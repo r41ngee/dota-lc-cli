@@ -42,4 +42,5 @@ def parse_localization_string(localization_string):
 
 with open("abilities_russian.txt", encoding="utf-8") as file:
     with open("abilities_russian.json", "w", encoding="utf-8") as jfile:
-        json.dump(parse_localization_string(file.read()), jfile)
+        json.dump(parse_localization_string(file.read()), jfile, ensure_ascii=False)
+
