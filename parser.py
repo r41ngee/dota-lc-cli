@@ -76,6 +76,3 @@ with open("abilities_russian.txt", encoding="utf-8") as file:
     with open("abilities_russian.json", "w", encoding="utf-8") as jfile:
         content = file.read()
         json.dump(parse_lstr(content), jfile, ensure_ascii=False, indent=4) 
-
-
-os.execv("bin/vpk.exe", ["-help"])
