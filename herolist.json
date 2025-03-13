@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Abaddon",
+        "key": "npc_dota_hero_abaddon:n",
+        "pic": null,
+        "skills": [
+            {
+                "name": "Mist Coil",
+                "key": "DOTA_Tooltip_ability_abaddon_death_coil"
+            },
+            {
+                "name": "Aphotic Shield",
+                "key": "DOTA_Tooltip_ability_abaddon_aphotic_shield"
+            },
+            {
+                "name": "Curse of the Avernus",
+                "key": "DOTA_Tooltip_ability_abaddon_frostmourne"
+            }
+        ]
+    },
+    {
+        "name": "Alchemist",
+        "key": "npc_dota_hero_alchemist:n",
+        "pic": null,
+        "skills": [
+            {
+                "name": "Acid Spray",
+                "key": "DOTA_Tooltip_ability_alchemist_acid_spray"
+            }
+        ]
+    }
+]

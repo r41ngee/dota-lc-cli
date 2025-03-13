@@ -1,6 +1,6 @@
 import json
-import os
-# import pathlib
+
+USER_FILEPATH = "ui/user_config.json"
 
 def parse_lstr(localization_string):
     """
@@ -72,7 +72,12 @@ def generate_lstr(localization_dict):
 
     return output_string
 
-with open("abilities_russian.txt", encoding="utf-8") as file:
-    with open("abilities_russian.json", "w", encoding="utf-8") as jfile:
-        content = file.read()
-        json.dump(parse_lstr(content), jfile, ensure_ascii=False, indent=4) 
+def change_value(key, value, filename=USER_FILEPATH):
+    with open(filename, "w") as file:
+        content = json.load(file)
+        content[key] = value
+        json.dump(content, file, ensure_ascii=False)
+
+def reset_config():
+    with open("ui/user_config.json", "w") as ufile, open("default_config.json") as dfile:
+        ufile.write(dfile.read())

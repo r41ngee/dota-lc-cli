@@ -45,7 +45,7 @@
 		"dota_ability_variable_max_mana_percentage"	"к максимальной мане"			// $max_mana_percentage
 		"dota_ability_variable_slow_resistance"		"к сопротивлению замедлениям"			// $slow_resistance
 		"dota_ability_variable_aoe_bonus"			"к радиусу заклинаний"					// $aoe_bonus
-"dota_ability_variable_damage_int_hero"	"к урону (у героев интеллекта)"
+		"dota_ability_variable_damage_int_hero"	"к урону (у героев интеллекта)"
 		"dota_ability_variable_damage_agi_hero"	"к урону (у героев ловкости)"
 		"dota_ability_variable_damage_str_hero"	"к урону (у героев силы)"
 		"dota_ability_variable_damage_universal_hero"	"к урону (у универсальных героев)"
@@ -17077,5 +17077,2806 @@
 		"DOTA_Tooltip_Ability_item_royale_with_cheese_Description"	"<h1>Использование: Scrumptious</h1>Съешь меня!"
 		"DOTA_Tooltip_Ability_item_royale_with_cheese"				"Block of Cheese"
 		"DOTA_Tooltip_ability_item_royale_with_cheese_Lore"			"Вначале был пояс силы. Затем — сапоги странствия. И вот, наконец, — головка сыра."
+		
+
+
+
+
+
+		
+		//------------------------------------------------------------------------------------------------------------------------
+		// powerbicats.ru - abilities_russian
+				
+				
+		// Items
+		"DOTA_Tooltip_Ability_item_royale_with_cheese"				"Головка Сыра"
+		"DOTA_Tooltip_Ability_item_royale_with_cheese_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Block of Cheese</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_abyssal_blade"				"Клинок Бездны"
+		"DOTA_Tooltip_Ability_item_abyssal_blade_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Abyssal Blade</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_arcane_ring"			"Чародейское Кольцо"
+		"DOTA_Tooltip_Ability_item_arcane_ring_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Arcane Ring</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_armlet"				"Браслет Мордиггиана"
+		"DOTA_Tooltip_Ability_item_armlet_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Armlet of Mordiggian</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_assault"				"Штурмовая кираса"
+		"DOTA_Tooltip_Ability_item_assault_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Assault Cuirass</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_basher"				"Крушитель Черепов"
+		"DOTA_Tooltip_Ability_item_basher_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Skull Basher</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_tenderizer"				"Bruiser's Maul"
+		"DOTA_Tooltip_Ability_item_tenderizer_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Bruiser's Maul</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_belt_of_strength"			"Пояс Силы"
+		"DOTA_Tooltip_Ability_item_belt_of_strength_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Belt of Strength</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_bfury"				"Боевая Фурия"
+		"DOTA_Tooltip_Ability_item_bfury_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Battle Fury</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_black_king_bar"			"Посох Чёрного Короля"
+		"DOTA_Tooltip_Ability_item_black_king_bar_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Black King Bar</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_blade_mail"				"Шипастая Броня"
+		"DOTA_Tooltip_Ability_item_blade_mail_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Blade Mail</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_blades_of_attack"			"Лезвия Натиска"
+		"DOTA_Tooltip_Ability_item_blades_of_attack_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Blades of Attack</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_blade_of_alacrity"			"Клинок Рвения"
+		"DOTA_Tooltip_Ability_item_blade_of_alacrity_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Blade of Alacrity</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_blink"				"Мерцающий Кинжал"
+		"DOTA_Tooltip_Ability_item_blink_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Blink Dagger</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_super_blink"				"Super Blink Dagger"
+		"DOTA_Tooltip_Ability_item_super_blink_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Super Blink Dagger</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_bloodstone"				"Камень Крови"
+		"DOTA_Tooltip_Ability_item_bloodstone_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Bloodstone</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_boots"				"Сапоги Скорости"
+		"DOTA_Tooltip_Ability_item_boots_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Boots of Speed</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_boots_of_elves"			"Эльфийская Повязка"
+		"DOTA_Tooltip_Ability_item_boots_of_elves_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Band of Elvenskin</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_bottle"				"Бутыль"
+		"DOTA_Tooltip_Ability_item_bottle_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Bottle</font></b></h1>"
+				
+		"DOTA_Tooltip_Ability_item_bracer"				"Наруч"
+		"DOTA_Tooltip_Ability_item_bracer_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Bracer</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_branches"				"Железная Ветвь"
+		"DOTA_Tooltip_Ability_item_branches_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Iron Branch</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_broadsword"				"Палаш"
+		"DOTA_Tooltip_Ability_item_broadsword_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Broadsword</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_buckler"				"Баклер"
+		"DOTA_Tooltip_Ability_item_buckler_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Buckler</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_butterfly"				"Бабочка"
+		"DOTA_Tooltip_Ability_item_butterfly_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Butterfly</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_chainmail"				"Кольчуга"
+		"DOTA_Tooltip_Ability_item_chainmail_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Chainmail</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_circlet"				"Венец"
+		"DOTA_Tooltip_Ability_item_circlet_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Circlet</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_crown"				"Корона"
+		"DOTA_Tooltip_Ability_item_crown_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Crown</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_clarity"				"Зелье Ясности"
+		"DOTA_Tooltip_Ability_item_clarity_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Clarity</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_cloak"				"Плащ"
+		"DOTA_Tooltip_Ability_item_cloak_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Cloak</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_faerie_fire"				"Волшебный Огонь"
+		"DOTA_Tooltip_Ability_item_faerie_fire_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Faerie Fire</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_skybreaker"				"Skybreaker"
+		"DOTA_Tooltip_Ability_item_skybreaker_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Skybreaker</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_infused_raindrop"				"Настой Благодатного Ливня"
+		"DOTA_Tooltip_Ability_item_infused_raindrop_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Infused Raindrops</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_banana"				"Банан"
+		"DOTA_Tooltip_Ability_item_banana_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Banana</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_jade_bow"				"Jade Bow"
+		"DOTA_Tooltip_Ability_item_jade_bow_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Jade Bow</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_spirit_helix"				"Spirit Helix"
+		"DOTA_Tooltip_Ability_item_spirit_helix_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Spirit Helix</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_wind_lace"				"Ветряная Тесьма"
+		"DOTA_Tooltip_Ability_item_wind_lace_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Wind Lace</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_blight_stone"			"Камень Порчи"
+		"DOTA_Tooltip_Ability_item_blight_stone_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Blight Stone</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_dragon_lance"				"Драконье копьё"
+		"DOTA_Tooltip_Ability_item_dragon_lance_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Dragon Lance</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_aether_lens"				"Эфирная Линза"
+		"DOTA_Tooltip_Ability_item_aether_lens_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Aether Lens</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_aetherial_halo"			"Aetherial Hammer"
+		"DOTA_Tooltip_Ability_item_aetherial_halo_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Aetherial Hammer</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_serenity_charm"			"Serenity Charm"
+		"DOTA_Tooltip_Ability_item_serenity_charm_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Serenity Charm</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_claymore"				"Клеймор"
+		"DOTA_Tooltip_Ability_item_claymore_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Claymore</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_meteor_hammer"			"Молот Метеоров"
+		"DOTA_Tooltip_Ability_item_meteor_hammer_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Meteor Hammer</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_traditional_crackers"	"Traditional Crackers"
+		"DOTA_Tooltip_Ability_item_traditional_crackers_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Traditional Crackers</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_nullifier"				"Нуллификатор"
+		"DOTA_Tooltip_Ability_item_nullifier_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Nullifier</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_aeon_disk"				"Диск Эона"
+		"DOTA_Tooltip_Ability_item_aeon_disk_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Aeon Disk</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_kaya"				"Кайя"
+		"DOTA_Tooltip_Ability_item_kaya_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Kaya</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_kaya"				"Рецепт: Кайя"
+		"DOTA_Tooltip_Ability_item_recipe_kaya_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Kaya</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_kaya_and_sange"				"Кайя и Санж"
+		"DOTA_Tooltip_Ability_item_kaya_and_sange_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Kaya and Sange</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_kaya_and_sange"		"Рецепт: Кайя и Санж"
+		"DOTA_Tooltip_Ability_item_recipe_kaya_and_sange_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Kaya and Sange</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_yasha_and_kaya"				"Яша и Кайя"
+		"DOTA_Tooltip_Ability_item_yasha_and_kaya_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Yasha and Kaya</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_yasha_and_kaya"		"Рецепт: Яша и Кайя"
+		"DOTA_Tooltip_Ability_item_recipe_yasha_and_kaya_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Yasha and Kaya</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_trident"				"Рецепт: Trident"
+		"DOTA_Tooltip_Ability_item_recipe_trident_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Trident</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_spirit_vessel"		"Рецепт: Сосуд Души"
+		"DOTA_Tooltip_Ability_item_recipe_spirit_vessel_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Spirit Vessel</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_spirit_vessel"				"Сосуд Души"
+		"DOTA_Tooltip_Ability_item_spirit_vessel_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Spirit Vessel</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_crimson_guard"				"Багровый Страж"
+		"DOTA_Tooltip_Ability_item_crimson_guard_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Crimson Guard</font></b></h1>"
+
+		"DOTA_Tooltip_Ability_item_wind_waker"				"Пробудитель Ветров"
+		"DOTA_Tooltip_Ability_item_wind_waker_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Wind Waker</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_cyclone"				"Божественный Скипетр Эула"
+		"DOTA_Tooltip_Ability_item_cyclone_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Eul's Scepter of Divinity</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_cyclone_2"				"Божественный Скипетр Эула (2 уровень)"
+		"DOTA_Tooltip_Ability_item_cyclone_2_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Eul's Scepter of Divinity (2 уровень)</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_dagon"				"Дагон"
+		"DOTA_Tooltip_Ability_item_dagon_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Dagon</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_dagon_2"				"Дагон"
+		"DOTA_Tooltip_Ability_item_dagon_2_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Dagon</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_dagon_2L"			"Дагон (2-й уровень)"
+		"DOTA_Tooltip_Ability_item_dagon_2L_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Dagon (2-й уровень)</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_dagon_3"				"Дагон"
+		"DOTA_Tooltip_Ability_item_dagon_3_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Dagon</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_dagon_3L"			"Дагон (3-й уровень)"
+		"DOTA_Tooltip_Ability_item_dagon_3L_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Dagon (3-й уровень)</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_dagon_4"				"Дагон"
+		"DOTA_Tooltip_Ability_item_dagon_4_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Dagon</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_dagon_4L"			"Дагон (4-й уровень)"
+		"DOTA_Tooltip_Ability_item_dagon_4L_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Dagon (4-й уровень)</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_dagon_5"				"Дагон"
+		"DOTA_Tooltip_Ability_item_dagon_5_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Dagon</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_dagon_5L"			"Дагон (5-й уровень)"
+		"DOTA_Tooltip_Ability_item_dagon_5L_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Dagon (5-й уровень)</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_demon_edge"				"Клинок Демона"
+		"DOTA_Tooltip_Ability_item_demon_edge_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Demon Edge</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_desolator"				"Опустошитель"
+		"DOTA_Tooltip_Ability_item_desolator_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Desolator</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_diffusal_blade"			"Клинок Рассеивания"
+		"DOTA_Tooltip_Ability_item_diffusal_blade_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Diffusal Blade</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_diffusal_blade_2"			"Клинок Рассеивания"
+		"DOTA_Tooltip_Ability_item_diffusal_blade_2_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Diffusal Blade</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_diffusal_blade_2L"		"Клинок Рассеивания (2-й уровень)"
+		"DOTA_Tooltip_Ability_item_diffusal_blade_2L_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Diffusal Blade (2-й уровень)</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_dust"				"Пыль Разоблачения"
+		"DOTA_Tooltip_Ability_item_dust_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Dust of Appearance</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_eagle"				"Орлиная Песнь"
+		"DOTA_Tooltip_Ability_item_eagle_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Eaglesong</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_energy_booster"			"Усилитель Энергии"
+		"DOTA_Tooltip_Ability_item_energy_booster_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Energy Booster</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ethereal_blade"			"Эфирный клинок"
+		"DOTA_Tooltip_Ability_item_ethereal_blade_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ethereal Blade</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_flask"				"Целебный Бальзам"
+		"DOTA_Tooltip_Ability_item_flask_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Healing Salve</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_force_staff"			"Посох Силы"
+		"DOTA_Tooltip_Ability_item_force_staff_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Force Staff</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_force_staff"			"Рецепт: Посох Силы"
+		"DOTA_Tooltip_Ability_item_recipe_force_staff_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Force Staff</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_gauntlets"				"Перчатки Силы"
+		"DOTA_Tooltip_Ability_item_gauntlets_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Gauntlets of Strength</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_gem"				"Самоцвет Истинного Зрения"
+		"DOTA_Tooltip_Ability_item_gem_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Gem of True Sight</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_eagle_eye"				"Eagle Eye"
+		"DOTA_Tooltip_Ability_item_eagle_eye_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Eagle Eye</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ghost"				"Призрачный Скипетр"
+		"DOTA_Tooltip_Ability_item_ghost_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ghost Scepter</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_aether_staff"				"Aether Staff"
+		"DOTA_Tooltip_Ability_item_aether_staff_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Aether Staff</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_gloves"				"Перчатки Спешки"
+		"DOTA_Tooltip_Ability_item_gloves_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Gloves of Haste</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_greater_crit"			"Дедал"
+		"DOTA_Tooltip_Ability_item_greater_crit_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Daedalus</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_hand_of_midas"			"Длань Мидаса"
+		"DOTA_Tooltip_Ability_item_hand_of_midas_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Hand of Midas</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_headdress"				"Головной Убор"
+		"DOTA_Tooltip_Ability_item_headdress_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Headdress</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_heart"				"Сердце Тарраска"
+		"DOTA_Tooltip_Ability_item_heart_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Heart of Tarrasque</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_helm_of_iron_will"			"Шлем Железной Воли"
+		"DOTA_Tooltip_Ability_item_helm_of_iron_will_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Helm of Iron Will</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_helm_of_the_dominator"		"Шлем Доминатора"
+		"DOTA_Tooltip_Ability_item_helm_of_the_dominator_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Helm of the Dominator</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_helm_of_the_overlord"		"Шлем Повелителя"
+		"DOTA_Tooltip_Ability_item_helm_of_the_overlord_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Helm of the Overlord</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_hood_of_defiance"			"Капюшон Непокорности"
+		"DOTA_Tooltip_Ability_item_hood_of_defiance_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Hood of Defiance</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_eternal_shroud"			"Вечный Саван"
+		"DOTA_Tooltip_Ability_item_eternal_shroud_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Eternal Shroud</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_hyperstone"				"Гиперкамень"
+		"DOTA_Tooltip_Ability_item_hyperstone_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Hyperstone</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_invis_sword"			"Клинок Теней"
+		"DOTA_Tooltip_Ability_item_invis_sword_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Shadow Blade</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_silver_edge"			"Серебряная Грань"
+		"DOTA_Tooltip_Ability_item_silver_edge_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Silver Edge</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_glimmer_cape"			"Мерцающий Плащ"
+		"DOTA_Tooltip_Ability_item_glimmer_cape_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Glimmer Cape</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_red_mist"			"Red Mist"
+		"DOTA_Tooltip_Ability_item_red_mist_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Red Mist</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_octarine_core"			"Октариновое Ядро"
+		"DOTA_Tooltip_Ability_item_octarine_core_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Octarine Core</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_enchanted_mango"			"Зачарованное Манго"
+		"DOTA_Tooltip_Ability_item_enchanted_mango_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Enchanted Mango</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_famango"			"Целебный Лотос"
+		"DOTA_Tooltip_Ability_item_famango_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Healing Lotus</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_great_famango"			"Великий Целебный Лотос"
+		"DOTA_Tooltip_Ability_item_great_famango_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Great Healing Lotus</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_greater_famango"			"Величайший Целебный Лотос"
+		"DOTA_Tooltip_Ability_item_greater_famango_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Greater Healing Lotus</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_lotus_orb"			"Сфера Лотоса"
+		"DOTA_Tooltip_Ability_item_lotus_orb_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Lotus Orb</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_nightfall_striders"			"Nightfall Striders"
+		"DOTA_Tooltip_Ability_item_nightfall_striders_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Nightfall Striders</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_guardian_greaves"		"Поножи Cтража"
+		"DOTA_Tooltip_Ability_item_guardian_greaves_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Guardian Greaves</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_solar_crest"			"Гребень Солнца"
+		"DOTA_Tooltip_Ability_item_solar_crest_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Solar Crest</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_rune_breaker"			"Rune Breaker"
+		"DOTA_Tooltip_Ability_item_rune_breaker_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Rune Breaker</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_bounty_pact"			"Bounty Pact"
+		"DOTA_Tooltip_Ability_item_bounty_pact_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Bounty Pact</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_natures_mend"		"Nature's Mend"
+		"DOTA_Tooltip_Ability_item_natures_mend_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Nature's Mend</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_blinders"			"Blinders"
+		"DOTA_Tooltip_Ability_item_blinders_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Blinders</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_javelin"				"Дротик"
+		"DOTA_Tooltip_Ability_item_javelin_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Javelin</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_lesser_crit"			"Кристалис"
+		"DOTA_Tooltip_Ability_item_lesser_crit_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Crystalys</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_lifesteal"				"Жуткая Маска"
+		"DOTA_Tooltip_Ability_item_lifesteal_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Morbid Mask</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_voodoo_mask"				"Маска Вуду"
+		"DOTA_Tooltip_Ability_item_voodoo_mask_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Voodoo Mask</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_mask_of_dispair"				"Mask of Dispair"
+		"DOTA_Tooltip_Ability_item_mask_of_dispair"				"Mask of Dispair"
+		
+		"DOTA_Tooltip_Ability_item_sphere"				"Сфера Линкена"
+		"DOTA_Tooltip_Ability_item_sphere_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Linken's Sphere</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_maelstrom"				"Смерч"
+		"DOTA_Tooltip_Ability_item_maelstrom_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Maelstrom</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_magic_stick"			"Волшебная Палочка"
+		"DOTA_Tooltip_Ability_item_magic_stick_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Magic Stick</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_magic_wand"				"Волшебный жезл"
+		"DOTA_Tooltip_Ability_item_magic_wand_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Magic Wand</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_manta"				"Стиль Манта"
+		"DOTA_Tooltip_Ability_item_manta_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Manta Style</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_mantle"				"Мантия Интеллекта"
+		"DOTA_Tooltip_Ability_item_mantle_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Mantle of Intelligence</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_mask_of_madness"			"Маска Безумия"
+		"DOTA_Tooltip_Ability_item_mask_of_madness_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Mask of Madness</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_mekansm"			"Меканизм"
+		"DOTA_Tooltip_Ability_item_mekansm_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Mekansm</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_mithril_hammer"			"Мифриловый молот"
+		"DOTA_Tooltip_Ability_item_mithril_hammer_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Mithril Hammer</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_mjollnir"				"Мьёльнир"
+		"DOTA_Tooltip_Ability_item_mjollnir_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Mjollnir</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_monkey_king_bar"			"Посох Короля Обезьян"
+		"DOTA_Tooltip_Ability_item_monkey_king_bar_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Monkey King Bar</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_mystic_staff"			"Мистический Посох"
+		"DOTA_Tooltip_Ability_item_mystic_staff_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Mystic Staff</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_null_talisman"			"Талисман Отмены"
+		"DOTA_Tooltip_Ability_item_null_talisman_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Null Talisman</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_hurricane_pike"			"Ураганная Пика"
+		"DOTA_Tooltip_Ability_item_hurricane_pike_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Hurricane Pike</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_whip"			"Whip"
+		"DOTA_Tooltip_Ability_item_whip_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Whip</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_oblivion_staff"			"Посох Забвения"
+		"DOTA_Tooltip_Ability_item_oblivion_staff_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Oblivion Staff</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_witch_blade"			"Ведьмин Клинок"
+		"DOTA_Tooltip_Ability_item_witch_blade_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Witch Blade</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ogre_axe"				"Топор Огра"
+		"DOTA_Tooltip_Ability_item_ogre_axe_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ogre Axe</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_orchid"				"Орхидея Злобы"
+		"DOTA_Tooltip_Ability_item_orchid_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Orchid Malevolence</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_bloodthorn"				"Кровавый Шип"
+		"DOTA_Tooltip_Ability_item_bloodthorn_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Bloodthorn</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_pers"				"Упорство"
+		"DOTA_Tooltip_Ability_item_pers_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Perseverance</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_phase_boots"			"Башмаки Фазы"
+		"DOTA_Tooltip_Ability_item_phase_boots_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Phase Boots</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_pipe"				"Трубка Прозрения"
+		"DOTA_Tooltip_Ability_item_pipe_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Pipe of Insight</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_platemail"				"Пластинчатый Доспех"
+		"DOTA_Tooltip_Ability_item_platemail_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Platemail</font></b></h1>"
+				
+		"DOTA_Tooltip_Ability_item_point_booster"			"Универсальный Усилитель"
+		
+		"DOTA_Tooltip_Ability_item_poor_mans_shield"			"Poor Man's Shield"
+		
+		"DOTA_Tooltip_Ability_item_power_treads"			"Сапоги Властной Поступи"
+		"DOTA_Tooltip_Ability_item_power_treads_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Power Treads</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_grandmasters_glaive"			"Grandmaster's Glaive"
+		"DOTA_Tooltip_Ability_item_grandmasters_glaive_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Grandmaster's Glaive</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_grandmasters_glaive_str"		"Mountain Stance"
+		"DOTA_Tooltip_Ability_item_grandmasters_glaive_str_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Mountain Stance</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_grandmasters_glaive_agi"		"Wind Stance"
+		"DOTA_Tooltip_Ability_item_grandmasters_glaive_agi_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Wind Stance</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_grandmasters_glaive_int"		"Ocean Stance"
+		"DOTA_Tooltip_Ability_item_grandmasters_glaive_int_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ocean Stance</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_quarterstaff"			"Боевой Посох"
+		"DOTA_Tooltip_Ability_item_quarterstaff_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Quarterstaff</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_blitz_knuckles"			"Лихой Кастет"
+		"DOTA_Tooltip_Ability_item_blitz_knuckles_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Blitz Knuckles</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_echo_sabre"				"Сабля Отзвука"
+		"DOTA_Tooltip_Ability_item_echo_sabre_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Echo Sabre</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_quelling_blade"			"Топор Подавления"
+		"DOTA_Tooltip_Ability_item_quelling_blade_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Quelling Blade</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_radiance"				"Радианс"
+		"DOTA_Tooltip_Ability_item_radiance_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Radiance</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_rapier"				"Всевышняя Рапира"
+		"DOTA_Tooltip_Ability_item_rapier_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Divine Rapier</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_caster_rapier"				"Caster Rapier"
+		"DOTA_Tooltip_Ability_item_caster_rapier_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Caster Rapier</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_reaver"				"Разоритель"
+		"DOTA_Tooltip_Ability_item_reaver_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Reaver</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_refresher"				"Сфера Обновления"
+		"DOTA_Tooltip_Ability_item_refresher_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Refresher Orb</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_aegis"			"Эгида бессмертия"
+		"DOTA_Tooltip_Ability_item_aegis_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Aegis of the Immortal</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_cheese"			"Сыр"
+		"DOTA_Tooltip_Ability_item_cheese_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Cheese</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_refresher_shard"			"Осклок Обновления"
+		"DOTA_Tooltip_Ability_item_refresher_shard_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Refresher Shard</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_relic"				"Священная Реликвия"
+		"DOTA_Tooltip_Ability_item_relic_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Sacred Relic</font></b></h1>"
+				
+		"DOTA_Tooltip_Ability_item_ring_of_basilius"			"Кольцо Базилиуса"
+		"DOTA_Tooltip_Ability_item_ring_of_basilius_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ring of Basilius</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_ring_of_basilius"		"Рецепт: Кольцо Базилиуса"
+		"DOTA_Tooltip_Ability_item_recipe_ring_of_basilius_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Ring of Basilius</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_holy_locket"			"Священный Медальон"
+		"DOTA_Tooltip_Ability_item_holy_locket_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Holy Locket</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_holy_locket"				"Рецепт: Священный Медальон"
+		"DOTA_Tooltip_Ability_item_recipe_holy_locket_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Holy Locket</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_witch_blade"				"Рецепт: Ведьмин Клинок"
+		"DOTA_Tooltip_Ability_item_recipe_witch_blade_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Witch Blade</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ring_of_health"			"Кольцо Здоровья"
+		"DOTA_Tooltip_Ability_item_ring_of_health_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ring of Health</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ring_of_protection"			"Кольцо Защиты"
+		"DOTA_Tooltip_Ability_item_ring_of_protection_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ring of Protection</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ring_of_regen"			"Кольцо Регенерации"
+		"DOTA_Tooltip_Ability_item_ring_of_regen_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ring of Regen</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ring_of_tarrasque"			"Кольцо Тарраска"
+		"DOTA_Tooltip_Ability_item_ring_of_tarrasque_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ring of Tarrasque</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_robe"				"Роба Мага"
+		"DOTA_Tooltip_Ability_item_robe_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Robe of the Magi</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_rod_of_atos"				"Жезл Атоса"
+		"DOTA_Tooltip_Ability_item_rod_of_atos_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Rod of Atos</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_sange"				"Санж"
+		"DOTA_Tooltip_Ability_item_sange_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Sange</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_heavens_halberd"				"Небесная алебарда"
+		"DOTA_Tooltip_Ability_item_heavens_halberd_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Heaven's Halberd</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_sange_and_yasha"			"Санж и Яша"
+		"DOTA_Tooltip_Ability_item_sange_and_yasha_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Sange and Yasha</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_satanic"				"Сатаник"
+		"DOTA_Tooltip_Ability_item_satanic_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Satanic</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_sheepstick"				"Коса Вайс"
+		"DOTA_Tooltip_Ability_item_sheepstick_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Scythe of Vyse</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_sheepstick"			"Рецепт: Коса Вайс"
+		"DOTA_Tooltip_Ability_item_recipe_sheepstick_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Scythe of Vyse</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_shivas_guard"			"Защитник Шивы"
+		"DOTA_Tooltip_Ability_item_shivas_guard_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Shiva's Guard</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_skadi"				"Око Скади"
+		"DOTA_Tooltip_Ability_item_skadi_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Eye of Skadi</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_skadi"				"Рецепт: Око Скади"
+		"DOTA_Tooltip_Ability_item_recipe_skadi_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Eye of Skadi</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_slippers"				"Тапочки Ловкости"
+		"DOTA_Tooltip_Ability_item_slippers_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Slippers of Agility</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_sobi_mask"				"Маска Мудреца"
+		"DOTA_Tooltip_Ability_item_sobi_mask_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Sage's Mask</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_soul_booster"			"Усилитель Души"
+		"DOTA_Tooltip_Ability_item_soul_booster_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Soul Booster</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_soul_ring"				"Кольцо Душ"
+		"DOTA_Tooltip_Ability_item_soul_ring_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Soul Ring</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_staff_of_wizardry"			"Волшебный Посох"
+		"DOTA_Tooltip_Ability_item_staff_of_wizardry_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Staff of Wizardry</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_stout_shield"			"Stout Shield"
+		"DOTA_Tooltip_Ability_item_stout_shield_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Stout Shield</font></b></h1>"
+				
+		"DOTA_Tooltip_Ability_item_moon_shard"			"Осколок Луны"
+		"DOTA_Tooltip_Ability_item_moon_shard_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Moon Shard</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_talisman_of_evasion"		"Талисман Уклонения"
+		"DOTA_Tooltip_Ability_item_talisman_of_evasion_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Talisman of Evasion</font></b></h1>"
+
+		"DOTA_Tooltip_Ability_item_tango"				"Танго"
+		"DOTA_Tooltip_Ability_item_tango_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Tango</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_tango_single"			"Танго (не свой)"
+		"DOTA_Tooltip_Ability_item_tango_single_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Tango (не свой)</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_tpscroll"				"Свиток Телепортации"
+		"DOTA_Tooltip_Ability_item_tpscroll_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Town Portal Scroll</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_tpscroll_2"				"Свиток Телепортации"
+		"DOTA_Tooltip_Ability_item_tpscroll_2_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Town Portal Scroll</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_boots_of_bearing"			"Сапоги Стати"
+		"DOTA_Tooltip_Ability_item_boots_of_bearing_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Boots of Bearing</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_tranquil_boots"			"Башмаки Спокойствия"
+		"DOTA_Tooltip_Ability_item_tranquil_boots_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Tranquil Boots</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_tranquil_boots"	"Рецепт: Башмаки Спокойствия"
+		"DOTA_Tooltip_Ability_item_recipe_tranquil_boots_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Tranquil Boots</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_tranquil_boots2"			"Башмаки Спокойствия"
+		"DOTA_Tooltip_Ability_item_tranquil_boots2_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Tranquil Boots Level 2</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_tranquil_boots2"	"Рецепт: Башмаки Спокойствия"
+		"DOTA_Tooltip_Ability_item_recipe_tranquil_boots2_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Tranquil Boots Level 2</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_travel_boots"			"Сапоги Странствий"
+		"DOTA_Tooltip_Ability_item_travel_boots_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Boots of Travel</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_travel_boots"			"Рецепт: Сапоги Странствий"
+		"DOTA_Tooltip_Ability_item_recipe_travel_boots_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Boots of Travel</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_travel_boots_2"			"Сапоги Странствий"
+		"DOTA_Tooltip_Ability_item_travel_boots_2_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Boots of Travel</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ultimate_orb"			"Верховная Сфера"
+		"DOTA_Tooltip_Ability_item_ultimate_orb_Note0_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ultimate Orb</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ultimate_scepter"			"Скипетр Аганима"
+		"DOTA_Tooltip_Ability_item_ultimate_scepter_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Aghanim's Scepter</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ultimate_scepter_2"			"Благословение Аганима"
+		"DOTA_Tooltip_Ability_item_ultimate_scepter_2_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Aghanim's Blessing</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ultimate_scepter_roshan"			"Благословение Аганима — Рошан"
+		"DOTA_Tooltip_Ability_item_ultimate_scepter_roshan_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Aghanim's Blessing — Рошан</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_ultimate_scepter_2"			"Рецепт: Благословение Аганима"
+		"DOTA_Tooltip_Ability_item_recipe_ultimate_scepter_2_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Aghanim's Blessing</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_aghanims_shard"			"Осколок Аганима"
+		"DOTA_Tooltip_Ability_item_aghanims_shard_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Aghanim's Shard</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_aghanims_shard_roshan"			"Осколок Аганима — Рошан"
+		"DOTA_Tooltip_Ability_item_aghanims_shard_roshan_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Aghanim's Shard — Рошан</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_aghanims_shard_2"			"Осколок Аганима(поглощённый)"
+		"DOTA_Tooltip_Ability_item_aghanims_shard_2_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Aghanim's Shard (поглощённый)</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_aghanims_shard"			"Рецепт: Осколок Аганима"
+		"DOTA_Tooltip_Ability_item_recipe_aghanims_shard_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Aghanim's Shard</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_aghanims_shard_2"			"Рецепт: Осколок Аганима (поглощённый)"
+		"DOTA_Tooltip_Ability_item_recipe_aghanims_shard_2_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Aghanim's Shard (поглощённый)</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_urn_of_shadows"			"Урна Теней"
+		"DOTA_Tooltip_Ability_item_urn_of_shadows_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Urn of Shadows</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_urn_of_shadows"	"Рецепт: Урна Теней"
+		"DOTA_Tooltip_Ability_item_recipe_urn_of_shadows_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Urn of Shadows</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_orb_of_pestilence"			"Рецепт: Orb of Pestilence"
+		"DOTA_Tooltip_Ability_item_recipe_orb_of_pestilence_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Orb of Pestilence</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_falcon_blade"			"Рецепт: Клинок Сокола"
+		"DOTA_Tooltip_Ability_item_recipe_falcon_blade_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Falcon Blade</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_voidwalker_scythe"	"Рецепт: Voidwalker Scythe"
+		"DOTA_Tooltip_Ability_item_recipe_voidwalker_scythe_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Voidwalker Scythe</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_mage_slayer"			"Рецепт: Убийца Магов"
+		"DOTA_Tooltip_Ability_item_recipe_mage_slayer_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Mage Slayer</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_overwhelming_blink"			"Рецепт: Ошеломительное Мерцание"
+		"DOTA_Tooltip_Ability_item_recipe_overwhelming_blink_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Overwhelming Blink</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_swift_blink"			"Рецепт: Стремительное Мерцание"
+		"DOTA_Tooltip_Ability_item_recipe_swift_blink_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Swift Blink</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_arcane_blink"			"Рецепт: Мистическое Мерцание"
+		"DOTA_Tooltip_Ability_item_recipe_arcane_blink_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Arcane Blink</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_boots_of_bearing"		"Рецепт: Сапоги Стати"
+		"DOTA_Tooltip_Ability_item_recipe_boots_of_bearing_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Boots of Bearing</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_ethereal_blade"		"Рецепт: Эфирный клинок"
+		"DOTA_Tooltip_Ability_item_recipe_ethereal_blade_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Ethereal Blade</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_orb_of_pestilence"			"Orb of Pestilence"
+		"DOTA_Tooltip_Ability_item_orb_of_pestilence_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Orb of Pestilence</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_fluffy_hat"			"Меховая Шапка"
+		"DOTA_Tooltip_Ability_item_fluffy_hat_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Fluffy Hat</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_falcon_blade"			"Клинок Сокола"
+		"DOTA_Tooltip_Ability_item_falcon_blade_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Falcon Blade</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_voidwalker_scythe"		"Voidwalker Scythe"
+		"DOTA_Tooltip_Ability_item_voidwalker_scythe_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Voidwalker Scythe</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_mage_slayer"			"Убийца Магов"
+		"DOTA_Tooltip_Ability_item_mage_slayer_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Mage Slayer</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_overwhelming_blink"			"Ошеломительное Мерцание"
+		"DOTA_Tooltip_Ability_item_overwhelming_blink_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Overwhelming Blink</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_swift_blink"			"Стремительное Мерцание"
+		"DOTA_Tooltip_Ability_item_swift_blink_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Swift Blink</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_arcane_blink"			"Мистическое Мерцание"
+		"DOTA_Tooltip_Ability_item_arcane_blink_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Arcane Blink</font></b></h1>"
+
+		"DOTA_Tooltip_Ability_item_vanguard"				"Авангард"
+		"DOTA_Tooltip_Ability_item_vanguard_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Vanguard</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_vitality_booster"			"Усилитель Здоровья"
+		"DOTA_Tooltip_Ability_item_vitality_booster_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Vitality Booster</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_vladmir"					"Жертва Владмира"
+		"DOTA_Tooltip_Ability_item_vladmir_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Vladmir's Offering</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_vladmir"			"Рецепт: Жертва Владмира"
+		"DOTA_Tooltip_Ability_item_recipe_vladmir_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Vladmir's Offering</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_wraith_pact"					"Wraith Pact"
+		"DOTA_Tooltip_Ability_item_wraith_pact_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Wraith Pact</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_wraith_pact"			"Рецепт: Wraith Pact"
+		"DOTA_Tooltip_Ability_item_recipe_wraith_pact_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Wraith Pact</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_void_stone"				"Камень пустоты"
+		"DOTA_Tooltip_Ability_item_void_stone_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Void Stone</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_tiara_of_selemene"		"Тиара Селемине"
+		"DOTA_Tooltip_Ability_item_tiara_of_selemene_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Tiara of Selemene</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ward_observer"			"Вард Обзора"
+		"DOTA_Tooltip_Ability_item_ward_observer_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Observer Ward</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ward_sentry"			"Вард Дозора"
+		"DOTA_Tooltip_Ability_item_ward_sentry_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Sentry Ward</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_wraith_band"			"Призрачный Венец"
+		"DOTA_Tooltip_Ability_item_wraith_band_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Wraith Band</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_yasha"				"Яша"
+		"DOTA_Tooltip_Ability_item_yasha_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Yasha</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_arcane_boots"			"Чародейские Сапоги"
+		"DOTA_Tooltip_Ability_item_arcane_boots_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Arcane Boots</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_arcane_boots2"			"Чародейские Сапоги"
+		"DOTA_Tooltip_Ability_item_arcane_boots2_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Arcane Boots</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_orb_of_venom"			"Сфера Яда"
+		"DOTA_Tooltip_Ability_item_orb_of_venom_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Orb of Venom</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_orb_of_frost"		"Сфера Мороза"
+		"DOTA_Tooltip_Ability_item_orb_of_frost_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Orb of Frost</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ancient_janggo"			"Барабаны Стойкости"
+		"DOTA_Tooltip_Ability_item_ancient_janggo_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Drum of Endurance</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_medallion_of_courage"	"Медальон Мужества"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Medallion of Courage</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_smoke_of_deceit"			"Дым Коварства"
+		"DOTA_Tooltip_Ability_item_smoke_of_deceit_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Smoke of Deceit</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_veil_of_discord"			"Вуаль Раздора"
+		"DOTA_Tooltip_Ability_item_veil_of_discord_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Veil of Discord</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_revenants_brooch"			"Брошь Неупокоенного"
+		"DOTA_Tooltip_Ability_item_revenants_brooch_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Revenant's Brooch</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_devastator"				"Паразма"
+		"DOTA_Tooltip_Ability_item_devastator_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Parasma</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ring_of_aquila"			"Ring of Aquila"
+		"DOTA_Tooltip_Ability_item_ring_of_aquila_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ring of Aquila</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_shadow_amulet"			"Теневой Амулет"
+		"DOTA_Tooltip_Ability_item_shadow_amulet_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Shadow Amulet</font></b></h1>"
+
+		"DOTA_Tooltip_Ability_item_keen_optic"			"Keen Optic"
+		"DOTA_Tooltip_Ability_item_keen_optic_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Keen Optic</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_grove_bow"			"Лук Священной Рощи"
+		"DOTA_Tooltip_Ability_item_grove_bow_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Grove Bow</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_quickening_charm"	"Quickening Charm"
+		"DOTA_Tooltip_Ability_item_quickening_charm_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Quickening Charm</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_philosophers_stone"	"Философский Камень"
+		"DOTA_Tooltip_Ability_item_philosophers_stone_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Philosopher's Stone</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_force_boots"			"Сапоги Силы"
+		"DOTA_Tooltip_Ability_item_force_boots_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Force Boots</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_desolator_2:n"			"#|n|#Стигийский Опустошитель"
+		"DOTA_Tooltip_Ability_item_desolator_2_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Stygian Desolator</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_phoenix_ash"			"Phoenix Ash"
+		"DOTA_Tooltip_Ability_item_phoenix_ash_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Phoenix Ash</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_seer_stone"			"Камень Провидца"
+		"DOTA_Tooltip_Ability_item_seer_stone_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Seer Stone</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_greater_mango"		"Greater Mango"
+		"DOTA_Tooltip_Ability_item_greater_mango_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Greater Mango</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_elixer"				"Elixir"
+		"DOTA_Tooltip_Ability_item_elixer_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Elixir</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_vampire_fangs"		"Клыки Вампира"
+		"DOTA_Tooltip_Ability_item_vampire_fangs_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Vampire Fangs</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_craggy_coat"		"Неотесанный Панцирь"
+		"DOTA_Tooltip_Ability_item_craggy_coat_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Craggy Coat</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_greater_faerie_fire"		"Greater Faerie Fire"
+		"DOTA_Tooltip_Ability_item_greater_faerie_fire_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Greater Faerie Fire</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_timeless_relic"		"Вневременная Реликвия"
+		"DOTA_Tooltip_Ability_item_timeless_relic_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Timeless Relic</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_mirror_shield"		"Зеркальный Щит"
+		"DOTA_Tooltip_Ability_item_mirror_shield_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Mirror Shield</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ironwood_tree"		"Ironwood Tree"
+		"DOTA_Tooltip_Ability_item_ironwood_tree_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ironwood Tree</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_ironwood_tree"		"Рецепт: Ironwood Tree"
+		"DOTA_Tooltip_Ability_item_recipe_ironwood_tree_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Ironwood Tree</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_royal_jelly"		"Маточное молочко"
+		"DOTA_Tooltip_Ability_item_royal_jelly_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Royal Jelly</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_pupils_gift"		"Дар Ученика"
+		"DOTA_Tooltip_Ability_item_pupils_gift_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Pupil's Gift</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_tome_of_aghanim"		"Tome of Aghanim"
+		"DOTA_Tooltip_Ability_item_tome_of_aghanim_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Tome of Aghanim</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_repair_kit"		"Repair Kit"
+		"DOTA_Tooltip_Ability_item_repair_kit_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Repair Kit</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_mind_breaker:n"		"#|n|#Разрушитель Разума"
+		"DOTA_Tooltip_Ability_item_mind_breaker_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Mind Breaker</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_third_eye"		"Third Eye"
+		"DOTA_Tooltip_Ability_item_third_eye_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Third Eye</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_spell_prism"		"Spell Prism"
+		"DOTA_Tooltip_Ability_item_spell_prism_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Spell Prism</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_horizon"		"Horizon" 
+		"DOTA_Tooltip_Ability_item_horizon_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Horizon</font></b></h1>" 
+		
+		"DOTA_Tooltip_Ability_item_fusion_rune"		"Fusion Rune"
+		"DOTA_Tooltip_Ability_item_fusion_rune_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Fusion Rune</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_princes_knife"		"Prince's Knife"
+		"DOTA_Tooltip_Ability_item_princes_knife_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Prince's Knife</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_spider_legs:n"		"#|n|#Паучьи Лапы"
+		"DOTA_Tooltip_Ability_item_spider_legs_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Spider Legs</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_helm_of_the_undying"		"Helm of the Undying"
+		"DOTA_Tooltip_Ability_item_helm_of_the_undying_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Helm of the Undying</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_mango_tree"		"Mango Tree"
+		"DOTA_Tooltip_Ability_item_mango_tree_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Mango Tree</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_vambrace"		"Наручи"
+		"DOTA_Tooltip_Ability_item_vambrace_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Vambrace</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_vambrace"		"Рецепт: Наручи"
+		"DOTA_Tooltip_Ability_item_recipe_vambrace_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Vambrace</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_witless_shako"		"Witless Shako"
+		"DOTA_Tooltip_Ability_item_witless_shako_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Witless Shako</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_imp_claw"		"Imp Claw"
+		"DOTA_Tooltip_Ability_item_imp_claw_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Imp Claw</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_flicker"		"Flicker"
+		"DOTA_Tooltip_Ability_item_flicker_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Flicker</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_spy_gadget"		"Телескоп"
+		"DOTA_Tooltip_Ability_item_spy_gadget_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Telescope</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ocean_heart"		"Ocean Heart"
+		"DOTA_Tooltip_Ability_item_ocean_heart_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ocean Heart</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_broom_handle"		"Черенок Метлы"
+		"DOTA_Tooltip_Ability_item_broom_handle_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Broom Handle</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_trusty_shovel:n"		"#|n|#Надёжная Лопата"
+		"DOTA_Tooltip_Ability_item_trusty_shovel_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Trusty Shovel</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_nether_shawl"		"Nether Shawl"
+		"DOTA_Tooltip_Ability_item_nether_shawl_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Nether Shawl</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_dragon_scale"		"Чешуя Дракона"
+		"DOTA_Tooltip_Ability_item_dragon_scale_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Dragon Scale</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_essence_ring:n"		"#|n|#Кольцо Сущности"
+		"DOTA_Tooltip_Ability_item_essence_ring_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Essence Ring</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_clumsy_net"		"Clumsy Net"
+		"DOTA_Tooltip_Ability_item_clumsy_net_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Clumsy Net</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_enchanted_quiver"		"Заколдованный Колчан"
+		"DOTA_Tooltip_Ability_item_enchanted_quiver_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Enchanted Quiver</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ninja_gear:n"		"#|n|#Снаряжение Ниндзя"
+		"DOTA_Tooltip_Ability_item_ninja_gear_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ninja Gear</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_illusionsts_cape"		"Illusionist's Cape"
+		"DOTA_Tooltip_Ability_item_illusionsts_cape_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Illusionist's Cape</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_havoc_hammer"		"Молот Разгрома"
+		"DOTA_Tooltip_Ability_item_havoc_hammer_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Havoc Hammer</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_panic_button:n"		"#|n|#Волшебная Лампа"
+		"DOTA_Tooltip_Ability_item_panic_button_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Magic Lamp</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_apex"		"Апекс"
+		"DOTA_Tooltip_Ability_item_apex_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Apex</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ballista"		"Ballista"
+		"DOTA_Tooltip_Ability_item_ballista_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ballista</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_woodland_striders"		"Woodland Striders"
+		"DOTA_Tooltip_Ability_item_woodland_striders_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Woodland Striders</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_trident"		"Trident"
+		"DOTA_Tooltip_Ability_item_trident_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Trident</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_demonicon:n"		"#|n|#Книга Мёртвых"
+		"DOTA_Tooltip_Ability_item_demonicon_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Book of the Dead</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_fallen_sky:n"		"#|n|#Рухнувшие Небеса"
+		"DOTA_Tooltip_Ability_item_fallen_sky_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Fallen Sky</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_fallen_sky"				"Рецепт: Fallen Sky"
+		"DOTA_Tooltip_Ability_item_recipe_fallen_sky_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Fallen Sky</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_pirate_hat:n"		"#|n|#Пиратская Шляпа"
+		"DOTA_Tooltip_Ability_item_pirate_hat_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Pirate Hat</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_dimensional_doorway"		"Dimensional Doorway"
+		"DOTA_Tooltip_Ability_item_dimensional_doorway_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Dimensional Doorway</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ex_machina"		"Ex Machina"
+		"DOTA_Tooltip_Ability_item_ex_machina_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ex Machina</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_faded_broach"		"Выцветшая Брошь"
+		"DOTA_Tooltip_Ability_item_faded_broach_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Faded Broach</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_paladin_sword"		"Меч Паладина"
+		"DOTA_Tooltip_Ability_item_paladin_sword_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Paladin Sword</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_minotaur_horn:n"		"#|n|#Рог Минотавра"
+		"DOTA_Tooltip_Ability_item_minotaur_horn_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Minotaur Horn</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_orb_of_destruction:n"		"#|n|#Сфера Разрушения"
+		"DOTA_Tooltip_Ability_item_orb_of_destruction_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Orb of Destruction</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_the_leveller"		"The Leveller"
+		"DOTA_Tooltip_Ability_item_the_leveller_Note0"			"<h1>Eng: <b><font color='#F2A93E'>The Leveller</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_titan_sliver"		"Titan Sliver"
+		"DOTA_Tooltip_Ability_item_titan_sliver_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Titan Sliver</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_chipped_vest"		"Chipped Vest"
+		"DOTA_Tooltip_Ability_item_chipped_vest_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Chipped Vest</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_orb_of_corrosion"		"Шар Коррозии"
+		"DOTA_Tooltip_Ability_item_orb_of_corrosion_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Orb of Corrosion</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_wizard_glass"		"Wizard Glass"
+		"DOTA_Tooltip_Ability_item_wizard_glass_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Wizard Glass</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_gloves_of_travel"		"Gloves of Travel"
+		"DOTA_Tooltip_Ability_item_gloves_of_travel_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Gloves of Travel</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_sorcerers_staff"		"Sorcerer's Staff"
+		"DOTA_Tooltip_Ability_item_sorcerers_staff_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Sorcerer's Staff</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_elven_tunic"		"Эльфийская Туника"
+		"DOTA_Tooltip_Ability_item_elven_tunic_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Elven Tunic</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_cloak_of_flames"		"Плащ Пламени"
+		"DOTA_Tooltip_Ability_item_cloak_of_flames_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Cloak of Flames</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_venom_gland"		"Venom Gland"
+		"DOTA_Tooltip_Ability_item_venom_gland_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Venom Gland</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_trickster_cloak"		"Плащ Пройдохи"
+		"DOTA_Tooltip_Ability_item_trickster_cloak_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Trickster Cloak</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_gladiator_helm"		"Helm of the Gladiator"
+		"DOTA_Tooltip_Ability_item_gladiator_helm_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Helm of the Gladiator</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_possessed_mask"		"Possessed Mask"
+		"DOTA_Tooltip_Ability_item_possessed_mask_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Possessed Mask</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_elusive_cloak"		"Elusive Cloak"
+		"DOTA_Tooltip_Ability_item_elusive_cloak_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Elusive Cloak</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_force_field"			"Броня Мистика"
+		"DOTA_Tooltip_Ability_item_force_field_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Arcanist's Armor</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_tree_processor"		"Tree Processor"
+		"DOTA_Tooltip_Ability_item_tree_processor_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Tree Processor</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_black_powder_bag"	"Blast Rig"
+		"DOTA_Tooltip_Ability_item_black_powder_bag_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Blast Rig</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ascetic_cap"			"Шляпа Аскета"
+		"DOTA_Tooltip_Ability_item_ascetic_cap_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ascetic's Cap</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_mechanical_arm"		"Mechanical Arm"
+		"DOTA_Tooltip_Ability_item_mechanical_arm_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Mechanical Arm</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_fortitude_ring"		"Ring of Fortitude"
+		"DOTA_Tooltip_Ability_item_fortitude_ring_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ring of Fortitude</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_assassins_dagger"	"Assassin's Dagger"
+		"DOTA_Tooltip_Ability_item_assassins_dagger_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Assassin's Dagger</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_light_robes"			"Light Robes"
+		"DOTA_Tooltip_Ability_item_light_robes_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Light Robes</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_pogo_stick:n"			"#|n|#Неваляшка"
+		"DOTA_Tooltip_Ability_item_pogo_stick_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Tumbler's Toy</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_paintball"			"Fae Grenade"
+		"DOTA_Tooltip_Ability_item_paintball_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Fae Grenade</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_heavy_blade"			"Witchbane"
+		"DOTA_Tooltip_Ability_item_heavy_blade_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Witchbane</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_unstable_wand:n"		"#|n|#Свинская Палочка"
+		"DOTA_Tooltip_Ability_item_unstable_wand_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Pig Pole</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_sample_picker"		"Assassin's Contract"
+		"DOTA_Tooltip_Ability_item_sample_picker_Note0"		"Assassin's Contract"
+		
+		"DOTA_Tooltip_Ability_item_icarus_wings"		"Icarus Wings"
+		"DOTA_Tooltip_Ability_item_icarus_wings_Note0"		"Icarus Wings"
+		
+		"DOTA_Tooltip_Ability_item_misericorde:n"			"#|n|#Бандитский Клинок"
+		"DOTA_Tooltip_Ability_item_misericorde_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Brigand's Blade</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ancient_perseverance"		"Ancient Perseverance"
+		"DOTA_Tooltip_Ability_item_ancient_perseverance_Note0"		"Ancient Perseverance"
+		
+		"DOTA_Tooltip_Ability_item_oakheart"		"Oakheart"
+		"DOTA_Tooltip_Ability_item_oakheart_Note0"		"Oakheart"
+		
+		"DOTA_Tooltip_Ability_item_stormcrafter"		"Грозодел"
+		"DOTA_Tooltip_Ability_item_stormcrafter_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Stormcrafter</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_overflowing_elixir"		"Overflowing Elixir"
+		"DOTA_Tooltip_Ability_item_overflowing_elixir_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Overflowing Elixir</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_mysterious_hat"		"Брелок Феи"
+		"DOTA_Tooltip_Ability_item_mysterious_hat_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Fairy's Trinket</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_star_mace"		"Star Mace"
+		"DOTA_Tooltip_Ability_item_star_mace_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Star Mace</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_penta_edged_sword"		"Penta-Edged Sword"
+		"DOTA_Tooltip_Ability_item_penta_edged_sword_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Penta-Edged Sword</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_satchel"		"Satchel"
+		"DOTA_Tooltip_Ability_item_satchel_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Satchel</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_orb_of_revelations"		"Orb of Revelations"
+		"DOTA_Tooltip_Ability_item_orb_of_revelations_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Orb of Revelations</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_gungir"		"Глейпнир"
+		"DOTA_Tooltip_Ability_item_gungir_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Gleipnir</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_warhammer"		"Warhammer"
+		"DOTA_Tooltip_Ability_item_warhammer_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Warhammer</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_psychic_headband"		"Ментальный Обруч"
+		"DOTA_Tooltip_Ability_item_psychic_headband_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Psychic Headband</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ceremonial_robe:n"		"#|n|#Церемониальное Одеяние"
+		"DOTA_Tooltip_Ability_item_ceremonial_robe_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ceremonial Robe</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_book_of_shadows"		"Книга Теней"
+		"DOTA_Tooltip_Ability_item_book_of_shadows_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Book of Shadows</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_giants_ring"		"Кольцо Исполина"
+		"DOTA_Tooltip_Ability_item_giants_ring_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Giant's Ring</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_vengeances_shadow"		"Shadow of Vengeance"
+		"DOTA_Tooltip_Ability_item_vengeances_shadow_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Shadow of Vengeance</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_bullwhip"		"Кнут"
+		"DOTA_Tooltip_Ability_item_bullwhip_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Bullwhip</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_quicksilver_amulet"		"Quicksilver Amulet"
+		"DOTA_Tooltip_Ability_item_quicksilver_amulet_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Quicksilver Amulet</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_seeds_of_serenity"			"Семена Безмятежности"
+		"DOTA_Tooltip_Ability_item_seeds_of_serenity_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Seeds of Serenity</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_lance_of_pursuit"			"Копье Погони"
+		"DOTA_Tooltip_Ability_item_lance_of_pursuit_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Lance of Pursuit</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_occult_bracelet:n"				"#|n|#Оккультный Браслет"
+		"DOTA_Tooltip_Ability_item_occult_bracelet_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Occult Bracelet</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ogre_seal_totem:n"				"#|n|#Тотем Огра-Тюленя"
+		"DOTA_Tooltip_Ability_item_ogre_seal_totem_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ogre Seal Totem</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_eye_of_the_vizier"				"Око Визиря"
+		"DOTA_Tooltip_Ability_item_eye_of_the_vizier_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Eye of the Vizier</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_specialists_array"				"Набор Специалиста"
+		"DOTA_Tooltip_Ability_item_specialists_array_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Specialist's Array</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_dagger_of_ristul"				"Dagger of Ristul"
+		"DOTA_Tooltip_Ability_item_dagger_of_ristul_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Dagger of Ristul</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_disperser"				"Дисперсер"
+		"DOTA_Tooltip_Ability_item_disperser_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Disperser</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_harpoon"						"Гарпун"
+		"DOTA_Tooltip_Ability_item_harpoon_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Harpoon</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_phylactery"						"Филактерия"
+		"DOTA_Tooltip_Ability_item_phylactery_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Phylactery</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_angels_demise"				"Кханда"
+		"DOTA_Tooltip_Ability_item_angels_demise_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Khanda</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_diadem"							"Диадема"
+		"DOTA_Tooltip_Ability_item_diadem_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Diadem</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_defiant_shell"						"Строптивая Раковина"
+		"DOTA_Tooltip_Ability_item_defiant_shell_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Defiant Shell</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_blood_grenade"						"Кровавая Граната"
+		"DOTA_Tooltip_Ability_item_blood_grenade_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Blood Grenade</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_spark_of_courage:n"					"#|n|#Искра Отваги"
+		"DOTA_Tooltip_ability_item_spark_of_courage_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Spark of Courage</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_duelist_gloves"						"Перчатки Дуэлянта"
+		"DOTA_Tooltip_ability_item_duelist_gloves_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Duelist Gloves</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_ancient_guardian"					"Древний Страж"
+		"DOTA_Tooltip_ability_item_ancient_guardian_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Ancient Guardian</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_dandelion_amulet"					"Амулет-Одуванчик"
+		"DOTA_Tooltip_ability_item_dandelion_amulet_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Dandelion Amulet</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_safety_bubble"						"Защитный Пузырь"
+		"DOTA_Tooltip_ability_item_safety_bubble_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Safety Bubble</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_whisper_of_the_dread:n"				"#|n|#Шёпот Ужаса"
+		"DOTA_Tooltip_ability_item_whisper_of_the_dread_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Whisper of the Dread</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_nemesis_curse:n"						"#|n|#Проклятие Немезиды"
+		"DOTA_Tooltip_ability_item_nemesis_curse_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Nemesis Curse</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_avianas_feather"						"Перо Авианы"
+		"DOTA_Tooltip_ability_item_avianas_feather_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Aviana's Feather</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_unwavering_condition"				"Незыблемость"
+		"DOTA_Tooltip_ability_item_unwavering_condition_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Unwavering Condition</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_vindicators_axe"						"Топор Защитника"
+		"DOTA_Tooltip_ability_item_vindicators_axe_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Vindicator's Axe</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_martyrs_plate"						"Кираса Мученика"
+		"DOTA_Tooltip_ability_item_martyrs_plate_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Martyr's Plate</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_cornucopia"						"Рог Изобилия"
+		"DOTA_Tooltip_ability_item_cornucopia_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Cornucopia</font></b></h1>"
+
+		"DOTA_Tooltip_ability_item_pavise"							"Павеза"
+		"DOTA_Tooltip_ability_item_pavise_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Pavise</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_gossamer_cape:n"					"#|n|#Паутиновый Плащ"
+		"DOTA_Tooltip_ability_item_gossamer_cape_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Gossamer Cape</font></b></h1>"
+		
+		//7.35
+		"DOTA_Tooltip_ability_item_light_collector"				"Средоточие Света"
+		"DOTA_Tooltip_ability_item_light_collector_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Light Collector</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_rattlecage"					"Гремучая Клетка"
+		"DOTA_Tooltip_ability_item_rattlecage_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Rattlecage</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_doubloon"					"Дублон"
+		"DOTA_Tooltip_ability_item_doubloon_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Doubloon</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_roshans_banner"					"Знамя Рошана"
+		"DOTA_Tooltip_ability_item_roshans_banner_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Roshan's Banner</font></b></h1>"
+		
+		//7.37
+		"DOTA_Tooltip_ability_item_claddish_spyglass"									"Claddish Spyglass"
+		"DOTA_Tooltip_ability_item_claddish_spyglass_Note0"									"<h1>Eng: <b><font color='#F2A93E'>Claddish Spyglass</font></b></h1>"
+		
+		//7.38
+		
+		"DOTA_Tooltip_Ability_item_cursed_circlet"				"Accursed"
+		"DOTA_Tooltip_Ability_item_ogre_heart"					"Restorative"
+		"DOTA_Tooltip_Ability_item_neutral_tabi"				"Elusive"
+
+		"DOTA_Tooltip_Ability_item_enhancement_mystical"		"Мистические Чары"
+		"DOTA_Tooltip_Ability_item_enhancement_mystical_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Mystical</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_enhancement_brawny"		"Крепкие Чары"
+		"DOTA_Tooltip_Ability_item_enhancement_brawny_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Brawny</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_enhancement_alert"			"Тревожные Чары"
+		"DOTA_Tooltip_Ability_item_enhancement_alert_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Alert</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_enhancement_tough"			"Суровые Чары"
+		"DOTA_Tooltip_Ability_item_enhancement_tough_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Tough</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_enhancement_quickened"		"Проворные Чары"
+		"DOTA_Tooltip_Ability_item_enhancement_quickened_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Quickened</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_enhancement_keen_eyed"		"Дальновидные Чары"
+		"DOTA_Tooltip_Ability_item_enhancement_keen_eyed_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Keen-eyed</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_enhancement_vast"			"Безбрежные Чары"
+		"DOTA_Tooltip_Ability_item_enhancement_vast_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Vast</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_enhancement_greedy"		"Алчные Чары"
+		"DOTA_Tooltip_Ability_item_enhancement_greedy_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Greedy</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_enhancement_vampiric"		"Вампирские Чары"
+		"DOTA_Tooltip_Ability_item_enhancement_vampiric_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Vampiric</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_enhancement_timeless"		"Вневременные Чары"
+		"DOTA_Tooltip_Ability_item_enhancement_timeless_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Timeless</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_enhancement_titanic"		"Титанические Чары"
+		"DOTA_Tooltip_Ability_item_enhancement_titanic_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Titanic</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_enhancement_crude"			"Грубые Чары"
+		"DOTA_Tooltip_Ability_item_enhancement_crude_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Crude</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_enhancement_feverish"		"Беспокойные Чары"
+		"DOTA_Tooltip_Ability_item_enhancement_feverish_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Feverish</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_enhancement_fleetfooted"	"Резвые Чары"
+		"DOTA_Tooltip_Ability_item_enhancement_fleetfooted_Note0"	"<h1>Eng: <b><font color='#F2A93E'>Fleetfooted</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_enhancement_audacious"		"Дерзкие Чары"
+		"DOTA_Tooltip_Ability_item_enhancement_audacious_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Audacious</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_enhancement_evolved"		"Развивающие Чары"
+		"DOTA_Tooltip_Ability_item_enhancement_evolved_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Evolved</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_enhancement_boundless"		"Безграничные Чары"
+		"DOTA_Tooltip_Ability_item_enhancement_boundless_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Boundless</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_enhancement_wise"			"Умудрённые Чары"
+		"DOTA_Tooltip_Ability_item_enhancement_wise_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Wise</font></b></h1>"
+
+		"DOTA_Tooltip_Ability_item_enhancement_mystical_Bound:g"		"#|m|#Mystical#|f|#Mystical#|n|#Mystical"
+		"DOTA_Tooltip_Ability_item_enhancement_brawny_Bound:g"		"#|m|#Brawny#|f|#Brawny#|n|#Brawny"
+		"DOTA_Tooltip_Ability_item_enhancement_alert_Bound:g"			"#|m|#Alert#|f|#Alert#|n|#Alert"
+		"DOTA_Tooltip_Ability_item_enhancement_tough_Bound:g"			"#|m|#Tough#|f|#Tough#|n|#Tough"
+		"DOTA_Tooltip_Ability_item_enhancement_quickened_Bound:g"		"#|m|#Quickened#|f|#Quickened#|n|#Quickened"
+		"DOTA_Tooltip_Ability_item_enhancement_keen_eyed_Bound:g"		"#|m|#Keen-eyed#|f|#Keen-eyed#|n|#Keen-eyed"
+		"DOTA_Tooltip_Ability_item_enhancement_vast_Bound:g"			"#|m|#Vast#|f|#Vast#|n|#Vast"
+		"DOTA_Tooltip_Ability_item_enhancement_greedy_Bound:g"		"#|m|#Greedy#|f|#Greedy#|n|#Greedy"
+		"DOTA_Tooltip_Ability_item_enhancement_vampiric_Bound:g"		"#|m|#Vampiric#|f|#Vampiric#|n|#Vampiric"
+		"DOTA_Tooltip_Ability_item_enhancement_timeless_Bound:g"		"#|m|#Timeless#|f|#Timeless#|n|#Timeless"
+		"DOTA_Tooltip_Ability_item_enhancement_titanic_Bound:g"		"#|m|#Titanic#|f|#Titanic#|n|#Titanic"
+		"DOTA_Tooltip_Ability_item_enhancement_crude_Bound:g"			"#|m|#Crude#|f|#Crude#|n|#Crude"
+		"DOTA_Tooltip_Ability_item_enhancement_feverish_Bound:g"		"#|m|#Feverish#|f|#Feverish#|n|#Feverish"
+		"DOTA_Tooltip_Ability_item_enhancement_fleetfooted_Bound:g"	"#|m|#Fleetfooted#|f|#Fleetfooted#|n|#Fleetfooted"
+		"DOTA_Tooltip_Ability_item_enhancement_audacious_Bound:g"		"#|m|#Audacious#|f|#Audacious#|n|#Audacious"
+		"DOTA_Tooltip_Ability_item_enhancement_evolved_Bound:g"		"#|m|#Evolved#|f|#Evolved#|n|#Evolved"
+		"DOTA_Tooltip_Ability_item_enhancement_boundless_Bound:g"		"#|m|#Boundless#|f|#Boundless#|n|#Boundless"
+		"DOTA_Tooltip_Ability_item_enhancement_wise_Bound:g"			"#|m|#Wise#|f|#Wise#|n|#Wise"
+
+		"DOTA_Tooltip_Ability_item_mana_draught:n"				"#|n|#Глоток Маны"
+		"DOTA_Tooltip_Ability_item_mana_draught_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Mana Draught</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_rippers_lash:n"				"#|n|#Плеть Потрошителя"
+		"DOTA_Tooltip_Ability_item_rippers_lash_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Ripper's Lash</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_crippling_crossbow:n"		"#|n|#Арбалет Увечий"
+		"DOTA_Tooltip_Ability_item_crippling_crossbow_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Crippling Crossbow</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_gale_guard:n"				"#|n|#Штормовой Страж"
+		"DOTA_Tooltip_Ability_item_gale_guard_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Gale Guard</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_gunpowder_gauntlets:n"		"#|n|#Пороховая Перчатка"
+		"DOTA_Tooltip_Ability_item_gunpowder_gauntlets_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Gunpowder Gauntlet</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_searing_signet:n"			"#|n|#Обжигающий Перстень"
+		"DOTA_Tooltip_Ability_item_searing_signet_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Searing Signet</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_serrated_shiv:n"				"#|n|#Зазубренный Нож"
+		"DOTA_Tooltip_Ability_item_serrated_shiv_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Serrated Shiv</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_polliwog_charm:n"			"#|n|#Талисман Полливога"
+		"DOTA_Tooltip_Ability_item_polliwog_charm_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Pollywog Charm</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_unrelenting_eye:n"			"#|n|#Неумолимый Взор"
+		"DOTA_Tooltip_ability_item_unrelenting_eye_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Unrelenting Eye</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_magnifying_monocle:n"		"#|n|#Увеличительный Монокль"
+		"DOTA_Tooltip_ability_item_magnifying_monocle_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Magnifying Monocle</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_pyrrhic_cloak:n"				"#|n|#Плащ Пирра"
+		"DOTA_Tooltip_ability_item_pyrrhic_cloak_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Pyrrhic Cloak</font></b></h1>"
+
+
+		// Recipes
+		"DOTA_Tooltip_Ability_item_recipe_aeon_disk"			"Рецепт: Диск Эона"
+		"DOTA_Tooltip_Ability_item_recipe_aeon_disk_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Aeon Disk</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_bracer"					"Рецепт: Наруч"
+		"DOTA_Tooltip_Ability_item_recipe_bracer_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Bracer</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_wind_waker"					"Рецепт: Пробудитель Ветров"
+		"DOTA_Tooltip_Ability_item_recipe_wind_waker_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Wind Waker</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_cyclone"					"Рецепт: Божественный скипетр Эула"
+		"DOTA_Tooltip_Ability_item_recipe_cyclone_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Eul's Scepter of Divinity</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_silver_edge"				"Рецепт: Серебряная Грань"
+		"DOTA_Tooltip_Ability_item_recipe_silver_edge_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Silver Edge</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_solar_crest"				"Рецепт: Гребень Солнца"
+		"DOTA_Tooltip_Ability_item_recipe_solar_crest_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Solar Crest</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_maelstrom"				"Рецепт: Смерч"
+		"DOTA_Tooltip_Ability_item_recipe_maelstrom_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Maelstrom</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_shivas_guard"				"Рецепт: Защитник Шивы"
+		"DOTA_Tooltip_Ability_item_recipe_shivas_guard_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Shiva's Guard</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_diffusal_blade"			"Рецепт: Клинок Рассеивания"
+		"DOTA_Tooltip_Ability_item_recipe_diffusal_blade_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Diffusal Blade</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_ancient_janggo"			"Рецепт: Drum of Endurance"
+		"DOTA_Tooltip_Ability_item_recipe_ancient_janggo_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Drum of Endurance</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_orchid"					"Рецепт: Орхидея Злобы"
+		"DOTA_Tooltip_Ability_item_recipe_orchid_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Orchid Malevolence</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_bloodstone"				"Рецепт: Камень Крови"
+		"DOTA_Tooltip_Ability_item_recipe_bloodstone_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Bloodstone</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_manta"					"Рецепт: Стиль Манта"
+		"DOTA_Tooltip_Ability_item_recipe_manta_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Manta Style</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_hurricane_pike"			"Рецепт: Ураганная Пика"
+		"DOTA_Tooltip_Ability_item_recipe_hurricane_pike_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Hurricane Pike</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_refresher"				"Рецепт: Сфера Обновления"
+		"DOTA_Tooltip_Ability_item_recipe_refresher_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Refresher Orb</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_sphere"					"Рецепт: Сфера Линкена"
+		"DOTA_Tooltip_Ability_item_recipe_sphere_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Linken's Sphere</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_greater_crit"				"Рецепт: Дедал"
+		"DOTA_Tooltip_Ability_item_recipe_greater_crit_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Daedalus</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_hand_of_midas"			"Рецепт: Длань Мидаса"
+		"DOTA_Tooltip_Ability_item_recipe_hand_of_midas_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Hand of Midas</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_mekansm"					"Рецепт: Меканизм"
+		"DOTA_Tooltip_Ability_item_recipe_mekansm_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Mekansm</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_assault"					"Рецепт: Штурмовая кираса"
+		"DOTA_Tooltip_Ability_item_recipe_assault_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Assault Cuirass</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_pipe"						"Рецепт: Трубка Прозрения"
+		"DOTA_Tooltip_Ability_item_recipe_pipe_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Pipe of Insight</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_eternal_shroud"			"Рецепт: Вечный Саван"
+		"DOTA_Tooltip_Ability_item_recipe_eternal_shroud_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Eternal Shroud</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_magic_wand"				"Рецепт: Волшебный жезл"
+		"DOTA_Tooltip_Ability_item_recipe_magic_wand_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Magic Wand</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_heart"					"Рецепт: Сердце Тарраска"
+		"DOTA_Tooltip_Ability_item_recipe_heart_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Heart of Tarrasque</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_bloodthorn"				"Рецепт: Кровавый Шип"
+		"DOTA_Tooltip_Ability_item_recipe_bloodthorn_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Bloodthorn</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_guardian_greaves"			"Рецепт: Поножи Cтража"
+		"DOTA_Tooltip_Ability_item_recipe_guardian_greaves_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Guardian Greaves</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_mjollnir"					"Рецепт: Мьёльнир"
+		"DOTA_Tooltip_Ability_item_recipe_mjollnir_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Mjollnir</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_abyssal_blade"			"Рецепт: Клинок Бездны"
+		"DOTA_Tooltip_Ability_item_recipe_abyssal_blade_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Abyssal Blade</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_black_king_bar"			"Рецепт: Посох Чёрного Короля"
+		"DOTA_Tooltip_Ability_item_recipe_black_king_bar_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Black King Bar</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_dagon"					"Рецепт: Дагон"
+		"DOTA_Tooltip_Ability_item_recipe_dagon_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Dagon</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_soul_ring"				"Рецепт: Кольцо душ"
+		"DOTA_Tooltip_Ability_item_recipe_soul_ring_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Soul Ring</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_yasha"					"Рецепт: Яша"
+		"DOTA_Tooltip_Ability_item_recipe_yasha_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Yasha</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_octarine_core"			"Рецепт: Октариновое Ядро"
+		"DOTA_Tooltip_Ability_item_recipe_octarine_core_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Octarine Core</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_satanic"					"Рецепт: Сатаник"
+		"DOTA_Tooltip_Ability_item_recipe_satanic_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Satanic</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_blade_mail"				"Рецепт: Шипастая Броня"
+		"DOTA_Tooltip_Ability_item_recipe_blade_mail_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Blade Mail</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_heavens_halberd"			"Рецепт: Небесная алебарда"
+		"DOTA_Tooltip_Ability_item_recipe_heavens_halberd_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Heaven's Halberd</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_crimson_guard"			"Рецепт: Багровый Страж"
+		"DOTA_Tooltip_Ability_item_recipe_crimson_guard_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Crimson Guard</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_sange"					"Рецепт: Санж"
+		"DOTA_Tooltip_Ability_item_recipe_sange_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Sange</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_basher"					"Рецепт: Крушитель Черепов"
+		"DOTA_Tooltip_Ability_item_recipe_basher_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Skull Basher</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_tenderizer"				"Рецепт: Bruiser's Maul"
+		"DOTA_Tooltip_Ability_item_recipe_tenderizer_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Bruiser's Maul</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_aether_lens"				"Рецепт: Эфирная Линза"
+		"DOTA_Tooltip_Ability_item_recipe_aether_lens_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Aether Lens</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_aetherial_halo"			"Рецепт: Aetherial Hammer"
+		"DOTA_Tooltip_Ability_item_recipe_aetherial_halo_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Aetherial Hammer</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_serenity_charm"			"Рецепт: Serenity Charm"
+		"DOTA_Tooltip_Ability_item_recipe_serenity_charm_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Serenity Charm</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_veil_of_discord"			"Рецепт: Вуаль Раздора"
+		"DOTA_Tooltip_Ability_item_recipe_veil_of_discord_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Veil of Discord</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_revenants_brooch"			"Рецепт: Брошь Неупокоенного"
+		"DOTA_Tooltip_Ability_item_recipe_revenants_brooch_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Revenant's Brooch</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_devastator"				"Рецепт: Паразма"
+		"DOTA_Tooltip_Ability_item_recipe_devastator_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Parasma</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_buckler"					"Рецепт: Баклер"
+		"DOTA_Tooltip_Ability_item_recipe_buckler_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Buckler</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_dragon_lance"				"Рецепт: Драконье копьё"
+		"DOTA_Tooltip_Ability_item_recipe_dragon_lance_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Dragon Lance</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_lesser_crit"				"Рецепт: Кристалис"
+		"DOTA_Tooltip_Ability_item_recipe_lesser_crit_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Crystalys</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_mask_of_madness"			"Рецепт: Маска Безумия"
+		"DOTA_Tooltip_Ability_item_recipe_mask_of_madness_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Mask of Madness</font></b></h1>"
+				
+		"DOTA_Tooltip_Ability_item_recipe_headdress"				"Рецепт: Головной Убор"
+		"DOTA_Tooltip_Ability_item_recipe_headdress_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Headdress</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_wraith_band"				"Рецепт: Призрачный Венец"
+		"DOTA_Tooltip_Ability_item_recipe_wraith_band_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Wraith Band</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_helm_of_the_dominator"	"Рецепт: Шлем Доминатора"
+		"DOTA_Tooltip_Ability_item_recipe_helm_of_the_dominator_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Helm of the Dominator</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_helm_of_the_overlord"		"Рецепт: Шлем Повелителя"
+		"DOTA_Tooltip_Ability_item_recipe_helm_of_the_overlord_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Helm of the Overlord</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_armlet"					"Рецепт: Браслет Мордиггиана"
+		"DOTA_Tooltip_Ability_item_recipe_armlet_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Armlet of Mordiggian</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_null_talisman"			"Рецепт: Талисман Отмены"
+		"DOTA_Tooltip_Ability_item_recipe_null_talisman_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Null Talisman</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_radiance"					"Рецепт: Радианс"
+		"DOTA_Tooltip_Ability_item_recipe_radiance_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Radiance</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_rod_of_atos"				"Рецепт: Жезл Атоса"
+		"DOTA_Tooltip_Ability_item_recipe_rod_of_atos_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Rod of Atos</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_nullifier"				"Рецепт: Нуллификатор"
+		"DOTA_Tooltip_Ability_item_recipe_nullifier_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Nullifier</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_bfury"					"Рецепт: Боевая Фурия"
+		"DOTA_Tooltip_Ability_item_recipe_bfury_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Battle Fury</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_monkey_king_bar"			"Рецепт: Посох Короля обезьян"
+		"DOTA_Tooltip_Ability_item_recipe_monkey_king_bar_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Monkey King Bar</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_glimmer_cape"				"Рецепт: Мерцающий Плащ"
+		"DOTA_Tooltip_Ability_item_recipe_glimmer_cape_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Glimmer Cape</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_orb_of_corrosion"			"Рецепт: Шар Коррозии"
+		"DOTA_Tooltip_Ability_item_recipe_orb_of_corrosion_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Orb of Corrosion</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_gungir"					"Рецепт: Gleipnir"
+		"DOTA_Tooltip_Ability_item_recipe_gungir_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Gleipnir</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_meteor_hammer"			"Рецепт: Молот Метеоров"
+		"DOTA_Tooltip_Ability_item_recipe_meteor_hammer_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Meteor Hammer</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_arcane_boots"				"Рецепт: Чародейские Сапоги"
+		"DOTA_Tooltip_Ability_item_recipe_arcane_boots_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Arcane Boots</font></b></h1>"
+		//7.33
+		"DOTA_Tooltip_Ability_item_recipe_samurai_tabi"				"Рецепт: Samurai Tabi"
+		"DOTA_Tooltip_Ability_item_recipe_samurai_tabi_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Samurai Tabi</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_disperser"				"Рецепт: Дисперсер"
+		"DOTA_Tooltip_Ability_item_recipe_disperser_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Disperser</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_phylactery"				"Рецепт: Филактерия"
+		"DOTA_Tooltip_Ability_item_recipe_phylactery_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Phylactery</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_angels_demise"			"Рецепт: Кханда"
+		"DOTA_Tooltip_Ability_item_recipe_angels_demise_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Khanda</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_recipe_pavise"						"Рецепт: Павеза"
+		"DOTA_Tooltip_ability_item_recipe_pavise_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Pavise</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_item_recipe_lotus_orb"				"Рецепт: Сфера Лотоса"
+		"DOTA_Tooltip_ability_item_recipe_lotus_orb_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Lotus Orb</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_harpoon"					"Рецепт: Гарпун"
+		"DOTA_Tooltip_Ability_item_recipe_harpoon_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Harpoon</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_ironwood_tree"		"Железное Древо"
+		"DOTA_Tooltip_Ability_item_ironwood_tree_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Ironwood Tree</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_recipe_ironwood_tree"		"Рецепт: Железное Древо"
+		"DOTA_Tooltip_Ability_item_recipe_ironwood_tree_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Рецепт: Harpoon</font></b></h1>"
+		
+		"DOTA_Tooltip_Ability_item_iron_talon:n"			"#|n|#Железная Лапа"
+		"DOTA_Tooltip_Ability_item_iron_talon_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Iron Talon</font></b></h1>"
+		
+		// powerbicats.ru - abilities_russian
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		
+   
+ 		
+		
+
+
+		//------------------------------------------------------------------------------------------------------------------------
+		// powerbicats.ru - abilities_russian
+
+		"npc_dota_hero_none:n"							"#|n|#--"
+		"npc_dota_hero_queenofpain:n"					"#|f|#Королева Боли"
+		"npc_dota_hero_antimage:n"						"#|m|#Антимаг"
+		"npc_dota_hero_antimage_persona1:n"				"#|f|#Антимаг (Вэй)"
+		"npc_dota_hero_kunkka:n"						"#|m|#Кункка"
+		"npc_dota_hero_lina:n"							"#|f|#Лина"
+		"npc_dota_hero_mirana:n"						"#|f|#Мирана"
+		"npc_dota_hero_mirana_persona1:n"				"#|f|#Мирана («Кровь дракона»)"
+		"npc_dota_hero_slardar:n"						"#|m|#Слардар"
+		"npc_dota_hero_lion:n"							"#|m|#Леон"
+		"npc_dota_hero_phantom_assassin:n"				"#|f|#Фантомный Убийца"
+		"npc_dota_hero_phantom_assassin_persona1:n"		"#|m|#Фантомный Убийца (Асан)"
+		"npc_dota_hero_tidehunter:n"					"#|m|#Охотник Прилива"
+		"npc_dota_hero_witch_doctor:n"					"#|m|#Знахарь"
+		"npc_dota_hero_vengefulspirit:n"				"#|f|#Дух Мщения"
+		"npc_dota_hero_juggernaut:n"					"#|m|#Джаггернаут"
+		"npc_dota_hero_earthshaker:n"					"#|m|#Землевержец"
+		"npc_dota_hero_pudge:n"							"#|m|#Падж"
+		"npc_dota_hero_pudge_persona1:n"				"#|m|#Падж (плюшевый)"
+		"npc_dota_hero_bane:n"							"#|m|#Губитель"
+		"npc_dota_hero_crystal_maiden:n"				"#|f|#Кристальная Дева"
+		"npc_dota_hero_crystal_maiden_persona1:n"		"#|f|#Кристальная Дева (волчица)"
+		"npc_dota_hero_sven:n"							"#|m|#Свен"
+		"npc_dota_hero_skeleton_king:n"					"#|m|#Король-Призрак"
+		"npc_dota_hero_storm_spirit:n"					"#|m|#Дух Шторма"
+		"npc_dota_hero_sand_king:n"						"#|m|#Царь Песков"
+		"npc_dota_hero_nevermore:n"						"#|m|#Исчадие Тьмы"
+		"npc_dota_hero_drow_ranger:n"					"#|f|#Дроу Рейнджер"
+		"npc_dota_hero_axe:n"							"#|m|#Топор"
+		"npc_dota_hero_bloodseeker:n"					"#|m|#Искатель Крови"
+		"npc_dota_hero_phantom_lancer:n"				"#|m|#Фантомный Пикинёр"
+		"npc_dota_hero_razor:n"							"#|m|#Рэйзор"
+		"npc_dota_hero_morphling:n"						"#|m|#Морфлинг"
+		"npc_dota_hero_zuus:n"							"#|m|#Зевс"
+		"npc_dota_hero_tiny:n"							"#|m|#Кроха"
+		"npc_dota_hero_puck:n"							"#|m|#Пак"
+		"npc_dota_hero_windrunner:n"					"#|f|#Рейнджер Ветра"
+		"npc_dota_hero_lich:n"							"#|m|#Лич"
+		"npc_dota_hero_shadow_shaman:n"					"#|m|#Шаман Теней"
+		"npc_dota_hero_riki:n"							"#|m|#Рики"
+		"npc_dota_hero_enigma:n"						"#|m|#Энигма"
+		"npc_dota_hero_tinker:n"						"#|m|#Жестянщик"
+		"npc_dota_hero_sniper:n"						"#|m|#Снайпер"
+		"npc_dota_hero_necrolyte:n"						"#|m|#Некрофос"
+		"npc_dota_hero_warlock:n"						"#|m|#Чернокнижник"
+		"npc_dota_hero_beastmaster:n"					"#|m|#Повелитель Зверей"
+		"npc_dota_hero_venomancer:n"					"#|m|#Веномант"
+		"npc_dota_hero_faceless_void:n"					"#|m|#Безликий"
+		"npc_dota_hero_death_prophet:n"					"#|f|#Предвестница Смерти"
+		"npc_dota_hero_pugna:n"							"#|m|#Пагна"
+		"npc_dota_hero_templar_assassin:n"				"#|f|#Ассасин Храма"
+		"npc_dota_hero_viper:n"							"#|m|#Вайпер"
+		"npc_dota_hero_luna:n"							"#|f|#Луна"
+		"npc_dota_hero_dragon_knight:n"					"#|m|#Рыцарь-Дракон"
+		"npc_dota_hero_dragon_knight_persona1:n"		"#|m|#Рыцарь-Дракон («Кровь дракона»)"
+		"npc_dota_hero_dazzle:n"						"#|m|#Даззл"
+		"npc_dota_hero_rattletrap:n"					"#|m|#Часовщик"
+		"npc_dota_hero_leshrac:n"						"#|m|#Лешрак"
+		"npc_dota_hero_furion:n"						"#|m|#Пророк Природы"
+		"npc_dota_hero_life_stealer:n"					"#|m|#Пожиратель Жизни"
+		"npc_dota_hero_dark_seer:n"						"#|m|#Тёмный Провидец"
+		"npc_dota_hero_clinkz:n"						"#|m|#Клинкз"
+		"npc_dota_hero_omniknight:n"					"#|m|#Рыцарь Всезнания"
+		"npc_dota_hero_enchantress:n"					"#|f|#Чаровница"
+		"npc_dota_hero_huskar:n"						"#|m|#Хускар"
+		"npc_dota_hero_night_stalker:n"					"#|m|#Ночной Охотник"
+		"npc_dota_hero_broodmother:n"					"#|f|#Паучиха-Мать"
+		"npc_dota_hero_bounty_hunter:n"					"#|m|#Охотник за головами"
+		"npc_dota_hero_weaver:n"						"#|m|#Ткач"
+		"npc_dota_hero_jakiro:n"						"#|m|#Джакиро"
+		"npc_dota_hero_batrider:n"						"#|m|#Батрайдер"
+		"npc_dota_hero_chen:n"							"#|m|#Чен"
+		"npc_dota_hero_spectre:n"						"#|f|#Спектра"
+		"npc_dota_hero_doom_bringer:n"					"#|m|#Вершитель Судеб"
+		"npc_dota_hero_ancient_apparition:n"			"#|m|#Древний Дух"
+		"npc_dota_hero_ursa:n"							"#|m|#Урса"
+		"npc_dota_hero_spirit_breaker:n"				"#|m|#Призрак Раздора"
+		"npc_dota_hero_gyrocopter:n"					"#|m|#Гирокоптер"
+		"npc_dota_hero_alchemist:n"						"#|m|#Алхимик"
+		"npc_dota_hero_invoker:n"						"#|m|#Заклинатель"
+		"npc_dota_hero_invoker_persona1:n"				"#|m|#Заклинатель (юный)"
+		"npc_dota_hero_silencer:n"						"#|m|#Творец Безмолвия"
+		"npc_dota_hero_obsidian_destroyer:n"			"#|m|#Разрушитель из Внемирья"
+		"npc_dota_hero_lycan:n"							"#|m|#Ликан"
+		"npc_dota_hero_brewmaster:n"					"#|m|#Пивовар "
+		"npc_dota_hero_shadow_demon:n"					"#|m|#Демон Тени"
+		"npc_dota_hero_lone_druid:n"					"#|m|#Последний Друид"
+		"npc_dota_hero_chaos_knight:n"					"#|m|#Рыцарь Хаоса"
+		"npc_dota_hero_treant:n"						"#|m|#Древень-Защитник"
+		"npc_dota_hero_meepo:n"							"#|m|#Мипо"
+		"npc_dota_hero_ogre_magi:n"						"#|m|#Огр-маг"
+		"npc_dota_hero_undying:n"						"#|m|#Нетленный"
+		"npc_dota_hero_rubick:n"						"#|m|#Рубик"
+		"npc_dota_hero_disruptor:n"						"#|m|#Дизраптор"
+		"npc_dota_hero_nyx_assassin:n"					"#|m|#Никс Ассасин"
+		"npc_dota_hero_naga_siren:n"					"#|f|#Нага Сирена"
+		"npc_dota_hero_keeper_of_the_light:n"			"#|m|#Хранитель Света"
+		"npc_dota_hero_visage:n"						"#|m|#Визаж"
+		"npc_dota_hero_wisp:n"							"#|m|#Ио"
+		"npc_dota_hero_slark:n"							"#|m|#Сларк"
+		"npc_dota_hero_medusa:n"						"#|f|#Медуза"
+		"npc_dota_hero_troll_warlord:n"					"#|m|#Тролль-воитель"
+		"npc_dota_hero_centaur:n"						"#|m|#Кентавр-Вестник Войны"
+		"npc_dota_hero_magnataur:n"						"#|m|#Магнус"
+		"npc_dota_hero_shredder:n"						"#|m|#Древопил"
+		"npc_dota_hero_bristleback:n"					"#|m|#Иглогрив"
+		"npc_dota_hero_tusk:n"							"#|m|#Бивень"
+		"npc_dota_hero_skywrath_mage:n"					"#|m|#Маг Скайрасов"
+		"npc_dota_hero_abaddon:n"						"#|m|#Абаддон"
+		"npc_dota_hero_elder_titan:n"					"#|m|#Древний Титан"
+		"npc_dota_hero_legion_commander:n"				"#|f|#Командир Легиона"
+		"npc_dota_hero_ember_spirit:n"					"#|m|#Дух Пламени"
+		"npc_dota_hero_earth_spirit:n"					"#|m|#Дух Земли"
+		"npc_dota_hero_abyssal_underlord:n"				"#|m|#Владыка Бездны"
+		"npc_dota_hero_phoenix:n"						"#|m|#Феникс"
+		"npc_dota_hero_terrorblade:n"					"#|m|#Террорблэйд"
+		"npc_dota_hero_oracle:n"						"#|m|#Оракул"
+		"npc_dota_hero_techies:n"						"#|n|#Технари"
+		"npc_dota_hero_target_dummy:n"					"#|f|#Мишень"
+		"npc_dota_hero_winter_wyvern:n"					"#|f|#Зимняя Виверна"
+		"npc_dota_hero_arc_warden:n"					"#|m|#Страж Безумной Луны"
+		"npc_dota_hero_monkey_king:n"					"#|m|#Король Обезьян"
+		"npc_dota_hero_pangolier:n"						"#|m|#Пангольер"
+		"npc_dota_hero_dark_willow:n"					"#|f|#Мрачная Ива"
+		"npc_dota_hero_grimstroke:n"					"#|m|#Гримстроук"
+		"npc_dota_hero_mars:n"							"#|m|#Марс"
+		"npc_dota_hero_snapfire:n"						"#|f|#Пороховница"
+		"npc_dota_hero_void_spirit:n"					"#|m|#Дух Пустоты"
+		"npc_dota_hero_hoodwink:n"						"#|f|#Прохвостка"
+		"npc_dota_hero_dawnbreaker:n"					"#|f|#Вестница Зари"
+		"npc_dota_hero_marci:n"							"#|f|#Марси"
+		"npc_dota_hero_primal_beast:n"					"#|m|#Первобытный Зверь"
+		"npc_dota_hero_muerta:n"						"#|f|#Муэрта"
+		"npc_dota_hero_ringmaster:n"					"#|m|#Распорядитель Манежа"
+		"npc_dota_hero_kez:n"							"#|m|#Кез"
+
+		// powerbicats.ru - abilities_russian
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+   
+   
+
+				
+		//------------------------------------------------------------------------------------------------------------------------
+		// powerbicats.ru - abilities_russian
+		//«» <h1>Eng: <b><font color='#F2A93E'></font></b></h1>
+		
+		//ABADDON
+		"DOTA_Tooltip_ability_abaddon_soul_suck"					"Soul Suck"
+		"DOTA_Tooltip_ability_abaddon_soul_suck_Note0"					"<h1>Eng: <b><font color='#F2A93E'>Soul Suck</font></b></h1>"
+	
+		"DOTA_Tooltip_ability_abaddon_death_coil"					"Туманная Спираль"
+		"DOTA_Tooltip_ability_abaddon_death_coil_Shard_Description"	"К способности «Туманная Спираль» добавляется атака, которая наносит урон и может активировать эффекты предметов и способностей."
+		"DOTA_Tooltip_ability_abaddon_death_coil_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Mist Coil</font></b></h1>\nЭтой способностью нельзя совершить самоубийство."
+		
+		"DOTA_Tooltip_ability_abaddon_aphotic_shield"				"Афотический Щит"
+		"DOTA_Tooltip_ability_abaddon_aphotic_shield_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Aphotic Shield</font></b></h1>\nВзрыв наносит максимальный урон вне зависимости от того, сколько урона поглотил барьер."
+
+		"DOTA_Tooltip_ability_abaddon_withering_mist"				"Губительный Туман"
+		"DOTA_Tooltip_ability_abaddon_withering_mist_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Withering Mist</font></b></h1>"
+	
+		"DOTA_Tooltip_ability_abaddon_frostmourne"					"Проклятие Аверно"
+		"DOTA_Tooltip_ability_abaddon_frostmourne_Note0"					"<h1>Eng: <b><font color='#F2A93E'>Curse of Avernus</font></b></h1>"
+		"DOTA_Tooltip_ability_abaddon_frostmourne_shard_description" "Увеличивает замедление от «Проклятие Аверно»"
+		"DOTA_Tooltip_ability_abaddon_frostmourne_abilitydraft_note" "Улучшение от «Aghanim's Shard» будет работать, только если у героя есть способность «Туманная Спираль» или «Афотический Щит»"
+		
+		"DOTA_Tooltip_ability_abaddon_borrowed_time"				"Долг Времени"
+		"DOTA_Tooltip_ability_abaddon_borrowed_time_scepter_description"	"Увеличивает длительность. Во время действия автоматически применяет способность «Туманная Спираль» на союзников в радиусе %redirect_range_scepter%, когда они получают более %ally_threshold_scepter% урона."
+		"DOTA_Tooltip_ability_abaddon_borrowed_time_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Borrowed Time</font></b></h1>\nЭту способность можно применить, если ваш герой выведен из строя, но не когда он обезмолвлен. Автоматическое применение срабатывает даже под безмолвием."
+		"DOTA_Tooltip_ability_abaddon_borrowed_time_Note1"		"Щит не блокирует урон при действии способности «Долг Времени»"
+		
+		//ABADDON - Ауры
+		"DOTA_Tooltip_modifier_abaddon_deathcoil_effect"				"Туманная Спираль"
+
+		"DOTA_Tooltip_modifier_abaddon_borrowed_time"					"Долг Времени"
+
+		"DOTA_Tooltip_modifier_abaddon_borrowed_time_damage_redirect"					"Перенаправление «Долг Времени»"
+		"DOTA_Tooltip_modifier_abaddon_borrowed_time_damage_redirect_Description"		"Применяет способность «Туманная Спираль» на союзника, когда тот получает больше определённого урона."
+		"DOTA_Tooltip_modifier_abaddon_aphotic_shield"					"Афотический Щит"
+
+		"DOTA_Tooltip_modifier_abaddon_frostmourne_debuff"				"Проклятие Аверно"
+		"DOTA_Tooltip_modifier_abaddon_frostmourne_debuff_bonus"				"Проклятие Аверно"
+
+		"DOTA_Tooltip_modifier_abaddon_frostmourne_buff"				"Проклятие Аверно"
+
+		"DOTA_Tooltip_modifier_abaddon_borrowed_time_immolate_damage"	"Сожжение Аверно"
+		"DOTA_Tooltip_modifier_abaddon_borrowed_time_immolate_damage_Description" "Получает и наносит периодический урон, когда действует способность «Долг Времени»"
+		"DOTA_Tooltip_modifier_abaddon_withering_mist_debuff"				"Губительный Туман"
+
+		//ABADDON - Аспекты
+		"DOTA_Tooltip_facet_abaddon_mephitic_shroud"							"Зловонный Саван"
+		"DOTA_Tooltip_facet_abaddon_mephitic_shroud_Description"				"Барьер от «Афотический Щит» поглощает больше урона и отражает его во врагов вокруг, но не взрывается."
+		
+		"DOTA_Tooltip_ability_abaddon_the_quickening"					"Разгон"
+		
+		//ABADDON - Таланты
+		"DOTA_Tooltip_ability_special_bonus_unique_abaddon"		"+{s:bonus_damage_absorb} к здоровью барьера от «Афотический Щит»"
+		"DOTA_Tooltip_ability_special_bonus_unique_abaddon_2"	"+{s:bonus_target_damage} к урону/лечению от «Туманная Спираль»"
+		"DOTA_Tooltip_ability_special_bonus_unique_abaddon_3"	"+{s:bonus_curse_attack_speed} к скорости атаки от «Проклятие Аверно»"
+		"DOTA_Tooltip_ability_special_bonus_unique_abaddon_4"	"«Туманная Спираль» применяется по области радиусом {s:bonus_effect_radius}"
+		"DOTA_Tooltip_ability_special_bonus_unique_abaddon_5"	"+{s:bonus_curse_dps} к урону в секунду от «Проклятие Аверно»"
+		"DOTA_Tooltip_ability_special_bonus_unique_abaddon_6"	"+{s:bonus_heal_reduction_pct}% к уменьшению восст. здоровья от «Губительный Туман»"
+		"DOTA_Tooltip_ability_special_bonus_unique_abaddon_7"	"«Афотический Щит» даёт +{s:bonus_regen} здоровья в секунду"
+		"DOTA_Tooltip_ability_special_bonus_unique_abaddon_immolation"	"«Долг Времени» сжигает {s:bonus_immolate_damage} здоровья в секунду"
+		//"DOTA_Tooltip_ability_special_bonus_unique_abaddon_immolation_Description"	"Действует на владельца способности и всех врагов в радиусе {s:bonus_immolate_aoe}."
+		//------------------------------------------------------------------------------------------------------------------------
+		
+		//SPECTRE
+		"DOTA_Tooltip_ability_spectre_spectral_dagger"						"Спектральный Кинжал"
+		"DOTA_Tooltip_ability_spectre_spectral_dagger_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Spectral Dagger</font></b></h1>\nПо непроходимой территории можно перемещаться ещё %dagger_grace_period% сек. после окончания эффекта."
+
+		"DOTA_Tooltip_ability_spectre_desolate"								"Опустошение"
+		"DOTA_Tooltip_ability_spectre_desolate_Note0"						"<h1>Eng: <b><font color='#F2A93E'>Desolate</font></b></h1>\nУрон наносится до завершения атаки."
+
+		"DOTA_Tooltip_ability_spectre_dispersion"							"Дисперсия"
+		"DOTA_Tooltip_ability_spectre_dispersion_abilitydraft_note"			"Улучшение от «Aghanim's Shard» будет работать, только если у героя есть способность Haunt»"
+		"DOTA_Tooltip_ability_spectre_dispersion_Note0"						"<h1>Eng: <b><font color='#F2A93E'>Dispersion</font></b></h1>\nОтражаемый урон не наносится владельцу способности."
+
+		"DOTA_Tooltip_ability_spectre_haunt"								"Травля"
+		"DOTA_Tooltip_ability_spectre_haunt_Note"								"Травля"
+		"DOTA_Tooltip_ability_spectre_haunt_Note0"								"<h1>Eng: <b><font color='#F2A93E'>Haunt</font></b></h1>"
+		"DOTA_Tooltip_ability_spectre_haunt_Description"					"Создаёт рядом с каждым вражеским героем спектральную иллюзию, которая атакует его. Эти иллюзии имеют те же характеристики, что и от способности «Поступь Тени», и с ними тоже можно поменяться местами, применив способность «Реальность»"
+
+		"DOTA_Tooltip_ability_spectre_reality"								"Реальность"
+		"DOTA_Tooltip_ability_spectre_reality_Note"								"Реальность"
+		"DOTA_Tooltip_ability_spectre_reality_Note0"								"<h1>Eng: <b><font color='#F2A93E'>Reality</font></b></h1>"
+		"DOTA_Tooltip_ability_spectre_reality_Description"					"Герой меняется местами с выбранной иллюзией от способности «Травля»"
+		"DOTA_Tooltip_ability_spectre_reality_Facet_spectre_twist_the_knife"	"На цель этой способности применяется кинжал от «Спектральный Кинжал»"
+		"DOTA_Tooltip_ability_spectre_reality_Lore"							"Разрозненные тени соединяются в одну настоящую «Спектра»"
+		
+		"DOTA_Tooltip_ability_spectre_haunt_single"                         "Поступь Тени"
+		"DOTA_Tooltip_ability_spectre_haunt_single_Note"                         "Поступь Тени"
+		"DOTA_Tooltip_ability_spectre_haunt_single_Note0"                         "<h1>Eng: <b><font color='#F2A93E'>Shadow Step</font></b></h1>"
+
+		"DOTA_Tooltip_ability_spectre_spectral"					"Спектральность"
+		"DOTA_Tooltip_ability_spectre_spectral_Note"					"Спектральность"
+		"DOTA_Tooltip_ability_spectre_spectral_Note0"					"<h1>Eng: <b><font color='#F2A93E'>Spectral</font></b></h1>"
+
+		//SPECTRE - Ауры
+		"DOTA_Tooltip_modifier_spectre_spectral_dagger_path"				"Dagger Path"
+		"DOTA_Tooltip_modifier_spectre_spectral_dagger_path"				"Dagger Path"
+		"DOTA_Tooltip_modifier_spectre_spectral_dagger_path_Description"	"Указатель эффекта «Dagger». Честно."
+		
+		"DOTA_Tooltip_modifier_spectre_spectral_dagger"						"Dagger Path Creator"
+		"DOTA_Tooltip_modifier_spectre_spectral_dagger"						"Dagger Path Creator"
+
+		"DOTA_Tooltip_modifier_spectre_spectral_dagger_in_path"				"След от «Спектральный Кинжал»"
+		
+		"DOTA_Tooltip_modifier_spectre_desolate"							"Опустошение"
+		"DOTA_Tooltip_modifier_spectre_desolate"							"Опустошение"
+		"DOTA_Tooltip_modifier_spectre_desolate_Description"				"Получает дополнительный урон от «Спектра»"
+		"DOTA_Tooltip_modifier_spectre_desolate_blind"						"Обзор уменьшен"
+		"DOTA_Tooltip_modifier_spectre_desolate_blind_Description"						"Обзор уменьшен способностью «Опустошение»"
+		
+		"DOTA_Tooltip_modifier_spectre_dispersion_boost"					"Дисперсия"
+		"DOTA_Tooltip_modifier_spectre_dispersion_boost"					"Дисперсия"
+		
+		//SPECTRE - Аспекты
+		"DOTA_Tooltip_Facet_spectre_forsaken"							"Покинутый"
+		"DOTA_Tooltip_Facet_spectre_forsaken_Description"				"Способность «Опустошение» наносит в {s:bonus_bonus_damage_multiplier_tooltip} раза больше урона. У иллюзий героя больше нет этой способности."
+		"DOTA_Tooltip_Facet_spectre_twist_the_knife"							"Нож в Спину"
+		"DOTA_Tooltip_Facet_spectre_twist_the_knife_Description"				"На цель способности «Реальность» применяется кинжал от «Спектральный Кинжал»"
+		
+		//SPECTRE - Таланты
+		"DOTA_Tooltip_ability_special_bonus_unique_spectre"	"–{s:value} сек. перезарядки «Спектральный Кинжал»"
+		"DOTA_Tooltip_ability_special_bonus_unique_spectre_2"	"+{s:bonus_bonus_damage} к урону от «Опустошение»"
+		"DOTA_Tooltip_ability_special_bonus_unique_spectre_3"	"+{s:bonus_bonus_movespeed}% к изменению скорости от «Спектральный Кинжал»"
+		"DOTA_Tooltip_ability_special_bonus_unique_spectre_4"	"+{s:value}% к урону всех иллюзий героя"
+		"DOTA_Tooltip_ability_special_bonus_unique_spectre_5"	"+{s:value}% к отражаемому урону у «Дисперсия»"
+		"DOTA_Tooltip_ability_special_bonus_unique_spectre_6"	"+{s:bonus_damage} к урону от «Спектральный Кинжал»"
+		"DOTA_Tooltip_ability_special_bonus_unique_spectre_desolate_radius"			"–{s:bonus_radius} от радиуса поиска союзников у «Опустошение»"
+		//------------------------------------------------------------------------------------------------------------------------
+		
+		// ORACLE
+		"DOTA_Tooltip_ability_oracle_fortunes_end"							"Исход Фортуны"
+		"DOTA_Tooltip_ability_oracle_fortunes_end_Note0"					"<h1>Eng: <b><font color='#F2A93E'>Fortune's End</font></b></h1>\nМожно применять на неуязвимых существ."
+		
+		"DOTA_Tooltip_ability_oracle_fates_edict"							"Эдикт Судьбы"
+		"DOTA_Tooltip_ability_oracle_fates_edict_Note0"							"<h1>Eng: <b><font color='#F2A93E'>Fate's Edict</font></b></h1>"
+
+		"DOTA_Tooltip_ability_oracle_purifying_flames"						"Очищающее Пламя"
+		"DOTA_Tooltip_ability_oracle_purifying_flames_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Purifying Flames</font></b></h1>\nЛечение от нескольких применений «Очищающее Пламя» складывается."
+
+		"DOTA_Tooltip_ability_oracle_false_promise"							"Ложное Обещание"
+		"DOTA_Tooltip_ability_oracle_false_promise_Note0"					"<h1>Eng: <b><font color='#F2A93E'>False Promise</font></b></h1>\nОтложенные урон и лечение учитывают броню и сопротивление магии."
+
+		"DOTA_Tooltip_ability_oracle_rain_of_destiny"							"Дождь Судьбы"
+		"DOTA_Tooltip_ability_oracle_rain_of_destiny_Note0"							"<h1>Eng: <b><font color='#F2A93E'>Rain of Destiny</font></b></h1>"
+
+		"DOTA_Tooltip_Ability_oracle_prognosticate"					"Прогнозирование"
+		"DOTA_Tooltip_Ability_oracle_prognosticate_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Prognosticate</font></b></h1>"
+
+		// ORACLE - Ауры
+		"DOTA_Tooltip_modifier_oracle_rain_of_destiny"					"Дождь Судьбы"
+		"DOTA_Tooltip_modifier_oracle_fortunes_end_purge"				"Оцепенение от «Исход Фортуны»"
+		"DOTA_Tooltip_modifier_oracle_fates_edict"						"Эдикт Судьбы"
+		"DOTA_Tooltip_modifier_oracle_purifying_flames"					"Лечение от «Очищающее Пламя»"
+		"DOTA_Tooltip_modifier_oracle_purifying_flames_Description"		"Лечение от «Очищающее Пламя»"
+		"DOTA_Tooltip_modifier_oracle_false_promise_timer"				"Ложное Обещание"
+		"DOTA_Tooltip_modifier_oracle_prognosticate"					"Прогнозирование"
+
+		// ORACLE - Аспекты
+		"DOTA_Tooltip_ability_oracle_clairvoyant_curse"						"Проклятье Оракула"
+		"DOTA_Tooltip_ability_oracle_clairvoyant_cure"						"Исцеление Оракула"
+
+		// ORACLE - Таланты
+		"DOTA_Tooltip_ability_special_bonus_unique_oracle"	"+{s:bonus_duration} сек. действия «Ложное Обещание»"
+		"DOTA_Tooltip_ability_special_bonus_unique_oracle_2"	"+{s:bonus_maximum_purge_duration} сек. действия «Исход Фортуны»"
+		"DOTA_Tooltip_ability_special_bonus_unique_oracle_3"	"–{s:value} сек. перезарядки «Эдикт Судьбы»"
+		"DOTA_Tooltip_ability_special_bonus_unique_oracle_4"	"«Ложное Обещание» даёт невидимость"
+		"DOTA_Tooltip_ability_special_bonus_unique_oracle_4_Description"	"Помимо других эффектов, цель «Ложное Обещание» становится невидимой (уход в невидимость занимает 0,6 секунды)."
+		"DOTA_Tooltip_ability_special_bonus_unique_oracle_5"	"–{s:value} сек. перезарядки «Очищающее Пламя»"
+		"DOTA_Tooltip_ability_special_bonus_unique_oracle_6"	"–{s:bonus_AbilityCooldown} сек. перезарядки «Ложное Обещание»"
+		"DOTA_Tooltip_ability_special_bonus_unique_oracle_7"	"«Исход Фортуны» применяет развеивание постоянно"
+		"DOTA_Tooltip_ability_special_bonus_unique_oracle_8"	"+{s:value}% к урону врагам от «Очищающее Пламя»"
+		"DOTA_Tooltip_ability_special_bonus_unique_oracle_9"	"«Ложное Обещание» даёт {s:bonus_bonus_armor} брони"
+		"DOTA_Tooltip_ability_special_bonus_unique_oracle_fortunes_end_damage"	"+{s:bonus_damage} к урону от «Исход Фортуны»"
+		"DOTA_Tooltip_ability_special_bonus_unique_oracle_damage_per_purge"		"{s:bonus_damage_per_buff} урона/лечения за развеивание у «Исход Фортуны»"
+		//------------------------------------------------------------------------------------------------------------------------
+		
+		// LONE DRUID
+		"DOTA_Tooltip_ability_lone_druid_spirit_bear"								"Призыв Духа Медведя"
+		"DOTA_Tooltip_ability_lone_druid_spirit_bear_Description"					"Призывает могучего духа-медведя, который может использовать предметы.<br><br>Медведь не может атаковать, если расстояние до владельца больше %bear_attack_leash_range%. Если медведь погибнет, герой получит урон в размере %backlash_damage%%% от своего максимального здоровья.\nУ медведя есть способности «Возвращение», «Разрушение» и «Цепкие Лапы»."
+		"DOTA_Tooltip_ability_lone_druid_spirit_bear_Note0"							"<h1>Eng: <b><font color='#F2A93E'>Summon Spirit Bear</font></b></h1>\Большинство заклинаний действуют на духа-медведя так же, как на героев."
+		"DOTA_Tooltip_ability_lone_druid_spirit_bear_Note3"							"У медведя есть свои улучшения от «Скипетр Аганима» и «Осколок Аганима»."
+
+		"DOTA_Tooltip_ability_lone_druid_spirit_bear_return"						"Возвращение"
+		"DOTA_Tooltip_ability_lone_druid_spirit_bear_return_Note0"						"<h1>Eng: <b><font color='#F2A93E'>Return</font></b></h1>"
+
+		"DOTA_Tooltip_ability_lone_druid_spirit_bear_entangle"						"Цепкие Лапы"
+		"DOTA_Tooltip_ability_lone_druid_spirit_bear_entangle_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Entangling Claws</font></b></h1>\nСущества под действием этой способности не могут мгновенно телепортироваться или уйти в невидимость."
+
+		"DOTA_Tooltip_ability_lone_druid_spirit_bear_demolish"						"Разрушение"	
+		"DOTA_Tooltip_ability_lone_druid_spirit_bear_demolish_Note0"						"<h1>Eng: <b><font color='#F2A93E'>Demolish</font></b></h1>"	
+
+		"DOTA_Tooltip_ability_lone_druid_spirit_bear_defender"						"Defender"
+		"DOTA_Tooltip_ability_lone_druid_spirit_bear_defender_Note0"						"<h1>Eng: <b><font color='#F2A93E'>Defender</font></b></h1>"
+
+		"DOTA_Tooltip_ability_lone_druid_rabid"										"Rabid"
+		"DOTA_Tooltip_ability_lone_druid_rabid_Note0"										"<h1>Eng: <b><font color='#F2A93E'>Rabid</font></b></h1>"
+
+		"DOTA_Tooltip_ability_lone_druid_spirit_link"								"Духовная Связь"
+		"DOTA_Tooltip_ability_lone_druid_spirit_link_scepter_Description"			"Герой разрывает связь с духом-медведем и создаёт связь с выбранным союзным героем, наделяя его бонусами от этой способности на %duration% сек. Увеличивает общую броню и дополнительную скорость атаки на %active_bonus%%%, а урон, нанесённый одним героем, излечивает другого.<br><br>На время этого эффекта на духа-медведя накладывается страх, если только у него тоже нет «Скипетр Аганима»."
+		"DOTA_Tooltip_ability_lone_druid_spirit_link_Note0"							"<h1>Eng: <b><font color='#F2A93E'>Spirit Link</font></b></h1>\nОбщий вампиризм отключается истощением."
+
+		"DOTA_Tooltip_ability_lone_druid_gift_bearer"								"Медвежья Услуга"
+		"DOTA_Tooltip_ability_lone_druid_gift_bearer_Note0"								"<h1>Eng: <b><font color='#F2A93E'>Gift Bearer</font></b></h1>"
+
+		"DOTA_Tooltip_ability_lone_druid_bear_necessities"							"Bear Necessities"
+		"DOTA_Tooltip_ability_lone_druid_bear_necessities_Note0"					"<h1>Eng: <b><font color='#F2A93E'>Bear Necessities</font></b></h1>\nПозволяет повысить следующие показатели:<br>* интеллект, силу и ловкость;<br>* здоровье, ману и уклонение;<br>* бонус к урону от атаки и её скорость;<br>* восстановление здоровья и маны."
+
+		"DOTA_Tooltip_ability_lone_druid_entangling_claws"							"Цепкие Лапы"
+		"DOTA_Tooltip_ability_lone_druid_entangling_claws_Note0"							"<h1>Eng: <b><font color='#F2A93E'>Entangling Claws</font></b></h1>"
+
+		"DOTA_Tooltip_ability_lone_druid_savage_roar"								"Дикий Рёв"
+		"DOTA_Tooltip_ability_lone_druid_savage_roar_bear"							"Дикий Рёв"
+		"DOTA_Tooltip_ability_lone_druid_savage_roar_Note0"							"<h1>Eng: <b><font color='#F2A93E'>Savage Roar</font></b></h1>\nГерой, связанный корнями, убегать не сможет."
+		"DOTA_Tooltip_ability_lone_druid_savage_roar_bear_Note0"					"<h1>Eng: <b><font color='#F2A93E'>Savage Roar</font></b></h1>\nГерой, связанный корнями, убегать не сможет."
+
+		"DOTA_Tooltip_ability_lone_druid_true_form"									"Истинный Облик"
+		"DOTA_Tooltip_ability_lone_druid_true_form_facet_lone_druid_bear_with_me"				"Герой оборачивается разъярённым медведем, который сражается в ближнем бою. В этом облике он имеет увеличенные здоровье и броню, а также усиленные способности «Цепкие Лапы» и «Разрушение»."
+		"DOTA_Tooltip_ability_lone_druid_true_form_facet_lone_druid_unbearable"				"Герой придаёт своему медведю разъярённый облик, увеличивая его броню, скорость атаки и урон от «Разрушение», а также снижая перезарядку «Цепкие Лапы» на %entangling_claws_cooldown_reduction_pct%%%."
+		"DOTA_Tooltip_ability_lone_druid_true_form_Note0"							"<h1>Eng: <b><font color='#F2A93E'>True Form</font></b></h1>\nПерезарядка некоторых предметов зависит от того, какой тип атаки герой имел при их использовании."
+
+		"DOTA_Tooltip_ability_lone_druid_true_form_druid"							"Druid Form"
+		"DOTA_Tooltip_ability_lone_druid_true_form_druid_Note0"							"<h1>Eng: <b><font color='#F2A93E'>Druid Form</font></b></h1>"
+
+		"DOTA_Tooltip_ability_lone_druid_true_form_battle_cry"						"Battle Cry"
+		"DOTA_Tooltip_ability_lone_druid_true_form_battle_cry_Note0"						"<h1>Eng: <b><font color='#F2A93E'>Battle Cry</font></b></h1>"
+
+		"DOTA_Tooltip_ability_lone_druid_spirit_bear_fetch"						"Fetch"
+		"DOTA_Tooltip_ability_lone_druid_spirit_bear_fetch_Note0"						"<h1>Eng: <b><font color='#F2A93E'>Fetch</font></b></h1>"
+
+		// LONE DRUID - Ауры
+		"DOTA_Tooltip_modifier_lone_druid_spirit_bear_entangle_effect"			"Цепкие Лапы"
+		"DOTA_Tooltip_modifier_lone_druid_rabid"								"Rabid"
+		"DOTA_Tooltip_modifier_lone_druid_savage_roar"							"Дикий Рёв"
+		"DOTA_Tooltip_modifier_lone_druid_true_form_battle_cry"					"Battle Cry"
+		"DOTA_Tooltip_modifier_lone_druid_spirit_bear_defender"					"Defender"
+		"DOTA_Tooltip_modifier_lone_druid_spirit_link"							"Духовная Связь"
+		"DOTA_Tooltip_modifier_lone_druid_true_form"							"Истинный Облик"
+		"DOTA_Tooltip_modifier_lone_druid_true_form_Description"				"Герой превратился в разъярённого медведя: перешёл из дальнего боя в ближний, но имеет +%dMODIFIER_PROPERTY_EXTRA_HEALTH_BONUS% к здоровью, +%dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS% к броне, а также усиленные способности «Цепкие Лапы» и «Разрушение»."
+		"DOTA_Tooltip_modifier_lone_druid_bear_demolish_corruption"				"Разрушение"
+		"DOTA_Tooltip_modifier_lone_druid_demolish_corruption"					"Разрушение"
+		
+		// LONE DRUID - Аспекты
+		"DOTA_Tooltip_Facet_lone_druid_bear_with_me"							"Медвежье Терпение"
+		"DOTA_Tooltip_Facet_lone_druid_bear_with_me_Description"				"Увеличивает общую броню от «Духовная Связь». Своими атаками герой излечивает медведя."
+		"DOTA_Tooltip_Facet_untenable_form"							"Wildskin"
+		"DOTA_Tooltip_Facet_untenable_form_Description"				"«Истинный Облик» health and armor bonuses are increased by {s:bonus_bonus_armor}%, but duration is decreased by {s:bonus_duration}s"
+		"DOTA_Tooltip_Facet_lone_druid_unbearable"								"Unbearable"		
+		"DOTA_Tooltip_Facet_lone_druid_unbearable_Description"					"Способность «Истинный Облик» действует не на героя, а на медведя. Увеличивает расстояние от владельца, на котором дух-медведь может атаковать."		
+		"DOTA_Tooltip_Facet_lone_druid_bear_necessities"						"Медвежьи Потребности"		
+		"DOTA_Tooltip_Facet_lone_druid_bear_necessities_Description"			"Предметы героя сильнее, а его инвентарь — меньше."
+		
+		// LONE DRUID - Таланты
+		"DOTA_Tooltip_ability_special_bonus_unique_lone_druid_1"	"+{s:value} к урону духа-медведя"
+		"DOTA_Tooltip_ability_special_bonus_unique_lone_druid_2"	"+{s:bonus_bonus_bear_armor} к броне духа-медведя"
+		"DOTA_Tooltip_ability_special_bonus_unique_lone_druid_3"	"«Разрушение» снижает броню построек на {s:bonus_bonus_building_damage}"
+		"DOTA_Tooltip_ability_special_bonus_unique_lone_druid_4"	"–{s:bonus_AbilityCooldown} сек. перезарядки «Дикий Рёв»"
+		"DOTA_Tooltip_ability_special_bonus_unique_lone_druid_5"	"+{s:value}% к сопротивлению магии у духа-медведя"
+		"DOTA_Tooltip_ability_special_bonus_unique_lone_druid_6"	"+{s:value} к скорости атаки от «Духовная Связь»"
+		"DOTA_Tooltip_ability_special_bonus_unique_lone_druid_7"	"+{s:bonus_bonus_bear_hp} к здоровью от «Истинный Облик» и у духа-медведя"
+		"DOTA_Tooltip_ability_special_bonus_unique_lone_druid_8"	"–{s:bonus_AbilityCooldown} сек. перезарядки «Истинный Облик»"
+		"DOTA_Tooltip_ability_special_bonus_unique_lone_druid_9"	"«Цепкие Лапы» без перезарядки"
+		"DOTA_Tooltip_ability_special_bonus_unique_lone_druid_10"	"–{s:bonus_bear_bat} сек. от базового интервала атак медведя"
+		"DOTA_Tooltip_ability_special_bonus_unique_lone_druid_11"	"+{s:bonus_bear_movespeed} к скорости передвижения духа-медведя"
+		"DOTA_Tooltip_ability_special_bonus_unique_lone_druid_12"	"«Цепкие Лапы» накладывает бессилие"
+		"DOTA_Tooltip_ability_special_bonus_unique_lone_druid_entangle_dps"		"+{s:bonus_damage} к урону в секунду от «Цепкие Лапы»"
+		"DOTA_Tooltip_ability_special_bonus_unique_lone_druid_spirit_link_attack_speed"		"+{s:bonus_bonus_attack_speed} к скорости атаки от «Духовная Связь»"
+		"DOTA_Tooltip_ability_special_bonus_unique_lone_druid_savage_roar_aoe"		"+{s:bonus_radius} к радиусу «Дикий Рёв»"
+		//------------------------------------------------------------------------------------------------------------------------
+		
+		//LIFESTEALER
+		"DOTA_Tooltip_ability_life_stealer_rage"										"Ярость"
+		"DOTA_Tooltip_ability_life_stealer_rage_Note0"									"<h1>Eng: <b><font color='#F2A93E'>Rage</font></b></h1>"
+
+		"DOTA_Tooltip_ability_life_stealer_unfettered"								"Unfettered"
+		"DOTA_Tooltip_ability_life_stealer_unfettered"								"<h1>Eng: <b><font color='#F2A93E'>Unfettered</font></b></h1>"
+
+		"DOTA_Tooltip_ability_life_stealer_feast"										"Пир"
+		"DOTA_Tooltip_ability_life_stealer_feast_Note0"									"<h1>Eng: <b><font color='#F2A93E'>Feast</font></b></h1>\nДействует на союзников и врагов. Не действует на Рошана."
+
+		"DOTA_Tooltip_ability_life_stealer_ghoul_frenzy"									"Неистовый Гуль"
+		"DOTA_Tooltip_ability_life_stealer_ghoul_frenzy_Note0"									"<h1>Eng: <b><font color='#F2A93E'>Ghoul Frenzy</font></b></h1>"
+
+		"DOTA_Tooltip_ability_life_stealer_open_wounds"									"Открытая Рана"
+		"DOTA_Tooltip_ability_life_stealer_open_wounds_Note0"							"<h1>Eng: <b><font color='#F2A93E'>Open Wounds</font></b></h1>\nЗамедление разделяется на 8 фаз: 50% / 50% / 40% / 30% / 20% / 10% / 10% / 10%. Каждая фаза длится секунду."
+
+		"DOTA_Tooltip_ability_life_stealer_infest"										"Заражение"
+		"DOTA_Tooltip_ability_life_stealer_infest_Note0"								"<h1>Eng: <b><font color='#F2A93E'>Infest</font></b></h1>\nГерой продолжает получать опыт, пока находится в теле другого существа."
+		"DOTA_Tooltip_ability_life_stealer_infest_Note3"								"При применении с «Скипетр Аганима» на вражеского героя урон аспекта «Кровавая Баня» зависит от суммарного урона, нанесённого жертве владельцем этой способности за время её действия."
+		"DOTA_Tooltip_ability_life_stealer_infest_shard_description"					"Вырвавшись из жертвы «Заражение», герой накладывает на всех врагов в радиусе урона эффект «Открытая Рана», действующий %bonus_open_wounds_duration_pct%%% от обычной длительности."
+
+		"DOTA_Tooltip_ability_life_stealer_corpse_eater"							"Corpse Eater"
+		"DOTA_Tooltip_ability_life_stealer_corpse_eater_Note0"							"<h1>Eng: <b><font color='#F2A93E'>Corpse Eater</font></b></h1>"
+
+		"DOTA_Tooltip_ability_life_stealer_control"										"Control"
+		"DOTA_Tooltip_ability_life_stealer_control_Note0"										"<h1>Eng: <b><font color='#F2A93E'>Control</font></b></h1>"
+
+		"DOTA_Tooltip_ability_life_stealer_consume"										"Пожирание"
+		"DOTA_Tooltip_ability_life_stealer_consume_Note0"										"<h1>Eng: <b><font color='#F2A93E'>Consume</font></b></h1>"
+
+		"DOTA_Tooltip_ability_life_stealer_assimilate"								"Assimilate"
+		"DOTA_Tooltip_ability_life_stealer_assimilate_Note0"								"<h1>Eng: <b><font color='#F2A93E'>Assimilate</font></b></h1>"
+
+		"DOTA_Tooltip_ability_life_stealer_assimilate_eject"							"Eject"
+		"DOTA_Tooltip_ability_life_stealer_assimilate_eject_Note0"							"<h1>Eng: <b><font color='#F2A93E'>Eject</font></b></h1>"
+	
+		//LIFESTEALER - Ауры
+		"DOTA_Tooltip_modifier_life_stealer_feast"										"Пир"
+		"DOTA_Tooltip_modifier_life_stealer_corpse_eater"								"Corpse Eater"
+		"DOTA_Tooltip_modifier_life_stealer_infest_enemy_hero"							"Заражение"
+		"DOTA_Tooltip_modifier_life_stealer_infest_dot"									"Кровавая Баня"
+		"DOTA_Tooltip_modifier_life_stealer_rage"										"Ярость"
+		"DOTA_Tooltip_modifier_life_stealer_unfettered"									"Unfettered"
+		"DOTA_Tooltip_modifier_life_stealer_open_wounds" 								"Открытая Рана"
+		"DOTA_Tooltip_modifier_life_stealer_ghoul_frenzy_slow" 							"Неистовый Гуль"
+		"DOTA_Tooltip_modifier_life_stealer_assimilate_Description"						"Прячется внутри Lifestealer. Лечится наравне с Lifestealer.\n\nПриказ на передвижение, применение способности или нажатие на эту иконку вынет вас из Lifestealer, и вы нанесёте урон врагам вокруг."
+		
+		//LIFESTEALER - Аспекты
+		"DOTA_Tooltip_facet_life_stealer_rage"											"Ярость"
+		"DOTA_Tooltip_facet_life_stealer_rage_Description"								"Герой имеет способность <b color='white'>«Ярость»</b>, которая делает его невосприимчивым к эффектам и увеличивает его сопротивление магии."
+		"DOTA_Tooltip_facet_life_stealer_rage_dispell"									"Unfettered"		
+		"DOTA_Tooltip_facet_life_stealer_rage_dispell_Description"						"Герой имеет способность <b color='white'>Unfettered</b>, даже в оглушении позволяющую применить на себя сильное развеивание и стать выносливее."		
+		"DOTA_Tooltip_facet_life_stealer_gorestorm"										"Кровавая Баня"
+		"DOTA_Tooltip_facet_life_stealer_gorestorm_Description"							"Вырвавшись из крипа, ставшего целью способности «Заражение», герой окатывает врагов кровью, которая наносит периодический урон, зависящий от остававшегося у носителя здоровья. Позволяет применять эту способность на древних крипов."
+		"DOTA_Tooltip_facet_life_stealer_fleshfeast"									"Пир Плоти"
+		"DOTA_Tooltip_facet_life_stealer_fleshfeast_Description"						"Увеличивает бонус к максимальному здоровью за героя от «Пир». Перезарядка способности «Открытая Рана» сбрасывается, если под её действием умирает существо."
+
+		//LIFESTEALER - Таланты
+		"DOTA_Tooltip_ability_special_bonus_unique_lifestealer"		"+{s:bonus_duration} сек. действия «Ярость»"
+		"DOTA_Tooltip_ability_special_bonus_unique_lifestealer_Facet_life_stealer_rage_dispell"		"+{s:bonus_duration} сек. действия Unfettered"
+		"DOTA_Tooltip_ability_special_bonus_unique_lifestealer_2"	"+{s:bonus_movement_speed_bonus}% к доп. скорости передв. от «Неистовый Гуль»"
+		"DOTA_Tooltip_ability_special_bonus_unique_lifestealer_3"	"+{s:bonus_hp_damage_percent}% к лечению и урону от «Пир»"
+		"DOTA_Tooltip_ability_special_bonus_unique_lifestealer_4"	"+{s:bonus_slow_tooltip}% к замедлению от «Открытая Рана»"
+		"DOTA_Tooltip_ability_special_bonus_unique_lifestealer_5"	"+{s:bonus_attack_speed_bonus} к скорости атаки от «Неистовый Гуль»"
+		"DOTA_Tooltip_ability_special_bonus_unique_lifestealer_6"	"+{s:bonus_heal_percent}% к вампиризму от «Открытая Рана»"
+		"DOTA_Tooltip_ability_special_bonus_unique_lifestealer_7"	"+{s:bonus_attack_speed_bonus} к скорости атаки от «Неистовый Гуль»"
+		"DOTA_Tooltip_ability_special_bonus_unique_lifestealer_ghoul_frenzy_miss"	"Промахи атаками с шансом в {s:bonus_miss_pct}% у жертв «Неистовый Гуль»"
+		"DOTA_Tooltip_ability_special_bonus_unique_lifestealer_infest_damage"	"+{s:bonus_damage} к урону от «Заражение»"
+		"DOTA_Tooltip_ability_special_bonus_unique_lifestealer_infest_target_bonus"			"+{s:bonus_bonus_movement_speed} к доп. скорости и здоровью у цели «Заражение»"
+		"DOTA_Tooltip_ability_special_bonus_unique_lifestealer_rage_armor"			"+{s:bonus_bonus_armor} к броне от «Ярость»"
+		//----------------------------------------------------------------------------------------------------------------------------------------------------
+
+		//Dark Willow
+		"DOTA_Tooltip_ability_dark_willow_bramble_maze"					"Лабиринт Ежевики"
+		"DOTA_Tooltip_ability_dark_willow_bramble_maze_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Bramble Maze</font></b></h1>\nОцепенение от этой способности не останавливает прерываемые заклинания."
+
+		"DOTA_Tooltip_ability_dark_willow_shadow_realm"					"Царство теней"
+		"DOTA_Tooltip_ability_dark_willow_shadow_realm_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Shadow Realm</font></b></h1>\nСбивает с цели снаряды, направленные во владельца способности."
+		
+		"DOTA_Tooltip_ability_dark_willow_cursed_crown"					"Проклятая Корона"
+		"DOTA_Tooltip_ability_dark_willow_cursed_crown_Note0"					"<h1>Eng: <b><font color='#F2A93E'>Cursed Crown</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_dark_willow_terrorize"					"Террор"
+		"DOTA_Tooltip_ability_dark_willow_terrorize_abilitydraft_note"	"Также даёт способность «Бедлам»."
+		"DOTA_Tooltip_ability_dark_willow_terrorize_Description"		"Герой натравливает на врагов своего ручного светлячка. После небольшой задержки он пугает всех противников в выбранной области, отчего они начинают бежать к своей базе. Невозможно применить во время действия способности «Бедлам»."
+		"DOTA_Tooltip_ability_dark_willow_terrorize_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Terrorize</font></b></h1>\nДаёт обзор по задетым существам."
+
+		"DOTA_Tooltip_ability_dark_willow_bedlam"					"Бедлам"
+		"DOTA_Tooltip_ability_dark_willow_bedlam_Note0"					"<h1>Eng: <b><font color='#F2A93E'>Bedlam</font></b></h1>"
+		"DOTA_Tooltip_ability_dark_willow_bedlam_Description"		"Герой призывает на помощь ручного светлячка, который начинает вращаться вокруг, быстро атакуя ближайших противников. Невозможно применить во время действия способности «Террор»."
+
+		"DOTA_Tooltip_ability_dark_willow_pixie_dust"					"Пыльца Фей"
+		"DOTA_Tooltip_ability_dark_willow_pixie_dust_Note0"					"<h1>Eng: <b><font color='#F2A93E'>Pixie Dust</font></b></h1>"
+		
+		//Dark Willow - Ауры
+		"DOTA_Tooltip_modifier_dark_willow_bramble_maze"					"Лабиринт Ежевики"
+		"DOTA_Tooltip_modifier_dark_willow_shadow_realm_buff"				"Царство теней"
+		"DOTA_Tooltip_modifier_dark_willow_shadow_realm_aura_debuff"		"Брошенная Тень"
+		"DOTA_Tooltip_modifier_dark_willow_shadow_realm_aura_debuff_Description"		"Получает больше урона от владельца «Царство теней»."
+		"DOTA_Tooltip_modifier_dark_willow_cursed_crown"					"Проклятая Корона"
+		"DOTA_Tooltip_modifier_dark_willow_debuff_fear"						"Террор"
+		"DOTA_Tooltip_modifier_dark_willow_bedlam"							"Бедлам"
+
+		//Dark Willow - Аспекты
+		"DOTA_Tooltip_Facet_dark_willow_throwing_shade"							"Брошенная Тень"	
+		"DOTA_Tooltip_Facet_dark_willow_throwing_shade_Description"				"Способность «Царство теней» увеличивает урон, который её владелец наносит вражеским героям поблизости."			
+		"DOTA_Tooltip_Facet_dark_willow_thorny_thicket"						"Thorny Thicket"
+		"DOTA_Tooltip_Facet_dark_willow_thorny_thicket_Description"			"Способность «Лабиринт Ежевики» создаёт больше кустов."	
+		"DOTA_Tooltip_Facet_dark_willow_shattering_crown"						"Корона Сокрушения"
+		"DOTA_Tooltip_Facet_dark_willow_shattering_crown_Description"			"Во время задержки перед оглушением способность «Проклятая Корона» накапливает часть урона, наносимого владельцем способности и атаками его союзников. В момент оглушения накопленный урон наносится по всей площади действия способности в виде магического урона."
+		
+		//Dark Willow - Таланты
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_willow_1"			"+{s:value} сек. действия «Царство теней»"
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_willow_2"			"Попадание «Террор» наносит {s:bonus_impact_damage} урона"
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_willow_3"			"–{s:bonus_AbilityCooldown} сек. перезарядки «Лабиринт Ежевики»"
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_willow_4"			"+{s:bonus_attack_damage} к урону от «Бедлам»"
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_willow_5"			"–{s:bonus_AbilityCooldown} сек. перезарядки «Царство теней»"
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_willow_6"			"+{s:bonus_roaming_duration} сек. действия «Бедлам»"
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_willow_7"			"+{s:bonus_stun_radius} к радиусу «Проклятая Корона»"
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_willow_bedlam_targets"	"+{s:bonus_target_count} к числу целей атаки у «Бедлам»"
+		//----------------------------------------------------------------------------------------------------------------------------------------------------
+		
+		//PUGNA
+		"DOTA_Tooltip_ability_pugna_nether_blast"										"Взрыв из Глубин"
+		"DOTA_Tooltip_ability_pugna_nether_blast_Note0"									"<h1>Eng: <b><font color='#F2A93E'>Nether Blast</font></b></h1>\nЗадержка перед взрывом — %delay% сек."
+
+		"DOTA_Tooltip_ability_pugna_decrepify"											"Одряхление"
+		"DOTA_Tooltip_ability_pugna_decrepify_Note0"									"<h1>Eng: <b><font color='#F2A93E'>Decrepify</font></b></h1>\nСуществу под действием этой способности наносится только магический и чистый урон."
+		"DOTA_Tooltip_ability_pugna_decrepify_Note2"									"Можно применять на тотем от способности «Тотем Бездны»."
+
+		"DOTA_Tooltip_ability_pugna_nether_ward"										"Тотем Бездны"
+		"DOTA_Tooltip_ability_pugna_nether_ward_Facet_pugna_siphoning_ward"				"Нанося урон, тотем от «Тотем Бездны» восстанавливает владельцу здоровье и ману."		
+		"DOTA_Tooltip_ability_pugna_nether_ward_Note0"									"<h1>Eng: <b><font color='#F2A93E'>Nether Ward</font></b></h1>\nНаносит урон перед применением способности, так что способность противника, убитого тотемом, не сработает."
+		"DOTA_Tooltip_ability_pugna_nether_ward_Note1"									"На тотем можно применить способность «Одряхление»."
+
+		"DOTA_Tooltip_ability_pugna_life_drain"											"Живосток"
+		"DOTA_Tooltip_ability_pugna_life_drain_Note0"									"<h1>Eng: <b><font color='#F2A93E'>Life Drain</font></b></h1>"
+		"DOTA_Tooltip_ability_pugna_life_drain_shard_description"						"Позволяет применять эту способность на тотем бездны от «Тотем Бездны», чтобы красть жизнь у врагов в радиусе %abilitycastrange% вокруг тотема. Способность, применённая на тотем, действует в %shard_damage_pct_from_ward%%% от своей обычной силы и прервётся, если уничтожить тотем."
+		"DOTA_Tooltip_ability_pugna_life_drain_scepter_description"						"Уменьшает перезарядку на %abilitycooldown% сек. Применение этой способности на вражеского героя каждую секунду уменьшает наносимый его заклинаниями урон на %spell_amp_drain_rate%%% (максимум — %spell_amp_drain_max%%%), при этом увеличивая урон, наносимый заклинаниями владельца, вплоть до %max_spell_amp_drain_pct%%%. При применении через тотем от «Тотем Бездны» скорость изменения урона составляет %spell_amp_drain_rate_ward%%%. Этот эффект действует %spell_amp_drain_duration% сек."
+
+		"DOTA_Tooltip_ability_pugna_oblivion_savant"									"Знаток Забвения"
+		"DOTA_Tooltip_ability_pugna_oblivion_savant_Note0"								"<h1>Eng: <b><font color='#F2A93E'>Oblivion Savant</font></b></h1>\nНе прерываются и заклинания предметов."
+
+		//PUGNA - Ауры
+		"DOTA_Tooltip_modifier_pugna_oblivion_savant"					"Почётный Руинер"
+		"DOTA_Tooltip_modifier_pugna_decrepify"							"Одряхление"
+		"DOTA_Tooltip_modifier_pugna_nether_ward_aura"					"Тотем Бездны"
+		"DOTA_Tooltip_modifier_pugna_nether_ward_aura_Description"		"Поблизости «Тотем Бездны»"
+		"DOTA_Tooltip_modifier_pugna_life_drain"						"Живосток"
+		"DOTA_Tooltip_modifier_pugna_life_drain_Description"			"Высасывает жизнь."
+		"DOTA_Tooltip_modifier_pugna_life_drain_spell_amp"				"Изменение урона заклинаний от «Живосток»"
+		
+		//PUGNA - Аспекты
+		"DOTA_Tooltip_Facet_pugna_siphoning_ward"					"Тотем Перелива"		
+		"DOTA_Tooltip_Facet_pugna_siphoning_ward_Description"		"Нанося урон, тотем от «Тотем Бездны» восстанавливает владельцу здоровье и ману."
+		"DOTA_Tooltip_Facet_pugna_rewards_of_ruin"					"Почётный Руинер"
+		"DOTA_Tooltip_Facet_pugna_rewards_of_ruin_Description"		"Герой получает +{s:bonus_tower_scale}% к урону от заклинаний за каждую разрушенную башню."		
+		
+		//PUGNA- Таланты
+		"DOTA_Tooltip_ability_special_bonus_unique_pugna_1"	"+{s:bonus_bonus_heal_pct}% лечения от «Живосток»"
+		"DOTA_Tooltip_ability_special_bonus_unique_pugna_2"	"+{s:bonus_blast_damage} к урону от «Взрыв из Глубин»"
+		"DOTA_Tooltip_ability_special_bonus_unique_pugna_3"	"+{s:bonus_mana_multiplier} к урону за единицу маны у «Тотем Бездны»"
+		"DOTA_Tooltip_ability_special_bonus_unique_pugna_4"	"–{s:bonus_AbilityCooldown} сек. перезарядки «Взрыв из Глубин»"
+		"DOTA_Tooltip_ability_special_bonus_unique_pugna_5"	"+{s:bonus_AbilityDuration} сек. действия «Одряхление»"
+		"DOTA_Tooltip_ability_special_bonus_unique_pugna_6"	"+{s:bonus_attacks_to_destroy} к атакам для уничтожения «Тотем Бездны»"
+		"DOTA_Tooltip_ability_special_bonus_unique_pugna_decrepify_ally_movespeed"		"«Одряхление» ускоряет союзников на {s:bonus_bonus_movement_speed_allies}%"
+		//----------------------------------------------------------------------------------------------------------------------------------------------------
+		
+		//BREWMASTER
+		"DOTA_Tooltip_ability_brewmaster_thunder_clap"								"Раскат Грома"
+		"DOTA_Tooltip_ability_brewmaster_thunder_clap_Note0"						"<h1>Eng: <b><font color='#F2A93E'>Thunder Clap</font></b></h1>"
+
+		"DOTA_Tooltip_ability_brewmaster_cinder_brew"								"Жгучее Варево"
+		"DOTA_Tooltip_ability_brewmaster_cinder_brew_Note0"							"<h1>Eng: <b><font color='#F2A93E'>Cinder Brew</font></b></h1>"
+		"DOTA_Tooltip_ability_brewmaster_cinder_brew_Description"					"Обливает себя и врагов в указанной области алкоголем, отчего они передвигаются медленнее и загораются, получив магический или чистый урон. Время действия на загоревшихся врагах продлевается на %extra_duration% сек. Под эффектом этой способности усиливаются стойки от способности «Пьян, Буян и Грубиян». Действие этой способности на владельца продлевается, когда он наносит или получает магический урон."
+
+		"DOTA_Tooltip_ability_brewmaster_drunken_brawler"							"Пьян, Буян и Грубиян"
+		"DOTA_Tooltip_ability_brewmaster_drunken_brawler_Description"				"Герой может менять стойку в зависимости от элементов, которыми он управляет, и получать за это пассивные бонусы, усиливающиеся под действием способности Жгучее Варево.\n<font color=\"#9acd32\">Боец земли</font> — даёт +%armor% к броне и +%magic_resist%%% к сопротивлению магии. Под эффектом «Жгучее Варево» бонусы умножаются на %active_multiplier%.\n<font color=\"#87ceeb\">Боец шторма</font> — даёт +%dodge_chance%%% к уклонению и +%bonus_move_speed%%% к скорости передвижения. Под эффектом «Жгучее Варево» бонусы умножаются на %active_multiplier%.\n<font color=\"#FF0000\">Боец огня</font> — даёт +%attack_speed% к скорости атаки и шанс в %crit_chance%%% нанести критической атакой %crit_multiplier%%% урона. Под эффектом «Жгучее Варево» бонусы умножаются на %active_multiplier%.\n<font color=\"#662375\">Боец пустоты</font> — даёт +%bonus_status_resist%%% к сопротивлению эффектам, а атаки замедляют жертв на %movespeed%%% на %slow_duration% сек. Под эффектом «Жгучее Варево» сопротивление и замедление умножаются на %active_multiplier%."
+		"DOTA_Tooltip_ability_brewmaster_drunken_brawler_Note0"						"<h1>Eng: <b><font color='#F2A93E'>Drunken Brawler</font></b></h1>\nСкладывается по закону убывающей полезности с другими источниками уклонения."
+
+		"DOTA_Tooltip_ability_brewmaster_primal_split"								"Раскол Стихий"
+		"DOTA_Tooltip_ability_brewmaster_primal_split_Note0"						"<h1>Eng: <b><font color='#F2A93E'>Primal Split</font></b></h1>\nВсе ауры от предметов героя действуют вокруг воина земли."
+		"DOTA_Tooltip_ability_brewmaster_primal_split_cancel"						"Прервать «Раскол Стихий»"
+
+		"DOTA_Tooltip_ability_brewmaster_primal_companion"							"Стихийный Собутыльник"
+		"DOTA_Tooltip_ability_brewmaster_primal_companion_Note0"					"<h1>Eng: <b><font color='#F2A93E'>Primal Companion</font></b></h1>"
+		"DOTA_Tooltip_ability_brewmaster_primal_companion_Description"				"Создаёт одного из воинов в зависимости от текущей стойки «Пьян, Буян и Грубиян».<br><br>Нового воина нельзя призвать, если существующий получал урон от врагов в последние %cooldown_on_take_damage% сек. Если воин умрёт, способность уйдёт на перезарядку в %cooldown_on_death% сек.<br><br>Одновременно может существовать только один воин. Он исчезнет, если применить способность «Раскол Стихий»."
+
+		//"DOTA_Tooltip_ability_brewmaster_resistant_skin"							"Resistant Skin"
+		"DOTA_Tooltip_ability_brewmaster_resistant_skin_Note0"						"<h1>Eng: <b><font color='#F2A93E'>Resistant Skin</font></b></h1>"
+
+		"DOTA_Tooltip_ability_brewmaster_earth_hurl_boulder"						"Швырнуть Валун"
+		"DOTA_Tooltip_ability_brewmaster_earth_hurl_boulder_Note0"					"<h1>Eng: <b><font color='#F2A93E'>Hurl Boulder</font></b></h1>"
+
+		"DOTA_Tooltip_ability_brewmaster_earth_pulverize"							"Разрушение"
+		"DOTA_Tooltip_ability_brewmaster_earth_pulverize_Note0"						"<h1>Eng: <b><font color='#F2A93E'>Demolish</font></b></h1>"
+	
+		"DOTA_Tooltip_ability_brewmaster_storm_dispel_magic"						"Рассеивание Магии"
+		"DOTA_Tooltip_ability_brewmaster_storm_dispel_magic_Note0"					"<h1>Eng: <b><font color='#F2A93E'>Dispel Magic</font></b></h1>\nМожно применять на неуязвимых существ."
+
+		"DOTA_Tooltip_ability_brewmaster_storm_cyclone"								"Циклон"
+		"DOTA_Tooltip_ability_brewmaster_storm_cyclone_Note0"						"<h1>Eng: <b><font color='#F2A93E'>Cyclone</font></b></h1>"
+
+		"DOTA_Tooltip_ability_brewmaster_storm_wind_walk"							"Ветреный Гуляка"
+		"DOTA_Tooltip_ability_brewmaster_storm_wind_walk_Note0"						"<h1>Eng: <b><font color='#F2A93E'>Wind Walk</font></b></h1>"
+
+		"DOTA_Tooltip_ability_brewmaster_fire_permanent_immolation"					"Извечное Самосожжение"
+		"DOTA_Tooltip_ability_brewmaster_fire_permanent_immolation_Note0"			"<h1>Eng: <b><font color='#F2A93E'>Permanent Immolation</font></b></h1>"
+
+		"DOTA_Tooltip_ability_brewmaster_fire_phase"								"Извечное Фазирование"
+		"DOTA_Tooltip_ability_brewmaster_fire_phase_Note0"							"<h1>Eng: <b><font color='#F2A93E'>Permanent Phase</font></b></h1>"
+
+		"DOTA_Tooltip_ability_brewmaster_void_astral_pulse"							"Астральное Притяжение"
+		"DOTA_Tooltip_ability_brewmaster_void_astral_pulse_Note0"					"<h1>Eng: <b><font color='#F2A93E'>Astral Pulse</font></b></h1>"
+
+		"DOTA_Tooltip_ability_brewmaster_void_astral_pull"							"Астральное Притяжение"
+		"DOTA_Tooltip_ability_brewmaster_void_astral_pull_Note0"					"<h1>Eng: <b><font color='#F2A93E'>Astral Pull</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_brewmaster_belligerent"								"Дебошир"
+		"DOTA_Tooltip_ability_brewmaster_belligerent_Note0"							"<h1>Eng: <b><font color='#F2A93E'>Belligerent</font></b></h1>"
+		"DOTA_Tooltip_ability_brewmaster_belligerent_Description"					"Герой получает +%damage_pct%%% к урону от атак на %damage_duration_split% сек. после окончания «Раскол Стихий» и на %damage_duration_respawn% сек. после возрождения."
+
+		//BREWMASTER - Ауры
+		"DOTA_Tooltip_modifier_brewmaster_thunder_clap"						"Раскат Грома"
+		"DOTA_Tooltip_modifier_brewmaster_drunken_brawler"					"Пьян, Буян и Грубиян"
+		"DOTA_Tooltip_modifier_brewmaster_earth_pulverize"					"Разрушение"
+		"DOTA_Tooltip_modifier_brewmaster_storm_wind_walk"					"Ветреный Гуляка"
+		"DOTA_Tooltip_modifier_brewmaster_storm_cyclone"					"Циклон"
+		"DOTA_Tooltip_modifier_brewmaster_fire_permanent_immolation"		"Извечное Самосожжение"
+		"DOTA_Tooltip_modifier_brewmaster_primal_split_duration"			"Раскол Стихий"
+		//"DOTA_Tooltip_modifier_brewmaster_void_void_strike"					"Void Strike"
+		"DOTA_Tooltip_modifier_brewmaster_void_astral_pulse"				"Астральное Притяжение"
+		"DOTA_Tooltip_modifier_brewmaster_cinder_brew"						"Жгучее Варево"
+		"DOTA_Tooltip_modifier_brewmaster_brew_up"							"Жгучее Варево"
+		"DOTA_Tooltip_modifier_brewmaster_brew_up_Description"				"Крепкое пойло улучшает стойки от способности «Пьян, Буян и Грубиян»"
+		"DOTA_Tooltip_modifier_brewmaster_cinder_brew_active"				"Горение от «Жгучее Варево»"
+		"DOTA_Tooltip_modifier_brewmaster_fear"								"Страх от «Жгучее Варево»"
+		"DOTA_Tooltip_modifier_brewmaster_void_astral_pull_movement"		"Астральное Притяжение"
+		"DOTA_Tooltip_modifier_brewmaster_drunken_brawler_passive"			"Пьян, Буян и Грубиян"
+		"DOTA_Tooltip_modifier_brewmaster_belligerent_damage"				"Дебошир"
+		"DOTA_Tooltip_modifier_brewmaster_belligerent_damage_Description"	"Урон от атак увеличен на %dMODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE%%% после окончания «Раскол Стихий» или возрождения"
+		
+		//BREWMASTER - Аспекты
+		"DOTA_Tooltip_Facet_brewmaster_roll_out_the_barrel"							"Качу Бочку!"			
+		"DOTA_Tooltip_Facet_brewmaster_roll_out_the_barrel_Description"				"«Жгучее Варево» позволяет швырнуть бочку, которая наносит врагам урон и обливает их алкоголем."		
+		"DOTA_Tooltip_Facet_brewmaster_drunken_master"								"Пьяный Мастер"
+		"DOTA_Tooltip_Facet_brewmaster_drunken_master_Description"					"Под действием способности «Жгучее Варево» её владелец передвигается с переменной скоростью, то замедляясь на {s:bonus_min_movement}%, то ускоряясь на {s:bonus_max_movement}%."
+
+		//BREWMASTER - Таланты
+		"DOTA_Tooltip_ability_special_bonus_unique_brewmaster"		"+{s:bonus_bonus_brewling_hp} к здоровью воинов от «Раскол Стихий»"
+		"DOTA_Tooltip_ability_special_bonus_unique_brewmaster_2"	"+{s:bonus_bonus_damage} к урону воинов от «Раскол Стихий»"
+		"DOTA_Tooltip_ability_special_bonus_unique_brewmaster_3"	"+{s:value} сек. замедления от «Раскат Грома»"
+		"DOTA_Tooltip_ability_special_bonus_unique_brewmaster_4"	"Горение от «Жгучее Варево» накладывает страх"
+		"DOTA_Tooltip_ability_special_bonus_unique_brewmaster_5"	"+{s:bonus_total_ignite_damage}% к длительности и урону от «Жгучее Варево»"
+		"DOTA_Tooltip_ability_special_bonus_unique_brewmaster_6"	"Воины получают эффекты «Пьян, Буян и Грубиян»"
+		"DOTA_Tooltip_ability_special_bonus_unique_brewmaster_7"	"+{s:bonus_radius} к радиусу «Раскат Грома»"
+		"DOTA_Tooltip_ability_special_bonus_unique_brewmaster_8"	"+{s:bonus_active_multiplier} к множителю бонусов у «Пьян, Буян и Грубиян»"
+		//----------------------------------------------------------------------------------------------------------------------------------------------------
+		
+		//Ancient Apparition
+		"DOTA_Tooltip_ability_ancient_apparition_cold_feet"								"Ледяная Поступь"
+		"DOTA_Tooltip_ability_ancient_apparition_cold_feet_Note0"						"<h1>Eng: <b><font color='#F2A93E'>Cold Feet</font></b></h1>\nНаносит урон каждые полсекунды."
+		"DOTA_Tooltip_ability_ancient_apparition_cold_feet_facet_ancient_apparition_exposure" "Применяется по области вокруг основной цели. Радиус зависит от текущего уровня способности «Ледяной Взрыв»"
+
+		"DOTA_Tooltip_ability_ancient_apparition_ice_vortex"							"Ледяной Вихрь"
+		"DOTA_Tooltip_ability_ancient_apparition_ice_vortex_Note0"						"<h1>Eng: <b><font color='#F2A93E'>Ice Vortex</font></b></h1>\nДаёт обзор по небольшой области."
+
+		"DOTA_Tooltip_ability_ancient_apparition_chilling_touch"						"Ледяная Хватка"
+		"DOTA_Tooltip_ability_ancient_apparition_chilling_touch_Note0"					"<h1>Eng: <b><font color='#F2A93E'>Chilling Touch</font></b></h1>"
+
+		"DOTA_Tooltip_ability_ancient_apparition_death_rime"							"Иней Смерти"
+		"DOTA_Tooltip_ability_ancient_apparition_death_rime_Note0"						"<h1>Eng: <b><font color='#F2A93E'>Death Rime</font></b></h1>"
+
+		"DOTA_Tooltip_ability_ancient_apparition_ice_blast"								"Ледяной Взрыв"
+		"DOTA_Tooltip_ability_ancient_apparition_ice_blast_shard_description"			"Применяет на жертв способность «Ледяная Поступь» текущего уровня, действующую %cold_feet_stun_duration_pct%%% от обычной длительности."
+		"DOTA_Tooltip_ability_ancient_apparition_ice_blast_cold_feet_aoe"				"РАДИУС ДЕЙСТВИЯ «ЛЕДЯНАЯ ПОСТУПЬ»:"
+		"DOTA_Tooltip_ability_ancient_apparition_ice_blast_Note0"						"<h1>Eng: <b><font color='#F2A93E'>Ice Blast</font></b></h1>\nПосле применения эта способность заменяется на другую, которая отправит ледяной шар в указанную область."
+		"DOTA_Tooltip_ability_ancient_apparition_ice_blast_Note4"						"Эффект способности предотвращает любое лечение, в том числе от фонтана, но не от способностей Sunder, Time Lapse и Supernova."
+
+		//"DOTA_Tooltip_ability_ancient_apparition_ice_blast_release"						""
+		//"DOTA_Tooltip_ability_ancient_apparition_ice_blast_release_Note0"				"<h1>Eng: <b><font color='#F2A93E'>Release</font></b></h1>"
+
+		//Ancient Apparition - Ауры
+		"DOTA_Tooltip_modifier_ancient_apparition_death_rime"						"Мороз от «Иней Смерти»"
+		"DOTA_Tooltip_modifier_cold_feet"											"Ледяная Поступь"
+		"DOTA_Tooltip_modifier_ancient_apparition_cold_feet_charge_counter"			"Зарядов «Ледяная Поступь»"
+		"DOTA_Tooltip_modifier_ancientapparition_coldfeet_freeze_Description"		"Заморожен «Древний Дух»"
+		"DOTA_Tooltip_modifier_ice_vortex"										"Ледяной Вихрь"
+		"DOTA_Tooltip_modifier_chilling_touch"									"Ледяная Хватка"
+		"DOTA_Tooltip_modifier_chilling_touch_slow"								"Ледяная Хватка"
+		"DOTA_Tooltip_modifier_chilling_touch_super_slow"						"Ледяная Хватка"
+		"DOTA_Tooltip_modifier_ice_blast"										"Ледяной Взрыв"
+		
+		//Ancient Apparition - Аспекты
+		"DOTA_Tooltip_Facet_ancient_apparition_exposure"						"Обледенение"	
+		"DOTA_Tooltip_Facet_ancient_apparition_exposure_Description"			"«Ледяная Поступь» применяется по области, зависящей от уровня способности «Ледяной Взрыв»"		
+		"DOTA_Tooltip_Facet_ancient_apparition_bone_chill"						"Мороз до костей"		
+		
+		//Ancient Apparition - Таланты
+		"DOTA_Tooltip_ability_special_bonus_unique_ancient_apparition_1"	"+{s:bonus_break_distance} к расстоянию разрыва у «Ледяная Поступь»"
+		"DOTA_Tooltip_ability_special_bonus_unique_ancient_apparition_2"	"+{s:bonus_damage} к урону от «Ледяная Хватка»"
+		"DOTA_Tooltip_ability_special_bonus_unique_ancient_apparition_3"	"–{s:bonus_AbilityCooldown} сек. перезарядки «Ледяной Вихрь»"
+		"DOTA_Tooltip_ability_special_bonus_unique_ancient_apparition_4"	"+{s:bonus_movement_speed_pct}% к сопротивлению и скорости от «Ледяной Вихрь»"
+		"DOTA_Tooltip_ability_special_bonus_unique_ancient_apparition_5"	"+{s:bonus_kill_pct}% к здоровью для убийства у «Ледяной Взрыв»"
+		//"DOTA_Tooltip_ability_special_bonus_unique_ancient_apparition_6"	"+{s:bonus_damage}% к замедлению и урону от эффектов мороза"
+		"DOTA_Tooltip_ability_special_bonus_unique_ancient_apparition_7"	"+{s:bonus_attack_range_bonus} к дальности атаки от «Ледяная Хватка»"
+		"DOTA_Tooltip_ability_special_bonus_unique_ancient_apparition_8"	"+{s:bonus_frost_stacks} к числу эффектов мороза от «Ледяная Поступь»"
+		"DOTA_Tooltip_ability_special_bonus_unique_ancient_apparition_ice_vortex_duration"			"+{s:bonus_frostbite_duration} сек. обморожения от «Ледяной Взрыв»"
+		//----------------------------------------------------------------------------------------------------------------------------------------------------
+		
+		//DARK SEER
+		"DOTA_Tooltip_ability_dark_seer_vacuum"											"Вакуум"
+		"DOTA_Tooltip_ability_dark_seer_vacuum_Note0"									"<h1>Eng: <b><font color='#F2A93E'>Vacuum</font></b></h1>\nОстанавливает прерываемые заклинания."
+		
+		"DOTA_Tooltip_ability_dark_seer_ion_shell"										"Ионная Оболочка"
+		"DOTA_Tooltip_ability_dark_seer_ion_shell_Note0"								"<h1>Eng: <b><font color='#F2A93E'>Ion Shell</font></b></h1>\nНаносит небольшой урон с интервалом в %tick_interval% сек."
+		
+		"DOTA_Tooltip_ability_dark_seer_surge"											"Всплеск"
+		"DOTA_Tooltip_ability_dark_seer_surge_Note0"									"<h1>Eng: <b><font color='#F2A93E'>Surge</font></b></h1>\nЦель способности нельзя замедлить, пока не спадёт её эффект."
+		
+		"DOTA_Tooltip_ability_dark_seer_wall_of_replica"								"Стена Реплик"
+		"DOTA_Tooltip_ability_dark_seer_wall_of_replica_Note0"							"<h1>Eng: <b><font color='#F2A93E'>Wall of Replica</font></b></h1>\nНе создаёт иллюзии других иллюзий."
+		
+		//"DOTA_Tooltip_ability_dark_seer_mental_fortitude"				"Mental Fortitude"
+		
+		"DOTA_Tooltip_ability_dark_seer_aggrandize"						"Возвышение"
+		"DOTA_Tooltip_ability_dark_seer_aggrandize_Note0"						"<h1>Eng: <b><font color='#F2A93E'>Aggrandize</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_dark_seer_normal_punch"									"Дежурный Удар"
+		"DOTA_Tooltip_ability_dark_seer_normal_punch_Note0"									"<h1>Eng: <b><font color='#F2A93E'>Normal Punch</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_dark_seer_quick_wit"				"Смекалка"
+		"DOTA_Tooltip_ability_dark_seer_quick_wit_Note0"		"<h1>Eng: <b><font color='#F2A93E'>Quick Wit</font></b></h1>\nКаждая единица интеллекта увеличивает скорость атаки героя на %int_to_atkspd%."
+		
+		"DOTA_Tooltip_ability_dark_seer_heart_of_battle"				"Сердце Битвы"
+		"DOTA_Tooltip_ability_dark_seer_heart_of_battle_Note0"	"<h1>Eng: <b><font color='#F2A93E'>Heart of Battle</font></b></h1>\nГерой получает %movement_speed_pct%%% от скорости передвижения всех героев в радиусе %radius%. Базовая скорость передвижения снижена."
+
+		//DARK SEER - Ауры
+		"DOTA_Tooltip_modifier_dark_seer_vacuum"						"Вакуум"
+		"DOTA_Tooltip_modifier_dark_seer_ion_shell"						"Ионная Оболочка"
+		"DOTA_Tooltip_modifier_dark_seer_surge"							"Всплеск"
+		"DOTA_Tooltip_modifier_dark_seer_wall_of_replica"				"Стена Реплик"
+		"DOTA_Tooltip_modifier_dark_seer_wall_of_replica_Description"	"Иллюзия, созданная способностью «Стена Реплик»"
+		"DOTA_Tooltip_modifier_darkseer_wallofreplica_illusion"			"Иллюзия, созданная заклинанием «Стена Реплик»"
+		"DOTA_Tooltip_modifier_dark_seer_wall_slow" 					"Замедление от «Стена Реплик»"
+		"DOTA_Tooltip_modifier_darkseer_normal_punch_illusion"			"Иллюзия от «Дежурный Удар»"
+		"DOTA_Tooltip_modifier_dark_seer_surge_trail"					"След от «Всплеск»"
+		//"DOTA_Tooltip_modifier_dark_seer_mental_fortitude"				"Mental Fortitude"
+
+		//DARK SEER - Аспекты
+		"DOTA_Tooltip_modifier_dark_seer_heart_of_battle"				"Сердце Битвы"
+		"DOTA_Tooltip_modifier_dark_seer_quick_wit"						"Смекалка"
+		
+		//DARK SEER - Таланты
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_seer""+{s:bonus_damage_per_second} к урону от «Ионная Оболочка»"
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_seer_2""+{s:bonus_radius} к радиусу «Вакуум»"
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_seer_3""«Всплеск» применяется по области радиусом {s:value}"
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_seer_5""+{s:bonus_radius} к радиусу «Ионная Оболочка»"
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_seer_6""«Ионная Оболочка» даёт +{s:bonus_bonus_health} к макс. здоровью"
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_seer_7""+{s:bonus_tooltip_outgoing}% к урону иллюзий от «Стена Реплик»"
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_seer_8""–{s:value} сек. перезарядки «Вакуум»"
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_seer_9""{s:value} заряда «Всплеск»"
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_seer_10""+{s:value} сек. оглушения от «Стена Реплик»"
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_seer_11""+{s:value} к длине стены от «Стена Реплик»"
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_seer_12""+{s:value} сек. замедления от «Стена Реплик»"
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_seer_13""–{s:value} сек. перезарядки «Стена Реплик»"
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_seer_14""{s:bonus_AbilityCharges} заряда «Ионная Оболочка»"
+		"DOTA_Tooltip_ability_special_bonus_unique_dark_seer_15""+{s:bonus_duration} сек. к длительности «Ионная Оболочка»"
+		//----------------------------------------------------------------------------------------------------------------------------------------------------
+		
+		//CHEN
+		"DOTA_Tooltip_ability_chen_penitence"								"Покаяние"
+		"DOTA_Tooltip_ability_chen_penitence_Note0"								"<h1>Eng: <b><font color='#F2A93E'>Penitence</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_chen_divine_favor"							"Божественная милость"
+		"DOTA_Tooltip_ability_chen_divine_favor_Note0"							"<h1>Eng: <b><font color='#F2A93E'>Divine Favor</font></b></h1>"
+		
+		//"DOTA_Tooltip_ability_chen_test_of_faith"							"Божественная милость"
+		//"DOTA_Tooltip_ability_chen_test_of_faith_Note0"							"<h1>Eng: <b><font color='#F2A93E'>Test of Faith</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_chen_holy_persuasion"							"Святейшее Убеждение"
+		"DOTA_Tooltip_ability_chen_holy_persuasion_Note0"							"<h1>Eng: <b><font color='#F2A93E'>Holy Persuasion</font></b></h1>\nЕсли превысить максимальное число подчинённых крипов, самый ранний из них умрёт."
+		
+		"DOTA_Tooltip_ability_chen_summon_convert"							"Призыв Обращённого"
+		"DOTA_Tooltip_ability_chen_summon_convert_Note0"							"<h1>Eng: <b><font color='#F2A93E'>Summon Convert</font></b></h1>"
+		
+		"DOTA_Tooltip_ability_chen_hand_of_god"								"Рука Господа"
+		"DOTA_Tooltip_ability_chen_hand_of_god_Note0"								"<h1>Eng: <b><font color='#F2A93E'>Hand of God</font></b></h1>\nЛечит неуязвимых и скрытых/изгнанных союзников."
+		
+		//Chen - Ауры
+		"DOTA_Tooltip_modifier_chen_hand_of_god_hot"						"Рука Господа"
+		"DOTA_Tooltip_modifier_chen_penitence_self_attack_range"			"Покаяние"
+		"DOTA_Tooltip_modifier_chen_penitence"								"Покаяние"
+		"DOTA_Tooltip_modifier_chen_holy_persuasion"						"Святейшее Убеждение"
+		//"DOTA_Tooltip_modifier_chen_test_of_faith_teleport"					"Rapture"
+		"DOTA_Tooltip_modifier_chen_penitence_attack_speed_buff"			"Покаяние"
+		"DOTA_Tooltip_modifier_chen_divine_favor"							"Божественная милость"
+		"DOTA_Tooltip_modifier_chen_divine_favor_armor_buff"				"Броня от Божественной милости"
+		"DOTA_Tooltip_modifier_chen_divine_favor_teleport"					"Божественная милость"
+
+		//Chen - Аспекты
+		"DOTA_Tooltip_Facet_chen_centaur_convert"				"Обращение Кентавра"
+		//"DOTA_Tooltip_Facet_chen_wolf_convert"					"Wolf Convert"
+		"DOTA_Tooltip_Facet_chen_hellbear_convert"				"Обращение Медведемона"
+		"DOTA_Tooltip_Facet_chen_troll_convert"					"Обращение Тролля"
+		"DOTA_Tooltip_Facet_chen_satyr_convert"					"Обращение Сатира"
+		"DOTA_Tooltip_Facet_chen_frog_convert"					"Обращение Болотного Мага"
+		
+		//Chen - Таланты
+		"DOTA_Tooltip_ability_special_bonus_unique_chen_1"	"+{s:bonus_AbilityCharges} заряда «Святейшее Убеждение», +{s:value} к максимуму существ"
+		"DOTA_Tooltip_ability_special_bonus_unique_chen_2"	"«Рука Господа» полностью лечит владельца и крипов"
+		"DOTA_Tooltip_ability_special_bonus_unique_chen_2_description"	"Полное лечение происходит при начальном исцелении. Эффект периодического лечения также накладывается."
+		"DOTA_Tooltip_ability_special_bonus_unique_chen_3"	"+{s:bonus_attack_speed} к скорости атаки крипа-фанатика"
+		"DOTA_Tooltip_ability_special_bonus_unique_chen_4"	"+{s:bonus_health_min} к мин. здоровью крипов у «Святейшее Убеждение»"
+		"DOTA_Tooltip_ability_special_bonus_unique_chen_5"	"+{s:bonus_damage_bonus} к доп. урону от атак у «Святейшее Убеждение»"
+		"DOTA_Tooltip_ability_special_bonus_unique_chen_6"	"–{s:value} сек. перезарядки «Божественная милость»"
+		"DOTA_Tooltip_ability_special_bonus_unique_chen_7"	"–{s:value} сек. перезарядки «Рука Господа»"
+		"DOTA_Tooltip_ability_special_bonus_unique_chen_8"	"+{s:bonus_bonus_movement_speed}% к замедлению от «Покаяние»"
+		"DOTA_Tooltip_ability_special_bonus_unique_chen_9"	"«Святейшее Убеждение» можно применять на древних крипов"
+		"DOTA_Tooltip_ability_special_bonus_unique_chen_10"	"Неограниченная дальность действия «Божественная милость»"
+		"DOTA_Tooltip_ability_special_bonus_unique_chen_11"	"«Покаяние» наносит {s:bonus_damage} урона"
+		"DOTA_Tooltip_ability_special_bonus_unique_chen_12"	"«Рука Господа» применяет сильное развеивание"
+		//----------------------------------------------------------------------------------------------------------------------------------------------------
+		//ALCHEMIST
+		"DOTA_Tooltip_ability_alchemist_acid_spray"									"Кислотный спрей"
+		"DOTA_Tooltip_ability_alchemist_acid_spray_Description"						"Распыляет в указанной области облако кислоты, которое наносит врагам периодический урон и снижает их броню."
+		"DOTA_Tooltip_ability_alchemist_acid_spray_Lore"							"Используя семейные рецепты рода Темноваров, Раззил получает едкую кислоту, которая разрушает даже самые прочные металлы."
+		"DOTA_Tooltip_ability_alchemist_acid_spray_radius"							"РАДИУС ОБЛАКА:"
+		"DOTA_Tooltip_ability_alchemist_acid_spray_duration"						"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_alchemist_acid_spray_damage"							"УРОН В СЕКУНДУ:"
+		"DOTA_Tooltip_ability_alchemist_acid_spray_armor_reduction"					"СНИЖЕНИЕ БРОНИ:"
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_throw"					"Бросок Нестабильной смеси"
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_throw_Description"		"Бросайте, пока не взорвалось!"
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_Lore"					"Хоть превращение горы в золото и потерпело провал, благодаря ему была получена летучая микстура с разрушительным потенциалом."		
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction"						"Нестабильная смесь"
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_Description"			"Герой начинает встряхивать колбу с гремучей смесью, которую можно бросить во вражеского героя. При попадании колба взорвётся, оглушив всех противников в радиусе взрыва и нанеся им урон. Чем дольше смесь встряхивать, тем больше урона она нанесёт и тем дольше будет оглушение. Пока герой не бросит колбу, он передвигается быстрее. Максимальный эффект достигается после %brew_time% сек., однако если не выбросить колбу через %brew_explosion% секунды, она взорвётся в руках героя, подействовав и на него самого."
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_Facet_alchemist_mixologist"	"Перезарядка этой способности уменьшается на %chemical_rage_cooldown_reduction_pct%%%, когда на её владельца действует Chemical Rage."
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_Note0"					"Во время действия способность заменяется на бросок колбы. Встряхивая смесь, герой может передвигаться и действовать как обычно."
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_Note1"					"Таймер над головой героя показывает время, оставшееся до взрыва. Противники видят этот таймер."
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_Note2"					"Этой способностью можно совершить самоубийство."
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_Note3"					"Колбу нельзя сбить с цели. Её эффект перестаёт увеличиваться после броска."
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_Note4"					"Взрыв наносит урон как героям, так и крипам."
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_max_stun"				"МАКС. ОГЛУШЕНИЕ:"
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_move_speed"				"%ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:"
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_max_damage"				"МАКС. УРОН:"
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_radius"					"РАДИУС ВЗРЫВА:"
+		"DOTA_Tooltip_ability_alchemist_goblins_greed"								"Грявольская жадность"		
+		"DOTA_Tooltip_ability_alchemist_goblins_greed_Description"					"Позволяет синтезировать больше золота из врагов и рун. Дополнительное золото за убийство существ состоит из начального бонуса и нарастающего, который увеличивается с каждым существом, убитым в течение %duration% сек. после предыдущего. Также способность умножает золото от рун богатства."
+		"DOTA_Tooltip_ability_alchemist_goblins_greed_Facet_alchemist_dividends"	"Герой получает +%gpm_increase_per_stack% к золоту в минуту за каждый расплавленный для союзников Aghanim's Scepter."
+		"DOTA_Tooltip_ability_alchemist_goblins_greed_scepter_description"		    "Герой может расплавить Скипетр Аганима, чтобы передать союзнику все его улучшения и получить дополнительный урон от атак. Бонусы за несколько расплавленных скипетров складываются."
+		"DOTA_Tooltip_ability_alchemist_goblins_greed_abilitydraft_note"			"В этом режиме возможность расплавить Скипетр Аганима, чтобы передать союзному герою все его улучшения, привязана к способности Greevil's Greed, а не Chemical Rage. Сам предмет дарует герою дополнительный урон от атак и заклинаний за каждый расплавленный для союзников Aghanim's Scepter."
+		"DOTA_Tooltip_ability_alchemist_goblins_greed_Lore"							"Пускай эксперимент с горой и не удался, зато структуры поменьше Раззил легко обращает в звонкую монету."
+		"DOTA_Tooltip_ability_alchemist_goblins_greed_duration"						"МАКС. ИНТЕРВАЛ УБИЙСТВ:"
+		"DOTA_Tooltip_ability_alchemist_goblins_greed_bonus_gold"					"НАЧАЛЬНЫЙ БОНУС:"
+		"DOTA_Tooltip_ability_alchemist_goblins_greed_bonus_bonus_gold"				"НАРАСТАЮЩИЙ БОНУС:"		
+		"DOTA_Tooltip_ability_alchemist_goblins_greed_bonus_gold_cap"				"МАКСИМУМ ДОП. ЗОЛОТА:"
+		"DOTA_Tooltip_ability_alchemist_goblins_greed_bounty_multiplier"			"МНОЖИТЕЛЬ РУН БОГАТСТВА:"
+		"DOTA_Tooltip_ability_alchemist_goblins_greed_scepter_bonus_damage"			"ДОП. УРОН ОТ АТАК ЗА СКИПЕТР:"
+		"DOTA_Tooltip_ability_alchemist_chemical_rage"								"Химическая ярость"
+		"DOTA_Tooltip_ability_alchemist_chemical_rage_Description"					"Особая химическая смесь разъяряет героя, отчего задержка перед его атакой уменьшается, а скорость его передвижения и восстановление здоровья увеличиваются.\n\nТИП РАЗВЕИВАНИЯ: нормальное"
+		"DOTA_Tooltip_ability_alchemist_chemical_rage_abilitydraft_note"			"Также даёт способность Грявольская жадность."
+		"DOTA_Tooltip_ability_alchemist_chemical_rage_Lore"							"Варево, которым Раззил напоил огра для побега из тюрьмы, стало полезным в сражении зельем."
+		"DOTA_Tooltip_ability_alchemist_chemical_rage_Note0"						"Трансформация длится %transformation_time% сек., которые можно использовать для уклонения от снарядов и оглушений."
+		"DOTA_Tooltip_ability_alchemist_chemical_rage_duration"						"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_alchemist_chemical_rage_base_attack_time"				"БАЗОВЫЙ ИНТЕРВАЛ АТАК:"
+		"DOTA_Tooltip_ability_alchemist_chemical_rage_bonus_health_regen"			"ДОП. ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:"
+		"DOTA_Tooltip_ability_alchemist_chemical_rage_bonus_movespeed"				"ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:"
+
+		"DOTA_Tooltip_ability_alchemist_corrosive_weaponry"							"Едкое вооружение"
+		"DOTA_Tooltip_ability_alchemist_corrosive_weaponry_Description"				"Герой усиливает свои оружие и способности кислотой, которая снижает скорость передвижения и базовый урон его жертв. Этот эффект складывается.\n\nАтаки героя накладывают %stacks_per_attack% эффекта, а Unstable Concoction накладывает %one_tooltip% эффект за каждую секунду подготовки."
+		"DOTA_Tooltip_ability_alchemist_corrosive_weaponry_max_stacks"				"МАКСИМУМ ЭФФЕКТОВ:"
+		"DOTA_Tooltip_ability_alchemist_corrosive_weaponry_debuff_duration"			"ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:"
+		"DOTA_Tooltip_ability_alchemist_corrosive_weaponry_slow_per_stack"			"%ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ ЗА ЭФФЕКТ:"
+		"DOTA_Tooltip_ability_alchemist_corrosive_weaponry_attack_damage_per_stack"	"%СНИЖЕНИЕ БАЗОВОГО УРОНА ОТ АТАК ЗА ЭФФЕКТ:"
+
+		"DOTA_Tooltip_modifier_alchemist_corrosive_weaponry_debuff"							"Едкое вооружение"
+		"DOTA_Tooltip_modifier_alchemist_corrosive_weaponry_debuff_description"				"Передвижение замедлено на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%. Базовый урон от атак уменьшен на %dMODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE%%%."
+
+		"DOTA_Tooltip_ability_alchemist_berserk_potion"								"Зелье берсерка"
+		"DOTA_Tooltip_ability_alchemist_berserk_potion_Description"					"Бросает в союзника зелье, которое применяет на него нормальное развеивание, увеличивает восстановление здоровья, а также ускоряет атаку и передвижение.<br><br>ТИП РАЗВЕИВАНИЯ: нормальное"
+		"DOTA_Tooltip_ability_alchemist_berserk_potion_Facet_alchemist_mixologist"	"Перезарядка этой способности уменьшается на %chemical_rage_cooldown_reduction_pct%%%, когда на её владельца действует Chemical Rage."
+		"DOTA_Tooltip_ability_alchemist_berserk_potion_attack_speed"				"ДОП. СКОРОСТЬ АТАКИ:"
+		"DOTA_Tooltip_ability_alchemist_berserk_potion_move_speed"					"ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:"
+		"DOTA_Tooltip_ability_alchemist_berserk_potion_hp_regen"				    "ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:"
+		"DOTA_Tooltip_ability_alchemist_berserk_potion_duration"					"ДЛИТЕЛЬНОСТЬ:"
+
+		"DOTA_Tooltip_modifier_alchemist_unstable_concoction"				"Нестабильная смесь"
+		"DOTA_Tooltip_modifier_alchemist_unstable_concoction_Description"	"Готовит гремучую смесь! Скорость передвижения увеличена на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
+		"DOTA_Tooltip_modifier_alchemist_acid_spray"						"Кислотный спрей"
+		"DOTA_Tooltip_modifier_alchemist_acid_spray_Description"			"Наносит периодический урон и уменьшает броню на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%."
+		"DOTA_Tooltip_modifier_alchemist_acid_spray_ally_Description"		"Броня увеличена на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%."
+		"DOTA_Tooltip_modifier_alchemist_goblins_greed"						"Грявольская жадность"
+		"DOTA_Tooltip_modifier_alchemist_goblins_greed_Description"			"Вы получаете дополнительное золото за убийство юнитов."
+		"DOTA_Tooltip_modifier_alchemist_chemical_rage"						"Chemical Rage"
+		"DOTA_Tooltip_modifier_alchemist_chemical_rage_Description"			"Интервал между атаками уменьшен до %fMODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT%, восстановление здоровья увеличено на %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%, скорость передвижения увеличена на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT%."
+		"DOTA_Tooltip_modifier_item_ultimate_scepter_consumed"		"Aghanim's Blessing"
+		"DOTA_Tooltip_modifier_item_ultimate_scepter_consumed_Description"	"Это существо навсегда получило улучшение от Aghanim's Scepter."
+		"DOTA_Tooltip_modifier_item_ultimate_scepter_consumed_alchemist"		"Aghanim's Blessing (Alchemist)"
+		"DOTA_Tooltip_modifier_item_ultimate_scepter_consumed_alchemist_Description"	"Это существо навсегда получило улучшение и бонусные характеристики от Aghanim's Scepter."
+		"DOTA_Tooltip_modifier_alchemist_scepter_bonus_damage"				"Дар Аганима" 
+		"DOTA_Tooltip_modifier_alchemist_scepter_bonus_damage_Description"	"За расплавленные для союзников Aghanim's Scepter урон от атак увеличен на %dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE%." 
+		"DOTA_Tooltip_modifier_alchemist_scepter_bonus_damage_Description_facet_alchemist_dividends"	"За расплавленные для союзников Aghanim's Scepter золото в минуту увеличено на %dMODIFIER_PROPERTY_TOOLTIP%, а урон от атак увеличен на %dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE%."
+		"DOTA_Tooltip_modifier_alchemist_berserk_potion"				"Berserk Potion"
+		"DOTA_Tooltip_modifier_alchemist_berserk_potion_Description"	"Увеличивает скорость атаки и восстановление здоровья."
+
+		"DOTA_Tooltip_facet_alchemist_mixologist"								"Mixologist"
+		"DOTA_Tooltip_facet_alchemist_mixologist_Description"					"Unstable Concoction и Berserk Potion перезаряжаются быстрее, когда действует способность Chemical Rage."
+		"DOTA_Tooltip_facet_alchemist_seed_money"									"Seed Money"
+		"DOTA_Tooltip_facet_alchemist_dividends"									"Dividends"
+		//----------------------------------------------------------------------------------------------------------------------------------------------------
+		// NEUTRAL UNIT TOOLTIPS
+		
+		// Kobold: Steal Weapon
+		"DOTA_Tooltip_ability_kobold_disarm"									"Кража Оружия"
+
+		// Berserker Troll: Break
+		"DOTA_Tooltip_ability_berserker_troll_break"							"Пролом"
+		
+		"DOTA_Tooltip_modifier_break"											"Истощение"
+
+		// Hill Troll: Rally
+		"DOTA_Tooltip_ability_hill_troll_rally"									"Стачка"
+
+		"DOTA_Tooltip_modifier_hill_troll_rally"								"Стачка"
+
+		// Fell Ghost: Vex
+		"DOTA_Tooltip_ability_fel_beast_haunt"									"Досада"
+
+		"DOTA_Tooltip_modifier_fel_beast_haunt"									"Безмолвие"
+		
+		// Ogre Bruiser: Ogre Smash
+		"DOTA_Tooltip_ability_ogre_bruiser_ogre_smash"							"Огр Крушит!"
+
+		// Kobold Taskmaster: Prospecting
+		"DOTA_Tooltip_ability_kobold_tunneler_prospecting"									"Аура Поиска"
+
+		"DOTA_Tooltip_modifier_kobold_tunneler_prospecting"									"Аура Поиска"
+		"DOTA_Tooltip_modifier_kobold_tunneler_prospecting_aura_money"						"Аура Поиска"
+
+		// Kobold Foreman: Speed Aura
+		"DOTA_Tooltip_ability_kobold_taskmaster_speed_aura"									"Аура Скорости"
+
+		"DOTA_Tooltip_modifier_kobold_taskmaster_speed_aura_bonus"							"Аура Скорости"
+		
+		// Hill Troll Priest: Mana Aura
+		"DOTA_Tooltip_ability_forest_troll_high_priest_mana_aura"									"Аура Маны"
+
+		"DOTA_Tooltip_modifier_forest_troll_high_priest_mana_aura_bonus"							"Аура Маны"
+
+		// Hill Troll Priest: Heal Amplification Aura
+		"DOTA_Tooltip_ability_forest_troll_high_priest_heal_amp_aura"									"Аура Усиленного Исцеления"
+
+		"DOTA_Tooltip_modifier_forest_troll_high_priest_heal_amp_aura_bonus"							"Аура Усиленного Исцеления"
+
+		"DOTA_Tooltip_modifier_forest_troll_high_priest_heal_amp_bonus"									"Аура Усиленного Исцеления"
+
+		// Hellbear Smasher: Swiftness Aura
+		"DOTA_Tooltip_ability_centaur_khan_endurance_aura"									"Аура Прыти"
+
+		"DOTA_Tooltip_modifier_centaur_khan_endurance_aura_bonus"							"Аура Прыти"
+
+		"DOTA_Tooltip_ability_furbolg_enrage_attack_speed"									"Агония: Натиск"
+
+		"DOTA_Tooltip_modifier_furbolg_enrage_attack_speed"									"Месть картошечки"
+		
+		"DOTA_Tooltip_ability_furbolg_enrage_damage"									"Агония: Мощь"
+
+		"DOTA_Tooltip_modifier_furbolg_enrage_damage"									"Месть помидорки"
+
+		// Centaur Conqueror: War Stomp
+		"DOTA_Tooltip_ability_centaur_khan_war_stomp"										"Топот Войны"
+
+		// Vhoul Assassin: Envenomed Weapon
+		"DOTA_Tooltip_ability_gnoll_assassin_envenomed_weapon"								"Отравленное Оружие"
+
+		"DOTA_Tooltip_modifier_gnoll_assassin_envenomed_weapon_poison"						"Отравленное Оружие"
+
+		"DOTA_Tooltip_modifier_gnoll_assassin_envenomed_weapon"								"Отравленное Оружие"
+
+		// Ghost: Frost Attack
+		"DOTA_Tooltip_ability_ghost_frost_attack"											"Морозная Атака"
+
+		"DOTA_Tooltip_modifier_ghost_frost_attack_slow"										"Морозная Атака"
+
+		"DOTA_Tooltip_modifier_ghost_frost_attack"										    "Морозная Атака"
+
+		// Hellbear Smasher: Thunder Clap
+		"DOTA_Tooltip_ability_polar_furbolg_ursa_warrior_thunder_clap"						"Раскат Грома"
+
+		"DOTA_Tooltip_modifier_polar_furbolg_ursa_warrior_thunder_clap"						"Раскат Грома"
+
+		// Generic Neutral Ability: Spell Immunity
+		"DOTA_Tooltip_ability_neutral_spell_immunity"										"Spell Immunity"
+
+		"DOTA_Tooltip_modifier_neutral_spell_immunity_visible"								"Невосприимчивость к магии"
+
+		// Generic Neutral Ability: Lost
+		"DOTA_Tooltip_modifier_neutral_creep_lost"											"Существо потерялось"
+
+		// Neutral: Cloak Aura
+		"DOTA_Tooltip_ability_mudgolem_cloak_aura"										    "Аура Покрова"
+
+		"DOTA_Tooltip_modifier_mudgolem_cloak_aura"	        								"Аура Покрова"
+		"DOTA_Tooltip_modifier_mudgolem_cloak_aura_bonus"	        						"Аура Покрова"
+
+		// Ogre Frostmage: Ice Armor
+		"DOTA_Tooltip_ability_ogre_magi_frost_armor"										"Ледяная Броня"
+
+		"DOTA_Tooltip_modifier_ogre_magi_frost_armor"										"Ледяная Броня"
+		"DOTA_Tooltip_modifier_ogre_magi_frost_armor_slow"									"Замедление от «Ледяная Броня»"
+
+		// Dark Troll Summoner: Ensnare
+		"DOTA_Tooltip_ability_dark_troll_warlord_ensnare"									"Силки"
+		
+		"DOTA_Tooltip_modifier_dark_troll_warlord_ensnare"									"Силки"
+
+		// Dark Troll Summoner: Raise Dead
+		"DOTA_Tooltip_ability_dark_troll_warlord_raise_dead"								"Воскрешение Мёртвых"
+
+		// Giant Wolf: Critical Strike
+		"DOTA_Tooltip_ability_giant_wolf_critical_strike"									"Критический Удар"
+
+		"DOTA_Tooltip_ability_giant_wolf_intimidate"									"Устрашение"
+
+		"DOTA_Tooltip_modifier_giant_wolf_intimidate"									"Устрашение"
+
+		// Alpha Wolf: Critical Strike
+		"DOTA_Tooltip_ability_alpha_wolf_critical_strike"									"Критический Удар"
+
+		"DOTA_Tooltip_modifier_alpha_wolf_critical_strike"									"Критический Удар"
+
+		"DOTA_Tooltip_ability_ice_shaman_incendiary_bomb"									"Бомба Ледопламени"
+
+		"DOTA_Tooltip_modifier_ice_shaman_incendiary_bomb"									"Бомба Ледопламени"
+
+		"DOTA_Tooltip_ability_frostbitten_golem_time_warp_aura"									"Аура Искривления Времени"
+
+		"DOTA_Tooltip_modifier_frostbitten_golem_time_warp_aura_bonus"							"Аура Искривления Времени"
+
+		// Alpha Wolf: Wolf Aura
+		"DOTA_Tooltip_ability_alpha_wolf_command_aura"										"Аура Вожака Стаи"
+
+		"DOTA_Tooltip_modifier_alpha_wolf_command_aura_bonus"								"Аура Вожака Стаи"
+
+		// Rock golem: Weakening Aura
+		"DOTA_Tooltip_ability_ancient_rock_golem_weakening_aura"										"Ослабляющая Аура"
+
+		"DOTA_Tooltip_modifier_ancient_rock_golem_weakening"										"Ослабляющая Аура"
+
+		// Alpha Wolf: Wolf Aura
+		"DOTA_Tooltip_ability_black_drake_magic_amplification_aura"										"Аура Магического Усиления"
+
+		"DOTA_Tooltip_modifier_black_drake_magic_amplification"											"Аура Магического Усиления"
+
+		// Tornado: Tempest
+		"DOTA_Tooltip_ability_tornado_tempest"												"Tempest"
+		"DOTA_Tooltip_ability_tornado_tempest_Description"									"Огромное «Торнадо» замедляет всех врагов, находящихся рядом с ним, а также наносит периодический урон, зависящий от того, как близко они находятся к «Торнадо»."
+
+		"DOTA_Tooltip_modifier_tornado_tempest_debuff"										"Tempest"
+		"DOTA_Tooltip_modifier_tornado_tempest_debuff_Description"							"Скорость передвижения уменьшена на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, скорость атаки уменьшена на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%. Получает периодический урон в зависимости от того, как близко находится «Торнадо»."
+
+		// Wildwing: Tornado
+		"DOTA_Tooltip_ability_enraged_wildkin_tornado"										"Торнадо"
+
+		// Wildwing Ripper: Hurricane
+		"DOTA_Tooltip_ability_enraged_wildkin_hurricane"										"Ураган"
+
+		"DOTA_Tooltip_modifier_enraged_wildkin_hurricane"										"Ураган"
+
+		// Wildwing Ripper: Toughness Aura
+		"DOTA_Tooltip_ability_flagbearer_creep_aura_effect"								"Inspiration Aura"
+
+		"DOTA_Tooltip_modifier_creep_bonus_xp"												"Увеличенная награда"
+
+		"DOTA_Tooltip_modifier_flagbearer_creep_aura_effect"								"Inspiration Aura"
+
+		"DOTA_Tooltip_ability_enraged_wildkin_toughness_aura"								"Аура Прочности"
+
+		"DOTA_Tooltip_modifier_enraged_wildkin_toughness_aura_bonus"						"Аура Прочности"
+
+		// Granite Golem: Granite Aura
+		"DOTA_Tooltip_ability_granite_golem_hp_aura"								"Гранитная Аура"
+
+		"DOTA_Tooltip_modifier_granite_golem_hp_aura_bonus"						"Гранитная Аура"
+
+		// Prowler Acolyte (Spawnlord): Prowler Aura
+		"DOTA_Tooltip_ability_spawnlord_aura"               "Аура Мародёра"
+
+        "DOTA_Tooltip_modifier_spawnlord_aura_bonus"                "Аура Мародёра"
+
+		// Prowler Shaman (Spawnlord Master): Prowler Freeze
+		"DOTA_Tooltip_ability_spawnlord_master_freeze"              "Окаменение"
+
+        "DOTA_Tooltip_modifier_spawnlord_master_freeze_root"              "Окаменение"
+
+		// Prowler Shaman (Spawnlord Master): Prowler Stomp
+		"DOTA_Tooltip_ability_spawnlord_master_stomp"               "Осквернение"
+
+        "DOTA_Tooltip_modifier_spawnlord_master_stomp"              "Осквернение"
+
+		// Satyr Banisher: Purge
+		"DOTA_Tooltip_ability_satyr_trickster_purge"										"Очищение"
+		
+		"DOTA_Tooltip_modifier_satyr_trickster_purge"										"Очищение"
+
+		// Satyr Mindstealer: Mana Burn
+		"DOTA_Tooltip_ability_satyr_soulstealer_mana_burn"									"Сжигание Маны"
+		
+		// Satyr Tormenter: Shockwave
+		"DOTA_Tooltip_ability_satyr_hellcaller_shockwave"									"Ударная Волна"
+
+		// Satyr Tormenter: Unholy Aura
+		"DOTA_Tooltip_ability_satyr_hellcaller_unholy_aura"									"Нечестивая Аура"
+
+		"DOTA_Tooltip_modifier_satyr_hellcaller_unholy_aura_bonus"							"Нечестивая Аура"
+
+		// Hill Troll Priest: Heal
+		"DOTA_Tooltip_ability_forest_troll_high_priest_heal"								"Исцеление"
+
+		// Warpine Raider
+		"DOTA_Tooltip_ability_warpine_raider_seed_shot"				"Семя в Темя"
+
+		// Mud Golems
+		"DOTA_Tooltip_ability_mud_golem_hurl_boulder"				"Швырнуть Валун"
+	
+		"DOTA_Tooltip_ability_mud_golem_rock_destroy"				"Раскол Осколка"
+		
+		"DOTA_Tooltip_modifier_mud_golem_rock_destroy"				"Раскол Осколка"
+
+		// Harpy Stormcrafter: Chain Lightning
+		"DOTA_Tooltip_ability_harpy_storm_chain_lightning"									"Цепная Молния"
+
+		// Harpy Scout: Take Off
+		"DOTA_Tooltip_ability_harpy_scout_take_off"									"Взлёт"
+
+		"DOTA_Tooltip_modifier_harpy_scout_take_off"								"Полёт"
+
+		// Black Dragon: Splash Attack
+		"DOTA_Tooltip_ability_black_dragon_splash_attack"									"Атака по Площади"
+		
+		// Black Dragon: Dragonhide Aura	
+		"DOTA_Tooltip_ability_black_dragon_dragonhide_aura"									"Аура Драконьей Шкуры"
+	
+		"DOTA_Tooltip_modifier_black_dragon_dragonhide_aura_bonus"							"Аура Драконьей Шкуры"
+
+		// Black Dragon: Fireball
+		"DOTA_Tooltip_ability_black_dragon_fireball"									    "Огненный Шар"
+
+		// Drakken Sentinel: Evasion
+
+		"DOTA_Tooltip_ability_blue_dragonspawn_sorcerer_evasion"							"Evasion"
+		"DOTA_Tooltip_ability_blue_dragonspawn_sorcerer_evasion_Description"				"«Drakken Sentinel» частично является неземным существом, что делает его сложной целью для атак."
+
+		// Drakken Armorer: Evasion
+		"DOTA_Tooltip_ability_blue_dragonspawn_overseer_evasion"							"Evasion"
+		"DOTA_Tooltip_ability_blue_dragonspawn_overseer_evasion_Description"				"Drakken Armorer быстро мчится, становясь трудной мишенью для атак."
+
+		// Drakken Armorer: Guardian Aura
+		"DOTA_Tooltip_ability_blue_dragonspawn_overseer_devotion_aura"						"Guardian Aura"
+		"DOTA_Tooltip_ability_blue_dragonspawn_overseer_devotion_aura_Description"			"«Drakken Armorer» имеет повышенную сопротивляемость физическому урону, так же как и все союзные войска, находящиеся рядом с ним."
+
+
+		"DOTA_Tooltip_modifier_blue_dragonspawn_overseer_devotion_aura_bonus"				"Guardian Aura"
+
+		// Big Thunder Lizard: Slam
+		"DOTA_Tooltip_ability_big_thunder_lizard_slam"										"Хлопок"
+
+		"DOTA_Tooltip_modifier_big_thunder_lizard_slam"										"Хлопок"
+
+		// Big Thunder Lizard: Frenzy
+		"DOTA_Tooltip_ability_big_thunder_lizard_frenzy"									"Безумие"
+
+		"DOTA_Tooltip_modifier_big_thunder_lizard_frenzy"									"Безумие"
+
+		// Big Thunder Lizard: War Drums Aura
+		"DOTA_Tooltip_ability_big_thunder_lizard_wardrums_aura"								"Аура Барабанов Войны"
+		
+		"DOTA_Tooltip_modifier_big_thunder_lizard_wardrums_aura"							"Аура Барабанов Войны"
+
+		//Frogmen: Riverborn Aura
+		"DOTA_Tooltip_ability_frogmen_riverborn_aura"								"Аура Рекорождённых"
+		
+		"DOTA_Tooltip_modifier_frogmen_riverborn_aura_bonus"							"Аура Рекорождённых"
+
+		"DOTA_Tooltip_ability_frogmen_arm_of_the_deep"							"Лапы Омута"
+
+		"DOTA_Tooltip_ability_frogmen_tendrils_of_the_deep"							"Щупальца Омута"
+
+		"DOTA_Tooltip_ability_frogmen_congregation_of_the_deep"							"Стая Омута"
+
+		"DOTA_Tooltip_modifier_frogmen_arm_of_the_deep_stun"						"Оглушение"
+
+		"DOTA_Tooltip_ability_frogmen_water_bubble_small"							"Водяной Пузырь (Малый)"
+
+		"DOTA_Tooltip_ability_frogmen_water_bubble_medium"							"Водяной Пузырь (Средний)"
+
+		"DOTA_Tooltip_ability_frogmen_water_bubble_large"							"Водяной Пузырь (Крупный)"
+
+		"DOTA_Tooltip_modifier_frogmen_water_bubble"								"Водяной Пузырь"
+
+		//----------------------------------------------------------------------------------------------------------------------------------------------------
+		
+		// Roshan
+		"DOTA_Tooltip_Ability_roshan_spell_block"				"Блокирование заклинаний"
+	
+		"DOTA_Tooltip_Ability_roshan_bash"					"Оглушающий Удар"
+
+		"DOTA_Tooltip_Ability_roshan_slam"					"Хлопок"
+
+		"DOTA_Tooltip_Ability_roshan_devotion"				"Strength of the Immortal"
+		
+		"DOTA_Tooltip_Ability_roshan_revengeroar"				"Рёв Возмездия"
+
+		"DOTA_Tooltip_Ability_roshan_grab_and_throw"					"Бросок"
+
+		"DOTA_Tooltip_modifier_roshan_revengeroar"			"Roar of Retribution"
+		"DOTA_Tooltip_modifier_roshan_revengeroar_disarm"				"Roar of Retribution"
+
+		//терзатель
+		"DOTA_Tooltip_Ability_miniboss_unyielding_shield"		"Несокрушимый Щит"
+		"DOTA_Tooltip_Ability_miniboss_reflect"					"Отражение"
+		"DOTA_Tooltip_Ability_miniboss_radiance"				"Сияние"
+		"DOTA_Tooltip_Ability_miniboss_alleviation"				"Умерь Терзанья"
+
+		"DOTA_Tooltip_modifier_miniboss_unyielding_shield"		"Несокрушимый Щит"
+		"DOTA_Tooltip_modifier_miniboss_reflect"				"Отражение"
+		"DOTA_Tooltip_modifier_miniboss_radiance"				"Сияние"
+		//"DOTA_Tooltip_modifier_miniboss_radiance_debuff"		"Burn Damage"
+		"DOTA_Tooltip_modifier_miniboss_alleviation_active"		"Умерь Терзанья"
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		// powerbicats.ru - abilities_russian
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		
 	}
 }
