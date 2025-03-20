@@ -12,7 +12,8 @@
             },
             {
                 "name": "Unstable Concoction Throw",
-                "key": "DOTA_Tooltip_ability_alchemist_unstable_concoction_throw"
+                "key": "DOTA_Tooltip_ability_alchemist_unstable_concoction_throw",
+                "link":[]
             },
             {
                 "name": "Unstable Concoction",
