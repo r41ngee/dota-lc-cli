@@ -1,5 +1,4 @@
 import localparser
-import jsontopickle
 from clilogic import *
 from tkinter.filedialog import askdirectory
 import json
