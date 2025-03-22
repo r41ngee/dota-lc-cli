@@ -7,3 +7,4 @@ jsontopickle.py
 /dist
 main.spec
 /output
+/.venv/
