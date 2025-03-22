@@ -1,5 +1,6 @@
 import os
 
+
 class Skill:
     def __init__(self, desc):
         self.name = desc["name"]
@@ -8,12 +9,23 @@ class Skill:
 
         self.desc = desc
 
+    def ToKeyPair(self) -> dict[str, str]:
+        result = {}
+        result.update({self.key: self.name})
+        for i in self.linked:
+            result.update({i: self.name})
+
+        return result
+
 class Facet:
     def __init__(self, desc):
         self.name = desc["name"]
         self.key = desc["key"]
 
         self.desc = desc
+
+    def ToKeyPair(self):
+        result = {self.key: self.name}
 
 class Hero:
     def __init__(self, desc: dict):
@@ -24,8 +36,9 @@ class Hero:
 
         self.desc = desc
 
-def clear_console():
-    if os.name == 'nt':
-        os.system('cls')
-    else:
-        os.system('clear')
+    def ToKeyPair(self):
+        result = {self.key: self.name}
+        for i in self.skills:
+            result.update(i.ToKeyPair())
+        for i in self.facets:
+            result.update(i.ToKeyPair())

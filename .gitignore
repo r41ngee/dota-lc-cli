@@ -1,2 +1,9 @@
 jsontopickle.py
 /__pycache__
+*.py~
+*.un~
+.log
+/build
+/dist
+main.spec
+/output
