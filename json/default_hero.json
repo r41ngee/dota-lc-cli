@@ -65,5 +65,31 @@
                 "key": "DOTA_Tooltip_facet_alchemist_dividends"
             }
         ]
+    },
+    {
+        "name": "Abaddon",
+        "key": "npc_dota_hero_abaddon:n",
+        "skills": [
+            {
+                "name": "Mist Coil",
+                "key": "DOTA_Tooltip_ability_abaddon_death_coil",
+                "linked": []
+            },
+            {
+                "name": "Aphotic Shield",
+                "key": "DOTA_Tooltip_ability_abaddon_aphotic_shield",
+                "linked": [
+                    "DOTA_Tooltip_modifier_abaddon_aphotic_shield"
+                ]
+            },
+            {
+                "name": "Curse of Avernus",
+                "key": "DOTA_Tooltip_ability_abaddon_frostmourne",
+                "linked": [
+                    "DOTA_Tooltip_modifier_abaddon_frostmourne_debuff",
+                    "DOTA_Tooltip_modifier_abaddon_frostmourne_debuff_bonus"
+                ]
+            }
+        ]
     }
 ]
