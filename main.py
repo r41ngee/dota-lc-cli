@@ -3,6 +3,7 @@ import logging
 from tkinter.filedialog import askdirectory
 
 import art
+import vpk
 from tabulate import tabulate
 
 import dlctypes
