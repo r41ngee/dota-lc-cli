@@ -1,7 +1,7 @@
 import logging
 import re
 
-import tqdm
+from tqdm import tqdm
 
 from misc import clear_console
 
@@ -15,9 +15,7 @@ def parse(lines: list|tuple) -> dict:
     
     clear_console()
 
-    print("Распаковка файла локализации:")
-
-    for lindex in tqdm.tqdm(range(len_lines)):
+    for lindex in tqdm(range(len_lines), desc="Распаковка файла локализации", colour="red"):
         if lindex < 5 or lindex>len_lines-3:
                 logging.debug(f"Skipped parsing line {lindex+1} (shell lines)")
                 continue
@@ -48,7 +46,7 @@ def parse(lines: list|tuple) -> dict:
             logging.warning(f"Parse error: line {lindex+1} was not parsed")
             
             
-    logging.debug(f"Parser ended with {len(data)} pairs")
+    logging.info(f"Parser ended with {len(data)} pairs")
     return data
 
 def unparse(data: dict, lang: str = "russian") -> str:
@@ -58,13 +56,13 @@ def unparse(data: dict, lang: str = "russian") -> str:
 	"Tokens" 
 	{''' # ДОРАБОТАТЬ языки(на будущее)
 
-    logging.debug(f"Unparser starts with {len(data.items())} pairs")
+    logging.info(f"Unparser starts with {len(data.items())} pairs")
 
     i = 5
 
-    print("\nЗапаковка файла локализации:")
+    print("\n")
 
-    for key, value in tqdm.tqdm(data.items()):
+    for key, value in tqdm(data.items(), desc="Запаковка файла локализации", colour="green"):
         result += f'\n\t\t"{key}" "{value}"'
         logging.debug(f"Key {key} written with value {value} in line {i}")
         i+=1
