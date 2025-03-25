@@ -27,6 +27,8 @@ class Facet:
     def ToKeyPair(self):
         result = {self.key: self.name}
 
+        return result
+
 class Hero:
     def __init__(self, desc: dict):
         self.name: str = desc["name"]
@@ -42,3 +44,5 @@ class Hero:
             result.update(i.ToKeyPair())
         for i in self.facets:
             result.update(i.ToKeyPair())
+
+        return result

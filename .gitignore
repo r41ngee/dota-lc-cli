@@ -1,10 +1,12 @@
 jsontopickle.py
 /__pycache__
-*.py~
-*.un~
 .log
 /build
 /dist
 main.spec
 /output
 /.venv/
+lazygit.exe
+*~
+skip
+/package/pak01_dir/

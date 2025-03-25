@@ -1,3 +1,4 @@
 {
-    "dota_directory": "G:/SteamLibrary/steamapps/common/dota 2 beta"
+    "dota_directory": "G:/SteamLibrary/steamapps/common/dota 2 beta",
+    "logger_lvl": "debug"
 }

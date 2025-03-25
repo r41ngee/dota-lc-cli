@@ -5,16 +5,29 @@ from tkinter.filedialog import askdirectory
 import art
 from tabulate import tabulate
 
-import keyparser
-from clilogic import *
+import dlctypes
+import keyparser2
 from misc import *
 
+with open("json/config.json", "r") as f:
+    config = json.load(f)
+
+config_logger_level_dict = {
+    "info": logging.INFO,
+    "error": logging.ERROR,
+    "debug": logging.DEBUG,
+    "warning": logging.WARNING,
+    "warn": logging.WARN
+}
+
 logging.basicConfig(
-    level=logging.DEBUG,  # МЕНЯТЬ на info
+    level=config_logger_level_dict[config["logger_lvl"]],  # МЕНЯТЬ на info
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',  # Формат сообщения
     filename='.log',  # Имя файла для записи логов
     filemode='w'  # Режим записи в файл ('a' - добавление, 'w' - перезапись)
 )
+
+del config_logger_level_dict
 
 
 def main():
@@ -22,11 +35,11 @@ def main():
         # READER
         with open("json/user_hero.json") as file:
             herolist = json.load(file)
-        herolist = [Hero(i) for i in herolist]
+        herolist = [dlctypes.Hero(i) for i in herolist]
 
         with open("json/default_hero.json") as file:
             def_herolist = json.load(file)
-        def_herolist = [Hero(i) for i in def_herolist]
+        def_herolist = [dlctypes.Hero(i) for i in def_herolist]
 
         # WELCOME
         clear_console()
@@ -46,7 +59,7 @@ def main():
 
         match input("Ваш выбор: "):
             case "0": 
-                logging.info("Exit completed")
+                logging.info("Exit called")
                 return
             case "1":
                 clear_console()
@@ -65,7 +78,7 @@ def main():
 
                 match input("\nДействие: "):
                     case "1":
-                        hero.name = input("Ваше имя: ")
+                        hero.name = "#|m|#" + input("Ваше имя: ")
                         keylog(hero.key, hero.name)
                     case "2":
                         skills = []
@@ -96,19 +109,28 @@ def main():
                 logging.error("Неверный ввод")
     except Exception as e:
         logging.error(e)
+        endlog(1)
     finally:
-        logging.info("FINISHED")
-        with open("json/user_hero.json") as file:
-            json.dump([i.desc for i in herolist])
+        with open("json/user_hero.json", "w") as file:
+            json.dump([i.desc for i in herolist], file, indent=4)
 
         allkeys = {}
         for i in herolist:
             allkeys.update(i.ToKeyPair())
 
-        with open():
-            ...
+        with open("abilities_russian.txt", "r+", encoding="utf-8") as file:
+            lines = file.readlines()
 
+            abilities = keyparser2.parse(lines)
+            
+            abilities.update(allkeys)
+
+            file.seek(0)
+            file.truncate()
+
+            file.write(keyparser2.unparse(abilities))
 
 if __name__=="__main__":
     main()
     input("Нажмите ENTER чтобы выйти")
+    endlog(0)

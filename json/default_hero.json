@@ -73,22 +73,28 @@
             {
                 "name": "Mist Coil",
                 "key": "DOTA_Tooltip_ability_abaddon_death_coil",
-                "linked": []
+                "link": []
             },
             {
                 "name": "Aphotic Shield",
                 "key": "DOTA_Tooltip_ability_abaddon_aphotic_shield",
-                "linked": [
+                "link": [
                     "DOTA_Tooltip_modifier_abaddon_aphotic_shield"
                 ]
             },
             {
                 "name": "Curse of Avernus",
                 "key": "DOTA_Tooltip_ability_abaddon_frostmourne",
-                "linked": [
+                "link": [
                     "DOTA_Tooltip_modifier_abaddon_frostmourne_debuff",
                     "DOTA_Tooltip_modifier_abaddon_frostmourne_debuff_bonus"
                 ]
+            }
+        ],
+        "facet": [
+            {
+                "name": "The Quickening",
+                "key": "DOTA_Tooltip_ability_abaddon_the_quickening"
             }
         ]
     }
