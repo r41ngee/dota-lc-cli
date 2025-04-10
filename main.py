@@ -3,7 +3,7 @@ import logging
 from tkinter.filedialog import askdirectory
 
 import art
-import vpk
+from rich.console import Console
 from tabulate import tabulate
 
 import dlctypes
@@ -28,6 +28,8 @@ logging.basicConfig(
     filemode='w'
 )
 
+console = Console()
+
 del config_logger_level_dict
 
 
@@ -37,8 +39,6 @@ def main():
         with open("json/default_hero.json") as file:
             herolist = json.load(file)
         herolist = [dlctypes.Hero(i) for i in herolist]
-        
-        
 
         while True:  # Главный цикл меню
             # WELCOME
@@ -183,7 +183,6 @@ def main():
             lines = file.readlines()
 
             abilities = keyparser2.parse(lines)
-            
             abilities.update(allkeys)
 
             file.seek(0)

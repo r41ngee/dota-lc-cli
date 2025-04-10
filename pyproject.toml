@@ -9,7 +9,6 @@ readme = "README.md"
 requires-python = ">=3.11, <3.14"
 dependencies = [
     "altgraph (==0.17.4)",
-    "art (==6.4)",
     "auto-py-to-exe (==2.46.0)",
     "bottle (==0.13.2)",
     "bottle-websocket (==0.2.9)",
@@ -42,13 +41,12 @@ dependencies = [
     "requests (==2.32.3)",
     "rich (==14.0.0)",
     "tabulate (==0.9.0)",
-    "textual (==3.0.1)",
     "tqdm (==4.67.1)",
     "typing-extensions (==4.13.1)",
     "uc-micro-py (==1.0.3)",
-    "urllib3 (==2.3.0)",
     "zope-event (==5.0)",
-    "zope-interface (==7.2)"
+    "zope-interface (==7.2)",
+    "art (>=6.4,<7.0)"
 ]
 
 
