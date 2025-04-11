@@ -1,3 +1,7 @@
+# -----------
+# - r41ngee -
+# -----------
+
 import json
 import logging
 from tkinter.filedialog import askdirectory
@@ -7,7 +11,7 @@ from rich.console import Console
 from tabulate import tabulate
 
 import dlctypes
-import keyparser2
+import kvparser2
 from misc import *
 
 with open("json/config.json", "r") as f:
@@ -182,13 +186,13 @@ def main():
         with open("abilities_russian.txt", "r+", encoding="utf-8") as file:
             lines = file.readlines()
 
-            abilities = keyparser2.parse(lines)
+            abilities = kvparser2.parse(lines)
             abilities.update(allkeys)
 
             file.seek(0)
             file.truncate()
 
-            file.write(keyparser2.unparse(abilities))
+            file.write(kvparser2.unparse(abilities))
 
 if __name__=="__main__":
     main()

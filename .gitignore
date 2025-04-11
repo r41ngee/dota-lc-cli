@@ -1,12 +1,11 @@
-jsontopickle.py
 /__pycache__
 .log
 /build
 /dist
-main.spec
 /output
 /.venv/
 lazygit.exe
-*~
 skip
 /package/pak01_dir/
+.vscode/
+abilities_russian.txt

@@ -1,5 +1,6 @@
-import os
-
+# -----------
+# - r41ngee -
+# -----------
 
 class Skill:
     def __init__(self, desc):
