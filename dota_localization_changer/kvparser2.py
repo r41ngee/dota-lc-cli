@@ -7,17 +7,11 @@ import re
 
 from tqdm import tqdm
 
-from misc import clear_console
-
-# СДЕЛАТЬ АНИМКУ
-
 def parse(lines: list|tuple) -> dict:
     data = {}
     len_lines = len(lines)
     logging.debug(f"Started parsing with {len_lines} lines")
     parsed = 0
-    
-    clear_console()
 
     for lindex in tqdm(range(len_lines), desc="Распаковка файла локализации", colour="red"):
         if lindex < 5 or lindex>len_lines-3:

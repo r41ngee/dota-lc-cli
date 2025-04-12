@@ -4,13 +4,20 @@
 
 import logging
 import os
+import json
+
+with open("data/config.json", "r") as f:
+    config = json.load(f)
 
 
-def clear_console():
-    if os.name == 'nt':
-        os.system('cls')
-    else:
-        os.system('clear')
+def getLogLevel():
+    config_logger_level_dict = {
+        "info": logging.INFO,
+        "error": logging.ERROR,
+        "debug": logging.DEBUG,
+        "warning": logging.WARNING,
+        "warn": logging.WARN
+    }
 
 def keylog(key, val):
     logging.info(f"New value for key \"{key}\": \"{val}\"")

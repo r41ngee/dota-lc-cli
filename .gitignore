@@ -1,4 +1,4 @@
-/src/__pycache__
+/dota_localization_changer/__pycache__
 .log
 /build
 /dist
@@ -6,5 +6,5 @@
 /.venv/
 lazygit.exe
 /.vscode/
-data/abilities_russian.txt
+dota_localization_changer/data/abilities_russian.txt
 poetry.lock
