@@ -9,3 +9,4 @@ skip
 /package/pak01_dir/
 .vscode/
 abilities_russian.txt
+poetry.lock
