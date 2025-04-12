@@ -2,17 +2,20 @@
 # - r41ngee -
 # -----------
 
+# BOX IMPORTS
 import json
 import logging
 from tkinter.filedialog import askdirectory
 
+# REMOTE IMPORTS
 import art
-from rich.console import Console
-from tabulate import tabulate
-
 import dlctypes
 import kvparser2
+
+# LOCAL IMPORTS
 from misc import *
+from rich.console import Console
+from tabulate import tabulate
 
 with open("json/config.json", "r") as f:
     config = json.load(f)
