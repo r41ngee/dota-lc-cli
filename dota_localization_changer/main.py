@@ -2,17 +2,23 @@
 # - r41ngee -
 # -----------
 
+# -BOX IMPORTS-
 import logging
 import os
+import re
 import subprocess
 from time import sleep
 
+# -REMOTE IMPORTS
 import art
 import kvparser2
 import tabulate
+
+# -LOCAL IMPORTS-
 from config import *
 from dlctypes import *
 from misc import *
+
 
 logging.basicConfig(
     level=cfg["logger_lvl"],
