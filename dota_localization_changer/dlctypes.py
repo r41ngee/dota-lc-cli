@@ -28,6 +28,7 @@ class Hero:
     def __init__(self, desc: dict):
         self.name: str = desc["name"]
         self.key: str = desc["key"]
+        self.username = desc["username"]
         self.skills: list[Skill] = [Skill(i) for i in desc["skills"]]
         self.facets: list[Facet] = [Facet(i) for i in desc["facet"]]
 
