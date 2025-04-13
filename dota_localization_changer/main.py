@@ -27,7 +27,7 @@ logging.basicConfig(
     filemode='w'
 )
 
-VPK_PATH = f'"{cfg["dota_directory"] + "/game/dota_russian/pak01_dir.vpk"}"'
+VPK_PATH = cfg["dota_directory"] + "/game/dota_russian/pak01_dir.vpk"
 INNER_VPK_PATH = "resource/localization/abilities_russian.txt"
 
 def main():
@@ -150,9 +150,7 @@ def main():
     with open("data/abilities_russian.txt", "w", encoding="utf-8") as f:
         f.write(kvparser2.unparse(kv))
 
-    # print(VPK_PATH)
-    # subprocess.run(['./bin/vpkeditcli.exe', '--extract', './pak01', VPK_PATH], check=True)
-
+    ...
 
 
 if __name__=="__main__":
