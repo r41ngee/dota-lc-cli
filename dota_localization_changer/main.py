@@ -7,7 +7,7 @@ import logging
 import subprocess
 from time import sleep
 
-# -REMOTE IMPORTS
+# -REMOTE IMPORTS-
 import art
 import kvparser2
 import tabulate
@@ -28,14 +28,13 @@ logging.basicConfig(
 VPK_PATH = cfg["dota_directory"] + "/game/dota_russian/pak01_dir.vpk"
 INNER_VPK_PATH = "resource/localization/abilities_russian.txt"
 
-def main():
+def main() -> int:
     try:
         tagsfile = open("data/tags.json", "r+", encoding='utf-8')
         herolist = [Hero(i) for i in json.load(tagsfile)]
     except OSError as e:
         logging.error(e)
-        endlog(2)
-        return
+        return 2
     
     
     art.tprint("DOTA 2")
@@ -44,9 +43,10 @@ def main():
     art.tprint("@r41ngee")
 
     sleep(3)
-    cls()
 
     while True:
+        cls()
+
         print("Действия:")
         print("0. ВЫХОД")
         print("1. Изменить героя")
@@ -147,15 +147,29 @@ def main():
     for i in herolist:
         kv.update(i.ToKeyPair())
 
-    KVFILE.close()
+    abil_file.close()
+
+    tagsfile.seek(0)
+    json.dump([i.desc for i in herolist], tagsfile, indent=4, ensure_ascii=True)
+    tagsfile.close()
 
     with open("data/abilities_russian.txt", "w", encoding="utf-8") as f:
         f.write(kvparser2.unparse(kv))
 
-    ...
+    f.close()
+
+    subprocess.run([
+        "bin/vpkeditcli.exe",
+        "--add-file",
+        "./data/abilities_russian.txt",
+        "resource/localization/abilities_russian.txt",
+        VPK_PATH
+    ])
 
 
 if __name__=="__main__":
-    main()
+    result = main()
+    if result is None:
+        result = 0
     input("Нажмите ENTER чтобы выйти")
-    endlog(0)
+    endlog(result)
