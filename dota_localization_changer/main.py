@@ -4,8 +4,6 @@
 
 # -BOX IMPORTS-
 import logging
-import os
-import re
 import subprocess
 from time import sleep
 
