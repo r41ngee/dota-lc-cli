@@ -1,6 +1,8 @@
 # -----------
 # - r41ngee -
 # -----------
+from typing import Literal
+
 
 class Skill:
     def __init__(self, desc):
@@ -28,14 +30,15 @@ class Hero:
     def __init__(self, desc: dict):
         self.name: str = desc["name"]
         self.key: str = desc["key"]
-        self.username = desc["username"]
+        self.username: str = desc["username"]
+        self.gender: str | Literal["m", "f"] = desc["gender"]
         self.skills: list[Skill] = [Skill(i) for i in desc["skills"]]
         self.facets: list[Facet] = [Facet(i) for i in desc["facet"]]
 
         self.desc = desc
 
     def ToKeyPair(self):
-        result = {self.key: self.name}
+        result = {self.key: f"#|{self.gender}|#{self.name}"}
         for i in self.skills:
             result.update(i.ToKeyPair())
         for i in self.facets:

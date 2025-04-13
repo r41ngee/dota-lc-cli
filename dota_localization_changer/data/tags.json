@@ -3,6 +3,7 @@
         "name": "Alchemist",
         "key": "npc_dota_hero_alchemist:n",
         "username": null,
+        "gender": "m",
         "skills": [
             {
                 "name": "Acid Spray",
@@ -62,6 +63,7 @@
         "name": "Abaddon",
         "key": "npc_dota_hero_abaddon:n",
         "username": null,
+        "gender": "m",
         "skills": [
             {
                 "name": "Mist Coil",
