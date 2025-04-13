@@ -33,7 +33,7 @@ class Hero:
         self.username: str = desc["username"]
         self.gender: str | Literal["m", "f"] = desc["gender"]
         self.skills: list[Skill] = [Skill(i) for i in desc["skills"]]
-        self.facets: list[Facet] = [Facet(i) for i in desc["facet"]]
+        self.facets: list[Facet] = [Facet(i) for i in desc["facets"]]
 
         self.desc = desc
 
