@@ -24,7 +24,7 @@ logging.basicConfig(
     level=cfg["logger_lvl"],
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     filename='.log',
-    filemode='w'
+    filemode='a'
 )
 
 VPK_PATH = cfg["dota_directory"] + "/game/dota_russian/pak01_dir.vpk"
@@ -85,7 +85,8 @@ def main():
                         break
                     
                     try:
-                        current_hero = HEROLIST[hero_input - 1]  
+                        current_hero = HEROLIST[hero_input - 1]
+                        logging.info(f"{current_hero.name} chosen")
                     except IndexError:
                         logging.warning("Incorrect input in hero choice(missindexed)")
                         continue
@@ -109,6 +110,7 @@ def main():
                                 break
                             case "1":
                                 current_hero.username = input("Имя: ")
+                                logging.info(f"Name of hero {current_hero.name} is {current_hero.username} now")
                             case "2":
                                 skilltable = [["0", "Выход", None]]
                                 for i in current_hero.skills:
@@ -118,6 +120,7 @@ def main():
                                 skill_choice = int(input("Ввод: "))
                                 current_skill = current_hero.skills[skill_choice - 1]
                                 current_skill.username = input("Новое название способности: ")
+                                logging.info(f"Name of skill {current_skill.name} is {current_skill.username} now")
                             case "3":
                                 facettable = [["0", "Выход", None]]
                                 for i in current_hero.facets:
@@ -127,6 +130,7 @@ def main():
                                 facet_choice = int(input("Ввод: "))
                                 current_facet = current_hero.facets[facet_choice - 1]
                                 current_facet.username = input("Новое название аспекта: ")
+                                logging.info(f"Name of facet {current_facet.name} is {current_facet.username} now")
                                 
             case "2":
                 print("Ну сказано же что неактивно")
