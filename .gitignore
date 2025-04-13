@@ -8,5 +8,4 @@ lazygit.exe
 dota_localization_changer/data/abilities_russian.txt
 poetry.lock
 *.vpk
-compiler_config.json
 dota_localization_changer/output
