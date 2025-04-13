@@ -30,20 +30,13 @@ INNER_VPK_PATH = "resource/localization/abilities_russian.txt"
 
 def main():
     try:
-        KVFILE = open("data/abilities_russian.txt", "r", encoding='utf-8')
+        tagsfile = open("data/tags.json", "r+", encoding='utf-8')
+        herolist = [Hero(i) for i in json.load(tagsfile)]
     except OSError as e:
         logging.error(e)
         endlog(2)
         return
     
-    try:
-        DATAFILE = open("data/tags.json", "r", encoding='utf-8')
-    except OSError as e:
-        logging.error(e)
-        endlog(4)
-        return
-    
-    HEROLIST = [Hero(i) for i in json.load(DATAFILE)]
     
     art.tprint("DOTA 2")
     art.tprint("LOCALIZATION")
@@ -69,8 +62,8 @@ def main():
                 while True:
                     cls()
                     table = [["0", "Выход", None]]
-                    for i in HEROLIST:
-                        table.append([(HEROLIST.index(i)+ 1), i.name, i.username])
+                    for i in herolist:
+                        table.append([(herolist.index(i)+ 1), i.name, i.username])
 
                     print(tabulate.tabulate(table, headers=["ID", "Имя", "Кастомное имя"], missingval="N/A"))
                     try:
@@ -83,7 +76,7 @@ def main():
                         break
                     
                     try:
-                        current_hero = HEROLIST[hero_input - 1]
+                        current_hero = herolist[hero_input - 1]
                         logging.info(f"{current_hero.name} chosen")
                     except IndexError:
                         logging.warning("Incorrect input in hero choice(missindexed)")
@@ -91,6 +84,7 @@ def main():
 
                     while True:
                         cls()
+
                         art.tprint(current_hero.name)
 
                         print("Действия:")
@@ -134,7 +128,7 @@ def main():
                 print("Ну сказано же что неактивно")
                 continue
             case "3":
-                for i in HEROLIST:
+                for i in herolist:
                     i.username = i.name
 
                 continue
@@ -143,8 +137,14 @@ def main():
     
     cls()
 
-    kv: dict = kvparser2.parse(KVFILE.readlines())
-    for i in HEROLIST:
+    try:
+        abil_file = open("data/abilities_russian.txt", "r", encoding='utf-8')
+    except OSError as e:
+        logging.error(e)
+        return 2
+
+    kv: dict = kvparser2.parse(abil_file.readlines())
+    for i in herolist:
         kv.update(i.ToKeyPair())
 
     KVFILE.close()
