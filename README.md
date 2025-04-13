@@ -9,5 +9,7 @@ Dota 2 localization changer is app that can change name of Dota 2 heroes, skills
 - Changing heroes names
 - Changing skills names
 - Changing facets names
-- Changing items names ***WIP***
 
+## To do
+- Changing items names
+- Dota autorun after execution
