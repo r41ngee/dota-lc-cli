@@ -6,29 +6,23 @@ class Skill:
     def __init__(self, desc):
         self.name = desc["name"]
         self.key = desc["key"]
-        self.linked = desc["link"]
+        self.username = desc["username"]
 
         self.desc = desc
 
     def ToKeyPair(self) -> dict[str, str]:
-        result = {}
-        result.update({self.key: self.name})
-        for i in self.linked:
-            result.update({i: self.name})
-
-        return result
+        return {self.key: self.name}
 
 class Facet:
     def __init__(self, desc):
         self.name = desc["name"]
         self.key = desc["key"]
+        self.username = desc["username"]
 
         self.desc = desc
 
     def ToKeyPair(self):
-        result = {self.key: self.name}
-
-        return result
+        return {self.key: self.name}
 
 class Hero:
     def __init__(self, desc: dict):

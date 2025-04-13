@@ -10,6 +10,9 @@ with open("data/config.json", "r") as f:
     config = json.load(f)
 
 
+def cls():
+    os.system("cls")
+
 def getLogLevel():
     config_logger_level_dict = {
         "info": logging.INFO,
