@@ -1,12 +1,10 @@
-jsontopickle.py
-/__pycache__
+/dota_localization_changer/__pycache__
 .log
 /build
 /dist
-main.spec
 /output
 /.venv/
 lazygit.exe
-*~
-skip
-/package/pak01_dir/
+/.vscode/
+dota_localization_changer/data/abilities_russian.txt
+poetry.lock
