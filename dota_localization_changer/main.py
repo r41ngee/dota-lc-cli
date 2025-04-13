@@ -3,12 +3,13 @@
 # -----------
 
 import logging
+import os
+import subprocess
 from time import sleep
 
 import art
 import kvparser2
 import tabulate
-# -----------
 from config import *
 from dlctypes import *
 from misc import *
@@ -20,16 +21,19 @@ logging.basicConfig(
     filemode='w'
 )
 
+VPK_PATH = f'"{cfg["dota_directory"] + "/game/dota_russian/pak01_dir.vpk"}"'
+INNER_VPK_PATH = "resource/localization/abilities_russian.txt"
+
 def main():
     try:
-        KVFILE = open("data/abilities_russian.txt", "r")
+        KVFILE = open("data/abilities_russian.txt", "r", encoding='utf-8')
     except OSError as e:
         logging.error(e)
         endlog(2)
         return
     
     try:
-        DATAFILE = open("data/tags.json", "r")
+        DATAFILE = open("data/tags.json", "r", encoding='utf-8')
     except OSError as e:
         logging.error(e)
         endlog(4)
@@ -131,11 +135,19 @@ def main():
     
     cls()
 
-    # kv: dict = kvparser2.parse(KVFILE.readlines())
-    # for i in HEROLIST:
-    #     kv.update(i.ToKeyPair())
+    kv: dict = kvparser2.parse(KVFILE.readlines())
+    for i in HEROLIST:
+        kv.update(i.ToKeyPair())
 
-    # KVFILE.close()
+    KVFILE.close()
+
+    with open("data/abilities_russian.txt", "w", encoding="utf-8") as f:
+        f.write(kvparser2.unparse(kv))
+
+    # print(VPK_PATH)
+    # subprocess.run(['./bin/vpkeditcli.exe', '--extract', './pak01', VPK_PATH], check=True)
+
+
 
 if __name__=="__main__":
     main()
