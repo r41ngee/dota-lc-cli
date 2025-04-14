@@ -135,7 +135,7 @@ def main() -> int:
                 continue
             case "3":
                 for i in herolist:
-                    i.username = i.name
+                    i.username = None
 
                 continue
             case _:
@@ -148,21 +148,27 @@ def main() -> int:
     except OSError as e:
         logging.error(e)
         return 2
-
     kv: dict = kvparser2.parse(abil_file.readlines())
+    abil_file.close()
+
     for i in herolist:
         kv.update(i.ToKeyPair())
 
-    abil_file.close()
-
     tagsfile.seek(0)
-    json.dump([i.desc for i in herolist], tagsfile, indent=4, ensure_ascii=True)
+    json.dump([i.toDict() for i in herolist], tagsfile, indent=4, ensure_ascii=False)
+    tagsfile.truncate()
     tagsfile.close()
 
     with open("data/abilities_russian.txt", "w", encoding="utf-8") as f:
         f.write(kvparser2.unparse(kv))
+        f.close()
 
-    f.close()
+    subprocess.run([
+        "bin/vpkeditcli.exe",
+        "--remove-file",
+        "resource/localization/abilities_russian.txt",
+        VPK_PATH
+    ])
 
     subprocess.run([
         "bin/vpkeditcli.exe",
@@ -177,5 +183,5 @@ if __name__=="__main__":
     result = main()
     if result is None:
         result = 0
-    input("Нажмите ENTER чтобы выйти")
+    input("Нажмите ENTER чтобы выйти ")
     endlog(result)
