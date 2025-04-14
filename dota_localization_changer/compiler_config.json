@@ -18,6 +18,10 @@
    "value": true
   },
   {
+   "optionDest": "name",
+   "value": "changer"
+  },
+  {
    "optionDest": "contents_directory",
    "value": "."
   },
