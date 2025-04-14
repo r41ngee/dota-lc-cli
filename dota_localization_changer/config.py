@@ -1,7 +1,16 @@
 import json
+import logging
 from tkinter.filedialog import askdirectory
-with open("data/config.json", "r") as f:
-    cfg: dict[str, str] = json.load(f)
+
+from misc import *
+
+try:
+    with open("data/config.json", "r") as f:
+        cfg: dict[str, str] = json.load(f)
+except OSError as e:
+    logging.error(e)
+    endlog(3)
+    raise e
 
 DOTA_DIR = cfg["dota_directory"]
 if DOTA_DIR in ("", None):

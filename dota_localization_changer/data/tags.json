@@ -3,6 +3,7 @@
         "name": "Alchemist",
         "key": "npc_dota_hero_alchemist:n",
         "username": null,
+        "gender": "m",
         "skills": [
             {
                 "name": "Acid Spray",
@@ -40,21 +41,21 @@
                 "username": null
             }
         ],
-        "facet": [
+        "facets": [
             {
                 "name": "Mixologist",
-                "username": null,
-                "key": "DOTA_Tooltip_facet_alchemist_mixologist"
+                "key": "DOTA_Tooltip_facet_alchemist_mixologist",
+                "username": null
             },
             {
                 "name": "Seed Money",
-                "username": null,
-                "key": "DOTA_Tooltip_facet_alchemist_seed_money"
+                "key": "DOTA_Tooltip_facet_alchemist_seed_money",
+                "username": null
             },
             {
                 "name": "Dividends",
-                "username": null,
-                "key": "DOTA_Tooltip_facet_alchemist_dividends"
+                "key": "DOTA_Tooltip_facet_alchemist_dividends",
+                "username": null
             }
         ]
     },
@@ -62,6 +63,7 @@
         "name": "Abaddon",
         "key": "npc_dota_hero_abaddon:n",
         "username": null,
+        "gender": "m",
         "skills": [
             {
                 "name": "Mist Coil",
@@ -79,11 +81,11 @@
                 "username": null
             }
         ],
-        "facet": [
+        "facets": [
             {
                 "name": "The Quickening",
-                "username": null,
-                "key": "DOTA_Tooltip_ability_abaddon_the_quickening"
+                "key": "DOTA_Tooltip_ability_abaddon_the_quickening",
+                "username": null
             }
         ]
     }

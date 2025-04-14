@@ -2,9 +2,10 @@
 .log
 /build
 /dist
-/output
 /.venv/
 lazygit.exe
 /.vscode/
 dota_localization_changer/data/abilities_russian.txt
 poetry.lock
+*.vpk
+dota_localization_changer/output
