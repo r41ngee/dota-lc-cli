@@ -19,7 +19,7 @@ from misc import *
 
 
 logging.basicConfig(
-    level=cfg["logger_lvl"],
+    level=LOGGER_LEVEL,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     filename='.log',
     filemode='w'
@@ -104,9 +104,9 @@ def main() -> int:
                                 current_hero.username = input("Имя: ")
                                 logging.info(f"Name of hero {current_hero.name} is {current_hero.username} now")
                             case "2":
-                                print("Не работает")
-                                sleep(2)
-                                continue
+                                # print("Не работает")
+                                # sleep(2)
+                                # continue
                                 skilltable = [["0", "Выход", None]]
                                 for i in current_hero.skills:
                                     skilltable.append([current_hero.skills.index(i) + 1, i.name, i.username])
@@ -117,9 +117,9 @@ def main() -> int:
                                 current_skill.username = input("Новое название способности: ")
                                 logging.info(f"Name of skill {current_skill.name} is {current_skill.username} now")
                             case "3":
-                                print("Не работает")
-                                sleep(2)
-                                continue
+                                # print("Не работает")
+                                # sleep(2)
+                                # continue
                                 facettable = [["0", "Выход", None]]
                                 for i in current_hero.facets:
                                     facettable.append([current_hero.facets.index(i) + 1, i.name, i.username])
