@@ -19,7 +19,7 @@ from misc import *
 
 
 logging.basicConfig(
-    level=cfg["logger_lvl"],
+    level=LOGGER_LEVEL,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     filename='.log',
     filemode='w'
