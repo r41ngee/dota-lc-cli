@@ -104,28 +104,30 @@ def main() -> int:
                                 current_hero.username = input("Имя: ")
                                 logging.info(f"Name of hero {current_hero.name} is {current_hero.username} now")
                             case "2":
-                                # print("Не работает")
-                                # sleep(2)
-                                # continue
                                 skilltable = [["0", "Выход", None]]
                                 for i in current_hero.skills:
                                     skilltable.append([current_hero.skills.index(i) + 1, i.name, i.username])
 
                                 print(tabulate.tabulate(skilltable, headers=["ID", "Имя", "Кастомное имя"], missingval="N/A"))
                                 skill_choice = int(input("Ввод: "))
+
+                                if skill_choice == "0":
+                                    break
+
                                 current_skill = current_hero.skills[skill_choice - 1]
                                 current_skill.username = input("Новое название способности: ")
                                 logging.info(f"Name of skill {current_skill.name} is {current_skill.username} now")
                             case "3":
-                                # print("Не работает")
-                                # sleep(2)
-                                # continue
                                 facettable = [["0", "Выход", None]]
                                 for i in current_hero.facets:
                                     facettable.append([current_hero.facets.index(i) + 1, i.name, i.username])
 
                                 print(tabulate.tabulate(facettable, headers=["ID", "Имя", "Кастомное имя"], missingval="N/A"))
                                 facet_choice = int(input("Ввод: "))
+                                
+                                if facet_choice == "0":
+                                    break
+
                                 current_facet = current_hero.facets[facet_choice - 1]
                                 current_facet.username = input("Новое название аспекта: ")
                                 logging.info(f"Name of facet {current_facet.name} is {current_facet.username} now")
