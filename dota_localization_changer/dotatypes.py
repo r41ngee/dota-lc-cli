@@ -13,7 +13,10 @@ class Skill:
         self.desc = desc
 
     def ToKeyPair(self) -> dict[str, str]:
-        return {self.key: self.username}
+        if self.username is not None:
+            return {self.key: self.username}
+        else:
+            return {self.key: self.name}
     
     def toDict(self):
         return {
@@ -31,7 +34,10 @@ class Facet:
         self.desc = desc
 
     def ToKeyPair(self):
-        return {self.key: self.username}
+        if self.username is not None:
+            return {self.key: self.username}
+        else:
+            return {self.key: self.name}
     
     def toDict(self):
         return {
@@ -62,7 +68,7 @@ class Hero:
         }
 
     def ToKeyPair(self):
-        if self.username is None:
+        if self.username is not None:
             result = {self.key: f"#|{self.gender}|#{self.username}"}
         else:
             result = {self.key: f"#|{self.gender}|#{self.name}"}
