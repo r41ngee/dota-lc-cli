@@ -14,6 +14,7 @@ except OSError as e:
 
 DOTA_DIR = cfg["dota_directory"]
 if DOTA_DIR in ("", None):
+    print("Выберите корневую директорию доты (dota 2 beta)")
     DOTA_DIR = askdirectory(initialdir="C:\\Program Files (x86)\\Steam\\steamapps\\common\\dota 2 beta")
     cfg["dota_directory"] = DOTA_DIR
 
