@@ -16,10 +16,14 @@ class Skill:
         return {self.key: self.username}
     
     def toDict(self):
+        if self.username is None:
+            username = self.name
+        else:
+            username = self.username
         return {
             "name": self.name,
             "key": self.key,
-            "username": self.username,
+            "username": username,
         }
 
 class Facet:
@@ -34,10 +38,14 @@ class Facet:
         return {self.key: self.username}
     
     def toDict(self):
+        if self.username is None:
+            username = self.name
+        else:
+            username = self.username
         return {
             "name": self.name,
             "key": self.key,
-            "username": self.username,
+            "username": username,
         }
 
 class Hero:
@@ -52,10 +60,14 @@ class Hero:
         self.desc = desc
 
     def toDict(self) -> dict:
+        if self.username is None:
+            username = self.name
+        else:
+            username = self.username
         return {
             "name": self.name,
             "key": self.key,
-            "username": self.username,
+            "username": username,
             "gender": self.gender,
             "skills": [i.toDict() for i in self.skills],
             "facets": [i.toDict() for i in self.facets],
