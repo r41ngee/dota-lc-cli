@@ -9,3 +9,4 @@ dota_localization_changer/data/abilities_russian.txt
 poetry.lock
 *.vpk
 dota_localization_changer/output
+dota_localization_changer/default_data
