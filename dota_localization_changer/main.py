@@ -106,7 +106,7 @@ def main() -> int:
                             case "2":
                                 print("Не работает")
                                 sleep(2)
-                                break
+                                continue
                                 skilltable = [["0", "Выход", None]]
                                 for i in current_hero.skills:
                                     skilltable.append([current_hero.skills.index(i) + 1, i.name, i.username])
@@ -119,7 +119,7 @@ def main() -> int:
                             case "3":
                                 print("Не работает")
                                 sleep(2)
-                                break
+                                continue
                                 facettable = [["0", "Выход", None]]
                                 for i in current_hero.facets:
                                     facettable.append([current_hero.facets.index(i) + 1, i.name, i.username])
