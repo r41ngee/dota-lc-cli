@@ -11,7 +11,7 @@ except OSError as e:
     logging.error(e)
     endlog(3)
     raise e
-
+LOGGER_LEVEL = cfg["logger_lvl"]
 DOTA_DIR = cfg["dota_directory"]
 if DOTA_DIR in ("", None):
     print("Выберите корневую директорию доты (dota 2 beta)")
