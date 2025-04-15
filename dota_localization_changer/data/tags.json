@@ -2,90 +2,90 @@
     {
         "name": "Alchemist",
         "key": "npc_dota_hero_alchemist:n",
-        "username": null,
+        "username": "Alchemist",
         "gender": "m",
         "skills": [
             {
                 "name": "Acid Spray",
                 "key": "DOTA_Tooltip_ability_alchemist_acid_spray",
-                "username": null
+                "username": "Acid Spray"
             },
             {
                 "name": "Unstable Concoction Throw",
                 "key": "DOTA_Tooltip_ability_alchemist_unstable_concoction_throw",
-                "username": null
+                "username": "Unstable Concoction Throw"
             },
             {
                 "name": "Unstable Concoction",
                 "key": "DOTA_Tooltip_ability_alchemist_unstable_concoction",
-                "username": null
+                "username": "Unstable Concoction"
             },
             {
                 "name": "Greevil's Greed",
                 "key": "DOTA_Tooltip_ability_alchemist_goblins_greed",
-                "username": null
+                "username": "Greevil's Greed"
             },
             {
                 "name": "Chemical Rage",
                 "key": "DOTA_Tooltip_ability_alchemist_chemical_rage",
-                "username": null
+                "username": "Chemical Rage"
             },
             {
                 "name": "Corrosive Weaponry",
                 "key": "DOTA_Tooltip_ability_alchemist_corrosive_weaponry",
-                "username": null
+                "username": "Corrosive Weaponry"
             },
             {
                 "name": "Berserk Potion",
                 "key": "DOTA_Tooltip_ability_alchemist_berserk_potion",
-                "username": null
+                "username": "Berserk Potion"
             }
         ],
         "facets": [
             {
                 "name": "Mixologist",
                 "key": "DOTA_Tooltip_facet_alchemist_mixologist",
-                "username": null
+                "username": "Mixologist"
             },
             {
                 "name": "Seed Money",
                 "key": "DOTA_Tooltip_facet_alchemist_seed_money",
-                "username": null
+                "username": "Seed Money"
             },
             {
                 "name": "Dividends",
                 "key": "DOTA_Tooltip_facet_alchemist_dividends",
-                "username": null
+                "username": "Dividends"
             }
         ]
     },
     {
         "name": "Abaddon",
         "key": "npc_dota_hero_abaddon:n",
-        "username": null,
+        "username": "Abaddon",
         "gender": "m",
         "skills": [
             {
                 "name": "Mist Coil",
                 "key": "DOTA_Tooltip_ability_abaddon_death_coil",
-                "username": null
+                "username": "Mist Coil"
             },
             {
                 "name": "Aphotic Shield",
                 "key": "DOTA_Tooltip_ability_abaddon_aphotic_shield",
-                "username": null
+                "username": "Aphotic Shield"
             },
             {
                 "name": "Curse of Avernus",
                 "key": "DOTA_Tooltip_ability_abaddon_frostmourne",
-                "username": null
+                "username": "Curse of Avernus"
             }
         ],
         "facets": [
             {
                 "name": "The Quickening",
                 "key": "DOTA_Tooltip_ability_abaddon_the_quickening",
-                "username": null
+                "username": "The Quickening"
             }
         ]
     }
