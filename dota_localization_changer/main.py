@@ -22,7 +22,7 @@ logging.basicConfig(
     level=cfg["logger_lvl"],
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     filename='.log',
-    filemode='a'
+    filemode='w'
 )
 
 VPK_PATH = cfg["dota_directory"] + "/game/dota_russian/pak01_dir.vpk"
@@ -136,6 +136,10 @@ def main() -> int:
             case "3":
                 for i in herolist:
                     i.username = None
+                    for j in i.skills:
+                        j.username = j.name
+                    for j in i.facets:
+                        j.username = j.name
 
                 continue
             case _:
@@ -180,7 +184,10 @@ def main() -> int:
 
 
 if __name__=="__main__":
-    result = main()
+    try:
+        result = main()
+    except Exception as e:
+        logging.error(e)
     if result is None:
         result = 0
     input("Нажмите ENTER чтобы выйти ")
