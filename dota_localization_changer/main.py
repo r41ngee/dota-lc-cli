@@ -137,9 +137,9 @@ def main() -> int:
                 for i in herolist:
                     i.username = None
                     for j in i.skills:
-                        j.username = j.name
+                        j.username = None
                     for j in i.facets:
-                        j.username = j.name
+                        j.username = None
 
                 continue
             case _:
@@ -165,22 +165,31 @@ def main() -> int:
 
     with open("data/abilities_russian.txt", "w", encoding="utf-8") as f:
         f.write(kvparser2.unparse(kv))
-        f.close()
 
-    subprocess.run([
-        "bin/vpkeditcli.exe",
-        "--remove-file",
-        "resource/localization/abilities_russian.txt",
-        VPK_PATH
-    ])
+    try:
+        subprocess.run(
+            [
+                "bin/vpkeditcli.exe",
+                "--remove-file",
+                "resource/localization/abilities_russian.txt",
+                VPK_PATH
+            ],
+            check=True,
+        )
+    except Exception:
+        logging.warning("r/l/abilities does not exist")
+        cls()
 
-    subprocess.run([
-        "bin/vpkeditcli.exe",
-        "--add-file",
-        "./data/abilities_russian.txt",
-        "resource/localization/abilities_russian.txt",
-        VPK_PATH
-    ])
+    try:
+        subprocess.run([
+            "bin/vpkeditcli.exe",
+            "--add-file",
+            "./data/abilities_russian.txt",
+            "resource/localization/abilities_russian.txt",
+            VPK_PATH
+        ])
+    except Exception:
+        logging.error("")
 
 
 if __name__=="__main__":
