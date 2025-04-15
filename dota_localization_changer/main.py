@@ -14,7 +14,7 @@ import tabulate
 
 # -LOCAL IMPORTS-
 from config import *
-from dlctypes import *
+from dotatypes import *
 from misc import *
 
 
