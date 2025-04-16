@@ -443,7 +443,7 @@
     {
         "name": "Bounty Hunter",
         "key": "npc_dota_hero_bounty_hunter:n",
-        "skills":[
+        "skills": [
             {
                 "name": "Shuriken Toss",
                 "key": "DOTA_Tooltip_ability_bounty_hunter_shuriken_toss"
@@ -469,7 +469,7 @@
                 "key": "DOTA_Tooltip_ability_bounty_hunter_big_game_hunter"
             }
         ],
-        "facets":[
+        "facets": [
             {
                 "name": "Through and Trough",
                 "key": "DOTA_Tooltip_Facet_bounty_hunter_shuriken"
@@ -483,7 +483,7 @@
     {
         "name": "Brewmaster",
         "key": "npc_dota_hero_brewmaster:n",
-        "skills":[
+        "skills": [
             {
                 "name": "Thunder Clap",
                 "key": "DOTA_Tooltip_ability_brewmaster_thunder_clap"
@@ -509,7 +509,7 @@
                 "key": "DOTA_Tooltip_ability_brewmaster_primal_companion"
             }
         ],
-        "facets":[
+        "facets": [
             {
                 "name": "Roll Out the Barrel",
                 "key": "DOTA_Tooltip_Facet_brewmaster_roll_out_the_barrel"
@@ -523,7 +523,7 @@
     {
         "name": "Bristleback",
         "key": "npc_dota_hero_bristleback:n",
-        "skills":[
+        "skills": [
             {
                 "name": "Viscous Nasal Goo",
                 "key": "DOTA_Tooltip_ability_bristleback_viscous_nasal_goo"
@@ -549,7 +549,7 @@
                 "key": "DOTA_Tooltip_ability_bristleback_prickly"
             }
         ],
-        "facets":[
+        "facets": [
             {
                 "name": "Snot Rocket",
                 "key": "DOTA_Tooltip_Facet_bristleback_snot_rocket"
@@ -557,6 +557,47 @@
             {
                 "name": "Seeing Red",
                 "key": "DOTA_Tooltip_Facet_bristleback_seeing_red"
+            }
+        ]
+    },
+    {
+        "name": "Broodmother",
+        "key": "npc_dota_hero_broodmother:n",
+        "gender": "f",
+        "skills": [
+            {
+                "name": "Spawn Spiderlings",
+                "key": "DOTA_Tooltip_ability_broodmother_spawn_spiderlings"
+            },
+            {
+                "name": "Spinner's Snare",
+                "key": "DOTA_Tooltip_ability_broodmother_sticky_snare"
+            },
+            {
+                "name": "Spin Web",
+                "key": "DOTA_Tooltip_ability_broodmother_spin_web"
+            },
+            {
+                "name": "Inacapacitating Bite",
+                "key": "DOTA_Tooltip_ability_broodmother_incapacitating_bite"
+            },
+            {
+                "name": "Spider's Milk",
+                "key": "DOTA_Tooltip_ability_broodmother_spiders_milk"
+            },
+            {
+                "name": "Insatiable Hunger",
+                "key": "DOTA_Tooltip_ability_broodmother_insatiable_hunger"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Necrotic Webs",
+                "key": "DOTA_Tooltip_Facet_broodmother_necrotic_webs"
+            },
+            {
+                "name": "Feeding Frenzy",
+                "key": "DOTA_Tooltip_Facet_broodmother_feeding_frenzy"
             }
         ]
     }
