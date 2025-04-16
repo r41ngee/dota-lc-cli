@@ -439,5 +439,45 @@
                 "key": "DOTA_Tooltip_Facet_bloodseeker_arterial_spray"
             }
         ]
+    },
+    {
+        "name": "Bounty Hunter",
+        "key": "npc_dota_hero_bounty_hunter:n",
+        "skills":[
+            {
+                "name": "Shuriken Toss",
+                "key": "DOTA_Tooltip_ability_bounty_hunter_shuriken_toss"
+            },
+            {
+                "name": "Jinada",
+                "key": "DOTA_Tooltip_ability_bounty_hunter_jinada"
+            },
+            {
+                "name": "Shadow Walk",
+                "key": "DOTA_Tooltip_ability_bounty_hunter_wind_walk"
+            },
+            {
+                "name": "Friendly Shadow",
+                "key": "DOTA_Tooltip_ability_bounty_hunter_wind_walk_ally"
+            },
+            {
+                "name": "Track",
+                "key": "DOTA_Tooltip_ability_bounty_hunter_track"
+            },
+            {
+                "name": "Big Game Hunter",
+                "key": "DOTA_Tooltip_ability_bounty_hunter_big_game_hunter"
+            }
+        ],
+        "facets":[
+            {
+                "name": "Through and Trough",
+                "key": "DOTA_Tooltip_Facet_bounty_hunter_shuriken"
+            },
+            {
+                "name": "Cutpurse",
+                "key": "DOTA_Tooltip_ability_bounty_hunter_cutpurse"
+            }
+        ]
     }
 ]
