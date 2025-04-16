@@ -407,5 +407,37 @@
                 "key": "DOTA_Tooltip_Facet_beastmaster_beast_mode"
             }
         ]
+    },
+    {
+        "name": "Bloodseeker",
+        "key": "npc_dota_hero_bloodseeker:n",
+        "skills": [
+            {
+                "name": "Bloodrage",
+                "key": "DOTA_Tooltip_ability_bloodseeker_bloodrage"
+            },
+            {
+                "name": "Blood Rite",
+                "key": "DOTA_Tooltip_ability_bloodseeker_blood_bath"
+            },
+            {
+                "name": "Thirst",
+                "key": "DOTA_Tooltip_ability_bloodseeker_thirst"
+            },
+            {
+                "name": "Sanguivore",
+                "key": "DOTA_Tooltip_ability_bloodseeker_sanguivore"
+            },
+            {
+                "name": "Rupture",
+                "key": "DOTA_Tooltip_ability_bloodseeker_rupture"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Arterial Spray",
+                "key": "DOTA_Tooltip_Facet_bloodseeker_arterial_spray"
+            }
+        ]
     }
 ]
