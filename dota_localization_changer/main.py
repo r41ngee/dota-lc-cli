@@ -208,6 +208,7 @@ def main() -> int:
 
 
 if __name__=="__main__":
+    result = 0
     try:
         result = main()
     except Exception as e:
