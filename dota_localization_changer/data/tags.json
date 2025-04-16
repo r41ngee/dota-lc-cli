@@ -191,5 +191,50 @@
                 "username": null
             }
         ]
+    },
+    {
+        "name": "Arc Warden",
+        "key": "npc_dota_hero_arc_warden:n",
+        "username": null,
+        "gender": "m",
+        "skills": [
+            {
+                "name": "Flux",
+                "key": "DOTA_Tooltip_ability_arc_warden_flux",
+                "username": null
+            },
+            {
+                "name": "Magnetic Field",
+                "key": "DOTA_Tooltip_ability_arc_warden_magnetic_field",
+                "username": null
+            },
+            {
+                "name": "Spark Wraith",
+                "key": "DOTA_Tooltip_ability_arc_warden_spark_wraith",
+                "username": null
+            },
+            {
+                "name": "Tempest Double",
+                "key": "DOTA_Tooltip_ability_arc_warden_tempest_double",
+                "username": null
+            },
+            {
+                "name": "Runic Infusion",
+                "key": "DOTA_Tooltip_ability_arc_warden_runic_infusion",
+                "username": null
+            }
+        ],
+        "facets": [
+            {
+                "name": "Runed Replica",
+                "key": "DOTA_Tooltip_Facet_arc_warden_runed_replica",
+                "username": null
+            },
+            {
+                "name": "Power Capture",
+                "key": "DOTA_Tooltip_Facet_arc_warden_power_capture",
+                "username": null
+            }
+        ]
     }
 ]
