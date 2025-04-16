@@ -139,11 +139,13 @@
         "facets": [
             {
                 "name": "Exposure",
-                "key": "DOTA_Tooltip_Facet_ancient_apparition_exposure"
+                "key": "DOTA_Tooltip_Facet_ancient_apparition_exposure",
+                "username": null
             },
             {
                 "name": "Bone Chill",
-                "key": "DOTA_Tooltip_Facet_ancient_apparition_exposure"
+                "key": "DOTA_Tooltip_Facet_ancient_apparition_exposure",
+                "username": null
             }
         ]
     },
