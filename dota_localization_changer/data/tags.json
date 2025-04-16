@@ -519,5 +519,45 @@
                 "key": "DOTA_Tooltip_Facet_brewmaster_drunken_master"
             }
         ]
+    },
+    {
+        "name": "Bristleback",
+        "key": "npc_dota_hero_bristleback:n",
+        "skills":[
+            {
+                "name": "Viscous Nasal Goo",
+                "key": "DOTA_Tooltip_ability_bristleback_viscous_nasal_goo"
+            },
+            {
+                "name": "Quill Spray",
+                "key": "DOTA_Tooltip_ability_bristleback_quill_spray"
+            },
+            {
+                "name": "Bristleback",
+                "key": "DOTA_Tooltip_ability_bristleback_bristleback"
+            },
+            {
+                "name": "Warpath",
+                "key": "DOTA_Tooltip_ability_bristleback_warpath"
+            },
+            {
+                "name": "Hairball",
+                "key": "DOTA_Tooltip_ability_bristleback_hairball"
+            },
+            {
+                "name": "Prickly",
+                "key": "DOTA_Tooltip_ability_bristleback_prickly"
+            }
+        ],
+        "facets":[
+            {
+                "name": "Snot Rocket",
+                "key": "DOTA_Tooltip_Facet_bristleback_snot_rocket"
+            },
+            {
+                "name": "Seeing Red",
+                "key": "DOTA_Tooltip_Facet_bristleback_seeing_red"
+            }
+        ]
     }
 ]
