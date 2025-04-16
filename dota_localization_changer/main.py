@@ -101,7 +101,11 @@ def main() -> int:
                             case "0":
                                 break
                             case "1":
-                                current_hero.username = input("Имя: ")
+                                select_name = input("Новое имя героя (пустая строка для сброса): ")
+                                if select_name.strip() == "":
+                                    current_hero.username = None
+                                else:
+                                    current_hero.username = select_name
                                 logging.info(f"Name of hero {current_hero.name} is {current_hero.username} now")
                             case "2":
                                 skilltable = [["0", "Выход", None]]
@@ -111,11 +115,16 @@ def main() -> int:
                                 print(tabulate.tabulate(skilltable, headers=["ID", "Имя", "Кастомное имя"], missingval="N/A"))
                                 skill_choice = int(input("Ввод: "))
 
-                                if skill_choice == "0":
+                                if skill_choice == 0:
                                     break
 
                                 current_skill = current_hero.skills[skill_choice - 1]
-                                current_skill.username = input("Новое название способности: ")
+
+                                select_skill = input("Новое название способности (пустая строка для сброса): ")
+                                if select_skill.strip() == "":
+                                    current_skill.username = None
+                                else:
+                                    current_skill.username = select_skill
                                 logging.info(f"Name of skill {current_skill.name} is {current_skill.username} now")
                             case "3":
                                 facettable = [["0", "Выход", None]]
@@ -125,11 +134,15 @@ def main() -> int:
                                 print(tabulate.tabulate(facettable, headers=["ID", "Имя", "Кастомное имя"], missingval="N/A"))
                                 facet_choice = int(input("Ввод: "))
                                 
-                                if facet_choice == "0":
+                                if facet_choice == 0:
                                     break
 
                                 current_facet = current_hero.facets[facet_choice - 1]
-                                current_facet.username = input("Новое название аспекта: ")
+                                select_facet = input("Новое название аспекта (пустая строка для сброса): ")
+                                if select_facet.strip() == "":
+                                    current_facet.username = None
+                                else:
+                                    current_facet.username = select_facet
                                 logging.info(f"Name of facet {current_facet.name} is {current_facet.username} now")
                                 
             case "2":

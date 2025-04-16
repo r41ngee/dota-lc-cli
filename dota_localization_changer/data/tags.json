@@ -79,16 +79,6 @@
                 "name": "Curse of Avernus",
                 "key": "DOTA_Tooltip_ability_abaddon_frostmourne",
                 "username": null
-            },
-            {
-                "name": "Withering Mist",
-                "key": "DOTA_Tooltip_ability_abaddon_withering_mist",
-                "username": null
-            },
-            {
-                "name": "Borrowed Time",
-                "key": "DOTA_Tooltip_ability_abaddon_borrowed_time",
-                "username": null
             }
         ],
         "facets": [
