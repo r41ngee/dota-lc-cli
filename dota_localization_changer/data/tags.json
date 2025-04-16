@@ -325,5 +325,50 @@
                 "username": null
             }
         ]
+    },
+    {
+        "name": "Batrider",
+        "key": "npc_dota_hero_batrider:n",
+        "username":null,
+        "gender":"m",
+        "skills":[
+            {
+                "name":"Sticky Napalm",
+                "key": "DOTA_Tooltip_ability_batrider_sticky_napalm",
+                "username":null
+            },
+            {
+                "name": "Flamebreak",
+                "key": "DOTA_Tooltip_ability_batrider_flamebreak",
+                "username": null
+            },
+            {
+                "name": "Firefly",
+                "key": "DOTA_Tooltip_ability_batrider_firefly",
+                "username": null
+            },
+            {
+                "name": "Flaming Lasso",
+                "key": "DOTA_Tooltip_ability_batrider_flaming_lasso",
+                "username": null
+            },
+            {
+                "name": "Smoldering Resin",
+                "key": "DOTA_Tooltip_ability_batrider_smoldering_resin",
+                "username": null
+            }
+        ],
+        "facets":[
+            {
+                "name": "Arsonist",
+                "key": "DOTA_Tooltip_Facet_batrider_arsonist",
+                "username": null
+            },
+            {
+                "name": "Stoked",
+                "key": "DOTA_Tooltip_ability_batrider_stoked",
+                "username": null
+            }
+        ]
     }
 ]
