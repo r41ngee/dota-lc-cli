@@ -363,5 +363,49 @@
                 "username": null
             }
         ]
+    },
+    {
+        "name": "Beastmaster",
+        "key": "npc_dota_hero_beastmaster:n",
+        "skills": [
+            {
+                "name": "Wild Axes",
+                "key": "DOTA_Tooltip_ability_beastmaster_wild_axes"
+            },
+            {
+                "name": "Call of the Wild (кабан)",
+                "key": "DOTA_Tooltip_ability_beastmaster_call_of_the_wild_boar"
+            },
+            {
+                "name": "Call of the Wild (ястреб)",
+                "key": "DOTA_Tooltip_ability_beastmaster_call_of_the_wild_hawk"
+            },
+            {
+                "name": "Inner Beast",
+                "key": "DOTA_Tooltip_ability_beastmaster_inner_beast"
+            },
+            {
+                "name": "Rugged",
+                "key": "DOTA_Tooltip_ability_beastmaster_rugged"
+            },
+            {
+                "name": "Primal Roar",
+                "key": "DOTA_Tooltip_ability_beastmaster_primal_roar"
+            },
+            {
+                "name": "Drums of Slom",
+                "key": "DOTA_Tooltip_ability_beastmaster_drums_of_slom"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Wild Hunt",
+                "key": "DOTA_Tooltip_Facet_beastmaster_wild_hunt"
+            },
+            {
+                "name": "Beast Mode",
+                "key": "DOTA_Tooltip_Facet_beastmaster_beast_mode"
+            }
+        ]
     }
 ]
