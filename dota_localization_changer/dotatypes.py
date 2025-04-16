@@ -32,7 +32,10 @@ class Facet:
     def __init__(self, desc):
         self.name = desc["name"]
         self.key = desc["key"]
-        self.username = desc["username"]
+        try:
+            self.username = desc["username"]
+        except KeyError:
+            self.username = None
 
         self.desc = desc
 
