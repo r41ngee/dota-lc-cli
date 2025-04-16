@@ -56,7 +56,10 @@ class Hero:
     def __init__(self, desc: dict):
         self.name: str = desc["name"]
         self.key: str = desc["key"]
-        self.username: str = desc["username"]
+        try:
+            self.username: str = desc["username"]
+        except KeyError:
+            self.username= None
         try:
             self.gender: str | Literal["m", "f"] = desc["gender"]
         except KeyError:
