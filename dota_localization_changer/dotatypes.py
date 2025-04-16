@@ -57,7 +57,10 @@ class Hero:
         self.name: str = desc["name"]
         self.key: str = desc["key"]
         self.username: str = desc["username"]
-        self.gender: str | Literal["m", "f"] = desc["gender"]
+        try:
+            self.gender: str | Literal["m", "f"] = desc["gender"]
+        except KeyError:
+            self.gender = "m"
         self.skills: list[Skill] = [Skill(i) for i in desc["skills"]]
         self.facets: list[Facet] = [Facet(i) for i in desc["facets"]]
 
