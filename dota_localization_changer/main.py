@@ -101,7 +101,7 @@ def main() -> int:
                             case "0":
                                 break
                             case "1":
-                                select_name = input("Имя: ")
+                                select_name = input("Новое имя героя (пустая строка для сброса): ")
                                 if select_name.strip() == "":
                                     current_hero.username = None
                                 else:
@@ -120,7 +120,7 @@ def main() -> int:
 
                                 current_skill = current_hero.skills[skill_choice - 1]
 
-                                select_skill = input("Новое название способности: ")
+                                select_skill = input("Новое название способности (пустая строка для сброса): ")
                                 if select_skill.strip() == "":
                                     current_skill.username = None
                                 else:
@@ -138,7 +138,7 @@ def main() -> int:
                                     break
 
                                 current_facet = current_hero.facets[facet_choice - 1]
-                                select_facet = input("Новое название аспекта: ")
+                                select_facet = input("Новое название аспекта (пустая строка для сброса): ")
                                 if select_facet.strip() == "":
                                     current_facet.username = None
                                 else:
