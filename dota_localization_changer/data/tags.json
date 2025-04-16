@@ -82,7 +82,7 @@
             },
             {
                 "name": "Withering Mist",
-                "key":"DOTA_Tooltip_ability_abaddon_withering_mist",
+                "key": "DOTA_Tooltip_ability_abaddon_withering_mist",
                 "username": null
             },
             {
@@ -101,6 +101,49 @@
                 "name": "Mephitic Shroud",
                 "key": "DOTA_Tooltip_facet_abaddon_mephitic_shroud",
                 "username": null
+            }
+        ]
+    },
+    {
+        "name": "Ancient Apparition",
+        "key": "npc_dota_hero_ancient_apparition:n",
+        "username": null,
+        "gender": "m",
+        "skills": [
+            {
+                "name": "Cold Feet",
+                "key": "DOTA_Tooltip_ability_ancient_apparition_cold_feet",
+                "username": null
+            },
+            {
+                "name": "Ice Vortex",
+                "key": "DOTA_Tooltip_ability_ancient_apparition_ice_vortex",
+                "username": null
+            },
+            {
+                "name": "Death Rime",
+                "key": "DOTA_Tooltip_ability_ancient_apparition_death_rime",
+                "username": null
+            },
+            {
+                "name": "Chilling Touch",
+                "key": "DOTA_Tooltip_ability_ancient_apparition_chilling_touch",
+                "username": null
+            },
+            {
+                "name": "Ice Blast",
+                "key": "DOTA_Tooltip_ability_ancient_apparition_chilling_touch",
+                "username": null
+            }
+        ],
+        "facets": [
+            {
+                "name": "Exposure",
+                "key": "DOTA_Tooltip_Facet_ancient_apparition_exposure"
+            },
+            {
+                "name": "Bone Chill",
+                "key": "DOTA_Tooltip_Facet_ancient_apparition_exposure"
             }
         ]
     }
