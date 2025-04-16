@@ -644,5 +644,45 @@
                 "key": "DOTA_Tooltip_Facet_centaur_counter_strike"
             }
         ]
+    },
+    {
+        "name": "Chaos Knight",
+        "key": "npc_dota_hero_chaos_knight:n",
+        "skills": [
+            {
+                "name": "Chaos Bolt",
+                "key": "DOTA_Tooltip_ability_chaos_knight_chaos_bolt"
+            },
+            {
+                "name": "Reality Rift",
+                "key": "DOTA_Tooltip_ability_chaos_knight_reality_rift"
+            },
+            {
+                "name": "Chaos Strike",
+                "key": "DOTA_Tooltip_ability_chaos_knight_chaos_strike"
+            },
+            {
+                "name": "Phantasm",
+                "key": "DOTA_Tooltip_ability_chaos_knight_phantasm"
+            },
+            {
+                "name": "Reins of Chaos",
+                "key": "DOTA_Tooltip_ability_chaos_knight_reins_of_chaos"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Irrationality",
+                "key": "DOTA_Tooltip_Facet_chaos_knight_irrationality"
+            },
+            {
+                "name": "Fundamental Forging",
+                "key": "DOTA_Tooltip_Facet_chaos_knight_facet_fundamental_forging"
+            },
+            {
+                "name": "Cloven Chaos",
+                "key": "DOTA_Tooltip_Facet_chaos_knight_cloven_chaos"
+            }
+        ]
     }
 ]
