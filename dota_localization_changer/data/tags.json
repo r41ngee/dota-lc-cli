@@ -280,5 +280,50 @@
                 "username": null
             }
         ]
+    },
+    {
+        "name": "Bane",
+        "key": "npc_dota_hero_bane:n",
+        "username": null,
+        "gender": "m",
+        "skills": [
+            {
+                "name": "Enfeeble",
+                "key": "DOTA_Tooltip_ability_bane_enfeeble",
+                "username": null
+            },
+            {
+                "name": "Brain Sap",
+                "key": "DOTA_Tooltip_ability_bane_brain_sap",
+                "username": null
+            },
+            {
+                "name": "Nightmare",
+                "key": "DOTA_Tooltip_ability_bane_nightmare",
+                "username": null
+            },
+            {
+                "name": "Ichor of Nyctasha",
+                "key": "DOTA_Tooltip_ability_bane_ichor_of_nyctasha",
+                "username": null
+            },
+            {
+                "name": "Fiend's Grip",
+                "key": "DOTA_Tooltip_ability_bane_fiends_grip",
+                "username": null
+            }
+        ],
+        "facets": [
+            {
+                "name": "Dream Stalker",
+                "key": "DOTA_Tooltip_Facet_bane_dream_stalker",
+                "username": null
+            },
+            {
+                "name": "Sleepwalk",
+                "key": "DOTA_Tooltip_Facet_bane_sleepwalk",
+                "username": null
+            }
+        ]
     }
 ]
