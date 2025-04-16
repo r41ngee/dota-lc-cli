@@ -79,12 +79,27 @@
                 "name": "Curse of Avernus",
                 "key": "DOTA_Tooltip_ability_abaddon_frostmourne",
                 "username": null
+            },
+            {
+                "name": "Withering Mist",
+                "key":"DOTA_Tooltip_ability_abaddon_withering_mist",
+                "username": null
+            },
+            {
+                "name": "Borrowed Time",
+                "key": "DOTA_Tooltip_ability_abaddon_borrowed_time",
+                "username": null
             }
         ],
         "facets": [
             {
                 "name": "The Quickening",
                 "key": "DOTA_Tooltip_ability_abaddon_the_quickening",
+                "username": null
+            },
+            {
+                "name": "Mephitic Shroud",
+                "key": "DOTA_Tooltip_facet_abaddon_mephitic_shroud",
                 "username": null
             }
         ]
