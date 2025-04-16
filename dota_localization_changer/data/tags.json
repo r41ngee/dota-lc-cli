@@ -600,5 +600,49 @@
                 "key": "DOTA_Tooltip_Facet_broodmother_feeding_frenzy"
             }
         ]
+    },
+    {
+        "name": "Centaur Warrunner",
+        "key": "npc_dota_hero_centaur:n",
+        "skills": [
+            {
+                "name": "Hoof Stomp",
+                "key": "DOTA_Tooltip_ability_centaur_hoof_stomp"
+            },
+            {
+                "name": "Double Edge",
+                "key": "DOTA_Tooltip_ability_centaur_double_edge"
+            },
+            {
+                "name": "Retaliate",
+                "key": "DOTA_Tooltip_ability_centaur_return"
+            },
+            {
+                "name": "Stampede",
+                "key": "DOTA_Tooltip_ability_centaur_stampede"
+            },
+            {
+                "name": "Work Horse",
+                "key": "DOTA_Tooltip_ability_centaur_work_horse"
+            },
+            {
+                "name": "Hitch A Ride",
+                "key": "DOTA_Tooltip_ability_centaur_mount"
+            },
+            {
+                "name": "Rawhide",
+                "key": "DOTA_Tooltip_ability_centaur_rawhide"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Horsepower",
+                "key": "DOTA_Tooltip_ability_centaur_horsepower"
+            },
+            {
+                "name": "Counter-Strike",
+                "key": "DOTA_Tooltip_Facet_centaur_counter_strike"
+            }
+        ]
     }
 ]
