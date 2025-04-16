@@ -146,5 +146,50 @@
                 "key": "DOTA_Tooltip_Facet_ancient_apparition_exposure"
             }
         ]
+    },
+    {
+        "name": "Anti-Mage",
+        "key": "npc_dota_hero_antimage:n",
+        "username": null,
+        "gender": "m",
+        "skills": [
+            {
+                "name": "Mana Break",
+                "key": "DOTA_Tooltip_ability_antimage_mana_break",
+                "username": null
+            },
+            {
+                "name": "Persecutor",
+                "key": "DOTA_Tooltip_ability_antimage_persectur",
+                "username": null
+            },
+            {
+                "name": "Blink",
+                "key": "DOTA_Tooltip_ability_antimage_blink",
+                "username": null
+            },
+            {
+                "name": "Counterspell",
+                "key": "DOTA_Tooltip_ability_antimage_counterspell",
+                "username": null
+            },
+            {
+                "name": "Mana Void",
+                "key": "DOTA_Tooltip_ability_antimage_mana_void",
+                "username": null
+            }
+        ],
+        "facets": [
+            {
+                "name": "Magebane's Mirror",
+                "key": "DOTA_Tooltip_Facet_antimage_magebanes_mirror",
+                "username": null
+            },
+            {
+                "name": "Mana Thirst",
+                "key": "DOTA_Tooltip_Facet_antimage_mana_thirst",
+                "username": null
+            }
+        ]
     }
 ]
