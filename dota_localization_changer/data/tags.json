@@ -479,5 +479,45 @@
                 "key": "DOTA_Tooltip_ability_bounty_hunter_cutpurse"
             }
         ]
+    },
+    {
+        "name": "Brewmaster",
+        "key": "npc_dota_hero_brewmaster:n",
+        "skills":[
+            {
+                "name": "Thunder Clap",
+                "key": "DOTA_Tooltip_ability_brewmaster_thunder_clap"
+            },
+            {
+                "name": "Drunken Haze",
+                "key": "DOTA_Tooltip_ability_brewmaster_drunken_haze"
+            },
+            {
+                "name": "Cinder Brew",
+                "key": "DOTA_Tooltip_ability_brewmaster_cinder_brew"
+            },
+            {
+                "name": "Drunken Brawler",
+                "key": "DOTA_Tooltip_ability_brewmaster_drunken_brawler"
+            },
+            {
+                "name": "Primal Split",
+                "key": "DOTA_Tooltip_ability_brewmaster_primal_split"
+            },
+            {
+                "name": "Primal Companion",
+                "key": "DOTA_Tooltip_ability_brewmaster_primal_companion"
+            }
+        ],
+        "facets":[
+            {
+                "name": "Roll Out the Barrel",
+                "key": "DOTA_Tooltip_Facet_brewmaster_roll_out_the_barrel"
+            },
+            {
+                "name": "Drunken Master",
+                "key": "DOTA_Tooltip_Facet_brewmaster_drunken_master"
+            }
+        ]
     }
 ]
