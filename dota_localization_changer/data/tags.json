@@ -684,5 +684,61 @@
                 "key": "DOTA_Tooltip_Facet_chaos_knight_cloven_chaos"
             }
         ]
+    },
+    {
+        "name": "Chen",
+        "key": "npc_dota_hero_chen:n",
+        "skills": [
+            {
+                "name": "Penitence",
+                "key": "DOTA_Tooltip_ability_chen_penitence"
+            },
+            {
+                "name": "Divine Favor",
+                "key": "DOTA_Tooltip_ability_chen_divine_favor"
+            },
+            {
+                "name": "Holy Persuasion",
+                "key": "DOTA_Tooltip_ability_chen_holy_persuasion"
+            },
+            {
+                "name": "Hand of God",
+                "key": "DOTA_Tooltip_ability_chen_hand_of_god"
+            },
+            {
+                "name": "Martyrdom",
+                "key": "DOTA_Tooltip_ability_chen_martyrdom"
+            },
+            {
+                "name": "Summon Convert",
+                "key": "DOTA_Tooltip_ability_chen_summon_convert"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Centaur Convert",
+                "key": "DOTA_Tooltip_Facet_chen_centaur_convert"
+            },
+            {
+                "name": "Wolf Convert",
+                "key": "DOTA_Tooltip_Facet_chen_wolf_convert"
+            },
+            {
+                "name": "Hellbear Convert",
+                "key": "DOTA_Tooltip_Facet_chen_hellbear_convert"
+            },
+            {
+                "name": "Troll Convert",
+                "key": "DOTA_Tooltip_Facet_chen_troll_convert"
+            },
+            {
+                "name": "Satyr Convert",
+                "key": "DOTA_Tooltip_Facet_chen_satyr_convert"
+            },
+            {
+                "name": "Marshmage Convert",
+                "key": "DOTA_Tooltip_Facet_chen_frog_convert"
+            }
+        ]
     }
 ]
