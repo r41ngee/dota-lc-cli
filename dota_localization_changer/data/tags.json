@@ -265,7 +265,8 @@
             },
             {
                 "name": "Coat of Blood",
-                "key": "DOTA_Tooltip_ability_axe_coat_of_blood"
+                "key": "DOTA_Tooltip_ability_axe_coat_of_blood",
+                "username": null
             }
         ],
         "facets": [
@@ -329,13 +330,13 @@
     {
         "name": "Batrider",
         "key": "npc_dota_hero_batrider:n",
-        "username":null,
-        "gender":"m",
-        "skills":[
+        "username": null,
+        "gender": "m",
+        "skills": [
             {
-                "name":"Sticky Napalm",
+                "name": "Sticky Napalm",
                 "key": "DOTA_Tooltip_ability_batrider_sticky_napalm",
-                "username":null
+                "username": null
             },
             {
                 "name": "Flamebreak",
@@ -358,7 +359,7 @@
                 "username": null
             }
         ],
-        "facets":[
+        "facets": [
             {
                 "name": "Arsonist",
                 "key": "DOTA_Tooltip_Facet_batrider_arsonist",
