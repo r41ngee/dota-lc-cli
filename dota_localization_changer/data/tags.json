@@ -236,5 +236,49 @@
                 "username": null
             }
         ]
+    },
+    {
+        "name": "Axe",
+        "key": "npc_dota_hero_axe:n",
+        "username": null,
+        "gender": "m",
+        "skills": [
+            {
+                "name": "Berserker's Call",
+                "key": "DOTA_Tooltip_ability_axe_berserkers_call",
+                "username": null
+            },
+            {
+                "name": "Battle Hunger",
+                "key": "DOTA_Tooltip_ability_axe_battle_hunger",
+                "username": null
+            },
+            {
+                "name": "Counter Helix",
+                "key": "DOTA_Tooltip_ability_axe_counter_helix",
+                "username": null
+            },
+            {
+                "name": "Culling Blade",
+                "key": "DOTA_Tooltip_ability_axe_culling_blade",
+                "username": null
+            },
+            {
+                "name": "Coat of Blood",
+                "key": "DOTA_Tooltip_ability_axe_coat_of_blood"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Call Out",
+                "key": "DOTA_Tooltip_Facet_axe_call_out",
+                "username": null
+            },
+            {
+                "name": "One Man Army",
+                "key": "DOTA_Tooltip_ability_axe_one_man_army",
+                "username": null
+            }
+        ]
     }
 ]
