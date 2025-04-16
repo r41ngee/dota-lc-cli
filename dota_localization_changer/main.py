@@ -111,7 +111,7 @@ def main() -> int:
                                 print(tabulate.tabulate(skilltable, headers=["ID", "Имя", "Кастомное имя"], missingval="N/A"))
                                 skill_choice = int(input("Ввод: "))
 
-                                if skill_choice == "0":
+                                if skill_choice == 0:
                                     break
 
                                 current_skill = current_hero.skills[skill_choice - 1]
@@ -125,7 +125,7 @@ def main() -> int:
                                 print(tabulate.tabulate(facettable, headers=["ID", "Имя", "Кастомное имя"], missingval="N/A"))
                                 facet_choice = int(input("Ввод: "))
                                 
-                                if facet_choice == "0":
+                                if facet_choice == 0:
                                     break
 
                                 current_facet = current_hero.facets[facet_choice - 1]
