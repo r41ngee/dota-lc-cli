@@ -833,7 +833,7 @@
         "name": "Crystal Maiden",
         "key": "npc_dota_hero_crystal_maiden:n",
         "gender": "f",
-        "skills":[
+        "skills": [
             {
                 "name": "Crystal Nova",
                 "key": "DOTA_Tooltip_ability_crystal_maiden_crystal_nova"
@@ -859,7 +859,7 @@
                 "key": "DOTA_Tooltip_ability_crystal_maiden_crystal_clone"
             }
         ],
-        "facets":[
+        "facets": [
             {
                 "name": "Glacial Guard",
                 "key": "DOTA_Tooltip_Facet_crystal_maiden_glacial_guard"
@@ -867,6 +867,46 @@
             {
                 "name": "Arcane Overflow",
                 "key": "DOTA_Tooltip_Facet_crystal_maiden_arcane_overflow"
+            }
+        ]
+    },
+    {
+        "name": "Dark Seer",
+        "key": "npc_dota_hero_dark_seer:n",
+        "skills": [
+            {
+                "name": "Vacuum",
+                "key": "DOTA_Tooltip_ability_dark_seer_vacuum"
+            },
+            {
+                "name": "Ion Shell",
+                "key": "DOTA_Tooltip_ability_dark_seer_ion_shell"
+            },
+            {
+                "name": "Surge",
+                "key": "DOTA_Tooltip_ability_dark_seer_surge"
+            },
+            {
+                "name": "Wall of Replica",
+                "key": "DOTA_Tooltip_ability_dark_seer_wall_of_replica"
+            },
+            {
+                "name": "Normal Punch",
+                "key": "DOTA_Tooltip_ability_dark_seer_normal_punch"
+            },
+            {
+                "name": "Arrgandize",
+                "key": "DOTA_Tooltip_ability_dark_seer_aggrandize"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Quick Wit",
+                "key": "DOTA_Tooltip_ability_dark_seer_quick_wit"
+            },
+            {
+                "name": "Heart of Battle",
+                "key": "DOTA_Tooltip_ability_dark_seer_heart_of_battle"
             }
         ]
     }
