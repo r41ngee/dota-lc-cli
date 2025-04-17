@@ -788,5 +788,45 @@
                 "key": "DOTA_Tooltip_Facet_clinkz_engulfing_step"
             }
         ]
+    },
+    {
+        "name": "Clockwerk",
+        "key": "npc_dota_hero_rattletrap:n",
+        "skills": [
+            {
+                "name": "Battery Assault",
+                "key": "DOTA_Tooltip_ability_rattletrap_battery_assault"
+            },
+            {
+                "name": "Power Cogs",
+                "key": "DOTA_Tooltip_ability_rattletrap_power_cogs"
+            },
+            {
+                "name": "Rocket Flare",
+                "key": "DOTA_Tooltip_ability_rattletrap_rocket_flare"
+            },
+            {
+                "name": "Hookshot",
+                "key": "DOTA_Tooltip_ability_rattletrap_hookshot"
+            },
+            {
+                "name": "Overclocking",
+                "key": "DOTA_Tooltip_ability_rattletrap_overclocking"
+            },
+            {
+                "name": "Jetpack",
+                "key": "DOTA_Tooltip_ability_rattletrap_jetpack"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Hookup",
+                "key": "DOTA_Tooltip_Facet_rattletrap_hookup"
+            },
+            {
+                "name": "Expanded Armature",
+                "key": "DOTA_Tooltip_Facet_rattletrap_expanded_armature"
+            }
+        ]
     }
 ]
