@@ -909,5 +909,46 @@
                 "key": "DOTA_Tooltip_ability_dark_seer_heart_of_battle"
             }
         ]
+    },
+    {
+        "name": "Dark Willow",
+        "key": "npc_dota_hero_dark_willow:n",
+        "gender": "f",
+        "skills": [
+            {
+                "name": "Bramble Maze",
+                "key": "DOTA_Tooltip_ability_dark_willow_bramble_maze"
+            },
+            {
+                "name": "Shadow Realm",
+                "key": "DOTA_Tooltip_ability_dark_willow_shadow_realm"
+            },
+            {
+                "name": "Cursed Crown",
+                "key": "DOTA_Tooltip_ability_dark_willow_cursed_crown"
+            },
+            {
+                "name": "Terrorize",
+                "key": "DOTA_Tooltip_ability_dark_willow_terrorize"
+            },
+            {
+                "name": "Bedlam",
+                "key": "DOTA_Tooltip_ability_dark_willow_bedlam"
+            },
+            {
+                "name": "Pixie Dust",
+                "key": "DOTA_Tooltip_ability_dark_willow_pixie_dust"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Throwing Shade",
+                "key": "DOTA_Tooltip_Facet_dark_willow_throwing_shade"
+            },
+            {
+                "name": "Shattering Crown",
+                "key": "DOTA_Tooltip_Facet_dark_willow_shattering_crown"
+            }
+        ]
     }
 ]
