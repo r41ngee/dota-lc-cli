@@ -828,5 +828,46 @@
                 "key": "DOTA_Tooltip_Facet_rattletrap_expanded_armature"
             }
         ]
+    },
+    {
+        "name": "Crystal Maiden",
+        "key": "npc_dota_hero_crystal_maiden:n",
+        "gender": "f",
+        "skills":[
+            {
+                "name": "Crystal Nova",
+                "key": "DOTA_Tooltip_ability_crystal_maiden_crystal_nova"
+            },
+            {
+                "name": "Frostbite",
+                "key": "DOTA_Tooltip_ability_crystal_maiden_frostbite"
+            },
+            {
+                "name": "Arcane Aura",
+                "key": "DOTA_Tooltip_ability_crystal_maiden_brilliance_aura"
+            },
+            {
+                "name": "Freezing Field",
+                "key": "DOTA_Tooltip_ability_crystal_maiden_freezing_field"
+            },
+            {
+                "name": "Blueheart Floe",
+                "key": "DOTA_Tooltip_ability_crystal_maiden_blueheart_floe"
+            },
+            {
+                "name": "Crystal Clone",
+                "key": "DOTA_Tooltip_ability_crystal_maiden_crystal_clone"
+            }
+        ],
+        "facets":[
+            {
+                "name": "Glacial Guard",
+                "key": "DOTA_Tooltip_Facet_crystal_maiden_glacial_guard"
+            },
+            {
+                "name": "Arcane Overflow",
+                "key": "DOTA_Tooltip_Facet_crystal_maiden_arcane_overflow"
+            }
+        ]
     }
 ]
