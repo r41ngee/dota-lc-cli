@@ -950,5 +950,46 @@
                 "key": "DOTA_Tooltip_Facet_dark_willow_shattering_crown"
             }
         ]
+    },
+    {
+        "name": "Dawnbreaker",
+        "key": "npc_dota_hero_dawnbreaker:n",
+        "gender": "f",
+        "skills": [
+            {
+                "name": "Solar Guardian",
+                "key": "DOTA_Tooltip_ability_dawnbreaker_solar_guardian"
+            },
+            {
+                "name": "Break of Dawn",
+                "key": "DOTA_Tooltip_ability_dawnbreaker_break_of_dawn"
+            },
+            {
+                "name": "Starbreaker",
+                "key": "DOTA_Tooltip_ability_dawnbreaker_fire_wreath"
+            },
+            {
+                "name": "Celestial Hammer",
+                "key": "DOTA_Tooltip_ability_dawnbreaker_celestial_hammer"
+            },
+            {
+                "name": "Luminosity",
+                "key": "DOTA_Tooltip_Ability_dawnbreaker_luminosity"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Solar Charged",
+                "key": "DOTA_Tooltip_Facet_dawnbreaker_solar_charged"
+            },
+            {
+                "name": "Starsurge",
+                "key": "DOTA_Tooltip_Facet_dawnbreaker_blaze"
+            },
+            {
+                "name": "Trailblazer",
+                "key": "DOTA_Tooltip_Facet_dawnbreaker_hearthfire"
+            }
+        ]
     }
 ]
