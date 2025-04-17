@@ -740,5 +740,53 @@
                 "key": "DOTA_Tooltip_Facet_chen_frog_convert"
             }
         ]
+    },
+    {
+        "name": "Clinkz",
+        "key": "npc_dota_hero_clinkz:n",
+        "skills": [
+            {
+                "name": "Burning Barrage",
+                "key": "DOTA_Tooltip_ability_clinkz_burning_barrage"
+            },
+            {
+                "name": "Searing Arrows",
+                "key": "DOTA_Tooltip_ability_clinkz_searing_arrows"
+            },
+            {
+                "name": "Tar Bomb",
+                "key": "DOTA_Tooltip_ability_clinkz_tar_bomb"
+            },
+            {
+                "name": "Strafe",
+                "key": "DOTA_Tooltip_ability_clinkz_strafe"
+            },
+            {
+                "name": "Wind Walk",
+                "key": "DOTA_Tooltip_ability_clinkz_wind_walk"
+            },
+            {
+                "name": "Death Pact",
+                "key": "DOTA_Tooltip_ability_clinkz_death_pact"
+            },
+            {
+                "name": "Bone and Arrow",
+                "key": "DOTA_Tooltip_ability_clinkz_bone_and_arrow"
+            },
+            {
+                "name": "Burning Army",
+                "key": "DOTA_Tooltip_ability_clinkz_burning_army"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Suppressive Fire",
+                "key": "DOTA_Tooltip_Facet_clinkz_suppressive_fire"
+            },
+            {
+                "name": "Engulfing Step",
+                "key": "DOTA_Tooltip_Facet_clinkz_engulfing_step"
+            }
+        ]
     }
 ]
