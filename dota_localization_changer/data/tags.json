@@ -1269,5 +1269,41 @@
                 "key": "DOTA_Tooltip_Facet_earth_spirit_ready_to_roll"
             }
         ]
+    },
+    {
+        "name": "Earthshaker",
+        "key": "npc_dota_hero_earthshaker:n",
+        "skills":[
+            {
+                "name": "Fissure"
+                ,"key": "DOTA_Tooltip_ability_earthshaker_fissure"
+            },
+            {
+                "name": "Enchant Totem",
+                "key": "DOTA_Tooltip_ability_earthshaker_enchant_totem"
+            },
+            {
+                "name": "Aftershock",
+                "key": "DOTA_Tooltip_ability_earthshaker_aftershock"
+            },
+            {
+                "name": "Echo Slam",
+                "key": "DOTA_Tooltip_ability_earthshaker_echo_slam"
+            },
+            {
+                "name": "Spirit Cairn",
+                "key": "DOTA_Tooltip_ability_earthshaker_spirit_cairn"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Tectonic Buildup",
+                "key": "DOTA_Tooltip_Facet_earthshaker_tectonic_buildup"
+            },
+            {
+                "name": "Slugger",
+                "key": "DOTA_Tooltip_Facet_earthshaker_slugger"
+            }
+        ]
     }
 ]
