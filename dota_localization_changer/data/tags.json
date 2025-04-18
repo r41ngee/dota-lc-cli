@@ -1462,5 +1462,49 @@
                 "key": "DOTA_Tooltip_ability_enigma_event_horizon"
             }
         ]
+    },
+    {
+        "name": "Faceless Void",
+        "key": "npc_dota_hero_faceless_void:n",
+        "skills": [
+            {
+                "name": "Time Walk",
+                "key": "DOTA_Tooltip_ability_faceless_void_time_walk"
+            },
+            {
+                "name": "Time Dilation",
+                "key": "DOTA_Tooltip_ability_faceless_void_time_dilation"
+            },
+            {
+                "name": "Time Lock",
+                "key": "DOTA_Tooltip_ability_faceless_void_time_lock"
+            },
+            {
+                "name": "Chronosphere",
+                "key": "DOTA_Tooltip_ability_faceless_void_chronosphere"
+            },
+            {
+                "name": "Time Zone",
+                "key": "DOTA_Tooltip_ability_faceless_void_time_zone"
+            },
+            {
+                "name": "Reverse Time Walk",
+                "key": "DOTA_Tooltip_ability_faceless_void_time_walk_reverse"
+            },
+            {
+                "name": "Distorion Field",
+                "key": "DOTA_Tooltip_ability_faceless_void_distortion_field"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Chronosphere",
+                "key": "DOTA_Tooltip_Facet_faceless_void_chronosphere"
+            },
+            {
+                "name": "Time Zone",
+                "key": "DOTA_Tooltip_Facet_faceless_void_time_zone"
+            }
+        ]
     }
 ]
