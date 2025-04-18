@@ -1140,5 +1140,49 @@
                 "key": "DOTA_Tooltip_Facet_doom_bringer_impending_doom"
             }
         ]
+    },
+    {
+        "name": "Dragon Knight",
+        "key": "npc_dota_hero_dragon_knight:n",
+        "skills":[
+            {
+                "name": "Breathe Fire",
+                "key": "DOTA_Tooltip_ability_dragon_knight_breathe_fire"
+            },
+            {
+                "name": "Dragon Tail",
+                "key": "DOTA_Tooltip_ability_dragon_knight_dragon_tail"
+            },
+            {
+                "name": "Wyrm's Wrath",
+                "key": "DOTA_Tooltip_ability_dragon_knight_dragon_blood"
+            },
+            {
+                "name": "Elder Dragon Form",
+                "key": "DOTA_Tooltip_ability_dragon_knight_elder_dragon_form"
+            },
+            {
+                "name": "Fireball",
+                "key": "DOTA_Tooltip_ability_dragon_knight_fireball"
+            },
+            {
+                "name": "Dragon Blood",
+                "key": "DOTA_Tooltip_ability_dragon_knight_inherited_vigor"
+            }
+        ],
+        "facets":[
+            {
+                "name": "Corrosive Dragon",
+                "key": "DOTA_Tooltip_Facet_dragon_knight_corrosive_dragon"
+            },
+            {
+                "name": "Fire Dragon",
+                "key": "DOTA_Tooltip_Facet_dragon_knight_fire_dragon"
+            },
+            {
+                "name": "Frost Dragon",
+                "key": "DOTA_Tooltip_Facet_dragon_knight_frost_dragon"
+            }
+        ]
     }
 ]
