@@ -1273,10 +1273,10 @@
     {
         "name": "Earthshaker",
         "key": "npc_dota_hero_earthshaker:n",
-        "skills":[
+        "skills": [
             {
-                "name": "Fissure"
-                ,"key": "DOTA_Tooltip_ability_earthshaker_fissure"
+                "name": "Fissure",
+                "key": "DOTA_Tooltip_ability_earthshaker_fissure"
             },
             {
                 "name": "Enchant Totem",
@@ -1303,6 +1303,42 @@
             {
                 "name": "Slugger",
                 "key": "DOTA_Tooltip_Facet_earthshaker_slugger"
+            }
+        ]
+    },
+    {
+        "name": "Elder Titan",
+        "key": "npc_dota_hero_elder_titan:n",
+        "skills": [
+            {
+                "name": "Echo Stomp",
+                "key": "DOTA_Tooltip_ability_elder_titan_echo_stomp"
+            },
+            {
+                "name": "Astral Spirit",
+                "key": "DOTA_Tooltip_ability_elder_titan_ancestral_spirit"
+            },
+            {
+                "name": "Natural Order",
+                "key": "DOTA_Tooltip_ability_elder_titan_natural_order"
+            },
+            {
+                "name": "Earth Splitter",
+                "key": "DOTA_Tooltip_ability_elder_titan_earth_splitter"
+            },
+            {
+                "name": "Tip the Scales",
+                "key": "DOTA_Tooltip_ability_elder_titan_tip_the_scales"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Deconstruction",
+                "key": "DOTA_Tooltip_Facet_elder_titan_deconstruction"
+            },
+            {
+                "name": "Momentum",
+                "key": "DOTA_Tooltip_ability_elder_titan_momentum"
             }
         ]
     }
