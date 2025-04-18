@@ -991,5 +991,41 @@
                 "key": "DOTA_Tooltip_Facet_dawnbreaker_hearthfire"
             }
         ]
+    },
+    {
+        "name": "Dazzle",
+        "key": "npc_dota_hero_dazzle:n",
+        "skills": [
+            {
+                "name": "Poison Touch",
+                "key": "DOTA_Tooltip_ability_dazzle_poison_touch"
+            },
+            {
+                "name": "Shallow Grave",
+                "key": "DOTA_Tooltip_ability_dazzle_shallow_grave"
+            },
+            {
+                "name": "Shadow Wave",
+                "key": "DOTA_Tooltip_ability_dazzle_shadow_wave"
+            },
+            {
+                "name": "Nothl Projection",
+                "key": "DOTA_Tooltip_ability_dazzle_nothl_projection"
+            },
+            {
+                "name": "Weave",
+                "key": "DOTA_Tooltip_ability_dazzle_innate_weave"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Nothl Boon",
+                "key": "DOTA_Tooltip_modifier_dazzle_nothl_boon_shield"
+            },
+            {
+                "name": "Poison Bloom",
+                "key": "DOTA_Tooltip_Facet_dazzle_poison_bloom"
+            }
+        ]
     }
 ]
