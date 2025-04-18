@@ -1072,7 +1072,7 @@
     {
         "name": "Disruptor",
         "key": "npc_dota_hero_disruptor:n",
-        "skills":[
+        "skills": [
             {
                 "name": "Thunder Strike",
                 "key": "DOTA_Tooltip_ability_disruptor_thunder_strike"
@@ -1090,7 +1090,7 @@
                 "key": "DOTA_Tooltip_ability_disruptor_static_storm"
             }
         ],
-        "facets":[
+        "facets": [
             {
                 "name": "Thunderstorm",
                 "key": "DOTA_Tooltip_Facet_disruptor_thunderstorm"
@@ -1098,6 +1098,46 @@
             {
                 "name": "Kinetic Fence",
                 "key": "DOTA_Tooltip_Facet_disruptor_line_walls"
+            }
+        ]
+    },
+    {
+        "name": "Doom",
+        "key": "npc_dota_hero_doom_bringer:n",
+        "skills": [
+            {
+                "name": "Devour",
+                "key": "DOTA_Tooltip_ability_doom_bringer_devour"
+            },
+            {
+                "name": "Lvl ? Pain",
+                "key": "DOTA_Tooltip_ability_doom_bringer_lvl_pain"
+            },
+            {
+                "name": "Scorched Earth",
+                "key": "DOTA_Tooltip_ability_doom_bringer_scorched_earth"
+            },
+            {
+                "name": "Infernal Blade",
+                "key": "DOTA_Tooltip_ability_doom_bringer_infernal_blade"
+            },
+            {
+                "name": "Doom",
+                "key": "DOTA_Tooltip_ability_doom_bringer_doom"
+            }
+        ],
+        "facets":[
+            {
+                "name": "Gluttony",
+                "key": "DOTA_Tooltip_Facet_doom_bringer_gluttony"
+            },
+            {
+                "name": "Devil's Bargain",
+                "key": "DOTA_Tooltip_ability_doom_bringer_devils_bargain"
+            },
+            {
+                "name": "Impending Doom",
+                "key": "DOTA_Tooltip_Facet_doom_bringer_impending_doom"
             }
         ]
     }
