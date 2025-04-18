@@ -1184,5 +1184,46 @@
                 "key": "DOTA_Tooltip_Facet_dragon_knight_frost_dragon"
             }
         ]
+    },
+    {
+        "name": "Drow Ranger",
+        "key": "npc_dota_hero_drow_ranger:n",
+        "gender":"f",
+        "skills":[
+            {
+                "name": "Frost Arrows",
+                "key": "DOTA_Tooltip_ability_drow_ranger_frost_arrows"
+            },
+            {
+                "name": "Multishot",
+                "key": "DOTA_Tooltip_ability_drow_ranger_multishot"
+            },
+            {
+                "name": "Gust",
+                "key": "DOTA_Tooltip_ability_drow_ranger_wave_of_silence"
+            },
+            {
+                "name": "Precision Aura",
+                "key": "DOTA_Tooltip_ability_drow_ranger_trueshot"
+            },
+            {
+                "name": "Marksmanship",
+                "key": "DOTA_Tooltip_ability_drow_ranger_marksmanship"
+            },
+            {
+                "name": "Glacier",
+                "key": "DOTA_Tooltip_ability_drow_ranger_glacier"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Vantage Point",
+                "key": "DOTA_Tooltip_ability_drow_ranger_vantage_point"
+            },
+            {
+                "name": "Sidestep",
+                "key": "DOTA_Tooltip_Facet_drow_ranger_sidestep"
+            }
+        ]
     }
 ]
