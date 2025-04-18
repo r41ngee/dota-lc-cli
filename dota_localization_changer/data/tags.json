@@ -1506,5 +1506,49 @@
                 "key": "DOTA_Tooltip_Facet_faceless_void_time_zone"
             }
         ]
+    },
+    {
+        "name": "Grimstroke",
+        "key": "npc_dota_hero_grimstroke:n",
+        "skills": [
+            {
+                "name": "Stroke of Fate",
+                "key": "DOTA_Tooltip_ability_grimstroke_dark_artistry"
+            },
+            {
+                "name": "Phantom's Embrace",
+                "key": "DOTA_Tooltip_ability_grimstroke_ink_creature"
+            },
+            {
+                "name": "Ink Swell",
+                "key": "DOTA_Tooltip_ability_grimstroke_spirit_walk"
+            },
+            {
+                "name": "Ink Explosion",
+                "key": "DOTA_Tooltip_ability_grimstroke_return"
+            },
+            {
+                "name": "Soulbind",
+                "key": "DOTA_Tooltip_ability_grimstroke_soul_chain"
+            },
+            {
+                "name": "Dark Portrait",
+                "key": "DOTA_Tooltip_ability_grimstroke_dark_portrait"
+            },
+            {
+                "name": "Ink Trail",
+                "key": "DOTA_Tooltip_ability_grimstroke_ink_trail"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Fine Art",
+                "key": "DOTA_Tooltip_Facet_grimstroke_fine_art"
+            },
+            {
+                "name": "Inkstigate",
+                "key": "DOTA_Tooltip_Facet_grimstroke_inkstigate"
+            }
+        ]
     }
 ]
