@@ -1341,5 +1341,45 @@
                 "key": "DOTA_Tooltip_ability_elder_titan_momentum"
             }
         ]
+    },
+    {
+        "name": "Ember Spirit",
+        "key": "npc_dota_hero_ember_spirit:n",
+        "skills": [
+            {
+                "name": "Searing Chains",
+                "key": "DOTA_Tooltip_ability_ember_spirit_searing_chains"
+            },
+            {
+                "name": "Sleight of Fist",
+                "key": "DOTA_Tooltip_ability_ember_spirit_sleight_of_fist"
+            },
+            {
+                "name": "Flame Guard",
+                "key": "DOTA_Tooltip_ability_ember_spirit_flame_guard"
+            },
+            {
+                "name": "Immolation",
+                "key": "DOTA_Tooltip_ability_ember_spirit_immolation"
+            },
+            {
+                "name": "Activate Fire Remnant",
+                "key": "DOTA_Tooltip_ability_ember_spirit_activate_fire_remnant"
+            },
+            {
+                "name": "Fire Remnant",
+                "key": "DOTA_Tooltip_ability_ember_spirit_fire_remnant"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Chain Gang",
+                "key": "DOTA_Tooltip_ability_ember_spirit_searing_chains_Facet_ember_spirit_chain_gang"
+            },
+            {
+                "name": "Double Impact",
+                "key": "DOTA_Tooltip_ability_ember_spirit_sleight_of_fist_Facet_ember_spirit_double_impact"
+            }
+        ]
     }
 ]
