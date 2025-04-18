@@ -1126,7 +1126,7 @@
                 "key": "DOTA_Tooltip_ability_doom_bringer_doom"
             }
         ],
-        "facets":[
+        "facets": [
             {
                 "name": "Gluttony",
                 "key": "DOTA_Tooltip_Facet_doom_bringer_gluttony"
@@ -1144,7 +1144,7 @@
     {
         "name": "Dragon Knight",
         "key": "npc_dota_hero_dragon_knight:n",
-        "skills":[
+        "skills": [
             {
                 "name": "Breathe Fire",
                 "key": "DOTA_Tooltip_ability_dragon_knight_breathe_fire"
@@ -1170,7 +1170,7 @@
                 "key": "DOTA_Tooltip_ability_dragon_knight_inherited_vigor"
             }
         ],
-        "facets":[
+        "facets": [
             {
                 "name": "Corrosive Dragon",
                 "key": "DOTA_Tooltip_Facet_dragon_knight_corrosive_dragon"
@@ -1188,8 +1188,8 @@
     {
         "name": "Drow Ranger",
         "key": "npc_dota_hero_drow_ranger:n",
-        "gender":"f",
-        "skills":[
+        "gender": "f",
+        "skills": [
             {
                 "name": "Frost Arrows",
                 "key": "DOTA_Tooltip_ability_drow_ranger_frost_arrows"
@@ -1223,6 +1223,50 @@
             {
                 "name": "Sidestep",
                 "key": "DOTA_Tooltip_Facet_drow_ranger_sidestep"
+            }
+        ]
+    },
+    {
+        "name": "Earth Spirit",
+        "key": "npc_dota_hero_earth_spirit:n",
+        "skills": [
+            {
+                "name": "Boulder Smash",
+                "key": "DOTA_Tooltip_ability_earth_spirit_boulder_smash"
+            },
+            {
+                "name": "Rolling Boulder",
+                "key": "DOTA_Tooltip_ability_earth_spirit_rolling_boulder"
+            },
+            {
+                "name": "Geomagnetic Grip",
+                "key": "DOTA_Tooltip_ability_earth_spirit_geomagnetic_grip"
+            },
+            {
+                "name": "Stone Remnant",
+                "key": "DOTA_Tooltip_ability_earth_spirit_stone_caller"
+            },
+            {
+                "name": "Magnetize",
+                "key": "DOTA_Tooltip_ability_earth_spirit_magnetize"
+            },
+            {
+                "name": "Enchant Remnant",
+                "key": "DOTA_Tooltip_ability_earth_spirit_petrify"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Resonance",
+                "key": "DOTA_Tooltip_Facet_earth_spirit_resonance"
+            },
+            {
+                "name": "Stepping Stone",
+                "key": "DOTA_Tooltip_Facet_earth_spirit_stepping_stone"
+            },
+            {
+                "name": "Ready to Roll",
+                "key": "DOTA_Tooltip_Facet_earth_spirit_ready_to_roll"
             }
         ]
     }
