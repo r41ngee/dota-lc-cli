@@ -1426,5 +1426,41 @@
                 "key": "DOTA_Tooltip_Facet_enchantress_overprotective_wisps"
             }
         ]
+    },
+    {
+        "name": "Enigma",
+        "key": "npc_dota_hero_enigma:n",
+        "skills": [
+            {
+                "name": "Malefice",
+                "key": "DOTA_Tooltip_ability_enigma_malefice"
+            },
+            {
+                "name": "Demonic Summonning",
+                "key": "DOTA_Tooltip_ability_enigma_demonic_conversion"
+            },
+            {
+                "name": "Midnight Pulse",
+                "key": "DOTA_Tooltip_ability_enigma_midnight_pulse"
+            },
+            {
+                "name": "Black Hole",
+                "key": "DOTA_Tooltip_ability_enigma_black_hole"
+            },
+            {
+                "name": "Gravity Well",
+                "key": "DOTA_Tooltip_ability_enigma_gravity_well"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Splitting Image",
+                "key": "DOTA_Tooltip_ability_enigma_splitting_image"
+            },
+            {
+                "name": "Event Horizon",
+                "key": "DOTA_Tooltip_ability_enigma_event_horizon"
+            }
+        ]
     }
 ]
