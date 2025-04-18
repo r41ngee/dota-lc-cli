@@ -1068,5 +1068,37 @@
                 "key": "DOTA_Tooltip_Ability_death_prophet_mourning_ritual"
             }
         ]
+    },
+    {
+        "name": "Disruptor",
+        "key": "npc_dota_hero_disruptor:n",
+        "skills":[
+            {
+                "name": "Thunder Strike",
+                "key": "DOTA_Tooltip_ability_disruptor_thunder_strike"
+            },
+            {
+                "name": "Glimpse",
+                "key": "DOTA_Tooltip_ability_disruptor_glimpse"
+            },
+            {
+                "name": "Kinetic Field",
+                "key": "DOTA_Tooltip_ability_disruptor_kinetic_field"
+            },
+            {
+                "name": "Static Storm",
+                "key": "DOTA_Tooltip_ability_disruptor_static_storm"
+            }
+        ],
+        "facets":[
+            {
+                "name": "Thunderstorm",
+                "key": "DOTA_Tooltip_Facet_disruptor_thunderstorm"
+            },
+            {
+                "name": "Kinetic Fence",
+                "key": "DOTA_Tooltip_Facet_disruptor_line_walls"
+            }
+        ]
     }
 ]
