@@ -1550,5 +1550,41 @@
                 "key": "DOTA_Tooltip_Facet_grimstroke_inkstigate"
             }
         ]
+    },
+    {
+        "name": "Gyrocopter",
+        "key": "npc_dota_hero_gyrocopter:n",
+        "skills": [
+            {
+                "name": "Chop Shop",
+                "key": "DOTA_Tooltip_ability_gyrocopter_chop_shop"
+            },
+            {
+                "name": "Rocket Barrage",
+                "key": "DOTA_Tooltip_ability_gyrocopter_rocket_barrage"
+            },
+            {
+                "name": "Homing Missile",
+                "key": "DOTA_Tooltip_ability_gyrocopter_homing_missile"
+            },
+            {
+                "name": "Flak Cannon",
+                "key": "DOTA_Tooltip_ability_gyrocopter_flak_cannon"
+            },
+            {
+                "name": "Call Down",
+                "key": "DOTA_Tooltip_ability_gyrocopter_call_down"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Secondary Strike",
+                "key": "DOTA_Tooltip_Facet_gyrocopter_secondary_strikes"
+            },
+            {
+                "name": "Afterburner",
+                "key": "DOTA_Tooltip_Facet_gyrocopter_afterburner"
+            }
+        ]
     }
 ]
