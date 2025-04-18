@@ -1027,5 +1027,46 @@
                 "key": "DOTA_Tooltip_Facet_dazzle_poison_bloom"
             }
         ]
+    },
+    {
+        "name": "Death Prophet",
+        "key": "npc_dota_hero_death_prophet:n",
+        "gender": "f",
+        "skills": [
+            {
+                "name": "Witchcraft",
+                "key": "DOTA_Tooltip_Ability_death_prophet_witchcraft"
+            },
+            {
+                "name": "Crypt Swarm",
+                "key": "DOTA_Tooltip_ability_death_prophet_carrion_swarm"
+            },
+            {
+                "name": "Silence",
+                "key": "DOTA_Tooltip_ability_death_prophet_silence"
+            },
+            {
+                "name": "Spirit Siphon",
+                "key": "DOTA_Tooltip_ability_death_prophet_spirit_siphon"
+            },
+            {
+                "name": "Exorcism",
+                "key": "DOTA_Tooltip_ability_death_prophet_exorcism"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Spirit Collector",
+                "key": "DOTA_Tooltip_ability_death_prophet_spirit_collector"
+            },
+            {
+                "name": "Suppress",
+                "key": "DOTA_Tooltip_Facet_death_prophet_suppress"
+            },
+            {
+                "name": "Mourning Ritual",
+                "key": "DOTA_Tooltip_Ability_death_prophet_mourning_ritual"
+            }
+        ]
     }
 ]
