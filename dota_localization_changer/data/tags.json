@@ -1381,5 +1381,50 @@
                 "key": "DOTA_Tooltip_ability_ember_spirit_sleight_of_fist_Facet_ember_spirit_double_impact"
             }
         ]
+    },
+    {
+        "name": "Enchantress",
+        "key": "npc_dota_hero_enchantress:n",
+        "gender": "f",
+        "skills": [
+            {
+                "name": "Untouchable",
+                "key": "DOTA_Tooltip_ability_enchantress_untouchable"
+            },
+            {
+                "name": "Enchant",
+                "key": "DOTA_Tooltip_ability_enchantress_enchant"
+            },
+            {
+                "name": "Nature's Attendants",
+                "key": "DOTA_Tooltip_ability_enchantress_natures_attendants"
+            },
+            {
+                "name": "Impetus",
+                "key": "DOTA_Tooltip_ability_enchantress_impetus"
+            },
+            {
+                "name": "Little Friends",
+                "key": "DOTA_Tooltip_ability_enchantress_little_friends"
+            },
+            {
+                "name": "Sproink",
+                "key": "DOTA_Tooltip_ability_enchantress_bunny_hop"
+            },
+            {
+                "name": "Rabble-Rouser",
+                "key": "DOTA_Tooltip_ability_enchantress_rabblerouser"
+            }
+        ],
+        "facets": [
+            {
+                "name": "Spellbounds",
+                "key": "DOTA_Tooltip_Facet_enchantress_spellbound"
+            },
+            {
+                "name": "Overprotective Wisps",
+                "key": "DOTA_Tooltip_Facet_enchantress_overprotective_wisps"
+            }
+        ]
     }
 ]
