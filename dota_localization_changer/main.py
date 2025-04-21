@@ -26,7 +26,6 @@ logging.basicConfig(
     filemode='w'
 )
 
-INNER_VPK_PATH = "resource/localization/abilities_russian.txt"
 
 def main() -> int:
     try:
