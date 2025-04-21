@@ -22,11 +22,15 @@ class Skill:
             return {self.key: self.name}
     
     def toDict(self):
-        return {
+        result = {
             "name": self.name,
             "key": self.key,
-            "username": self.username,
         }
+
+        if self.username is not None:
+            result["username"] = self.username
+
+        return result
 
 class Facet:
     def __init__(self, desc):
@@ -46,11 +50,15 @@ class Facet:
             return {self.key: self.name}
     
     def toDict(self):
-        return {
+        result = {
             "name": self.name,
             "key": self.key,
-            "username": self.username,
         }
+
+        if self.username is not None: 
+            result["username"] = self.username
+
+        return result
 
 class Hero:
     def __init__(self, desc: dict):
@@ -70,14 +78,21 @@ class Hero:
         self.desc = desc
 
     def toDict(self) -> dict:
-        return {
+        result = {
             "name": self.name,
             "key": self.key,
-            "username": self.username,
             "gender": self.gender,
             "skills": [i.toDict() for i in self.skills],
             "facets": [i.toDict() for i in self.facets],
         }
+
+        if self.username is not None:
+            result["username"] = self.username
+
+        if self.gender == "f":
+            result["gender"] = "f"
+
+        return result
 
     def ToKeyPair(self):
         if self.username is not None:
