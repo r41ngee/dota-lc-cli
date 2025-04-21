@@ -7,4 +7,4 @@ logger lvl - INFO
 
 ## data/tags.json
 
-usernames - null
+reset settings
