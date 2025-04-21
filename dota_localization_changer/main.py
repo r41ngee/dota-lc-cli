@@ -18,6 +18,7 @@ from dotatypes import *
 from misc import *
 
 
+# -LOGGER SETTINGS-
 logging.basicConfig(
     level=LOGGER_LEVEL,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -25,7 +26,6 @@ logging.basicConfig(
     filemode='w'
 )
 
-VPK_PATH = cfg["dota_directory"] + "/game/dota_russian/pak01_dir.vpk"
 INNER_VPK_PATH = "resource/localization/abilities_russian.txt"
 
 def main() -> int:
@@ -50,7 +50,6 @@ def main() -> int:
         print("Действия:")
         print("0. ВЫХОД")
         print("1. Изменить героя")
-        # print("2. Изменить предметы(неактивно)")
         print("2. Сбросить настройки\n")
 
         action = input("Действие: ")
