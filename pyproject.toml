@@ -1,6 +1,6 @@
 [project]
 name = "dota-localization-changer"
-version = "1.0.0"
+version = "1.1.0"
 description = ""
 authors = [
     {name = "r41ngee",email = "r41ngeee@gmail.com"}
