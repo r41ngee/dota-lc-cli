@@ -51,7 +51,8 @@ def main() -> int:
         print("0. ВЫХОД")
         print("1. Изменить героя")
         print("2. Загрузить пресет")
-        print("3. Сбросить настройки\n")
+        print("3. Сохранить пресет")
+        print("4. Сбросить настройки\n")
 
         action = input("Действие: ")
 
@@ -160,6 +161,12 @@ def main() -> int:
                 herolist = selected_preset.heroes
             
             case "3":
+                preset_name = input("Введите имя пресета(английские буквы, цифры и нижние подчеркивания): ")
+
+                preset = Preset(preset_name, heroes=[i.toDict() for i in herolist])
+                preset.save()
+
+            case "4":
                 for i in herolist:
                     i.username = None
                     for j in i.skills:
