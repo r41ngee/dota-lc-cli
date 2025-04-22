@@ -23,7 +23,7 @@ class Preset:
                 ensure_ascii=False,
             )
 
-    def load(filename: str) -> None:
+    def load(filename: str):
         with open(f"presets/{filename}", "r") as f:
             dct = json.load(f)
             return Preset(
@@ -31,3 +31,8 @@ class Preset:
                 heroes=dct["heroes"],
                 items=dct["items"],
             )
+        
+    def loadAll() -> list:
+        files = [f for f in os.listdir("presets/") if os.path.isfile(os.path.join("presets/", f))]
+
+        return [Preset.load(f) for f in files]
