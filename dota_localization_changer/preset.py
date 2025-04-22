@@ -9,3 +9,17 @@ class Preset:
 
         self.heroes = heroes
         self.items = items
+
+    def save(self):
+        os.makedirs("presets", exist_ok=True)
+
+        with open(f"presets/{self.filename}", "w") as f:
+            json.dump(
+                {
+                    "heroes": self.heroes,
+                    "items": self.items,
+                },
+                f,
+                indent=4,
+                ensure_ascii=False,
+            )
