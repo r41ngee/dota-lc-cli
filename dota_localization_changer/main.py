@@ -16,6 +16,7 @@ import tabulate
 from config import *
 from dotatypes import *
 from misc import *
+from presets import *
 
 
 # -LOGGER SETTINGS-
@@ -49,7 +50,7 @@ def main() -> int:
         print("Действия:")
         print("0. ВЫХОД")
         print("1. Изменить героя")
-        print("2. Пресеты")
+        print("2. Загрузить пресет")
         print("3. Сбросить настройки\n")
 
         action = input("Действие: ")
@@ -145,7 +146,18 @@ def main() -> int:
                                 logging.info(f"Name of facet {current_facet.name} is {current_facet.username} now")
 
             case "2":
-                ...
+                preset_filenames: list = Preset.load_names()
+                table = [["0", "Выход"]]
+                table += [[preset_filenames.index(name) + 1, name] for name in preset_filenames]
+                print(tabulate.tabulate(table, missingval="N/A", headers=["Индекс", "Пресет"]))
+                
+                selected_preset_input = int(input("Выбранный пресет: "))
+                if selected_preset_input == 0:
+                    break
+
+                selected_preset: Preset = Preset.load(preset_filenames[selected_preset_input - 1])
+
+                herolist = selected_preset.heroes
             
             case "3":
                 for i in herolist:
