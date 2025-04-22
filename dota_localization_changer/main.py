@@ -49,7 +49,8 @@ def main() -> int:
         print("Действия:")
         print("0. ВЫХОД")
         print("1. Изменить героя")
-        print("2. Сбросить настройки\n")
+        print("2. Пресеты")
+        print("3. Сбросить настройки\n")
 
         action = input("Действие: ")
 
@@ -142,11 +143,11 @@ def main() -> int:
                                 else:
                                     current_facet.username = select_facet
                                 logging.info(f"Name of facet {current_facet.name} is {current_facet.username} now")
-                                
-            # case "2":
-            #     print("Ну сказано же что неактивно")
-            #     continue
+
             case "2":
+                ...
+            
+            case "3":
                 for i in herolist:
                     i.username = None
                     for j in i.skills:

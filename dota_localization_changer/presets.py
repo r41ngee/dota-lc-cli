@@ -32,7 +32,7 @@ class Preset:
                 items=dct["items"],
             )
         
-    def loadAll() -> list:
+    def load_names() -> list:
         files = [f for f in os.listdir("presets/") if os.path.isfile(os.path.join("presets/", f))]
 
         return files
