@@ -32,13 +32,24 @@ def parse(lines: list|tuple) -> dict:
             logging.debug(f"Line {lindex+1} matched with comment")
             key, value, _ = match_c.groups()
             key, value = key.strip('"'), value.strip('"')
-            data[key] = value
+            if "<" in value:
+                logging.debug(f"Line {key}:{value} skipped(html)")
+            else:
+                logging.debug(f"Readed key {key}: value {value}")
+
+                data[key] = value
             parsed += 1
         elif match_wc:
             logging.debug(f"Line {lindex+1} matched without comment")
             key, value = match_wc.groups()
             key, value = key.strip('"'), value.strip('"')
-            data[key] = value
+
+            if "<" in value:
+                logging.debug(f"Line {key}:{value} skipped(html)")
+            else:
+                logging.debug(f"Readed key {key}: value {value}")
+
+                data[key] = value
             parsed += 1
         else:
             logging.warning(f"Parse error: line {lindex+1} was not parsed")
