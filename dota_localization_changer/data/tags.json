@@ -2,371 +2,307 @@
     {
         "name": "Alchemist",
         "key": "npc_dota_hero_alchemist:n",
-        "username": null,
         "gender": "m",
         "skills": [
             {
                 "name": "Acid Spray",
-                "key": "DOTA_Tooltip_ability_alchemist_acid_spray",
-                "username": null
+                "key": "DOTA_Tooltip_ability_alchemist_acid_spray"
             },
             {
                 "name": "Unstable Concoction Throw",
-                "key": "DOTA_Tooltip_ability_alchemist_unstable_concoction_throw",
-                "username": null
+                "key": "DOTA_Tooltip_ability_alchemist_unstable_concoction_throw"
             },
             {
                 "name": "Unstable Concoction",
-                "key": "DOTA_Tooltip_ability_alchemist_unstable_concoction",
-                "username": null
+                "key": "DOTA_Tooltip_ability_alchemist_unstable_concoction"
             },
             {
                 "name": "Greevil's Greed",
-                "key": "DOTA_Tooltip_ability_alchemist_goblins_greed",
-                "username": null
+                "key": "DOTA_Tooltip_ability_alchemist_goblins_greed"
             },
             {
                 "name": "Chemical Rage",
-                "key": "DOTA_Tooltip_ability_alchemist_chemical_rage",
-                "username": null
+                "key": "DOTA_Tooltip_ability_alchemist_chemical_rage"
             },
             {
                 "name": "Corrosive Weaponry",
-                "key": "DOTA_Tooltip_ability_alchemist_corrosive_weaponry",
-                "username": null
+                "key": "DOTA_Tooltip_ability_alchemist_corrosive_weaponry"
             },
             {
                 "name": "Berserk Potion",
-                "key": "DOTA_Tooltip_ability_alchemist_berserk_potion",
-                "username": null
+                "key": "DOTA_Tooltip_ability_alchemist_berserk_potion"
             }
         ],
         "facets": [
             {
                 "name": "Mixologist",
-                "key": "DOTA_Tooltip_facet_alchemist_mixologist",
-                "username": null
+                "key": "DOTA_Tooltip_facet_alchemist_mixologist"
             },
             {
                 "name": "Seed Money",
-                "key": "DOTA_Tooltip_facet_alchemist_seed_money",
-                "username": null
+                "key": "DOTA_Tooltip_facet_alchemist_seed_money"
             },
             {
                 "name": "Dividends",
-                "key": "DOTA_Tooltip_facet_alchemist_dividends",
-                "username": null
+                "key": "DOTA_Tooltip_facet_alchemist_dividends"
             }
         ]
     },
     {
         "name": "Abaddon",
         "key": "npc_dota_hero_abaddon:n",
-        "username": null,
         "gender": "m",
         "skills": [
             {
                 "name": "Mist Coil",
-                "key": "DOTA_Tooltip_ability_abaddon_death_coil",
-                "username": null
+                "key": "DOTA_Tooltip_ability_abaddon_death_coil"
             },
             {
                 "name": "Aphotic Shield",
-                "key": "DOTA_Tooltip_ability_abaddon_aphotic_shield",
-                "username": null
+                "key": "DOTA_Tooltip_ability_abaddon_aphotic_shield"
             },
             {
                 "name": "Curse of Avernus",
-                "key": "DOTA_Tooltip_ability_abaddon_frostmourne",
-                "username": null
+                "key": "DOTA_Tooltip_ability_abaddon_frostmourne"
             }
         ],
         "facets": [
             {
                 "name": "The Quickening",
-                "key": "DOTA_Tooltip_ability_abaddon_the_quickening",
-                "username": null
+                "key": "DOTA_Tooltip_ability_abaddon_the_quickening"
             },
             {
                 "name": "Mephitic Shroud",
-                "key": "DOTA_Tooltip_facet_abaddon_mephitic_shroud",
-                "username": null
+                "key": "DOTA_Tooltip_facet_abaddon_mephitic_shroud"
             }
         ]
     },
     {
         "name": "Ancient Apparition",
         "key": "npc_dota_hero_ancient_apparition:n",
-        "username": null,
         "gender": "m",
         "skills": [
             {
                 "name": "Cold Feet",
-                "key": "DOTA_Tooltip_ability_ancient_apparition_cold_feet",
-                "username": null
+                "key": "DOTA_Tooltip_ability_ancient_apparition_cold_feet"
             },
             {
                 "name": "Ice Vortex",
-                "key": "DOTA_Tooltip_ability_ancient_apparition_ice_vortex",
-                "username": null
+                "key": "DOTA_Tooltip_ability_ancient_apparition_ice_vortex"
             },
             {
                 "name": "Death Rime",
-                "key": "DOTA_Tooltip_ability_ancient_apparition_death_rime",
-                "username": null
+                "key": "DOTA_Tooltip_ability_ancient_apparition_death_rime"
             },
             {
                 "name": "Chilling Touch",
-                "key": "DOTA_Tooltip_ability_ancient_apparition_chilling_touch",
-                "username": null
+                "key": "DOTA_Tooltip_ability_ancient_apparition_chilling_touch"
             },
             {
                 "name": "Ice Blast",
-                "key": "DOTA_Tooltip_ability_ancient_apparition_chilling_touch",
-                "username": null
+                "key": "DOTA_Tooltip_ability_ancient_apparition_chilling_touch"
             }
         ],
         "facets": [
             {
                 "name": "Exposure",
-                "key": "DOTA_Tooltip_Facet_ancient_apparition_exposure",
-                "username": null
+                "key": "DOTA_Tooltip_Facet_ancient_apparition_exposure"
             },
             {
                 "name": "Bone Chill",
-                "key": "DOTA_Tooltip_Facet_ancient_apparition_exposure",
-                "username": null
+                "key": "DOTA_Tooltip_Facet_ancient_apparition_exposure"
             }
         ]
     },
     {
         "name": "Anti-Mage",
         "key": "npc_dota_hero_antimage:n",
-        "username": null,
         "gender": "m",
         "skills": [
             {
                 "name": "Mana Break",
-                "key": "DOTA_Tooltip_ability_antimage_mana_break",
-                "username": null
+                "key": "DOTA_Tooltip_ability_antimage_mana_break"
             },
             {
                 "name": "Persecutor",
-                "key": "DOTA_Tooltip_ability_antimage_persectur",
-                "username": null
+                "key": "DOTA_Tooltip_ability_antimage_persectur"
             },
             {
                 "name": "Blink",
-                "key": "DOTA_Tooltip_ability_antimage_blink",
-                "username": null
+                "key": "DOTA_Tooltip_ability_antimage_blink"
             },
             {
                 "name": "Counterspell",
-                "key": "DOTA_Tooltip_ability_antimage_counterspell",
-                "username": null
+                "key": "DOTA_Tooltip_ability_antimage_counterspell"
             },
             {
                 "name": "Mana Void",
-                "key": "DOTA_Tooltip_ability_antimage_mana_void",
-                "username": null
+                "key": "DOTA_Tooltip_ability_antimage_mana_void"
             }
         ],
         "facets": [
             {
                 "name": "Magebane's Mirror",
-                "key": "DOTA_Tooltip_Facet_antimage_magebanes_mirror",
-                "username": null
+                "key": "DOTA_Tooltip_Facet_antimage_magebanes_mirror"
             },
             {
                 "name": "Mana Thirst",
-                "key": "DOTA_Tooltip_Facet_antimage_mana_thirst",
-                "username": null
+                "key": "DOTA_Tooltip_Facet_antimage_mana_thirst"
             }
         ]
     },
     {
         "name": "Arc Warden",
         "key": "npc_dota_hero_arc_warden:n",
-        "username": null,
         "gender": "m",
         "skills": [
             {
                 "name": "Flux",
-                "key": "DOTA_Tooltip_ability_arc_warden_flux",
-                "username": null
+                "key": "DOTA_Tooltip_ability_arc_warden_flux"
             },
             {
                 "name": "Magnetic Field",
-                "key": "DOTA_Tooltip_ability_arc_warden_magnetic_field",
-                "username": null
+                "key": "DOTA_Tooltip_ability_arc_warden_magnetic_field"
             },
             {
                 "name": "Spark Wraith",
-                "key": "DOTA_Tooltip_ability_arc_warden_spark_wraith",
-                "username": null
+                "key": "DOTA_Tooltip_ability_arc_warden_spark_wraith"
             },
             {
                 "name": "Tempest Double",
-                "key": "DOTA_Tooltip_ability_arc_warden_tempest_double",
-                "username": null
+                "key": "DOTA_Tooltip_ability_arc_warden_tempest_double"
             },
             {
                 "name": "Runic Infusion",
-                "key": "DOTA_Tooltip_ability_arc_warden_runic_infusion",
-                "username": null
+                "key": "DOTA_Tooltip_ability_arc_warden_runic_infusion"
             }
         ],
         "facets": [
             {
                 "name": "Runed Replica",
-                "key": "DOTA_Tooltip_Facet_arc_warden_runed_replica",
-                "username": null
+                "key": "DOTA_Tooltip_Facet_arc_warden_runed_replica"
             },
             {
                 "name": "Power Capture",
-                "key": "DOTA_Tooltip_Facet_arc_warden_power_capture",
-                "username": null
+                "key": "DOTA_Tooltip_Facet_arc_warden_power_capture"
             }
         ]
     },
     {
         "name": "Axe",
         "key": "npc_dota_hero_axe:n",
-        "username": null,
         "gender": "m",
         "skills": [
             {
                 "name": "Berserker's Call",
-                "key": "DOTA_Tooltip_ability_axe_berserkers_call",
-                "username": null
+                "key": "DOTA_Tooltip_ability_axe_berserkers_call"
             },
             {
                 "name": "Battle Hunger",
-                "key": "DOTA_Tooltip_ability_axe_battle_hunger",
-                "username": null
+                "key": "DOTA_Tooltip_ability_axe_battle_hunger"
             },
             {
                 "name": "Counter Helix",
-                "key": "DOTA_Tooltip_ability_axe_counter_helix",
-                "username": null
+                "key": "DOTA_Tooltip_ability_axe_counter_helix"
             },
             {
                 "name": "Culling Blade",
-                "key": "DOTA_Tooltip_ability_axe_culling_blade",
-                "username": null
+                "key": "DOTA_Tooltip_ability_axe_culling_blade"
             },
             {
                 "name": "Coat of Blood",
-                "key": "DOTA_Tooltip_ability_axe_coat_of_blood",
-                "username": null
+                "key": "DOTA_Tooltip_ability_axe_coat_of_blood"
             }
         ],
         "facets": [
             {
                 "name": "Call Out",
-                "key": "DOTA_Tooltip_Facet_axe_call_out",
-                "username": null
+                "key": "DOTA_Tooltip_Facet_axe_call_out"
             },
             {
                 "name": "One Man Army",
-                "key": "DOTA_Tooltip_ability_axe_one_man_army",
-                "username": null
+                "key": "DOTA_Tooltip_ability_axe_one_man_army"
             }
         ]
     },
     {
         "name": "Bane",
         "key": "npc_dota_hero_bane:n",
-        "username": null,
         "gender": "m",
         "skills": [
             {
                 "name": "Enfeeble",
-                "key": "DOTA_Tooltip_ability_bane_enfeeble",
-                "username": null
+                "key": "DOTA_Tooltip_ability_bane_enfeeble"
             },
             {
                 "name": "Brain Sap",
-                "key": "DOTA_Tooltip_ability_bane_brain_sap",
-                "username": null
+                "key": "DOTA_Tooltip_ability_bane_brain_sap"
             },
             {
                 "name": "Nightmare",
-                "key": "DOTA_Tooltip_ability_bane_nightmare",
-                "username": null
+                "key": "DOTA_Tooltip_ability_bane_nightmare"
             },
             {
                 "name": "Ichor of Nyctasha",
-                "key": "DOTA_Tooltip_ability_bane_ichor_of_nyctasha",
-                "username": null
+                "key": "DOTA_Tooltip_ability_bane_ichor_of_nyctasha"
             },
             {
                 "name": "Fiend's Grip",
-                "key": "DOTA_Tooltip_ability_bane_fiends_grip",
-                "username": null
+                "key": "DOTA_Tooltip_ability_bane_fiends_grip"
             }
         ],
         "facets": [
             {
                 "name": "Dream Stalker",
-                "key": "DOTA_Tooltip_Facet_bane_dream_stalker",
-                "username": null
+                "key": "DOTA_Tooltip_Facet_bane_dream_stalker"
             },
             {
                 "name": "Sleepwalk",
-                "key": "DOTA_Tooltip_Facet_bane_sleepwalk",
-                "username": null
+                "key": "DOTA_Tooltip_Facet_bane_sleepwalk"
             }
         ]
     },
     {
         "name": "Batrider",
         "key": "npc_dota_hero_batrider:n",
-        "username": null,
         "gender": "m",
         "skills": [
             {
                 "name": "Sticky Napalm",
-                "key": "DOTA_Tooltip_ability_batrider_sticky_napalm",
-                "username": null
+                "key": "DOTA_Tooltip_ability_batrider_sticky_napalm"
             },
             {
                 "name": "Flamebreak",
-                "key": "DOTA_Tooltip_ability_batrider_flamebreak",
-                "username": null
+                "key": "DOTA_Tooltip_ability_batrider_flamebreak"
             },
             {
                 "name": "Firefly",
-                "key": "DOTA_Tooltip_ability_batrider_firefly",
-                "username": null
+                "key": "DOTA_Tooltip_ability_batrider_firefly"
             },
             {
                 "name": "Flaming Lasso",
-                "key": "DOTA_Tooltip_ability_batrider_flaming_lasso",
-                "username": null
+                "key": "DOTA_Tooltip_ability_batrider_flaming_lasso"
             },
             {
                 "name": "Smoldering Resin",
-                "key": "DOTA_Tooltip_ability_batrider_smoldering_resin",
-                "username": null
+                "key": "DOTA_Tooltip_ability_batrider_smoldering_resin"
             }
         ],
         "facets": [
             {
                 "name": "Arsonist",
-                "key": "DOTA_Tooltip_Facet_batrider_arsonist",
-                "username": null
+                "key": "DOTA_Tooltip_Facet_batrider_arsonist"
             },
             {
                 "name": "Stoked",
-                "key": "DOTA_Tooltip_ability_batrider_stoked",
-                "username": null
+                "key": "DOTA_Tooltip_ability_batrider_stoked"
             }
         ]
     },
     {
         "name": "Beastmaster",
         "key": "npc_dota_hero_beastmaster:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Wild Axes",
@@ -411,6 +347,7 @@
     {
         "name": "Bloodseeker",
         "key": "npc_dota_hero_bloodseeker:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Bloodrage",
@@ -443,6 +380,7 @@
     {
         "name": "Bounty Hunter",
         "key": "npc_dota_hero_bounty_hunter:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Shuriken Toss",
@@ -483,6 +421,7 @@
     {
         "name": "Brewmaster",
         "key": "npc_dota_hero_brewmaster:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Thunder Clap",
@@ -523,6 +462,7 @@
     {
         "name": "Bristleback",
         "key": "npc_dota_hero_bristleback:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Viscous Nasal Goo",
@@ -604,6 +544,7 @@
     {
         "name": "Centaur Warrunner",
         "key": "npc_dota_hero_centaur:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Hoof Stomp",
@@ -648,6 +589,7 @@
     {
         "name": "Chaos Knight",
         "key": "npc_dota_hero_chaos_knight:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Chaos Bolt",
@@ -688,6 +630,7 @@
     {
         "name": "Chen",
         "key": "npc_dota_hero_chen:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Penitence",
@@ -744,6 +687,7 @@
     {
         "name": "Clinkz",
         "key": "npc_dota_hero_clinkz:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Burning Barrage",
@@ -792,6 +736,7 @@
     {
         "name": "Clockwerk",
         "key": "npc_dota_hero_rattletrap:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Battery Assault",
@@ -873,6 +818,7 @@
     {
         "name": "Dark Seer",
         "key": "npc_dota_hero_dark_seer:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Vacuum",
@@ -995,6 +941,7 @@
     {
         "name": "Dazzle",
         "key": "npc_dota_hero_dazzle:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Poison Touch",
@@ -1072,6 +1019,7 @@
     {
         "name": "Disruptor",
         "key": "npc_dota_hero_disruptor:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Thunder Strike",
@@ -1104,6 +1052,7 @@
     {
         "name": "Doom",
         "key": "npc_dota_hero_doom_bringer:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Devour",
@@ -1144,6 +1093,7 @@
     {
         "name": "Dragon Knight",
         "key": "npc_dota_hero_dragon_knight:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Breathe Fire",
@@ -1229,6 +1179,7 @@
     {
         "name": "Earth Spirit",
         "key": "npc_dota_hero_earth_spirit:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Boulder Smash",
@@ -1273,6 +1224,7 @@
     {
         "name": "Earthshaker",
         "key": "npc_dota_hero_earthshaker:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Fissure",
@@ -1309,6 +1261,7 @@
     {
         "name": "Elder Titan",
         "key": "npc_dota_hero_elder_titan:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Echo Stomp",
@@ -1345,6 +1298,7 @@
     {
         "name": "Ember Spirit",
         "key": "npc_dota_hero_ember_spirit:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Searing Chains",
@@ -1430,6 +1384,7 @@
     {
         "name": "Enigma",
         "key": "npc_dota_hero_enigma:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Malefice",
@@ -1466,6 +1421,7 @@
     {
         "name": "Faceless Void",
         "key": "npc_dota_hero_faceless_void:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Time Walk",
@@ -1510,6 +1466,7 @@
     {
         "name": "Grimstroke",
         "key": "npc_dota_hero_grimstroke:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Stroke of Fate",
@@ -1554,6 +1511,7 @@
     {
         "name": "Gyrocopter",
         "key": "npc_dota_hero_gyrocopter:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Chop Shop",
@@ -1635,6 +1593,7 @@
     {
         "name": "Huskar",
         "key": "npc_dota_hero_huskar:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Inner Fire",
@@ -1671,6 +1630,7 @@
     {
         "name": "Invoker",
         "key": "npc_dota_hero_invoker:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Quas",
@@ -1747,6 +1707,7 @@
     {
         "name": "Io",
         "key": "npc_dota_hero_wisp:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Sight Seer",
@@ -1791,6 +1752,7 @@
     {
         "name": "Jakiro",
         "key": "npc_dota_hero_jakiro:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Dual Breath",
@@ -1827,6 +1789,7 @@
     {
         "name": "Juggernaut",
         "key": "npc_dota_hero_juggernaut:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Blade Fury",
@@ -1867,6 +1830,7 @@
     {
         "name": "Keeper of the Light",
         "key": "npc_dota_hero_keeper_of_the_light:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Illuminate",
@@ -1902,6 +1866,7 @@
     {
         "name": "Kez",
         "key": "npc_dota_hero_kez:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Switch Discipline",
@@ -1954,6 +1919,7 @@
     {
         "name": "Kunnka",
         "key": "npc_dota_hero_kunkka:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Torrent",
@@ -2031,6 +1997,7 @@
     {
         "name": "Leshrac",
         "key": "npc_dota_hero_leshrac:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Split Earth",
@@ -2071,6 +2038,7 @@
     {
         "name": "Lich",
         "key": "npc_dota_hero_lich:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Frost Blast",
@@ -2107,6 +2075,7 @@
     {
         "name": "Lifestealer",
         "key": "npc_dota_hero_life_stealer:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Rage",
@@ -2142,8 +2111,8 @@
     },
     {
         "name": "Lina",
-        "gender": "f",
         "key": "npc_dota_hero_lina:n",
+        "gender": "f",
         "skills": [
             {
                 "name": "Dragon Slave",
@@ -2184,6 +2153,7 @@
     {
         "name": "Lion",
         "key": "npc_dota_hero_lion:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Earth Spike",
@@ -2216,6 +2186,7 @@
     {
         "name": "Lone Druid",
         "key": "npc_dota_hero_lone_druid:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Summon Spirit Bear",
@@ -2289,6 +2260,7 @@
     {
         "name": "Lycan",
         "key": "npc_dota_hero_lycan:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Summon Wolves",
@@ -2333,6 +2305,7 @@
     {
         "name": "Magnus",
         "key": "npc_dota_hero_magnataur:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Shockwave",
@@ -2414,6 +2387,7 @@
     {
         "name": "Mars",
         "key": "npc_dota_hero_mars:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Dauntless",
@@ -2495,6 +2469,7 @@
     {
         "name": "Meepo",
         "key": "npc_dota_hero_meepo:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Earthbind",
@@ -2538,8 +2513,8 @@
     },
     {
         "name": "Mirana",
-        "gender": "f",
         "key": "npc_dota_hero_mirana:n",
+        "gender": "f",
         "skills": [
             {
                 "name": "Sacred Arrow",
@@ -2576,6 +2551,7 @@
     {
         "name": "Monkey King",
         "key": "npc_dota_hero_monkey_king:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Tree Dance",
@@ -2616,6 +2592,7 @@
     {
         "name": "Morphling",
         "key": "npc_dota_hero_morphling:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Waveform",
@@ -2651,8 +2628,8 @@
     },
     {
         "name": "Muerta",
-        "gender": "f",
         "key": "npc_dota_hero_muerta:n",
+        "gender": "f",
         "skills": [
             {
                 "name": "Dead Shot",
@@ -2738,6 +2715,7 @@
     {
         "name": "Nature's Prophet",
         "key": "npc_dota_hero_furion:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Sprout",
@@ -2778,6 +2756,7 @@
     {
         "name": "Necrophos",
         "key": "npc_dota_hero_necrolyte:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Death Pulse",
@@ -2818,6 +2797,7 @@
     {
         "name": "Night Stalker",
         "key": "npc_dota_hero_night_stalker:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Void",
@@ -2854,6 +2834,7 @@
     {
         "name": "Nyx Assassin",
         "key": "npc_dota_hero_nyx_assassin:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Impale",
@@ -2898,6 +2879,7 @@
     {
         "name": "Ogre Magi",
         "key": "npc_dota_hero_ogre_magi:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Dumb Luck",
@@ -2942,6 +2924,7 @@
     {
         "name": "Omniknight",
         "key": "npc_dota_hero_omniknight:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Purification",
@@ -2978,6 +2961,7 @@
     {
         "name": "Oracle",
         "key": "npc_dota_hero_oracle:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Fortune's End",
@@ -3014,6 +2998,7 @@
     {
         "name": "Outworld Destroyer",
         "key": "npc_dota_hero_obsidian_destroyer:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Ominous Discernment",
@@ -3050,6 +3035,7 @@
     {
         "name": "Pangolier",
         "key": "npc_dota_hero_pangolier:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Swashbuckle",
@@ -3131,6 +3117,7 @@
     {
         "name": "Phantom Lancer",
         "key": "npc_dota_hero_phantom_lancer:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Spirit Lance",
@@ -3167,6 +3154,7 @@
     {
         "name": "Phoenix",
         "key": "npc_dota_hero_phoenix:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Icarus Dive",
@@ -3203,6 +3191,7 @@
     {
         "name": "Primal Beast",
         "key": "npc_dota_hero_primal_beast:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Trample",
@@ -3243,6 +3232,7 @@
     {
         "name": "Puck",
         "key": "npc_dota_hero_puck:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Illusory Orb",
@@ -3283,6 +3273,7 @@
     {
         "name": "Pudge",
         "key": "npc_dota_hero_pudge:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Meat Hook",
@@ -3319,6 +3310,7 @@
     {
         "name": "Pugna",
         "key": "npc_dota_hero_pugna:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Nether Blast",
@@ -3354,8 +3346,8 @@
     },
     {
         "name": "Queen of Pain",
-        "gender": "f",
         "key": "npc_dota_hero_queenofpain:n",
+        "gender": "f",
         "skills": [
             {
                 "name": "Shadow Strike",
@@ -3392,6 +3384,7 @@
     {
         "name": "Razor",
         "key": "npc_dota_hero_razor:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Plasma Field",
@@ -3428,6 +3421,7 @@
     {
         "name": "Riki",
         "key": "npc_dota_hero_riki:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Smoke Screen",
@@ -3464,6 +3458,7 @@
     {
         "name": "Ringmaster",
         "key": "npc_dota_hero_ringmaster:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Spotlight",
@@ -3491,6 +3486,7 @@
     {
         "name": "Rubick",
         "key": "npc_dota_hero_rubick:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Telekinesis",
@@ -3527,6 +3523,7 @@
     {
         "name": "Sand King",
         "key": "npc_dota_hero_sand_king:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Burrowstrike",
@@ -3563,6 +3560,7 @@
     {
         "name": "Shadow Demon",
         "key": "npc_dota_hero_shadow_demon:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Disruption",
@@ -3603,6 +3601,7 @@
     {
         "name": "Shadow Fiend",
         "key": "npc_dota_hero_nevermore:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Necromastery",
@@ -3635,6 +3634,7 @@
     {
         "name": "Shadow Shaman",
         "key": "npc_dota_hero_shadow_shaman:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Ether Shock",
@@ -3671,6 +3671,7 @@
     {
         "name": "Silencer",
         "key": "npc_dota_hero_silencer:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Arcane Curse",
@@ -3707,16 +3708,7 @@
     {
         "name": "Skywrath Mage",
         "key": "npc_dota_hero_skywrath_mage:n",
-        "facets": [
-            {
-                "name": "Shield of the Scion",
-                "key": "DOTA_Tooltip_Facet_skywrath_mage_shield"
-            },
-            {
-                "name": "Staff of the Scion",
-                "key": "DOTA_Tooltip_Facet_skywrath_mage_staff"
-            }
-        ],
+        "gender": "m",
         "skills": [
             {
                 "name": "Arcane Bolt",
@@ -3734,11 +3726,22 @@
                 "name": "Mystic Flare",
                 "key": "DOTA_Tooltip_ability_skywrath_mage_mystic_flare"
             }
+        ],
+        "facets": [
+            {
+                "name": "Shield of the Scion",
+                "key": "DOTA_Tooltip_Facet_skywrath_mage_shield"
+            },
+            {
+                "name": "Staff of the Scion",
+                "key": "DOTA_Tooltip_Facet_skywrath_mage_staff"
+            }
         ]
     },
     {
         "name": "Slardar",
         "key": "npc_dota_hero_slardar:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Seaborn Sentinel",
@@ -3775,6 +3778,7 @@
     {
         "name": "Slark",
         "key": "npc_dota_hero_slark:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Dark Pact",
@@ -3814,8 +3818,8 @@
     },
     {
         "name": "Snapfire",
-        "gender": "f",
         "key": "npc_dota_hero_snapfire:n",
+        "gender": "f",
         "skills": [
             {
                 "name": "Scatterblast",
@@ -3860,6 +3864,7 @@
     {
         "name": "Sniper",
         "key": "npc_dota_hero_sniper:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Shrapnel",
@@ -3945,6 +3950,7 @@
     {
         "name": "Spirit Breaker",
         "key": "npc_dota_hero_spirit_breaker:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Charge of Darkness",
@@ -3985,6 +3991,7 @@
     {
         "name": "Storm Spirit",
         "key": "npc_dota_hero_storm_spirit:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Galvanized",
@@ -4021,6 +4028,7 @@
     {
         "name": "Sven",
         "key": "npc_dota_hero_sven:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Storm Hammer",
@@ -4057,6 +4065,7 @@
     {
         "name": "Techies",
         "key": "npc_dota_hero_techies:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Blast Off!",
@@ -4146,6 +4155,7 @@
     {
         "name": "Terrorblade",
         "key": "npc_dota_hero_terrorblade:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Reflection",
@@ -4186,6 +4196,7 @@
     {
         "name": "Tidehunter",
         "key": "npc_dota_hero_tidehunter:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Gush",
@@ -4226,6 +4237,7 @@
     {
         "name": "Timbersaw",
         "key": "npc_dota_hero_shredder:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Whirling Death",
@@ -4266,6 +4278,7 @@
     {
         "name": "Tinker",
         "key": "npc_dota_hero_tinker:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Laser",
@@ -4310,6 +4323,7 @@
     {
         "name": "Tiny",
         "key": "npc_dota_hero_tiny:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Avalanche",
@@ -4354,6 +4368,7 @@
     {
         "name": "Treant Protector",
         "key": "npc_dota_hero_treant:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Nature's Guise",
@@ -4394,6 +4409,7 @@
     {
         "name": "Troll Warlord",
         "key": "npc_dota_hero_troll_warlord:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Berserker's Rage",
@@ -4434,6 +4450,7 @@
     {
         "name": "Tusk",
         "key": "npc_dota_hero_tusk:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Ice Shards",
@@ -4478,6 +4495,7 @@
     {
         "name": "Underlord",
         "key": "npc_dota_hero_abyssal_underlord:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Firestorm",
@@ -4514,6 +4532,7 @@
     {
         "name": "Undying",
         "key": "npc_dota_hero_undying:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Decay",
@@ -4550,6 +4569,7 @@
     {
         "name": "Ursa",
         "key": "npc_dota_hero_ursa:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Earthshock",
@@ -4623,6 +4643,7 @@
     {
         "name": "Venomancer",
         "key": "npc_dota_hero_venomancer:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Venomous Gale",
@@ -4655,6 +4676,7 @@
     {
         "name": "Viper",
         "key": "npc_dota_hero_viper:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Poison Attack",
@@ -4695,6 +4717,7 @@
     {
         "name": "Visage",
         "key": "npc_dota_hero_visage:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Grave Chill",
@@ -4739,6 +4762,7 @@
     {
         "name": "Void Spirit",
         "key": "npc_dota_hero_void_spirit:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Aether Remnant",
@@ -4775,6 +4799,7 @@
     {
         "name": "Warlock",
         "key": "npc_dota_hero_warlock:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Fatal Bonds",
@@ -4811,6 +4836,7 @@
     {
         "name": "Weaver",
         "key": "npc_dota_hero_weaver:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "The Swarm",
@@ -4847,6 +4873,7 @@
     {
         "name": "Windranger",
         "key": "npc_dota_hero_windrunner:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Focus Fire",
@@ -4887,6 +4914,7 @@
     {
         "name": "Winter Wyvern",
         "key": "npc_dota_hero_winter_wyvern:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Arctic Burn",
@@ -4923,6 +4951,7 @@
     {
         "name": "Witch Doctor",
         "key": "npc_dota_hero_witch_doctor:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Paralyzing Cask",
@@ -4963,6 +4992,7 @@
     {
         "name": "Wraith King",
         "key": "npc_dota_hero_skeleton_king:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Wraithfire Blast",
@@ -5003,6 +5033,7 @@
     {
         "name": "Zeus",
         "key": "npc_dota_hero_zuus:n",
+        "gender": "m",
         "skills": [
             {
                 "name": "Arc Lightning",
