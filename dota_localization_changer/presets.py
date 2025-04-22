@@ -35,4 +35,4 @@ class Preset:
     def loadAll() -> list:
         files = [f for f in os.listdir("presets/") if os.path.isfile(os.path.join("presets/", f))]
 
-        return [Preset.load(f) for f in files]
+        return files
