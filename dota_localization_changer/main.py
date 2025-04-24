@@ -56,9 +56,10 @@ def main() -> int:
         print("Действия:")
         print("0. ВЫХОД")
         print("1. Изменить героя")
-        print("2. Загрузить пресет")
-        print("3. Сохранить пресет")
-        print("4. Сбросить настройки\n")
+        print("2. Изменить предметы")
+        print("3. Загрузить пресет")
+        print("4. Сохранить пресет")
+        print("5. Сбросить настройки\n")
 
         action = input("Действие: ")
 
@@ -153,6 +154,32 @@ def main() -> int:
                                 logging.info(f"Name of facet {current_facet.name} is {current_facet.username} now")
 
             case "2":
+                while True:
+                    cls()
+                    table = [["0", "Выход", None]]
+                    for i in itemslist:
+                        table.append([itemslist.index(i) + 1, i.name, i.username])
+
+                    print(tabulate.tabulate(table, headers=["ID", "Имя", "Кастомное имя"], missingval="N/A"))
+                    item_index_input = int(input("Введите ID предмета:"))
+                    if item_index_input == 0:
+                        break
+                    
+                    try:
+                        select_item = itemslist[item_index_input - 1]
+                    except IndexError:
+                        print("Неверный ввод")
+                        sleep(2)
+                        continue
+
+                    select_name_input = input("Введите название предмета(пустая строка для сброса): ")
+                    if select_name_input == "":
+                        select_item.username = None
+                        continue
+
+                    select_item.username = select_name_input
+
+            case "3":
                 preset_filenames: list = Preset.load_names()
                 table = [["0", "Выход"]]
                 table += [[preset_filenames.index(name) + 1, name] for name in preset_filenames]
@@ -167,13 +194,13 @@ def main() -> int:
                 herolist = selected_preset.heroes
                 itemslist = selected_preset.items
             
-            case "3":
+            case "4":
                 preset_name = input("Введите имя пресета(английские буквы, цифры и нижние подчеркивания): ")
 
-                preset = Preset(preset_name, heroes=[i.toDict() for i in herolist])
+                preset = Preset(preset_name, heroes=[i.toDict() for i in herolist], items=[j.toDict() for j in itemslist])
                 preset.save()
 
-            case "4":
+            case "5":
                 for i in herolist:
                     i.username = None
                     for j in i.skills:
@@ -217,19 +244,16 @@ def main() -> int:
     with open("data/abilities_russian.txt", "w", encoding="utf-8") as f:
         f.write(kvparser2.unparse(kv))
 
-    try:
-        subprocess.run(
-            [
-                "bin/vpkeditcli.exe",
-                "--remove-file",
-                "resource/localization/abilities_russian.txt",
-                VPK_PATH
-            ],
-            check=True,
-        )
-    except Exception:
-        logging.warning("r/l/abilities does not exist")
-        cls()
+
+    subprocess.run(
+        [
+            "bin/vpkeditcli.exe",
+            "--remove-file",
+            "resource/localization/abilities_russian.txt",
+            VPK_PATH
+        ]
+    )
+
 
     try:
         subprocess.run([
@@ -244,12 +268,5 @@ def main() -> int:
 
 
 if __name__=="__main__":
-    result = 0
-    try:
-        result = main()
-    except Exception as e:
-        logging.error(e)
-    if result is None:
-        result = 0
+    main()
     input("Нажмите ENTER чтобы выйти ")
-    endlog(result)
