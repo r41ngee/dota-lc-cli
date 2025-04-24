@@ -13,8 +13,6 @@ class Skill:
         except KeyError:
             self.username = None
 
-        self.desc = desc
-
     def ToKeyPair(self) -> dict[str, str]:
         if self.username is not None:
             return {self.key: self.username}
@@ -40,8 +38,6 @@ class Facet:
             self.username = desc["username"]
         except KeyError:
             self.username = None
-
-        self.desc = desc
 
     def ToKeyPair(self):
         if self.username is not None:
@@ -74,8 +70,6 @@ class Hero:
             self.gender = "m"
         self.skills: list[Skill] = [Skill(i) for i in desc["skills"]]
         self.facets: list[Facet] = [Facet(i) for i in desc["facets"]]
-
-        self.desc = desc
 
     def toDict(self) -> dict:
         result = {
