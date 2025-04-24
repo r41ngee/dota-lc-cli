@@ -3,7 +3,7 @@ Dota 2 localization changer — это приложение, которое мо
 ## Установка
 1. Скачайте архив со страницы [релиза](https://github.com/r41ngee/dota-lc-cli/releases/latest)
 2. Распакуйте архив в любую папку
-3. Запустите `changer.exe`
+3. Запустите `dota-localization-changer.exe`
 4. **ЗАКРЫВАТЬ ТОЛЬКО С ПРЕДНАЗНАЧЕННЫМ МЕНЮ**
 
 ## Возможности
