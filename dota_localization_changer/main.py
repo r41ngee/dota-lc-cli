@@ -30,11 +30,17 @@ logging.basicConfig(
 
 def main() -> int:
     try:
-        tagsfile = open("data/tags.json", "r+", encoding='utf-8')
-        herolist = [Hero(i) for i in json.load(tagsfile)]
+        herotagsfile = open("data/hero_tags.json", "r+", encoding='utf-8')
+        herolist = [Hero(i) for i in json.load(herotagsfile)]
     except OSError as e:
         logging.error(e)
         return 2
+    
+    try:
+        itemstagsfile = open("data/items_tags.json", "r+", encoding="utf-8")
+        itemslist = [Item(i) for i in json.load(itemstagsfile)]
+    except OSError:
+        return 5
     
     
     art.tprint("DOTA 2")
@@ -159,6 +165,7 @@ def main() -> int:
                 selected_preset: Preset = Preset.load(preset_filenames[selected_preset_input - 1])
 
                 herolist = selected_preset.heroes
+                itemslist = selected_preset.items
             
             case "3":
                 preset_name = input("Введите имя пресета(английские буквы, цифры и нижние подчеркивания): ")
@@ -173,6 +180,9 @@ def main() -> int:
                         j.username = None
                     for j in i.facets:
                         j.username = None
+
+                for i in itemslist:
+                    i.username = None
 
                 continue
             case _:
@@ -191,10 +201,18 @@ def main() -> int:
     for i in herolist:
         kv.update(i.ToKeyPair())
 
-    tagsfile.seek(0)
-    json.dump([i.toDict() for i in herolist], tagsfile, indent=4, ensure_ascii=False)
-    tagsfile.truncate()
-    tagsfile.close()
+    for i in itemslist:
+        kv.update(i.ToKeyPair())
+
+    herotagsfile.seek(0)
+    json.dump([i.toDict() for i in herolist], herotagsfile, indent=4, ensure_ascii=False)
+    herotagsfile.truncate()
+    herotagsfile.close()
+
+    itemstagsfile.seek(0)
+    json.dump([i.toDict() for i in itemslist], itemstagsfile, indent=4, ensure_ascii=False)
+    itemstagsfile.truncate()
+    itemstagsfile.close()
 
     with open("data/abilities_russian.txt", "w", encoding="utf-8") as f:
         f.write(kvparser2.unparse(kv))
