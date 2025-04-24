@@ -75,13 +75,10 @@ class Hero:
         self.skills: list[Skill] = [Skill(i) for i in desc["skills"]]
         self.facets: list[Facet] = [Facet(i) for i in desc["facets"]]
 
-        self.desc = desc
-
     def toDict(self) -> dict:
         result = {
             "name": self.name,
             "key": self.key,
-            "gender": self.gender,
             "skills": [i.toDict() for i in self.skills],
             "facets": [i.toDict() for i in self.facets],
         }
