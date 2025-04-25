@@ -197,7 +197,7 @@ def main() -> int:
             case "4":
                 preset_name = input("Введите имя пресета(английские буквы, цифры и нижние подчеркивания): ")
 
-                preset = Preset(preset_name, heroes=[i.toDict() for i in herolist], items=[j.toDict() for j in itemslist])
+                preset = Preset(preset_name, heroes=[i.to_dict() for i in herolist], items=[j.to_dict() for j in itemslist])
                 preset.save()
 
             case "5":
@@ -226,18 +226,18 @@ def main() -> int:
     abil_file.close()
 
     for i in herolist:
-        kv.update(i.ToKeyPair())
+        kv.update(i.to_key_pair())
 
     for i in itemslist:
         kv.update(i.ToKeyPair())
 
     herotagsfile.seek(0)
-    json.dump([i.toDict() for i in herolist], herotagsfile, indent=4, ensure_ascii=False)
+    json.dump([i.to_dict() for i in herolist], herotagsfile, indent=4, ensure_ascii=False)
     herotagsfile.truncate()
     herotagsfile.close()
 
     itemstagsfile.seek(0)
-    json.dump([i.toDict() for i in itemslist], itemstagsfile, indent=4, ensure_ascii=False)
+    json.dump([i.to_dict() for i in itemslist], itemstagsfile, indent=4, ensure_ascii=False)
     itemstagsfile.truncate()
     itemstagsfile.close()
 
