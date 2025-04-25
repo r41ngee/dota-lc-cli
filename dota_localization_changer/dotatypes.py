@@ -75,3 +75,7 @@ class Hero(BaseEntity):
             result.update(i.to_key_pair())
 
         return result
+    
+class Item(BaseEntity):
+    def __init__(self, desc: dict):
+        super().__init__(desc)
