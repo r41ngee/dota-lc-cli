@@ -75,7 +75,6 @@ class Hero:
         result = {
             "name": self.name,
             "key": self.key,
-            "gender": self.gender,
             "skills": [i.toDict() for i in self.skills],
             "facets": [i.toDict() for i in self.facets],
         }
