@@ -3,8 +3,7 @@
 # -----------
 from typing import Literal
 
-
-class Skill:
+class BaseEntity:
     def __init__(self, desc: dict):
         self.name: str = desc["name"]
         self.key: str = desc["key"]
@@ -13,13 +12,13 @@ class Skill:
         except KeyError:
             self.username = None
 
-    def ToKeyPair(self) -> dict[str, str]:
+    def to_key_pair(self) -> dict[str, str]:
         if self.username is not None:
             return {self.key: self.username}
         else:
             return {self.key: self.name}
     
-    def toDict(self) -> dict:
+    def to_dict(self) -> dict:
         result = {
             "name": self.name,
             "key": self.key,
@@ -30,53 +29,31 @@ class Skill:
 
         return result
 
-class Facet:
+class Skill(BaseEntity):
     def __init__(self, desc: dict):
-        self.name: str = desc["name"]
-        self.key: str = desc["key"]
-        try:
-            self.username: str = desc["username"]
-        except KeyError:
-            self.username = None
+        super().__init__(desc)
 
-    def ToKeyPair(self) -> dict[str, str]:
-        if self.username is not None:
-            return {self.key: self.username}
-        else:
-            return {self.key: self.name}
-    
-    def toDict(self) -> dict:
-        result = {
-            "name": self.name,
-            "key": self.key,
-        }
-
-        if self.username is not None: 
-            result["username"] = self.username
-
-        return result
-
-class Hero:
+class Facet(BaseEntity):
     def __init__(self, desc: dict):
-        self.name: str = desc["name"]
-        self.key: str = desc["key"]
+        super().__init__(desc)
+
+class Hero(BaseEntity):
+    def __init__(self, desc: dict):
+        super().__init__(desc)
         try:
-            self.username: str = desc["username"]
-        except KeyError:
-            self.username = None
-        try:
-            self.gender: str | Literal["m", "f"] = desc["gender"]
+            self.gender: Literal["m", "f"] = desc["gender"]
         except KeyError:
             self.gender = "m"
+
         self.skills: list[Skill] = [Skill(i) for i in desc["skills"]]
         self.facets: list[Facet] = [Facet(i) for i in desc["facets"]]
 
-    def toDict(self) -> dict:
+    def to_dict(self) -> dict:
         result = {
             "name": self.name,
             "key": self.key,
-            "skills": [i.toDict() for i in self.skills],
-            "facets": [i.toDict() for i in self.facets],
+            "skills": [i.to_dict() for i in self.skills],
+            "facets": [i.to_dict() for i in self.facets],
         }
 
         if self.username is not None:
@@ -87,14 +64,14 @@ class Hero:
 
         return result
 
-    def ToKeyPair(self):
+    def to_key_pair(self):
         if self.username is not None:
             result = {self.key: f"#|{self.gender}|#{self.username}"}
         else:
             result = {self.key: f"#|{self.gender}|#{self.name}"}
         for i in self.skills:
-            result.update(i.ToKeyPair())
+            result.update(i.to_key_pair())
         for i in self.facets:
-            result.update(i.ToKeyPair())
+            result.update(i.to_key_pair())
 
         return result
