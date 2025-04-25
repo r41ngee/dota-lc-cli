@@ -5,11 +5,11 @@ from typing import Literal
 
 
 class Skill:
-    def __init__(self, desc):
-        self.name = desc["name"]
-        self.key = desc["key"]
+    def __init__(self, desc: dict):
+        self.name: str = desc["name"]
+        self.key: str = desc["key"]
         try:
-            self.username = desc["username"]
+            self.username: str = desc["username"]
         except KeyError:
             self.username = None
 
@@ -19,7 +19,7 @@ class Skill:
         else:
             return {self.key: self.name}
     
-    def toDict(self):
+    def toDict(self) -> dict:
         result = {
             "name": self.name,
             "key": self.key,
@@ -31,21 +31,21 @@ class Skill:
         return result
 
 class Facet:
-    def __init__(self, desc):
-        self.name = desc["name"]
-        self.key = desc["key"]
+    def __init__(self, desc: dict):
+        self.name: str = desc["name"]
+        self.key: str = desc["key"]
         try:
-            self.username = desc["username"]
+            self.username: str = desc["username"]
         except KeyError:
             self.username = None
 
-    def ToKeyPair(self):
+    def ToKeyPair(self) -> dict[str, str]:
         if self.username is not None:
             return {self.key: self.username}
         else:
             return {self.key: self.name}
     
-    def toDict(self):
+    def toDict(self) -> dict:
         result = {
             "name": self.name,
             "key": self.key,
@@ -63,7 +63,7 @@ class Hero:
         try:
             self.username: str = desc["username"]
         except KeyError:
-            self.username= None
+            self.username = None
         try:
             self.gender: str | Literal["m", "f"] = desc["gender"]
         except KeyError:
