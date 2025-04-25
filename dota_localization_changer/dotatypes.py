@@ -76,29 +76,6 @@ class Hero(BaseEntity):
 
         return result
     
-class Item:
-    def __init__(self, desc:dict[str, str]):
-        self.name = desc["name"]
-        self.key = desc["key"]
-        try:
-            self.username = desc["username"]
-        except KeyError:
-            self.username = None
-
-    def ToKeyPair(self):
-        if self.username:
-            result = {self.key: self.username}
-        else:
-            result = {self.key: self.name}
-
-        return result
-    
-    def toDict(self):
-        result = {
-            "name": self.name,
-            "key": self.key,
-        }
-        if self.username:
-            result["username"] = self.username
-        
-        return result
+class Item(BaseEntity):
+    def __init__(self, desc: dict):
+        super().__init__(desc)
