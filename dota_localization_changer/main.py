@@ -32,11 +32,6 @@ def main() -> int:
         logging.error(e)
         return 2
 
-    art.tprint("DOTA 2")
-    art.tprint("LOCALIZATION")
-    art.tprint("CHANGER")
-    art.tprint("@r41ngee")
-
     sleep(3)
 
     while True:
