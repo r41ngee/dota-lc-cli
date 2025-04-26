@@ -26,16 +26,17 @@ logging.basicConfig(
 
 def main() -> None:
     try:
-        herotagsfile = open("data/hero_tags.json", "r+", encoding="utf-8")
-        herolist = [Hero(i) for i in json.load(herotagsfile)]
+        with open("data/hero_tags.json", "r", encoding="utf-8") as f:
+            herolist = [Hero(i) for i in json.load(f)]
     except OSError as e:
         logging.error(e)
         return
 
     try:
-        itemstagsfile = open("data/items_tags.json", "r+", encoding="utf-8")
-        itemslist = [Item(i) for i in json.load(itemstagsfile)]
-    except OSError:
+        with open("data/items_tags.json", "r", encoding="utf-8") as f:
+            itemslist = [Item(i) for i in json.load(f)]
+    except OSError as e:
+        logging.error(e)
         return
 
     art.tprint("DOTA 2")
@@ -291,19 +292,11 @@ def main() -> None:
     for i in itemslist:
         kv.update(i.ToKeyPair())
 
-    herotagsfile.seek(0)
-    json.dump(
-        [i.to_dict() for i in herolist], herotagsfile, indent=4, ensure_ascii=False
-    )
-    herotagsfile.truncate()
-    herotagsfile.close()
+    with open("data/hero_tags.json", "w", encoding="utf-8") as f:
+        json.dump([i.to_dict() for i in herolist], f, indent=4, ensure_ascii=False)
 
-    itemstagsfile.seek(0)
-    json.dump(
-        [i.to_dict() for i in itemslist], itemstagsfile, indent=4, ensure_ascii=False
-    )
-    itemstagsfile.truncate()
-    itemstagsfile.close()
+    with open("data/items_tags.json", "w", encoding="utf-8") as f:
+        json.dump([i.to_dict() for i in itemslist], f, indent=4, ensure_ascii=False)
 
     with open("data/abilities_russian.txt", "w", encoding="utf-8") as f:
         f.write(kvparser2.unparse(kv))
