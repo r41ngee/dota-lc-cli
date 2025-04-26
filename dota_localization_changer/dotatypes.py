@@ -3,6 +3,7 @@
 # -----------
 from typing import Literal
 
+
 class BaseEntity:
     def __init__(self, desc: dict):
         self.name: str = desc["name"]
@@ -17,7 +18,7 @@ class BaseEntity:
             return {self.key: self.username}
         else:
             return {self.key: self.name}
-    
+
     def to_dict(self) -> dict:
         result = {
             "name": self.name,
@@ -29,13 +30,16 @@ class BaseEntity:
 
         return result
 
+
 class Skill(BaseEntity):
     def __init__(self, desc: dict):
         super().__init__(desc)
 
+
 class Facet(BaseEntity):
     def __init__(self, desc: dict):
         super().__init__(desc)
+
 
 class Hero(BaseEntity):
     def __init__(self, desc: dict):
@@ -75,7 +79,8 @@ class Hero(BaseEntity):
             result.update(i.to_key_pair())
 
         return result
-    
+
+
 class Item(BaseEntity):
     def __init__(self, desc: dict):
         super().__init__(desc)

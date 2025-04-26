@@ -2,41 +2,36 @@
 # - r41ngee -
 # -----------
 
-# -BOX IMPORTS-
+import json
 import logging
 import subprocess
 from time import sleep
 
-# -REMOTE IMPORTS-
 import art
 import kvparser2
 import tabulate
-
-# -LOCAL IMPORTS-
-from config import *
-from dotatypes import *
-from misc import *
-from presets import *
-
+from config import LOGGER_LEVEL, VPK_PATH
+from dotatypes import Hero
+from misc import cls
+from presets import Preset
 
 # -LOGGER SETTINGS-
 logging.basicConfig(
     level=LOGGER_LEVEL,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    filename='.log',
-    filemode='w'
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    filename=".log",
+    filemode="w",
 )
 
 
 def main() -> int:
     try:
-        tagsfile = open("data/tags.json", "r+", encoding='utf-8')
+        tagsfile = open("data/tags.json", "r+", encoding="utf-8")
         herolist = [Hero(i) for i in json.load(tagsfile)]
     except OSError as e:
         logging.error(e)
         return 2
-    
-    
+
     art.tprint("DOTA 2")
     art.tprint("LOCALIZATION")
     art.tprint("CHANGER")
@@ -64,9 +59,15 @@ def main() -> int:
                     cls()
                     table = [["0", "Выход", None]]
                     for i in herolist:
-                        table.append([(herolist.index(i)+ 1), i.name, i.username])
+                        table.append([(herolist.index(i) + 1), i.name, i.username])
 
-                    print(tabulate.tabulate(table, headers=["ID", "Имя", "Кастомное имя"], missingval="N/A"))
+                    print(
+                        tabulate.tabulate(
+                            table,
+                            headers=["ID", "Имя", "Кастомное имя"],
+                            missingval="N/A",
+                        )
+                    )
                     try:
                         hero_input = int(input("Герой: "))
                     except ValueError:
@@ -75,7 +76,7 @@ def main() -> int:
 
                     if hero_input == 0:
                         break
-                    
+
                     try:
                         current_hero = herolist[hero_input - 1]
                         logging.info(f"{current_hero.name} chosen")
@@ -102,18 +103,34 @@ def main() -> int:
                             case "0":
                                 break
                             case "1":
-                                select_name = input("Новое имя героя (пустая строка для сброса): ")
+                                select_name = input(
+                                    "Новое имя героя (пустая строка для сброса): "
+                                )
                                 if select_name.strip() == "":
                                     current_hero.username = None
                                 else:
                                     current_hero.username = select_name
-                                logging.info(f"Name of hero {current_hero.name} is {current_hero.username} now")
+                                logging.info(
+                                    f"Name of hero {current_hero.name} is {current_hero.username} now"
+                                )
                             case "2":
                                 skilltable = [["0", "Выход", None]]
                                 for i in current_hero.skills:
-                                    skilltable.append([current_hero.skills.index(i) + 1, i.name, i.username])
+                                    skilltable.append(
+                                        [
+                                            current_hero.skills.index(i) + 1,
+                                            i.name,
+                                            i.username,
+                                        ]
+                                    )
 
-                                print(tabulate.tabulate(skilltable, headers=["ID", "Имя", "Кастомное имя"], missingval="N/A"))
+                                print(
+                                    tabulate.tabulate(
+                                        skilltable,
+                                        headers=["ID", "Имя", "Кастомное имя"],
+                                        missingval="N/A",
+                                    )
+                                )
                                 skill_choice = int(input("Ввод: "))
 
                                 if skill_choice == 0:
@@ -121,47 +138,78 @@ def main() -> int:
 
                                 current_skill = current_hero.skills[skill_choice - 1]
 
-                                select_skill = input("Новое название способности (пустая строка для сброса): ")
+                                select_skill = input(
+                                    "Новое название способности (пустая строка для сброса): "
+                                )
                                 if select_skill.strip() == "":
                                     current_skill.username = None
                                 else:
                                     current_skill.username = select_skill
-                                logging.info(f"Name of skill {current_skill.name} is {current_skill.username} now")
+                                logging.info(
+                                    f"Name of skill {current_skill.name} is {current_skill.username} now"
+                                )
                             case "3":
                                 facettable = [["0", "Выход", None]]
                                 for i in current_hero.facets:
-                                    facettable.append([current_hero.facets.index(i) + 1, i.name, i.username])
+                                    facettable.append(
+                                        [
+                                            current_hero.facets.index(i) + 1,
+                                            i.name,
+                                            i.username,
+                                        ]
+                                    )
 
-                                print(tabulate.tabulate(facettable, headers=["ID", "Имя", "Кастомное имя"], missingval="N/A"))
+                                print(
+                                    tabulate.tabulate(
+                                        facettable,
+                                        headers=["ID", "Имя", "Кастомное имя"],
+                                        missingval="N/A",
+                                    )
+                                )
                                 facet_choice = int(input("Ввод: "))
-                                
+
                                 if facet_choice == 0:
                                     break
 
                                 current_facet = current_hero.facets[facet_choice - 1]
-                                select_facet = input("Новое название аспекта (пустая строка для сброса): ")
+                                select_facet = input(
+                                    "Новое название аспекта (пустая строка для сброса): "
+                                )
                                 if select_facet.strip() == "":
                                     current_facet.username = None
                                 else:
                                     current_facet.username = select_facet
-                                logging.info(f"Name of facet {current_facet.name} is {current_facet.username} now")
+                                logging.info(
+                                    f"Name of facet {current_facet.name} is {current_facet.username} now"
+                                )
 
             case "2":
                 preset_filenames: list = Preset.load_names()
                 table = [["0", "Выход"]]
-                table += [[preset_filenames.index(name) + 1, name] for name in preset_filenames]
-                print(tabulate.tabulate(table, missingval="N/A", headers=["Индекс", "Пресет"]))
-                
+                table += [
+                    [preset_filenames.index(name) + 1, name]
+                    for name in preset_filenames
+                ]
+                print(
+                    tabulate.tabulate(
+                        table, missingval="N/A", headers=["Индекс", "Пресет"]
+                    )
+                )
+
                 selected_preset_input = int(input("Выбранный пресет: "))
                 if selected_preset_input == 0:
                     break
 
-                selected_preset: Preset = Preset.load(preset_filenames[selected_preset_input - 1])
+                selected_preset: Preset = Preset.load(
+                    preset_filenames[selected_preset_input - 1]
+                )
 
                 herolist = selected_preset.heroes
-            
+
             case "3":
-                preset_name = input("Введите имя пресета(английские буквы, цифры и нижние подчеркивания): ")
+                preset_name = input(
+                    "Введите имя пресета(английские буквы, цифры и нижние подчеркивания): "
+                )
 
                 preset = Preset(preset_name, heroes=[i.to_dict() for i in herolist])
                 preset.save()
@@ -177,11 +225,11 @@ def main() -> int:
                 continue
             case _:
                 print(f"Неверный ввод: {action}")
-    
+
     cls()
 
     try:
-        abil_file = open("data/abilities_russian.txt", "r", encoding='utf-8')
+        abil_file = open("data/abilities_russian.txt", "r", encoding="utf-8")
     except OSError as e:
         logging.error(e)
         return 2
@@ -205,7 +253,7 @@ def main() -> int:
                 "bin/vpkeditcli.exe",
                 "--remove-file",
                 "resource/localization/abilities_russian.txt",
-                VPK_PATH
+                VPK_PATH,
             ],
             check=True,
         )
@@ -214,17 +262,19 @@ def main() -> int:
         cls()
 
     try:
-        subprocess.run([
-            "bin/vpkeditcli.exe",
-            "--add-file",
-            "./data/abilities_russian.txt",
-            "resource/localization/abilities_russian.txt",
-            VPK_PATH
-        ])
+        subprocess.run(
+            [
+                "bin/vpkeditcli.exe",
+                "--add-file",
+                "./data/abilities_russian.txt",
+                "resource/localization/abilities_russian.txt",
+                VPK_PATH,
+            ]
+        )
     except Exception:
         logging.error("")
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     main()
     input("Нажмите ENTER чтобы выйти ")

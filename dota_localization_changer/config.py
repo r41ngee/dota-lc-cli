@@ -2,8 +2,6 @@ import json
 import logging
 from tkinter.filedialog import askdirectory
 
-from misc import *
-
 try:
     with open("data/config.json", "r") as f:
         cfg: dict[str, str] = json.load(f)
@@ -16,7 +14,7 @@ LOGGER_LEVEL = cfg["logger_lvl"]
 DOTA_DIR = cfg["dota_directory"]
 if DOTA_DIR is None:
     print("Выберите корневую директорию доты (dota 2 beta)")
-    DOTA_DIR = askdirectory(initialdir="C:\\Program Files (x86)\\Steam\\steamapps\\common\\dota 2 beta")
+    DOTA_DIR = askdirectory()
     cfg["dota_directory"] = DOTA_DIR
 
 VPK_PATH = DOTA_DIR + "/game/dota_russian/pak01_dir.vpk"
