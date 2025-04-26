@@ -80,6 +80,8 @@ def main() -> None:
                         hero_input = int(input("Герой: "))
                     except ValueError:
                         logging.warning("Incorrect input in hero choice(non-integer)")
+                        print("Ошибка: введите число")
+                        sleep(2)
                         continue
 
                     if hero_input == 0:
@@ -90,6 +92,8 @@ def main() -> None:
                         logging.info(f"{current_hero.name} chosen")
                     except IndexError:
                         logging.warning("Incorrect input in hero choice(missindexed)")
+                        print("Ошибка: неверный индекс героя")
+                        sleep(2)
                         continue
 
                     while True:
@@ -267,6 +271,10 @@ def main() -> None:
 
                     select_item.username = select_name_input
 
+                    logging.info(
+                        f"Name of item {select_item.name} is {select_item.username} now"
+                    )
+
             case "3":
                 preset_filenames: list = Preset.load_names()
                 table = [["0", "Выход"]]
@@ -353,7 +361,7 @@ def main() -> None:
             ],
             check=True,
         )
-    except Exception:
+    except subprocess.CalledProcessError:
         logging.warning("r/l/abilities does not exist")
         cls()
 
@@ -367,7 +375,7 @@ def main() -> None:
                 VPK_PATH,
             ]
         )
-    except Exception:
+    except (subprocess.CalledProcessError, PermissionError):
         logging.error(
             "Не удалось добавить файл локализации в VPK. Проверьте права доступа и повторите попытку"
         )
