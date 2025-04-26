@@ -226,12 +226,5 @@ def main() -> int:
 
 
 if __name__=="__main__":
-    result = 0
-    try:
-        result = main()
-    except Exception as e:
-        logging.error(e)
-    if result is None:
-        result = 0
+    main()
     input("Нажмите ENTER чтобы выйти ")
-    endlog(result)
