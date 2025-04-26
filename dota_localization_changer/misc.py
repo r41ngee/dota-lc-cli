@@ -8,7 +8,12 @@ import subprocess
 def cls():
     """Очищает консоль.
 
-    Использует команду cls через subprocess для очистки консоли.
-    Работает только в Windows.
+    Использует команду cls/clear через subprocess для очистки консоли.
+    Работает на Windows и Unix-подобных системах.
     """
-    subprocess.run("cls", shell=True)
+    import os
+
+    if os.name == "nt":  # Windows
+        subprocess.run("cls", shell=True)
+    else:  # Unix/Linux/MacOS
+        subprocess.run("clear", shell=True)
