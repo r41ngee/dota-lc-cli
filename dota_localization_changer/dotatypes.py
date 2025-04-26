@@ -4,7 +4,7 @@
 from typing import Literal
 
 
-class BaseEntity:
+class LocalizableEntity:
     def __init__(self, desc: dict):
         self.name: str = desc["name"]
         self.key: str = desc["key"]
@@ -20,17 +20,17 @@ class BaseEntity:
         return result
 
 
-class Skill(BaseEntity):
+class Skill(LocalizableEntity):
     def __init__(self, desc: dict):
         super().__init__(desc)
 
 
-class Facet(BaseEntity):
+class Facet(LocalizableEntity):
     def __init__(self, desc: dict):
         super().__init__(desc)
 
 
-class Hero(BaseEntity):
+class Hero(LocalizableEntity):
     def __init__(self, desc: dict):
         super().__init__(desc)
         self.gender: Literal["m", "f"] = desc.get("gender", "m")
@@ -63,6 +63,6 @@ class Hero(BaseEntity):
         return result
 
 
-class Item(BaseEntity):
+class Item(LocalizableEntity):
     def __init__(self, desc: dict):
         super().__init__(desc)
