@@ -267,9 +267,11 @@ def main() -> int:
             ]
         )
     except Exception:
-        logging.error("")
+        logging.error(
+            "Не удалось добавить файл локализации в VPK. Проверьте права доступа и повторите попытку"
+        )
 
 
 if __name__ == "__main__":
     main()
-    input("Нажмите ENTER чтобы выйти ")
+    input("Нажмите ENTER чтобы выйти...")
