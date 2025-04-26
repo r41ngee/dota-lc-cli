@@ -17,43 +17,23 @@ def parse(lines: list | tuple) -> dict:
     for lindex in tqdm(
         range(len_lines), desc="Распаковка файла локализации", colour="red"
     ):
-        if lindex < 5 or lindex > len_lines - 3:
-            logging.debug(f"Skipped parsing line {lindex + 1} (shell lines)")
+        if (
+            lindex < 5
+            or lindex > len_lines - 3
+            or not lines[lindex].strip()
+            or lines[lindex].strip().startswith("//")
+        ):
             continue
+
         line = lines[lindex].strip()
-        if line.startswith("//"):
-            logging.debug(f"Skipped parsing line {lindex + 1} (full comment)")
-            continue
-        if not line:
-            logging.debug(f"Skipped parsing line {lindex + 1} (empty line)")
-            continue
+        match = re.match(r'(".*?")\s*(".*?")(?:\s*//\s*(.*))?', line)
 
-        match_c = re.match(r'(".*?")\s*(".*?")\s*//\s*(.*)', line)
-        match_wc = re.match(r'(".*?")\s*(".*?")', line)
-
-        if match_c:
-            logging.debug(f"Line {lindex + 1} matched with comment")
-            key, value, _ = match_c.groups()
+        if match:
+            key, value, _ = match.groups()
             key, value = key.strip('"'), value.strip('"')
-            if "<" in value:
-                logging.debug(f"Line {key}:{value} skipped(html)")
-            else:
-                logging.debug(f"Readed key {key}: value {value}")
-
+            if "<" not in value:
                 data[key] = value
-            parsed += 1
-        elif match_wc:
-            logging.debug(f"Line {lindex + 1} matched without comment")
-            key, value = match_wc.groups()
-            key, value = key.strip('"'), value.strip('"')
-
-            if "<" in value:
-                logging.debug(f"Line {key}:{value} skipped(html)")
-            else:
-                logging.debug(f"Readed key {key}: value {value}")
-
-                data[key] = value
-            parsed += 1
+                parsed += 1
         else:
             logging.warning(f"Parse error: line {lindex + 1} was not parsed")
 

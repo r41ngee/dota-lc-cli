@@ -1,17 +1,16 @@
-from dotatypes import *
+import json
 import os
-import json 
+
+from dotatypes import Hero
+
 
 class Preset:
-    def __init__(self, name: str, heroes: list[Hero] | None = None, items: list | None = None):
+    def __init__(
+        self, name: str, heroes: list[Hero] | None = None, items: list | None = None
+    ):
         self.filename = name + ".json"
-
-        self.heroes = heroes
-        self.items = items
-        if self.items is None:
-            self.items = []
-        if self.heroes is None:
-            self.heroes = []
+        self.heroes = heroes or []
+        self.items = items or []
 
     def save(self):
         os.makedirs("presets", exist_ok=True)
@@ -35,7 +34,7 @@ class Preset:
                 heroes=[Hero(h) for h in dct["heroes"]],  # Преобразуем словари в Hero
                 items=dct["items"],
             )
-        
+
     def load_names() -> list[str]:
         files = [f for f in os.listdir("presets/") if f.endswith(".json")]
 

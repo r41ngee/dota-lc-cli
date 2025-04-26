@@ -2,8 +2,8 @@
 # - r41ngee -
 # -----------
 
-import os
+import subprocess
 
 
 def cls():
-    os.system("cls")
+    subprocess.run("cls", shell=True)
