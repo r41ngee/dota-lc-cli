@@ -39,14 +39,18 @@ def parse(lines: list | tuple) -> dict:
             continue
 
         line = lines[lindex].strip()
-        match = re.match(r'(".*?")\s*(".*?")(?:\s*//\s*(.*))?', line)
+        # Используем более точное регулярное выражение для парсинга
+        match = re.match(
+            r'("(?:[^"\\]|\\.)*")\s*("(?:[^"\\]|\\.)*")(?:\s*//\s*(.*))?', line
+        )
 
         if match:
             key, value, _ = match.groups()
-            key, value = key.strip('"'), value.strip('"')
-            if "<" not in value:
-                data[key] = value
-                parsed += 1
+            # Убираем внешние кавычки и экранируем внутренние
+            key = key[1:-1].replace('\\"', '"')
+            value = value[1:-1].replace('\\"', '"')
+            data[key] = value
+            parsed += 1
         else:
             logging.warning(f"Parse error: line {lindex + 1} was not parsed")
 
