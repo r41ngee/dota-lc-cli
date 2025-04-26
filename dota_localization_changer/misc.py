@@ -2,16 +2,18 @@
 # - r41ngee -
 # -----------
 
-import logging
-import os
-import json
+import subprocess
 
 
 def cls():
-    os.system("cls")
+    """Очищает консоль.
 
-def keylog(key, val):
-    logging.info(f"New value for key \"{key}\": \"{val}\"")
+    Использует команду cls/clear через subprocess для очистки консоли.
+    Работает на Windows и Unix-подобных системах.
+    """
+    import os
 
-def endlog(code: int):
-    logging.info(f"Program exit with code {hex(code)}")
+    if os.name == "nt":  # Windows
+        subprocess.run("cls", shell=True)
+    else:  # Unix/Linux/MacOS
+        subprocess.run("clear", shell=True)

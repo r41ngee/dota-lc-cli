@@ -7,77 +7,81 @@ import re
 
 from tqdm import tqdm
 
-def parse(lines: list|tuple) -> dict:
+
+def parse(lines: list | tuple) -> dict:
+    """Парсит файл локализации Dota 2 из формата KV в словарь Python.
+
+    Args:
+        lines (list | tuple): Список строк файла локализации
+
+    Returns:
+        dict: Словарь, где ключи - это идентификаторы строк локализации,
+              а значения - соответствующие тексты
+
+    Note:
+        Пропускает первые 5 и последние 3 строки файла, а также пустые строки
+        и строки, начинающиеся с '//'.
+    """
     data = {}
     len_lines = len(lines)
     logging.debug(f"Started parsing with {len_lines} lines")
-    parsed = 0
 
-    for lindex in tqdm(range(len_lines), desc="Распаковка файла локализации", colour="red"):
-        if lindex < 5 or lindex>len_lines-3:
-                logging.debug(f"Skipped parsing line {lindex+1} (shell lines)")
-                continue
-        line = lines[lindex].strip()
-        if line.startswith("//"):
-            logging.debug(f"Skipped parsing line {lindex+1} (full comment)")
-            continue
-        if not line:
-            logging.debug(f"Skipped parsing line {lindex+1} (empty line)")
-            continue
+    # Предварительно компилируем регулярное выражение
+    pattern = re.compile(r'("(?:[^"\\]|\\.)*")\s*("(?:[^"\\]|\\.)*")(?:\s*//\s*(.*))?')
 
-        match_c = re.match(r'(".*?")\s*(".*?")\s*//\s*(.*)', line)
-        match_wc = re.match(r'(".*?")\s*(".*?")', line)
+    # Предварительно фильтруем строки, которые нужно обработать
+    valid_lines = [
+        (i, line.strip())
+        for i, line in enumerate(lines)
+        if 5 <= i < len_lines - 3 and line.strip() and not line.strip().startswith("//")
+    ]
 
-        if match_c:
-            logging.debug(f"Line {lindex+1} matched with comment")
-            key, value, _ = match_c.groups()
-            key, value = key.strip('"'), value.strip('"')
-            if "<" in value:
-                logging.debug(f"Line {key}:{value} skipped(html)")
-            else:
-                logging.debug(f"Readed key {key}: value {value}")
-
-                data[key] = value
-            parsed += 1
-        elif match_wc:
-            logging.debug(f"Line {lindex+1} matched without comment")
-            key, value = match_wc.groups()
-            key, value = key.strip('"'), value.strip('"')
-
-            if "<" in value:
-                logging.debug(f"Line {key}:{value} skipped(html)")
-            else:
-                logging.debug(f"Readed key {key}: value {value}")
-
-                data[key] = value
-            parsed += 1
+    for lindex, line in tqdm(
+        valid_lines, desc="Распаковка файла локализации", colour="red"
+    ):
+        match = pattern.match(line)
+        if match:
+            key, value, _ = match.groups()
+            # Убираем внешние кавычки и экранируем внутренние
+            data[key[1:-1].replace('\\"', '"')] = value[1:-1].replace('\\"', '"')
         else:
-            logging.warning(f"Parse error: line {lindex+1} was not parsed")
-            
-            
+            logging.warning(f"Parse error: line {lindex + 1} was not parsed")
+
     logging.info(f"Parser ended with {len(data)} pairs")
     return data
 
-def unparse(data: dict, lang: str = "russian") -> str:
-    result = '''"lang"
-{ 
-	"Language" "russian" 
-	"Tokens" 
-	{''' # ДОРАБОТАТЬ языки(на будущее)
 
+def unparse(data: dict, lang: str = "russian") -> str:
+    """Преобразует словарь Python обратно в формат KV файла локализации Dota 2.
+
+    Args:
+        data (dict): Словарь с данными локализации
+        lang (str, optional): Язык локализации. По умолчанию "russian"
+
+    Returns:
+        str: Строка в формате KV файла локализации Dota 2
+
+    Note:
+        В настоящее время поддерживается только русский язык.
+        В будущем планируется добавить поддержку других языков.
+    """
     logging.info(f"Unparser starts with {len(data.items())} pairs")
 
-    i = 5
+    # Используем список для более эффективной конкатенации
+    lines = ['"lang"', "{", '\t"Language" "russian"', '\t"Tokens"', "\t{"]
 
-    print("\n")
+    # Предварительно экранируем все ключи и значения с прогресс-баром
+    escaped_items = []
+    for key, value in tqdm(
+        data.items(), desc="Запаковка файла локализации", colour="green"
+    ):
+        escaped_key = key.replace('"', '\\"')
+        escaped_value = value.replace('"', '\\"')
+        escaped_items.append((escaped_key, escaped_value))
 
-    for key, value in tqdm(data.items(), desc="Запаковка файла локализации", colour="green"):
-        result += f'\n\t\t"{key}" "{value}"'
-        logging.debug(f"Key {key} written with value {value} in line {i}")
-        i+=1
+    # Добавляем все строки одним махом
+    lines.extend(f'\t\t"{key}" "{value}"' for key, value in escaped_items)
 
-    result += """
-	}
-}"""
+    lines.extend(["\t}", "}"])
 
-    return result
+    return "\n".join(lines)
