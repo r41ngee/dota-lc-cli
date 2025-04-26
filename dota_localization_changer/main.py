@@ -332,7 +332,7 @@ def main() -> None:
         kv.update(i.to_key_pair())
 
     for i in itemslist:
-        kv.update(i.ToKeyPair())
+        kv.update(i.to_key_pair())
 
     with open("data/hero_tags.json", "w", encoding="utf-8") as f:
         json.dump([i.to_dict() for i in herolist], f, indent=4, ensure_ascii=False)
