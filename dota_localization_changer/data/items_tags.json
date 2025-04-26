@@ -268,10 +268,6 @@
         "key": "DOTA_Tooltip_Ability_item_monkey_king_bar"
     },
     {
-        "name": "Necronomicon",
-        "key": "DOTA_Tooltip_Ability_item_necronomicon"
-    },
-    {
         "name": "Nullifier",
         "key": "DOTA_Tooltip_Ability_item_nullifier"
     },
@@ -380,7 +376,7 @@
         "key": "DOTA_Tooltip_Ability_item_sheepstick"
     },
     {
-        "name": "Sentinel Ward",
+        "name": "Sentry Ward",
         "key": "DOTA_Tooltip_Ability_item_ward_sentry"
     },
     {
@@ -466,10 +462,6 @@
     {
         "name": "Wind Waker",
         "key": "DOTA_Tooltip_Ability_item_wind_waker"
-    },
-    {
-        "name": "Wraith Pact",
-        "key": "DOTA_Tooltip_Ability_item_wraith_pact"
     },
     {
         "name": "Yasha",
