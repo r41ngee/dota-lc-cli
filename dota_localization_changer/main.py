@@ -24,19 +24,19 @@ logging.basicConfig(
 )
 
 
-def main() -> int:
+def main() -> None:
     try:
         herotagsfile = open("data/hero_tags.json", "r+", encoding="utf-8")
         herolist = [Hero(i) for i in json.load(herotagsfile)]
     except OSError as e:
         logging.error(e)
-        return 2
+        return
 
     try:
         itemstagsfile = open("data/items_tags.json", "r+", encoding="utf-8")
         itemslist = [Item(i) for i in json.load(itemstagsfile)]
     except OSError:
-        return 5
+        return
 
     art.tprint("DOTA 2")
     art.tprint("LOCALIZATION")
@@ -281,7 +281,7 @@ def main() -> int:
         abil_file = open("data/abilities_russian.txt", "r", encoding="utf-8")
     except OSError as e:
         logging.error(e)
-        return 2
+        return
     kv: dict = kvparser2.parse(abil_file.readlines())
     abil_file.close()
 
