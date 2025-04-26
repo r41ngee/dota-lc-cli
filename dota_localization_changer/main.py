@@ -2,6 +2,7 @@
 # - r41ngee -
 # -----------
 
+import atexit
 import json
 import logging
 import subprocess
@@ -24,6 +25,62 @@ logging.basicConfig(
 )
 
 
+def save_changes(herolist, itemslist):
+    """Сохраняет все изменения в файлы"""
+    try:
+        abil_file = open("data/abilities_russian.txt", "r", encoding="utf-8")
+    except OSError as e:
+        logging.error(e)
+        return
+
+    kv: dict = kvparser2.parse(abil_file.readlines())
+    abil_file.close()
+
+    for i in herolist:
+        kv.update(i.to_key_pair())
+
+    for i in itemslist:
+        kv.update(i.to_key_pair())
+
+    with open("data/hero_tags.json", "w", encoding="utf-8") as f:
+        json.dump([i.to_dict() for i in herolist], f, indent=4, ensure_ascii=False)
+
+    with open("data/items_tags.json", "w", encoding="utf-8") as f:
+        json.dump([i.to_dict() for i in itemslist], f, indent=4, ensure_ascii=False)
+
+    with open("data/abilities_russian.txt", "w", encoding="utf-8") as f:
+        f.write(kvparser2.unparse(kv))
+
+    try:
+        subprocess.run(
+            [
+                "bin/vpkeditcli.exe",
+                "--remove-file",
+                "resource/localization/abilities_russian.txt",
+                VPK_PATH,
+            ],
+            check=True,
+        )
+    except subprocess.CalledProcessError:
+        logging.warning("r/l/abilities does not exist")
+        cls()
+
+    try:
+        subprocess.run(
+            [
+                "bin/vpkeditcli.exe",
+                "--add-file",
+                "./data/abilities_russian.txt",
+                "resource/localization/abilities_russian.txt",
+                VPK_PATH,
+            ]
+        )
+    except (subprocess.CalledProcessError, PermissionError):
+        logging.error(
+            "Не удалось добавить файл локализации в VPK. Проверьте права доступа и повторите попытку"
+        )
+
+
 def main() -> None:
     try:
         with open("data/hero_tags.json", "r", encoding="utf-8") as f:
@@ -38,6 +95,9 @@ def main() -> None:
     except OSError as e:
         logging.error(e)
         return
+
+    # Регистрируем функцию сохранения при выходе
+    atexit.register(save_changes, herolist, itemslist)
 
     art.tprint("DOTA 2")
     art.tprint("LOCALIZATION")
@@ -328,59 +388,6 @@ def main() -> None:
 
     cls()
 
-    try:
-        abil_file = open("data/abilities_russian.txt", "r", encoding="utf-8")
-    except OSError as e:
-        logging.error(e)
-        return
-    kv: dict = kvparser2.parse(abil_file.readlines())
-    abil_file.close()
-
-    for i in herolist:
-        kv.update(i.to_key_pair())
-
-    for i in itemslist:
-        kv.update(i.to_key_pair())
-
-    with open("data/hero_tags.json", "w", encoding="utf-8") as f:
-        json.dump([i.to_dict() for i in herolist], f, indent=4, ensure_ascii=False)
-
-    with open("data/items_tags.json", "w", encoding="utf-8") as f:
-        json.dump([i.to_dict() for i in itemslist], f, indent=4, ensure_ascii=False)
-
-    with open("data/abilities_russian.txt", "w", encoding="utf-8") as f:
-        f.write(kvparser2.unparse(kv))
-
-    try:
-        subprocess.run(
-            [
-                "bin/vpkeditcli.exe",
-                "--remove-file",
-                "resource/localization/abilities_russian.txt",
-                VPK_PATH,
-            ],
-            check=True,
-        )
-    except subprocess.CalledProcessError:
-        logging.warning("r/l/abilities does not exist")
-        cls()
-
-    try:
-        subprocess.run(
-            [
-                "bin/vpkeditcli.exe",
-                "--add-file",
-                "./data/abilities_russian.txt",
-                "resource/localization/abilities_russian.txt",
-                VPK_PATH,
-            ]
-        )
-    except (subprocess.CalledProcessError, PermissionError):
-        logging.error(
-            "Не удалось добавить файл локализации в VPK. Проверьте права доступа и повторите попытку"
-        )
-
 
 if __name__ == "__main__":
     main()
-    input("Нажмите ENTER чтобы выйти...")

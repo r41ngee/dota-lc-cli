@@ -4,7 +4,6 @@ Dota 2 localization changer — это приложение, которое мо
 1. Скачайте архив со страницы [релиза](https://github.com/r41ngee/dota-lc-cli/releases/latest)
 2. Распакуйте архив в любую папку
 3. Запустите `dota-localization-changer.exe`
-4. **ЗАКРЫВАТЬ ТОЛЬКО С ПРЕДНАЗНАЧЕННЫМ МЕНЮ**
 
 ## Возможности
 - Изменение имен героев
@@ -23,7 +22,6 @@ Dota 2 localization changer is app that can change name of Dota 2 heroes, skills
 1. Download archive from [release page](https://github.com/r41ngee/dota-lc-cli/releases/latest)
 2. Unpack archive in any folder
 3. Run `changer.exe`
-4. **CLOSE ONLY WITH INTENDED MENU**
 
 ## Features
 - Changing heroes names
