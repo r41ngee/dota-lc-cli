@@ -25,32 +25,25 @@ def parse(lines: list | tuple) -> dict:
     data = {}
     len_lines = len(lines)
     logging.debug(f"Started parsing with {len_lines} lines")
-    parsed = 0
 
-    for lindex in tqdm(
-        range(len_lines), desc="Распаковка файла локализации", colour="red"
+    # Предварительно компилируем регулярное выражение
+    pattern = re.compile(r'("(?:[^"\\]|\\.)*")\s*("(?:[^"\\]|\\.)*")(?:\s*//\s*(.*))?')
+
+    # Предварительно фильтруем строки, которые нужно обработать
+    valid_lines = [
+        (i, line.strip())
+        for i, line in enumerate(lines)
+        if 5 <= i < len_lines - 3 and line.strip() and not line.strip().startswith("//")
+    ]
+
+    for lindex, line in tqdm(
+        valid_lines, desc="Распаковка файла локализации", colour="red"
     ):
-        if (
-            lindex < 5
-            or lindex > len_lines - 3
-            or not lines[lindex].strip()
-            or lines[lindex].strip().startswith("//")
-        ):
-            continue
-
-        line = lines[lindex].strip()
-        # Используем более точное регулярное выражение для парсинга
-        match = re.match(
-            r'("(?:[^"\\]|\\.)*")\s*("(?:[^"\\]|\\.)*")(?:\s*//\s*(.*))?', line
-        )
-
+        match = pattern.match(line)
         if match:
             key, value, _ = match.groups()
             # Убираем внешние кавычки и экранируем внутренние
-            key = key[1:-1].replace('\\"', '"')
-            value = value[1:-1].replace('\\"', '"')
-            data[key] = value
-            parsed += 1
+            data[key[1:-1].replace('\\"', '"')] = value[1:-1].replace('\\"', '"')
         else:
             logging.warning(f"Parse error: line {lindex + 1} was not parsed")
 
@@ -72,30 +65,23 @@ def unparse(data: dict, lang: str = "russian") -> str:
         В настоящее время поддерживается только русский язык.
         В будущем планируется добавить поддержку других языков.
     """
-    result = """"lang"
-{ 
-	"Language" "russian" 
-	"Tokens" 
-	{"""
-
     logging.info(f"Unparser starts with {len(data.items())} pairs")
 
-    i = 5
+    # Используем список для более эффективной конкатенации
+    lines = ['"lang"', "{", '\t"Language" "russian"', '\t"Tokens"', "\t{"]
 
-    print("\n")
-
+    # Предварительно экранируем все ключи и значения с прогресс-баром
+    escaped_items = []
     for key, value in tqdm(
         data.items(), desc="Запаковка файла локализации", colour="green"
     ):
-        # Экранируем кавычки в ключах и значениях
         escaped_key = key.replace('"', '\\"')
         escaped_value = value.replace('"', '\\"')
-        result += f'\n\t\t"{escaped_key}" "{escaped_value}"'
-        logging.debug(f"Key {key} written with value {value} in line {i}")
-        i += 1
+        escaped_items.append((escaped_key, escaped_value))
 
-    result += """
-	}
-}"""
+    # Добавляем все строки одним махом
+    lines.extend(f'\t\t"{key}" "{value}"' for key, value in escaped_items)
 
-    return result
+    lines.extend(["\t}", "}"])
+
+    return "\n".join(lines)

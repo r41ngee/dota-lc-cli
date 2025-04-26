@@ -80,6 +80,8 @@ def main() -> None:
                         hero_input = int(input("Герой: "))
                     except ValueError:
                         logging.warning("Incorrect input in hero choice(non-integer)")
+                        print("Ошибка: введите число")
+                        sleep(2)
                         continue
 
                     if hero_input == 0:
@@ -90,6 +92,8 @@ def main() -> None:
                         logging.info(f"{current_hero.name} chosen")
                     except IndexError:
                         logging.warning("Incorrect input in hero choice(missindexed)")
+                        print("Ошибка: неверный индекс героя")
+                        sleep(2)
                         continue
 
                     while True:
@@ -122,40 +126,82 @@ def main() -> None:
                                     f"Name of hero {current_hero.name} is {current_hero.username} now"
                                 )
                             case "2":
-                                skilltable = [["0", "Выход", None]]
-                                for i in current_hero.skills:
-                                    skilltable.append(
-                                        [
-                                            current_hero.skills.index(i) + 1,
-                                            i.name,
-                                            i.username,
-                                        ]
+                                while True:
+                                    skilltable = [["0", "Выход", None]]
+                                    for i in current_hero.skills:
+                                        skilltable.append(
+                                            [
+                                                current_hero.skills.index(i) + 1,
+                                                i.name,
+                                                i.username,
+                                            ]
+                                        )
+
+                                    print(
+                                        tabulate.tabulate(
+                                            skilltable,
+                                            headers=["ID", "Имя", "Кастомное имя"],
+                                            missingval="N/A",
+                                        )
                                     )
+                                    skill_choice = int(input("Ввод: "))
 
-                                print(
-                                    tabulate.tabulate(
-                                        skilltable,
-                                        headers=["ID", "Имя", "Кастомное имя"],
-                                        missingval="N/A",
+                                    if skill_choice == 0:
+                                        break
+
+                                    current_skill = current_hero.skills[
+                                        skill_choice - 1
+                                    ]
+
+                                    select_skill = input(
+                                        "Новое название способности (пустая строка для сброса): "
                                     )
-                                )
-                                skill_choice = int(input("Ввод: "))
+                                    if select_skill.strip() == "":
+                                        current_skill.username = None
+                                    else:
+                                        current_skill.username = select_skill
+                                    logging.info(
+                                        f"Name of skill {current_skill.name} is {current_skill.username} now"
+                                    )
+                                    cls()
+                            case "3":
+                                while True:
+                                    facettable = [["0", "Выход", None]]
+                                    for i in current_hero.facets:
+                                        facettable.append(
+                                            [
+                                                current_hero.facets.index(i) + 1,
+                                                i.name,
+                                                i.username,
+                                            ]
+                                        )
 
-                                if skill_choice == 0:
-                                    break
+                                    print(
+                                        tabulate.tabulate(
+                                            facettable,
+                                            headers=["ID", "Имя", "Кастомное имя"],
+                                            missingval="N/A",
+                                        )
+                                    )
+                                    facet_choice = int(input("Ввод: "))
 
-                                current_skill = current_hero.skills[skill_choice - 1]
+                                    if facet_choice == 0:
+                                        break
 
-                                select_skill = input(
-                                    "Новое название способности (пустая строка для сброса): "
-                                )
-                                if select_skill.strip() == "":
-                                    current_skill.username = None
-                                else:
-                                    current_skill.username = select_skill
-                                logging.info(
-                                    f"Name of skill {current_skill.name} is {current_skill.username} now"
-                                )
+                                    current_facet = current_hero.facets[
+                                        facet_choice - 1
+                                    ]
+                                    select_facet = input(
+                                        "Новое название аспекта (пустая строка для сброса): "
+                                    )
+                                    if select_facet.strip() == "":
+                                        current_facet.username = None
+                                    else:
+                                        current_facet.username = select_facet
+                                    logging.info(
+                                        f"Name of facet {current_facet.name} is {current_facet.username} now"
+                                    )
+                                    cls()
                             case "3":
                                 facettable = [["0", "Выход", None]]
                                 for i in current_hero.facets:
@@ -225,6 +271,10 @@ def main() -> None:
 
                     select_item.username = select_name_input
 
+                    logging.info(
+                        f"Name of item {select_item.name} is {select_item.username} now"
+                    )
+
             case "3":
                 preset_filenames: list = Preset.load_names()
                 table = [["0", "Выход"]]
@@ -290,7 +340,7 @@ def main() -> None:
         kv.update(i.to_key_pair())
 
     for i in itemslist:
-        kv.update(i.ToKeyPair())
+        kv.update(i.to_key_pair())
 
     with open("data/hero_tags.json", "w", encoding="utf-8") as f:
         json.dump([i.to_dict() for i in herolist], f, indent=4, ensure_ascii=False)
@@ -311,7 +361,7 @@ def main() -> None:
             ],
             check=True,
         )
-    except Exception:
+    except subprocess.CalledProcessError:
         logging.warning("r/l/abilities does not exist")
         cls()
 
@@ -325,7 +375,7 @@ def main() -> None:
                 VPK_PATH,
             ]
         )
-    except Exception:
+    except (subprocess.CalledProcessError, PermissionError):
         logging.error(
             "Не удалось добавить файл локализации в VPK. Проверьте права доступа и повторите попытку"
         )
