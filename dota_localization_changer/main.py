@@ -269,18 +269,23 @@ class App(tk.Tk):
         self.button_frame = ttk.Frame(self)
         self.button_frame.pack(fill="x", padx=20, pady=20)
 
+        self.button_frame.columnconfigure(0, weight=1)
+        self.button_frame.columnconfigure(1, weight=1)
+        self.button_frame.columnconfigure(2, weight=1)
+        self.button_frame.columnconfigure(3, weight=1)
+
         ttk.Button(
             self.button_frame, text="Загрузить пресет", command=self.load_preset
-        ).pack(side="left", padx=10)
+        ).grid(row=0, column=0, sticky="ew", padx=5)
         ttk.Button(
             self.button_frame, text="Сохранить пресет", command=self.save_preset
-        ).pack(side="left", padx=10)
+        ).grid(row=0, column=1, sticky="ew", padx=5)
         ttk.Button(
             self.button_frame, text="Сбросить настройки", command=self.reset_settings
-        ).pack(side="left", padx=10)
+        ).grid(row=0, column=2, sticky="ew", padx=5)
         ttk.Button(
             self.button_frame, text="Сменить путь Dota 2", command=self.change_dota_path
-        ).pack(side="left", padx=10)
+        ).grid(row=0, column=3, sticky="ew", padx=5)
 
         # Привязываем двойной клик
         self.heroes_tree.bind("<Double-1>", self.edit_hero)
