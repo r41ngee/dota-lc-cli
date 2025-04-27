@@ -1,0 +1,24 @@
+{
+  "name": "dota-localization-changer",
+  "version": "2.0.1",
+  "description": "Dota 2 localization changer — приложение для изменения имен героев, навыков, аспектов и предметов Dota 2",
+  "author": "r41ngee <r41ngeee@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "art": "^6.4.0",
+    "tabulate": "^0.9.0"
+  },
+  "devDependencies": {
+    "auto-py-to-exe": "^2.46.0",
+    "pyinstaller": "^6.12.0",
+    "isort": "^6.0.1"
+  },
+  "scripts": {
+    "build": "pyinstaller --onefile dota_localization_changer/main.py",
+    "format": "isort .",
+    "start": "python dota_localization_changer/main.py"
+  },
+  "engines": {
+    "python": ">=3.11.0 <3.14.0"
+  }
+} 
