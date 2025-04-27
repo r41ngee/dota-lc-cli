@@ -95,7 +95,16 @@ class App(tk.Tk):
         style.theme_use("clam")
         style.configure("TNotebook", background="#2C2F33", borderwidth=0)
         style.configure(
-            "TNotebook.Tab", background="#7289DA", foreground="white", padding=[10, 5]
+            "TNotebook.Tab",
+            background="#36393F",  # Более темный фон для вкладок
+            foreground="white",
+            padding=[10, 5],
+            font=("Helvetica", 10, "bold"),  # Делаем шрифт жирным для лучшей читаемости
+        )
+        style.map(
+            "TNotebook.Tab",
+            background=[("selected", "#7289DA")],  # Цвет выбранной вкладки
+            foreground=[("selected", "white")],  # Цвет текста выбранной вкладки
         )
         style.configure("TFrame", background="#2C2F33")
         style.configure("TButton", background="#7289DA", foreground="white", padding=10)
@@ -106,7 +115,16 @@ class App(tk.Tk):
             foreground="white",
             fieldbackground="#36393F",
         )
-        style.configure("Treeview.Heading", background="#7289DA", foreground="white")
+        style.configure(
+            "Treeview.Heading",
+            background="#7289DA",
+            foreground="white",
+            relief="flat",  # Убираем эффект нажатия
+        )
+        style.map(
+            "Treeview.Heading",
+            background=[("active", "#7289DA")],  # Убираем эффект наведения
+        )
 
         try:
             with open("data/hero_tags.json", "r", encoding="utf-8") as f:
