@@ -41,9 +41,16 @@ class Preset:
         self.heroes = heroes or []
         self.items = items or []
 
+    def to_dict(self):
+        return {
+            "heroes": [hero.to_dict() for hero in self.heroes],
+            "items": [item.to_dict() for item in self.items],
+        }
+
     def save(self) -> None:
         """Сохраняет пресет в файл."""
         try:
+            os.makedirs("presets", exist_ok=True)
             with open(
                 os.path.join("presets", f"{self.filename}"), "w", encoding="utf-8"
             ) as f:
