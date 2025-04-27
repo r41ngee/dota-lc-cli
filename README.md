@@ -1,5 +1,5 @@
 # DOTA 2 LOCALIZATION CHANGER v2 (ru)
-Dota 2 localization changer — это приложение, которое может менять имена героев, навыков, граней и предметов Dota 2 *(в настоящее время не реализовано)*
+Dota 2 localization changer — это приложение, которое может менять имена героев, навыков, аспектов и предметов Dota 2
 ## Установка
 1. Скачайте архив со страницы [релиза](https://github.com/r41ngee/dota-lc-cli/releases/latest)
 2. Распакуйте архив в любую папку
@@ -17,7 +17,7 @@ Dota 2 localization changer — это приложение, которое мо
 
 
 # DOTA 2 LOCALIZATION CHANGER v2 (en)
-Dota 2 localization changer is app that can change name of Dota 2 heroes, skills, facets and items *(not realized currently)*
+Dota 2 localization changer is app that can change name of Dota 2 heroes, skills, facets and items
 ## Installation
 1. Download archive from [release page](https://github.com/r41ngee/dota-lc-cli/releases/latest)
 2. Unpack archive in any folder
