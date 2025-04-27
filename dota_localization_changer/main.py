@@ -262,41 +262,6 @@ def main() -> None:
                                         f"Name of facet {current_facet.name} is {current_facet.username} now"
                                     )
                                     cls()
-                            case "3":
-                                facettable = [["0", "Выход", None]]
-                                for i in current_hero.facets:
-                                    facettable.append(
-                                        [
-                                            current_hero.facets.index(i) + 1,
-                                            i.name,
-                                            i.username,
-                                        ]
-                                    )
-
-                                print(
-                                    tabulate.tabulate(
-                                        facettable,
-                                        headers=["ID", "Имя", "Кастомное имя"],
-                                        missingval="N/A",
-                                    )
-                                )
-                                facet_choice = int(input("Ввод: "))
-
-                                if facet_choice == 0:
-                                    break
-
-                                current_facet = current_hero.facets[facet_choice - 1]
-                                select_facet = input(
-                                    "Новое название аспекта (пустая строка для сброса): "
-                                )
-                                if select_facet.strip() == "":
-                                    current_facet.username = None
-                                else:
-                                    current_facet.username = select_facet
-                                logging.info(
-                                    f"Name of facet {current_facet.name} is {current_facet.username} now"
-                                )
-
             case "2":
                 while True:
                     cls()
@@ -385,6 +350,7 @@ def main() -> None:
                 continue
             case _:
                 print(f"Неверный ввод: {action}")
+                sleep(2)
 
     cls()
 
