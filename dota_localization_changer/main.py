@@ -200,7 +200,7 @@ class App(tk.Tk):
         self.heroes_tree = ttk.Treeview(
             heroes_tree_frame,
             columns=("col1", "col2", "col3", "col4"),
-            show="headings",
+            show="",  # Убираем все заголовки
             height=20,
             selectmode="none",  # Отключаем стандартное выделение
         )
