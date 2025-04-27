@@ -1,6 +1,6 @@
 [project]
 name = "dota-localization-changer"
-version = "1.2.1"
+version = "2.0.0"
 description = ""
 authors = [
     {name = "r41ngee",email = "r41ngeee@gmail.com"}
@@ -10,7 +10,6 @@ requires-python = ">=3.11, <3.14"
 dependencies = [
     "art (>=6.4,<7.0)",
     "tabulate (>=0.9.0,<0.10.0)",
-    "tqdm (>=4.67.1,<5.0.0)"
 ]
 
 

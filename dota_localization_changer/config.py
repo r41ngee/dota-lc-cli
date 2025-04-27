@@ -31,6 +31,30 @@ if DOTA_DIR is None:
 # Путь к VPK файлу с русской локализацией
 VPK_PATH = DOTA_DIR + "/game/dota_russian/pak01_dir.vpk"
 
+
+def change_dota_directory() -> bool:
+    """Смена пути установки Dota 2
+
+    Returns:
+        bool: True если путь был успешно изменен, False в противном случае
+    """
+    global DOTA_DIR, VPK_PATH
+    new_dir = askdirectory()
+    if not new_dir:
+        return False
+
+    DOTA_DIR = new_dir
+    VPK_PATH = DOTA_DIR + "/game/dota_russian/pak01_dir.vpk"
+
+    cfg["dota_directory"] = DOTA_DIR
+    with open("data/config.json", "w") as f:
+        json.dump(cfg, f, indent=4)
+
+    return True
+
+
 # Сохранение обновленной конфигурации
 with open("data/config.json", "w") as f:
     json.dump(cfg, f, indent=4)
+
+print(VPK_PATH)

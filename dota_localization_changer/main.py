@@ -6,14 +6,12 @@ import atexit
 import json
 import logging
 import subprocess
-from time import sleep
+import tkinter as tk
+from tkinter import messagebox, ttk
 
-import art
 import kvparser2
-import tabulate
-from config import LOGGER_LEVEL, VPK_PATH
+from config import LOGGER_LEVEL, VPK_PATH, change_dota_directory
 from dotatypes import Hero, Item
-from misc import cls
 from presets import Preset
 
 # -LOGGER SETTINGS-
@@ -62,8 +60,10 @@ def save_changes(herolist, itemslist):
             check=True,
         )
     except subprocess.CalledProcessError:
-        logging.warning("r/l/abilities does not exist")
-        cls()
+        messagebox.showwarning(
+            "Предупреждение",
+            "Файл resource/localization/abilities_russian.txt не существует",
+        )
 
     try:
         subprocess.run(
@@ -76,318 +76,422 @@ def save_changes(herolist, itemslist):
             ]
         )
     except (subprocess.CalledProcessError, PermissionError):
-        logging.error(
-            "Не удалось добавить файл локализации в VPK. Проверьте права доступа и повторите попытку"
+        messagebox.showerror(
+            "Ошибка",
+            "Не удалось добавить файл локализации в VPK. Проверьте права доступа и повторите попытку",
         )
 
 
-def main() -> None:
-    try:
-        with open("data/hero_tags.json", "r", encoding="utf-8") as f:
-            herolist = [Hero(i) for i in json.load(f)]
-    except OSError as e:
-        logging.error(e)
-        return
+class App(tk.Tk):
+    def __init__(self):
+        super().__init__()
 
-    try:
-        with open("data/items_tags.json", "r", encoding="utf-8") as f:
-            itemslist = [Item(i) for i in json.load(f)]
-    except OSError as e:
-        logging.error(e)
-        return
+        self.title("DOTA 2 Localization Changer")
+        self.geometry("1000x700")
+        self.configure(bg="#2C2F33")
 
-    # Регистрируем функцию сохранения при выходе
-    atexit.register(save_changes, herolist, itemslist)
+        # Настройка стилей
+        style = ttk.Style()
+        style.theme_use("clam")
+        style.configure("TNotebook", background="#2C2F33", borderwidth=0)
+        style.configure(
+            "TNotebook.Tab", background="#7289DA", foreground="white", padding=[10, 5]
+        )
+        style.configure("TFrame", background="#2C2F33")
+        style.configure("TButton", background="#7289DA", foreground="white", padding=10)
+        style.configure("TLabel", background="#2C2F33", foreground="white")
+        style.configure(
+            "Treeview",
+            background="#36393F",
+            foreground="white",
+            fieldbackground="#36393F",
+        )
+        style.configure("Treeview.Heading", background="#7289DA", foreground="white")
 
-    art.tprint("DOTA 2")
-    art.tprint("LOCALIZATION")
-    art.tprint("CHANGER")
-    art.tprint("@r41ngee")
+        try:
+            with open("data/hero_tags.json", "r", encoding="utf-8") as f:
+                self.herolist = [Hero(i) for i in json.load(f)]
+        except OSError as e:
+            messagebox.showerror("Ошибка", str(e))
+            self.destroy()
+            return
 
-    sleep(3)
+        try:
+            with open("data/items_tags.json", "r", encoding="utf-8") as f:
+                self.itemslist = [Item(i) for i in json.load(f)]
+        except OSError as e:
+            messagebox.showerror("Ошибка", str(e))
+            self.destroy()
+            return
 
-    while True:
-        cls()
+        atexit.register(save_changes, self.herolist, self.itemslist)
 
-        print("Действия:")
-        print("0. ВЫХОД")
-        print("1. Изменить героя")
-        print("2. Изменить предметы")
-        print("3. Загрузить пресет")
-        print("4. Сохранить пресет")
-        print("5. Сбросить настройки\n")
+        # Заголовок
+        title_label = ttk.Label(
+            self, text="DOTA 2 Localization Changer", font=("Helvetica", 24, "bold")
+        )
+        title_label.pack(pady=20)
 
-        action = input("Действие: ")
+        self.notebook = ttk.Notebook(self)
+        self.notebook.pack(expand=True, fill="both", padx=20, pady=10)
 
-        match action:
-            case "0":
-                break
-            case "1":
-                while True:
-                    cls()
-                    table = [["0", "Выход", None]]
-                    for i in herolist:
-                        table.append([(herolist.index(i) + 1), i.name, i.username])
+        # Вкладка героев
+        self.heroes_frame = ttk.Frame(self.notebook)
+        self.notebook.add(self.heroes_frame, text="Герои")
 
-                    print(
-                        tabulate.tabulate(
-                            table,
-                            headers=["ID", "Имя", "Кастомное имя"],
-                            missingval="N/A",
-                        )
-                    )
-                    try:
-                        hero_input = int(input("Герой: "))
-                    except ValueError:
-                        logging.warning("Incorrect input in hero choice(non-integer)")
-                        print("Ошибка: введите число")
-                        sleep(2)
-                        continue
+        # Поле поиска для героев
+        self.hero_search_var = tk.StringVar()
+        hero_search_entry = ttk.Entry(
+            self.heroes_frame,
+            textvariable=self.hero_search_var,
+            width=40,
+            foreground="#888888",
+        )
+        hero_search_entry.pack(padx=10, pady=(10, 0), anchor="nw")
+        hero_placeholder = "Поиск..."
+        hero_search_entry.insert(0, hero_placeholder)
+        hero_search_entry.config(foreground="#888888")
 
-                    if hero_input == 0:
-                        break
+        def on_hero_focus_in(event):
+            if hero_search_entry.get() == hero_placeholder:
+                hero_search_entry.delete(0, tk.END)
+                hero_search_entry.config(foreground="#ffffff")
 
-                    try:
-                        current_hero = herolist[hero_input - 1]
-                        logging.info(f"{current_hero.name} chosen")
-                    except IndexError:
-                        logging.warning("Incorrect input in hero choice(missindexed)")
-                        print("Ошибка: неверный индекс героя")
-                        sleep(2)
-                        continue
+        def on_hero_focus_out(event):
+            if not hero_search_entry.get():
+                hero_search_entry.insert(0, hero_placeholder)
+                hero_search_entry.config(foreground="#888888")
 
-                    while True:
-                        cls()
+        hero_search_entry.bind("<FocusIn>", on_hero_focus_in)
+        hero_search_entry.bind("<FocusOut>", on_hero_focus_out)
 
-                        art.tprint(current_hero.name)
+        def hero_var_trace(*args):
+            if self.hero_search_var.get() != hero_placeholder:
+                self.filter_heroes()
 
-                        print("Действия:")
-                        print("0. Выход")
-                        print("1. Изменить имя")
-                        print("2. Изменить названия способностей")
-                        print("3. Изменить названия аспектов\n")
+        self.hero_search_var.trace_add("write", hero_var_trace)
 
-                        subact = input("Действие: ")
+        # Внутренний фрейм для таблицы и скроллбара
+        heroes_tree_frame = ttk.Frame(self.heroes_frame)
+        heroes_tree_frame.pack(expand=True, fill="both", padx=10, pady=10)
 
-                        cls()
+        self.heroes_tree = ttk.Treeview(
+            heroes_tree_frame,
+            columns=("name", "custom_name"),
+            show="headings",
+            height=20,
+        )
+        self.heroes_tree.heading("name", text="Имя")
+        self.heroes_tree.heading("custom_name", text="Кастомное имя")
+        self.heroes_tree.column("name", width=200, anchor="w")
+        self.heroes_tree.column("custom_name", width=200, anchor="w")
+        self.heroes_tree.pack(side="left", fill="both", expand=True)
 
-                        match subact:
-                            case "0":
-                                break
-                            case "1":
-                                select_name = input(
-                                    "Новое имя героя (пустая строка для сброса): "
-                                )
-                                if select_name.strip() == "":
-                                    current_hero.username = None
-                                else:
-                                    current_hero.username = select_name
-                                logging.info(
-                                    f"Name of hero {current_hero.name} is {current_hero.username} now"
-                                )
-                            case "2":
-                                while True:
-                                    skilltable = [["0", "Выход", None]]
-                                    for i in current_hero.skills:
-                                        skilltable.append(
-                                            [
-                                                current_hero.skills.index(i) + 1,
-                                                i.name,
-                                                i.username,
-                                            ]
-                                        )
+        # Добавляем скроллбар только вертикальный, горизонтальный не используем
+        heroes_scrollbar = ttk.Scrollbar(
+            heroes_tree_frame, orient="vertical", command=self.heroes_tree.yview
+        )
+        heroes_scrollbar.pack(side="right", fill="y")
+        self.heroes_tree.configure(
+            yscrollcommand=heroes_scrollbar.set, xscrollcommand=""
+        )
 
-                                    print(
-                                        tabulate.tabulate(
-                                            skilltable,
-                                            headers=["ID", "Имя", "Кастомное имя"],
-                                            missingval="N/A",
-                                        )
-                                    )
-                                    skill_choice = int(input("Ввод: "))
+        for hero in self.herolist:
+            self.heroes_tree.insert(
+                "", "end", values=(hero.name, hero.username or "N/A")
+            )
 
-                                    if skill_choice == 0:
-                                        break
+        # Вкладка предметов
+        self.items_frame = ttk.Frame(self.notebook)
+        self.notebook.add(self.items_frame, text="Предметы")
 
-                                    current_skill = current_hero.skills[
-                                        skill_choice - 1
-                                    ]
+        # Поле поиска для предметов
+        self.item_search_var = tk.StringVar()
+        item_search_entry = ttk.Entry(
+            self.items_frame,
+            textvariable=self.item_search_var,
+            width=40,
+            foreground="#888888",
+        )
+        item_search_entry.pack(padx=10, pady=(10, 0), anchor="nw")
+        item_placeholder = "Поиск..."
+        item_search_entry.insert(0, item_placeholder)
+        item_search_entry.config(foreground="#888888")
 
-                                    select_skill = input(
-                                        "Новое название способности (пустая строка для сброса): "
-                                    )
-                                    if select_skill.strip() == "":
-                                        current_skill.username = None
-                                    else:
-                                        current_skill.username = select_skill
-                                    logging.info(
-                                        f"Name of skill {current_skill.name} is {current_skill.username} now"
-                                    )
-                                    cls()
-                            case "3":
-                                while True:
-                                    facettable = [["0", "Выход", None]]
-                                    for i in current_hero.facets:
-                                        facettable.append(
-                                            [
-                                                current_hero.facets.index(i) + 1,
-                                                i.name,
-                                                i.username,
-                                            ]
-                                        )
+        def on_item_focus_in(event):
+            if item_search_entry.get() == item_placeholder:
+                item_search_entry.delete(0, tk.END)
+                item_search_entry.config(foreground="#ffffff")
 
-                                    print(
-                                        tabulate.tabulate(
-                                            facettable,
-                                            headers=["ID", "Имя", "Кастомное имя"],
-                                            missingval="N/A",
-                                        )
-                                    )
-                                    facet_choice = int(input("Ввод: "))
+        def on_item_focus_out(event):
+            if not item_search_entry.get():
+                item_search_entry.insert(0, item_placeholder)
+                item_search_entry.config(foreground="#888888")
 
-                                    if facet_choice == 0:
-                                        break
+        item_search_entry.bind("<FocusIn>", on_item_focus_in)
+        item_search_entry.bind("<FocusOut>", on_item_focus_out)
 
-                                    current_facet = current_hero.facets[
-                                        facet_choice - 1
-                                    ]
-                                    select_facet = input(
-                                        "Новое название аспекта (пустая строка для сброса): "
-                                    )
-                                    if select_facet.strip() == "":
-                                        current_facet.username = None
-                                    else:
-                                        current_facet.username = select_facet
-                                    logging.info(
-                                        f"Name of facet {current_facet.name} is {current_facet.username} now"
-                                    )
-                                    cls()
-                            case "3":
-                                facettable = [["0", "Выход", None]]
-                                for i in current_hero.facets:
-                                    facettable.append(
-                                        [
-                                            current_hero.facets.index(i) + 1,
-                                            i.name,
-                                            i.username,
-                                        ]
-                                    )
+        def item_var_trace(*args):
+            if self.item_search_var.get() != item_placeholder:
+                self.filter_items()
 
-                                print(
-                                    tabulate.tabulate(
-                                        facettable,
-                                        headers=["ID", "Имя", "Кастомное имя"],
-                                        missingval="N/A",
-                                    )
-                                )
-                                facet_choice = int(input("Ввод: "))
+        self.item_search_var.trace_add("write", item_var_trace)
 
-                                if facet_choice == 0:
-                                    break
+        # Внутренний фрейм для таблицы и скроллбара
+        items_tree_frame = ttk.Frame(self.items_frame)
+        items_tree_frame.pack(expand=True, fill="both", padx=10, pady=10)
 
-                                current_facet = current_hero.facets[facet_choice - 1]
-                                select_facet = input(
-                                    "Новое название аспекта (пустая строка для сброса): "
-                                )
-                                if select_facet.strip() == "":
-                                    current_facet.username = None
-                                else:
-                                    current_facet.username = select_facet
-                                logging.info(
-                                    f"Name of facet {current_facet.name} is {current_facet.username} now"
-                                )
+        self.items_tree = ttk.Treeview(
+            items_tree_frame,
+            columns=("name", "custom_name"),
+            show="headings",
+            height=20,
+        )
+        self.items_tree.heading("name", text="Имя")
+        self.items_tree.heading("custom_name", text="Кастомное имя")
+        self.items_tree.column("name", width=200, anchor="w")
+        self.items_tree.column("custom_name", width=200, anchor="w")
+        self.items_tree.pack(side="left", fill="both", expand=True)
 
-            case "2":
-                while True:
-                    cls()
-                    table = [["0", "Выход", None]]
-                    for i in itemslist:
-                        table.append([itemslist.index(i) + 1, i.name, i.username])
+        # Добавляем скроллбар только вертикальный, горизонтальный не используем
+        items_scrollbar = ttk.Scrollbar(
+            items_tree_frame, orient="vertical", command=self.items_tree.yview
+        )
+        items_scrollbar.pack(side="right", fill="y")
+        self.items_tree.configure(yscrollcommand=items_scrollbar.set, xscrollcommand="")
 
-                    print(
-                        tabulate.tabulate(
-                            table,
-                            headers=["ID", "Имя", "Кастомное имя"],
-                            missingval="N/A",
-                        )
-                    )
-                    item_index_input = int(input("Введите ID предмета:"))
-                    if item_index_input == 0:
-                        break
+        for item in self.itemslist:
+            self.items_tree.insert(
+                "", "end", values=(item.name, item.username or "N/A")
+            )
 
-                    try:
-                        select_item = itemslist[item_index_input - 1]
-                    except IndexError:
-                        print("Неверный ввод")
-                        sleep(2)
-                        continue
+        # Кнопки управления
+        self.button_frame = ttk.Frame(self)
+        self.button_frame.pack(fill="x", padx=20, pady=20)
 
-                    select_name_input = input(
-                        "Введите название предмета(пустая строка для сброса): "
-                    )
-                    if select_name_input == "":
-                        select_item.username = None
-                        continue
+        self.button_frame.columnconfigure(0, weight=1)
+        self.button_frame.columnconfigure(1, weight=1)
+        self.button_frame.columnconfigure(2, weight=1)
+        self.button_frame.columnconfigure(3, weight=1)
 
-                    select_item.username = select_name_input
+        ttk.Button(
+            self.button_frame, text="Загрузить пресет", command=self.load_preset
+        ).grid(row=0, column=0, sticky="ew", padx=5)
+        ttk.Button(
+            self.button_frame, text="Сохранить пресет", command=self.save_preset
+        ).grid(row=0, column=1, sticky="ew", padx=5)
+        ttk.Button(
+            self.button_frame, text="Сбросить настройки", command=self.reset_settings
+        ).grid(row=0, column=2, sticky="ew", padx=5)
+        ttk.Button(
+            self.button_frame, text="Сменить путь Dota 2", command=self.change_dota_path
+        ).grid(row=0, column=3, sticky="ew", padx=5)
 
-                    logging.info(
-                        f"Name of item {select_item.name} is {select_item.username} now"
-                    )
+        # Привязываем двойной клик
+        self.heroes_tree.bind("<Double-1>", self.edit_hero)
+        self.items_tree.bind("<Double-1>", self.edit_item)
 
-            case "3":
-                preset_filenames: list = Preset.load_names()
-                table = [["0", "Выход"]]
-                table += [
-                    [preset_filenames.index(name) + 1, name]
-                    for name in preset_filenames
-                ]
-                print(
-                    tabulate.tabulate(
-                        table, missingval="N/A", headers=["Индекс", "Пресет"]
-                    )
+    def edit_hero(self, event):
+        item = self.heroes_tree.selection()[0]
+        hero_name = self.heroes_tree.item(item)["values"][0]
+        hero = next(h for h in self.herolist if h.name == hero_name)
+
+        dialog = tk.Toplevel(self)
+        dialog.title(f"Редактирование {hero.name}")
+        dialog.geometry("500x700")
+        dialog.configure(bg="#2C2F33")
+
+        # Имя героя
+        ttk.Label(dialog, text="Новое имя героя:", font=("Helvetica", 12)).pack(pady=10)
+        name_entry = ttk.Entry(dialog, width=40)
+        name_entry.insert(0, hero.username or "")
+        name_entry.pack(pady=5)
+
+        # Скиллы
+        ttk.Label(dialog, text="Скиллы:", font=("Helvetica", 12, "bold")).pack(pady=10)
+        skills_frame = ttk.Frame(dialog)
+        skills_frame.pack(fill="x", padx=20)
+
+        skill_entries = []
+        for skill in hero.skills:
+            ttk.Label(skills_frame, text=skill.name, font=("Helvetica", 10)).pack(
+                pady=2
+            )
+            entry = ttk.Entry(skills_frame, width=40)
+            entry.insert(0, skill.username or "")
+            entry.pack(pady=5)
+            skill_entries.append((skill, entry))
+
+        # Аспекты
+        ttk.Label(dialog, text="Аспекты:", font=("Helvetica", 12, "bold")).pack(pady=10)
+        facets_frame = ttk.Frame(dialog)
+        facets_frame.pack(fill="x", padx=20)
+
+        facet_entries = []
+        for facet in hero.facets:
+            ttk.Label(facets_frame, text=facet.name, font=("Helvetica", 10)).pack(
+                pady=2
+            )
+            entry = ttk.Entry(facets_frame, width=40)
+            entry.insert(0, facet.username or "")
+            entry.pack(pady=5)
+            facet_entries.append((facet, entry))
+
+        def save():
+            hero.username = name_entry.get() if name_entry.get().strip() else None
+
+            for skill, entry in skill_entries:
+                skill.username = entry.get() if entry.get().strip() else None
+
+            for facet, entry in facet_entries:
+                facet.username = entry.get() if entry.get().strip() else None
+
+            self.heroes_tree.item(item, values=(hero.name, hero.username or "N/A"))
+            dialog.destroy()
+
+        ttk.Button(dialog, text="Сохранить", command=save).pack(pady=20)
+
+    def edit_item(self, event):
+        item_sel = self.items_tree.selection()[0]
+        item_name = self.items_tree.item(item_sel)["values"][0]
+        item = next(i for i in self.itemslist if i.name == item_name)
+
+        dialog = tk.Toplevel(self)
+        dialog.title(f"Редактирование {item.name}")
+        dialog.geometry("400x300")
+        dialog.configure(bg="#2C2F33")
+
+        ttk.Label(dialog, text="Новое имя:", font=("Helvetica", 12)).pack(pady=20)
+        name_entry = ttk.Entry(dialog, width=40)
+        name_entry.insert(0, item.username or "")
+        name_entry.pack(pady=10)
+
+        def save():
+            item.username = name_entry.get() if name_entry.get().strip() else None
+            self.items_tree.item(item_sel, values=(item.name, item.username or "N/A"))
+            dialog.destroy()
+
+        ttk.Button(dialog, text="Сохранить", command=save).pack(pady=20)
+
+    def load_preset(self):
+        preset_filenames = Preset.load_names()
+
+        dialog = tk.Toplevel(self)
+        dialog.title("Загрузка пресета")
+        dialog.geometry("400x500")
+        dialog.configure(bg="#2C2F33")
+
+        ttk.Label(dialog, text="Выберите пресет:", font=("Helvetica", 12)).pack(pady=10)
+
+        listbox = tk.Listbox(
+            dialog,
+            bg="#36393F",
+            fg="white",
+            selectmode="single",
+            font=("Helvetica", 10),
+        )
+        listbox.pack(expand=True, fill="both", padx=20, pady=10)
+
+        for name in preset_filenames:
+            listbox.insert("end", name)
+
+        def load():
+            if not listbox.curselection():
+                return
+            selected = listbox.get(listbox.curselection())
+            preset = Preset.load(selected)
+            self.herolist = preset.heroes
+            self.itemslist = preset.items
+            self.refresh_trees()
+            dialog.destroy()
+
+        ttk.Button(dialog, text="Загрузить", command=load).pack(pady=20)
+
+    def save_preset(self):
+        dialog = tk.Toplevel(self)
+        dialog.title("Сохранение пресета")
+        dialog.geometry("400x200")
+        dialog.configure(bg="#2C2F33")
+
+        ttk.Label(dialog, text="Имя пресета:", font=("Helvetica", 12)).pack(pady=20)
+        name_entry = ttk.Entry(dialog, width=40)
+        name_entry.pack(pady=10)
+
+        def save():
+            name = name_entry.get()
+            if not name:
+                return
+            preset = Preset(
+                name,
+                heroes=[i.to_dict() for i in self.herolist],
+                items=[j.to_dict() for j in self.itemslist],
+            )
+            preset.save()
+            dialog.destroy()
+
+        ttk.Button(dialog, text="Сохранить", command=save).pack(pady=20)
+
+    def reset_settings(self):
+        if not messagebox.askyesno(
+            "Подтверждение", "Вы уверены что хотите сбросить все настройки?"
+        ):
+            return
+
+        for hero in self.herolist:
+            hero.username = None
+            for skill in hero.skills:
+                skill.username = None
+            for facet in hero.facets:
+                facet.username = None
+
+        for item in self.itemslist:
+            item.username = None
+
+        self.refresh_trees()
+
+    def refresh_trees(self):
+        self.filter_heroes()
+        self.filter_items()
+
+    def filter_heroes(self):
+        """Фильтрация героев по поисковому запросу"""
+        query = self.hero_search_var.get().lower()
+        if query == "поиск...":
+            query = ""
+        self.heroes_tree.delete(*self.heroes_tree.get_children())
+        for hero in self.herolist:
+            if query in hero.name.lower() or (
+                hero.username and query in hero.username.lower()
+            ):
+                self.heroes_tree.insert(
+                    "", "end", values=(hero.name, hero.username or "N/A")
                 )
 
-                selected_preset_input = int(input("Выбранный пресет: "))
-                if selected_preset_input == 0:
-                    break
-
-                selected_preset: Preset = Preset.load(
-                    preset_filenames[selected_preset_input - 1]
+    def filter_items(self):
+        """Фильтрация предметов по поисковому запросу"""
+        query = self.item_search_var.get().lower()
+        if query == "поиск...":
+            query = ""
+        self.items_tree.delete(*self.items_tree.get_children())
+        for item in self.itemslist:
+            if query in item.name.lower() or (
+                item.username and query in item.username.lower()
+            ):
+                self.items_tree.insert(
+                    "", "end", values=(item.name, item.username or "N/A")
                 )
 
-                herolist = selected_preset.heroes
-                itemslist = selected_preset.items
-
-            case "4":
-                preset_name = input(
-                    "Введите имя пресета(английские буквы, цифры и нижние подчеркивания): "
-                )
-
-                preset = Preset(
-                    preset_name,
-                    heroes=[i.to_dict() for i in herolist],
-                    items=[j.to_dict() for j in itemslist],
-                )
-                preset.save()
-
-            case "5":
-                for i in herolist:
-                    i.username = None
-                    for j in i.skills:
-                        j.username = None
-                    for j in i.facets:
-                        j.username = None
-
-                for i in itemslist:
-                    i.username = None
-
-                continue
-            case _:
-                print(f"Неверный ввод: {action}")
-
-    cls()
+    def change_dota_path(self):
+        """Смена пути установки Dota 2"""
+        if change_dota_directory():
+            messagebox.showinfo(
+                "Успех",
+                "Путь к Dota 2 успешно изменен. Изменения вступят в силу после перезапуска программы.",
+            )
+        else:
+            messagebox.showwarning("Предупреждение", "Смена пути отменена")
 
 
 if __name__ == "__main__":
-    main()
+    app = App()
+    app.mainloop()

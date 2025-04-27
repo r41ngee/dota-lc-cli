@@ -15,11 +15,11 @@
   },
   {
    "optionDest": "console",
-   "value": true
+   "value": false
   },
   {
    "optionDest": "name",
-   "value": "changer"
+   "value": "dota-localization-changer"
   },
   {
    "optionDest": "contents_directory",
