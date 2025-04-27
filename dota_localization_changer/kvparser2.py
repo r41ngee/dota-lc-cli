@@ -1,42 +1,43 @@
-# -----------
-# - r41ngee -
-# -----------
+"""Парсер KV-файлов для Dota 2 Localization Changer.
+
+Модуль для парсинга и генерации KV-файлов локализации Dota 2.
+"""
 
 import logging
 import re
+from typing import Dict, List, Tuple
+
+# Предварительно компилируем регулярные выражения
+KV_PATTERN = re.compile(r'("(?:[^"\\]|\\.)*")\s*("(?:[^"\\]|\\.)*")(?:\s*//\s*(.*))?')
+HEADER_LINES = 5
+FOOTER_LINES = 3
 
 
-def parse(lines: list | tuple) -> dict:
+def parse(lines: List[str] | Tuple[str, ...]) -> Dict[str, str]:
     """Парсит файл локализации Dota 2 из формата KV в словарь Python.
 
     Args:
-        lines (list | tuple): Список строк файла локализации
+        lines: Список строк файла локализации
 
     Returns:
-        dict: Словарь, где ключи - это идентификаторы строк локализации,
-              а значения - соответствующие тексты
-
-    Note:
-        Пропускает первые 5 и последние 3 строки файла, а также пустые строки
-        и строки, начинающиеся с '//'.
+        Словарь, где ключи - это идентификаторы строк локализации,
+        а значения - соответствующие тексты
     """
-    data = {}
-    len_lines = len(lines)
-    logging.debug(f"Started parsing with {len_lines} lines")
+    data: Dict[str, str] = {}
+    total_lines = len(lines)
+    logging.debug(f"Started parsing with {total_lines} lines")
 
-    # Предварительно компилируем регулярное выражение
-    pattern = re.compile(r'("(?:[^"\\]|\\.)*")\s*("(?:[^"\\]|\\.)*")(?:\s*//\s*(.*))?')
-
-    # Предварительно фильтруем строки, которые нужно обработать
-    valid_lines = [
+    # Фильтруем и обрабатываем только нужные строки
+    valid_lines = (
         (i, line.strip())
         for i, line in enumerate(lines)
-        if 5 <= i < len_lines - 3 and line.strip() and not line.strip().startswith("//")
-    ]
+        if HEADER_LINES <= i < total_lines - FOOTER_LINES
+        and line.strip()
+        and not line.strip().startswith("//")
+    )
 
     for lindex, line in valid_lines:
-        match = pattern.match(line)
-        if match:
+        if match := KV_PATTERN.match(line):
             key, value, _ = match.groups()
             # Убираем внешние кавычки и экранируем внутренние
             data[key[1:-1].replace('\\"', '"')] = value[1:-1].replace('\\"', '"')
@@ -47,35 +48,26 @@ def parse(lines: list | tuple) -> dict:
     return data
 
 
-def unparse(data: dict, lang: str = "russian") -> str:
+def unparse(data: Dict[str, str], lang: str = "russian") -> str:
     """Преобразует словарь Python обратно в формат KV файла локализации Dota 2.
 
     Args:
-        data (dict): Словарь с данными локализации
-        lang (str, optional): Язык локализации. По умолчанию "russian"
+        data: Словарь с данными локализации
+        lang: Язык локализации (по умолчанию "russian")
 
     Returns:
-        str: Строка в формате KV файла локализации Dota 2
-
-    Note:
-        В настоящее время поддерживается только русский язык.
-        В будущем планируется добавить поддержку других языков.
+        Строка в формате KV файла локализации Dota 2
     """
-    logging.info(f"Unparser starts with {len(data.items())} pairs")
+    logging.info(f"Unparser starts with {len(data)} pairs")
 
     # Используем список для более эффективной конкатенации
-    lines = ['"lang"', "{", '\t"Language" "russian"', '\t"Tokens"', "\t{"]
+    lines = ['"lang"', "{", f'\t"Language" "{lang}"', '\t"Tokens"', "\t{"]
 
-    # Предварительно экранируем все ключи и значения
-    escaped_items = []
+    # Экранируем и добавляем все строки одним махом
     for key, value in data.items():
         escaped_key = key.replace('"', '\\"')
         escaped_value = value.replace('"', '\\"')
-        escaped_items.append((escaped_key, escaped_value))
-
-    # Добавляем все строки одним махом
-    lines.extend(f'\t\t"{key}" "{value}"' for key, value in escaped_items)
+        lines.append(f'\t\t"{escaped_key}" "{escaped_value}"')
 
     lines.extend(["\t}", "}"])
-
     return "\n".join(lines)
