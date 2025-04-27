@@ -8,6 +8,7 @@
 
 import json
 import logging
+from tkinter import messagebox
 from tkinter.filedialog import askdirectory
 
 # Загрузка конфигурации из файла
@@ -24,7 +25,12 @@ LOGGER_LEVEL = cfg["logger_lvl"]
 # Путь к директории Dota 2
 DOTA_DIR = cfg["dota_directory"]
 if DOTA_DIR is None:
-    print("Выберите корневую директорию доты (dota 2 beta)")
+    messagebox.showinfo(
+        "Выбор директории Dota 2",
+        "Пожалуйста, выберите корневую директорию Dota 2 (dota 2 beta).\n\n"
+        "Обычно она находится в:\n"
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\dota 2 beta",
+    )
     DOTA_DIR = askdirectory()
     cfg["dota_directory"] = DOTA_DIR
 
