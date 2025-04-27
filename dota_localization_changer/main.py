@@ -126,6 +126,8 @@ class App(tk.Tk):
             "Treeview.Heading",
             background=[("active", "#7289DA")],  # Убираем эффект наведения
         )
+        style.configure("Treeview.Cell", background="#36393F")
+        style.map("Treeview.Cell", background=[("selected", "#7289DA")])
 
         try:
             with open("data/hero_tags.json", "r", encoding="utf-8") as f:
@@ -194,31 +196,47 @@ class App(tk.Tk):
         heroes_tree_frame = ttk.Frame(self.heroes_frame)
         heroes_tree_frame.pack(expand=True, fill="both", padx=10, pady=10)
 
+        # Создаем одну таблицу с 4 колонками
         self.heroes_tree = ttk.Treeview(
             heroes_tree_frame,
-            columns=("name", "custom_name"),
+            columns=("col1", "col2", "col3", "col4"),
             show="headings",
             height=20,
+            selectmode="none",  # Отключаем стандартное выделение
         )
-        self.heroes_tree.heading("name", text="Имя")
-        self.heroes_tree.heading("custom_name", text="Кастомное имя")
-        self.heroes_tree.column("name", width=200, anchor="w")
-        self.heroes_tree.column("custom_name", width=200, anchor="w")
+
+        # Настраиваем стили
+        style = ttk.Style()
+        style.configure(
+            "Treeview",
+            background="#36393F",
+            foreground="white",
+            fieldbackground="#36393F",
+        )
+        style.configure("Treeview.Cell", background="#36393F")
+        style.map("Treeview.Cell", background=[("selected", "#7289DA")])
+
+        # Настраиваем колонки
+        for i in range(1, 5):
+            self.heroes_tree.heading(f"col{i}", text="Герои")
+            self.heroes_tree.column(f"col{i}", width=150, anchor="w")
+
         self.heroes_tree.pack(side="left", fill="both", expand=True)
 
-        # Добавляем скроллбар только вертикальный, горизонтальный не используем
+        # Добавляем скроллбар
         heroes_scrollbar = ttk.Scrollbar(
             heroes_tree_frame, orient="vertical", command=self.heroes_tree.yview
         )
         heroes_scrollbar.pack(side="right", fill="y")
-        self.heroes_tree.configure(
-            yscrollcommand=heroes_scrollbar.set, xscrollcommand=""
-        )
+        self.heroes_tree.configure(yscrollcommand=heroes_scrollbar.set)
 
-        for hero in self.herolist:
-            self.heroes_tree.insert(
-                "", "end", values=(hero.name, hero.username or "N/A")
-            )
+        # Заполняем таблицу героями
+        self.refresh_heroes_tree()
+
+        # Привязываем события
+        self.heroes_tree.bind("<Double-1>", self.edit_hero)
+        self.heroes_tree.bind("<Button-1>", self.on_click)
+        self.heroes_tree.bind("<Motion>", self.on_mouse_motion)
 
         # Вкладка предметов
         self.items_frame = ttk.Frame(self.notebook)
@@ -292,29 +310,96 @@ class App(tk.Tk):
         self.button_frame.columnconfigure(1, weight=1)
         self.button_frame.columnconfigure(2, weight=1)
         self.button_frame.columnconfigure(3, weight=1)
+        self.button_frame.columnconfigure(4, weight=1)
 
         ttk.Button(
-            self.button_frame, text="Загрузить пресет", command=self.load_preset
+            self.button_frame, text="Сохранить пресет", command=self.save_preset
         ).grid(row=0, column=0, sticky="ew", padx=5)
         ttk.Button(
-            self.button_frame, text="Сохранить пресет", command=self.save_preset
+            self.button_frame, text="Загрузить пресет", command=self.load_preset
         ).grid(row=0, column=1, sticky="ew", padx=5)
         ttk.Button(
-            self.button_frame, text="Сбросить настройки", command=self.reset_settings
+            self.button_frame,
+            text="Открыть папку пресетов",
+            command=self.open_presets_folder,
         ).grid(row=0, column=2, sticky="ew", padx=5)
         ttk.Button(
             self.button_frame, text="Сменить путь Dota 2", command=self.change_dota_path
         ).grid(row=0, column=3, sticky="ew", padx=5)
+        ttk.Button(
+            self.button_frame, text="Сбросить настройки", command=self.reset_settings
+        ).grid(row=0, column=4, sticky="ew", padx=5)
 
         # Привязываем двойной клик
-        self.heroes_tree.bind("<Double-1>", self.edit_hero)
         self.items_tree.bind("<Double-1>", self.edit_item)
 
-    def edit_hero(self, event):
-        item = self.heroes_tree.selection()[0]
-        hero_name = self.heroes_tree.item(item)["values"][0]
-        hero = next(h for h in self.herolist if h.name == hero_name)
+    def refresh_heroes_tree(self):
+        """Обновляет отображение героев в таблице"""
+        self.heroes_tree.delete(*self.heroes_tree.get_children())
 
+        # Распределяем героев по строкам и колонкам
+        heroes_per_row = 4
+        for i in range(0, len(self.herolist), heroes_per_row):
+            row_heroes = self.herolist[i : i + heroes_per_row]
+            values = [hero.name for hero in row_heroes]
+            # Дополняем строку пустыми значениями, если героев меньше 4
+            while len(values) < 4:
+                values.append("")
+            self.heroes_tree.insert("", "end", values=values)
+
+    def on_click(self, event):
+        """Обработчик клика для выделения ячейки"""
+        # Определяем текущую ячейку
+        region = self.heroes_tree.identify("region", event.x, event.y)
+        if region == "cell":
+            item = self.heroes_tree.identify_row(event.y)
+            column = self.heroes_tree.identify_column(event.x)
+            if item and column:
+                # Снимаем выделение со всех ячеек
+                for i in self.heroes_tree.get_children():
+                    self.heroes_tree.item(i, tags=())
+
+                # Выделяем текущую ячейку
+                self.heroes_tree.item(item, tags=("selected",))
+                self.heroes_tree.selection_set(item)
+
+    def on_mouse_motion(self, event):
+        """Обработчик движения мыши для подсветки ячейки"""
+        # Определяем текущую ячейку
+        region = self.heroes_tree.identify("region", event.x, event.y)
+        if region == "cell":
+            item = self.heroes_tree.identify_row(event.y)
+            column = self.heroes_tree.identify_column(event.x)
+            if item and column:
+                # Подсвечиваем текущую ячейку
+                self.heroes_tree.item(item, tags=("hover",))
+            else:
+                # Снимаем подсветку
+                for i in self.heroes_tree.get_children():
+                    if "hover" in self.heroes_tree.item(i, "tags"):
+                        self.heroes_tree.item(i, tags=())
+        else:
+            # Снимаем подсветку
+            for i in self.heroes_tree.get_children():
+                if "hover" in self.heroes_tree.item(i, "tags"):
+                    self.heroes_tree.item(i, tags=())
+
+    def edit_hero(self, event):
+        """Обработчик двойного клика по герою"""
+        # Определяем текущую ячейку
+        region = self.heroes_tree.identify("region", event.x, event.y)
+        if region == "cell":
+            item = self.heroes_tree.identify_row(event.y)
+            column = self.heroes_tree.identify_column(event.x)
+            if item and column:
+                column_index = int(column[1:]) - 1
+                hero_name = self.heroes_tree.item(item)["values"][column_index]
+                if hero_name:  # Проверяем, что клик был по герою, а не по пустой ячейке
+                    hero = next(h for h in self.herolist if h.name == hero_name)
+                    self.show_hero_edit_dialog(hero)
+
+    def show_hero_edit_dialog(self, hero):
+        """Показывает диалог редактирования героя"""
         dialog = tk.Toplevel(self)
         dialog.title(f"Редактирование {hero.name}")
         dialog.geometry("900x500")
@@ -391,7 +476,7 @@ class App(tk.Tk):
                     facet.username = None
                 else:
                     facet.username = val
-            self.heroes_tree.item(item, values=(hero.name, hero.username or "N/A"))
+            self.refresh_heroes_tree()
             dialog.destroy()
 
         # Редактирование кастомных имён по двойному клику
@@ -486,7 +571,7 @@ class App(tk.Tk):
             preset = Preset.load(selected)
             self.herolist = preset.heroes
             self.itemslist = preset.items
-            self.refresh_trees()
+            self.refresh_heroes_tree()
             dialog.destroy()
 
         ttk.Button(dialog, text="Загрузить", command=load).pack(pady=20)
@@ -542,25 +627,14 @@ class App(tk.Tk):
         for item in self.itemslist:
             item.username = None
 
-        self.refresh_trees()
-
-    def refresh_trees(self):
-        self.filter_heroes()
-        self.filter_items()
+        self.refresh_heroes_tree()
 
     def filter_heroes(self):
         """Фильтрация героев по поисковому запросу"""
         query = self.hero_search_var.get().lower()
         if query == "поиск...":
             query = ""
-        self.heroes_tree.delete(*self.heroes_tree.get_children())
-        for hero in self.herolist:
-            if query in hero.name.lower() or (
-                hero.username and query in hero.username.lower()
-            ):
-                self.heroes_tree.insert(
-                    "", "end", values=(hero.name, hero.username or "N/A")
-                )
+        self.refresh_heroes_tree()
 
     def filter_items(self):
         """Фильтрация предметов по поисковому запросу"""
@@ -585,6 +659,16 @@ class App(tk.Tk):
             )
         else:
             messagebox.showwarning("Предупреждение", "Смена пути отменена")
+
+    def open_presets_folder(self):
+        """Открывает папку с пресетами в проводнике"""
+        presets_path = os.path.abspath("presets")
+        try:
+            subprocess.run(["explorer", presets_path])
+        except Exception as e:
+            messagebox.showwarning(
+                "Внимание", f"Не удалось открыть папку пресетов: {e}"
+            )
 
 
 if __name__ == "__main__":
