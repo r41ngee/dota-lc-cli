@@ -5,8 +5,6 @@
 import logging
 import re
 
-from tqdm import tqdm
-
 
 def parse(lines: list | tuple) -> dict:
     """Парсит файл локализации Dota 2 из формата KV в словарь Python.
