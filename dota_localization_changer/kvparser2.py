@@ -36,9 +36,7 @@ def parse(lines: list | tuple) -> dict:
         if 5 <= i < len_lines - 3 and line.strip() and not line.strip().startswith("//")
     ]
 
-    for lindex, line in tqdm(
-        valid_lines, desc="Распаковка файла локализации", colour="red"
-    ):
+    for lindex, line in valid_lines:
         match = pattern.match(line)
         if match:
             key, value, _ = match.groups()
@@ -70,11 +68,9 @@ def unparse(data: dict, lang: str = "russian") -> str:
     # Используем список для более эффективной конкатенации
     lines = ['"lang"', "{", '\t"Language" "russian"', '\t"Tokens"', "\t{"]
 
-    # Предварительно экранируем все ключи и значения с прогресс-баром
+    # Предварительно экранируем все ключи и значения
     escaped_items = []
-    for key, value in tqdm(
-        data.items(), desc="Запаковка файла локализации", colour="green"
-    ):
+    for key, value in data.items():
         escaped_key = key.replace('"', '\\"')
         escaped_value = value.replace('"', '\\"')
         escaped_items.append((escaped_key, escaped_value))
