@@ -4,24 +4,15 @@
 
 import atexit
 import json
-import logging
 import os
 import subprocess
 import tkinter as tk
 from tkinter import messagebox, ttk
 
 import kvparser2
-from config import LOGGER_LEVEL, VPK_PATH, change_dota_directory
+from config import VPK_PATH, change_dota_directory
 from dotatypes import Hero, Item
 from presets import Preset
-
-# -LOGGER SETTINGS-
-logging.basicConfig(
-    level=LOGGER_LEVEL,
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    filename=".log",
-    filemode="w",
-)
 
 
 def save_changes(herolist, itemslist):
@@ -29,7 +20,7 @@ def save_changes(herolist, itemslist):
     try:
         abil_file = open("data/abilities_russian.txt", "r", encoding="utf-8")
     except OSError as e:
-        logging.error(e)
+        messagebox.showerror("Ошибка", str(e))
         return
 
     kv: dict = kvparser2.parse(abil_file.readlines())

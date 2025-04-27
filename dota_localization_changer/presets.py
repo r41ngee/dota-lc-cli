@@ -5,11 +5,12 @@
 """
 
 import json
-import logging
+import os
 from pathlib import Path
+from tkinter import messagebox
 from typing import List, Optional
 
-from dotatypes import Hero
+from dotatypes import Hero, Item
 
 PRESETS_DIR = Path("presets")
 
@@ -42,22 +43,15 @@ class Preset:
 
     def save(self) -> None:
         """Сохраняет пресет в файл."""
-        PRESETS_DIR.mkdir(parents=True, exist_ok=True)
-        file_path = PRESETS_DIR / self.filename
-
         try:
-            with file_path.open("w", encoding="utf-8") as f:
-                json.dump(
-                    {
-                        "heroes": [hero.to_dict() for hero in self.heroes],
-                        "items": [item.to_dict() for item in self.items],
-                    },
-                    f,
-                    indent=4,
-                    ensure_ascii=False,
-                )
-        except OSError as e:
-            logging.error(f"Ошибка сохранения пресета {self.filename}: {e}")
+            with open(
+                os.path.join("presets", f"{self.filename}"), "w", encoding="utf-8"
+            ) as f:
+                json.dump(self.to_dict(), f, indent=4, ensure_ascii=False)
+        except Exception as e:
+            messagebox.showerror(
+                "Ошибка", f"Ошибка сохранения пресета {self.filename}: {e}"
+            )
 
     @staticmethod
     def load(filename: str) -> "Preset":
@@ -69,17 +63,18 @@ class Preset:
         Returns:
             Загруженный пресет
         """
-        file_path = PRESETS_DIR / filename
         try:
-            with file_path.open("r", encoding="utf-8") as f:
+            with open(
+                os.path.join("presets", f"{filename}"), "r", encoding="utf-8"
+            ) as f:
                 data = json.load(f)
                 return Preset(
-                    name=filename.replace(".json", ""),
-                    heroes=[Hero(hero_data) for hero_data in data["heroes"]],
-                    items=data["items"],
+                    filename.replace(".json", ""),
+                    [Hero(i) for i in data["heroes"]],
+                    [Item(i) for i in data["items"]],
                 )
-        except (OSError, json.JSONDecodeError) as e:
-            logging.error(f"Ошибка загрузки пресета {filename}: {e}")
+        except Exception as e:
+            messagebox.showerror("Ошибка", f"Ошибка загрузки пресета {filename}: {e}")
             return Preset(filename.replace(".json", ""))
 
     @staticmethod

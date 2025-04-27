@@ -3,7 +3,6 @@
 Модуль для парсинга и генерации KV-файлов локализации Dota 2.
 """
 
-import logging
 import re
 from typing import Dict, List, Tuple
 
@@ -25,7 +24,6 @@ def parse(lines: List[str] | Tuple[str, ...]) -> Dict[str, str]:
     """
     data: Dict[str, str] = {}
     total_lines = len(lines)
-    logging.debug(f"Started parsing with {total_lines} lines")
 
     # Фильтруем и обрабатываем только нужные строки
     valid_lines = (
@@ -41,10 +39,7 @@ def parse(lines: List[str] | Tuple[str, ...]) -> Dict[str, str]:
             key, value, _ = match.groups()
             # Убираем внешние кавычки и экранируем внутренние
             data[key[1:-1].replace('\\"', '"')] = value[1:-1].replace('\\"', '"')
-        else:
-            logging.warning(f"Parse error: line {lindex + 1} was not parsed")
 
-    logging.info(f"Parser ended with {len(data)} pairs")
     return data
 
 
@@ -58,8 +53,6 @@ def unparse(data: Dict[str, str], lang: str = "russian") -> str:
     Returns:
         Строка в формате KV файла локализации Dota 2
     """
-    logging.info(f"Unparser starts with {len(data)} pairs")
-
     # Используем список для более эффективной конкатенации
     lines = ['"lang"', "{", f'\t"Language" "{lang}"', '\t"Tokens"', "\t{"]
 

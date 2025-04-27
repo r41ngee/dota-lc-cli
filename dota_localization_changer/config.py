@@ -7,35 +7,36 @@
 """
 
 import json
-import logging
-from pathlib import Path
+import os
 from tkinter import messagebox
 from tkinter.filedialog import askdirectory
 from typing import Final
 
 # Константы
-CONFIG_PATH: Final[Path] = Path("data/config.json")
+CONFIG_FILE: Final[str] = "config.json"
 DEFAULT_LOGGER_LEVEL: Final[str] = "INFO"
 
 
 def load_config() -> dict[str, str]:
     """Загружает конфигурацию из файла."""
+    global VPK_PATH
     try:
-        with CONFIG_PATH.open("r", encoding="utf-8") as f:
-            return json.load(f)
-    except (OSError, json.JSONDecodeError) as e:
-        logging.error(f"Ошибка загрузки конфигурации: {e}")
+        with open(CONFIG_FILE, "r", encoding="utf-8") as f:
+            config = json.load(f)
+            VPK_PATH = config.get("vpk_path", "")
+            return config
+    except Exception as e:
+        messagebox.showerror("Ошибка", f"Ошибка загрузки конфигурации: {e}")
         return {"logger_lvl": DEFAULT_LOGGER_LEVEL, "dota_directory": None}
 
 
 def save_config(config: dict[str, str]) -> None:
     """Сохраняет конфигурацию в файл."""
     try:
-        CONFIG_PATH.parent.mkdir(parents=True, exist_ok=True)
-        with CONFIG_PATH.open("w", encoding="utf-8") as f:
+        with open(CONFIG_FILE, "w", encoding="utf-8") as f:
             json.dump(config, f, indent=4, ensure_ascii=False)
-    except OSError as e:
-        logging.error(f"Ошибка сохранения конфигурации: {e}")
+    except Exception as e:
+        messagebox.showerror("Ошибка", f"Ошибка сохранения конфигурации: {e}")
 
 
 # Загрузка конфигурации
@@ -70,13 +71,12 @@ def change_dota_directory() -> bool:
     Returns:
         bool: True если путь был успешно изменен, False в противном случае
     """
-    global DOTA_DIR, VPK_PATH
-    new_dir = askdirectory()
-    if not new_dir:
+    global VPK_PATH
+    new_path = askdirectory(title="Выберите папку с Dota 2")
+    if not new_path:
         return False
 
-    DOTA_DIR = new_dir
-    VPK_PATH = f"{DOTA_DIR}/game/dota_russian/pak01_dir.vpk"
-    cfg["dota_directory"] = DOTA_DIR
+    VPK_PATH = os.path.join(new_path, "game", "dota", "pak01_dir.vpk")
+    cfg["dota_directory"] = new_path
     save_config(cfg)
     return True
