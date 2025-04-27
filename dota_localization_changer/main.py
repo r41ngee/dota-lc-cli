@@ -316,58 +316,123 @@ class App(tk.Tk):
 
         dialog = tk.Toplevel(self)
         dialog.title(f"Редактирование {hero.name}")
-        dialog.geometry("500x700")
+        dialog.geometry("900x500")
         dialog.configure(bg="#2C2F33")
 
-        # Имя героя
-        ttk.Label(dialog, text="Новое имя героя:", font=("Helvetica", 12)).pack(pady=10)
-        name_entry = ttk.Entry(dialog, width=40)
+        main_frame = ttk.Frame(dialog)
+        main_frame.pack(expand=True, fill="both", padx=10, pady=10)
+        main_frame.columnconfigure(0, weight=1)
+        main_frame.columnconfigure(1, weight=2)
+        main_frame.columnconfigure(2, weight=2)
+
+        # 1 столбец: имя героя
+        name_frame = ttk.Frame(main_frame)
+        name_frame.grid(row=0, column=0, sticky="nsew", padx=10, pady=10)
+        ttk.Label(name_frame, text="Имя героя:").pack(anchor="w")
+        name_entry = ttk.Entry(name_frame, width=25)
         name_entry.insert(0, hero.username or "")
-        name_entry.pack(pady=5)
+        name_entry.pack(anchor="w", pady=5)
 
-        # Скиллы
-        ttk.Label(dialog, text="Скиллы:", font=("Helvetica", 12, "bold")).pack(pady=10)
-        skills_frame = ttk.Frame(dialog)
-        skills_frame.pack(fill="x", padx=20)
+        # 2 столбец: таблица скиллов
+        skills_frame = ttk.Frame(main_frame)
+        skills_frame.grid(row=0, column=1, sticky="nsew", padx=10, pady=10)
+        ttk.Label(skills_frame, text="Скиллы").pack(anchor="w")
+        skills_tree = ttk.Treeview(
+            skills_frame, columns=("skill", "custom"), show="headings", height=10
+        )
+        skills_tree.heading("skill", text="Скилл")
+        skills_tree.heading("custom", text="Кастомное имя")
+        skills_tree.column("skill", width=150, anchor="w")
+        skills_tree.column("custom", width=150, anchor="w")
+        skills_tree.pack(side="left", fill="both", expand=True)
+        skills_scroll = ttk.Scrollbar(
+            skills_frame, orient="vertical", command=skills_tree.yview
+        )
+        skills_tree.configure(yscrollcommand=skills_scroll.set)
+        skills_scroll.pack(side="right", fill="y")
+        for i, skill in enumerate(hero.skills):
+            display_value = skill.username if skill.username else "N/A"
+            skills_tree.insert("", "end", iid=i, values=(skill.name, display_value))
 
-        skill_entries = []
-        for skill in hero.skills:
-            ttk.Label(skills_frame, text=skill.name, font=("Helvetica", 10)).pack(
-                pady=2
-            )
-            entry = ttk.Entry(skills_frame, width=40)
-            entry.insert(0, skill.username or "")
-            entry.pack(pady=5)
-            skill_entries.append((skill, entry))
+        # 3 столбец: таблица аспектов
+        facets_frame = ttk.Frame(main_frame)
+        facets_frame.grid(row=0, column=2, sticky="nsew", padx=10, pady=10)
+        ttk.Label(facets_frame, text="Аспекты").pack(anchor="w")
+        facets_tree = ttk.Treeview(
+            facets_frame, columns=("facet", "custom"), show="headings", height=10
+        )
+        facets_tree.heading("facet", text="Аспект")
+        facets_tree.heading("custom", text="Кастомное имя")
+        facets_tree.column("facet", width=150, anchor="w")
+        facets_tree.column("custom", width=150, anchor="w")
+        facets_tree.pack(side="left", fill="both", expand=True)
+        facets_scroll = ttk.Scrollbar(
+            facets_frame, orient="vertical", command=facets_tree.yview
+        )
+        facets_tree.configure(yscrollcommand=facets_scroll.set)
+        facets_scroll.pack(side="right", fill="y")
+        for i, facet in enumerate(hero.facets):
+            display_value = facet.username if facet.username else "N/A"
+            facets_tree.insert("", "end", iid=i, values=(facet.name, display_value))
 
-        # Аспекты
-        ttk.Label(dialog, text="Аспекты:", font=("Helvetica", 12, "bold")).pack(pady=10)
-        facets_frame = ttk.Frame(dialog)
-        facets_frame.pack(fill="x", padx=20)
-
-        facet_entries = []
-        for facet in hero.facets:
-            ttk.Label(facets_frame, text=facet.name, font=("Helvetica", 10)).pack(
-                pady=2
-            )
-            entry = ttk.Entry(facets_frame, width=40)
-            entry.insert(0, facet.username or "")
-            entry.pack(pady=5)
-            facet_entries.append((facet, entry))
-
-        def save():
+        # Сохранение изменений
+        def save_changes():
             hero.username = name_entry.get() if name_entry.get().strip() else None
-
-            for skill, entry in skill_entries:
-                skill.username = entry.get() if entry.get().strip() else None
-
-            for facet, entry in facet_entries:
-                facet.username = entry.get() if entry.get().strip() else None
-
+            for i, skill in enumerate(hero.skills):
+                val = skills_tree.item(i)["values"][1]
+                if not val or val == "N/A":
+                    skill.username = None
+                else:
+                    skill.username = val
+            for i, facet in enumerate(hero.facets):
+                val = facets_tree.item(i)["values"][1]
+                if not val or val == "N/A":
+                    facet.username = None
+                else:
+                    facet.username = val
             self.heroes_tree.item(item, values=(hero.name, hero.username or "N/A"))
             dialog.destroy()
 
-        ttk.Button(dialog, text="Сохранить", command=save).pack(pady=20)
+        # Редактирование кастомных имён по двойному клику
+        def edit_tree_cell(tree, iid, col):
+            x, y, width, height = tree.bbox(iid, col)
+            value = tree.set(iid, col)
+            entry = ttk.Entry(tree)
+            entry.place(x=x, y=y, width=width, height=height)
+            entry.insert(0, value)
+            entry.focus()
+
+            def on_enter(event=None):
+                tree.set(iid, col, entry.get())
+                entry.destroy()
+
+            entry.bind("<Return>", on_enter)
+            entry.bind("<FocusOut>", lambda e: entry.destroy())
+
+        def on_skill_double(event):
+            region = skills_tree.identify("region", event.x, event.y)
+            if region == "cell":
+                row = skills_tree.identify_row(event.y)
+                col = skills_tree.identify_column(event.x)
+                if col == "#2":
+                    edit_tree_cell(skills_tree, row, "custom")
+
+        skills_tree.bind("<Double-1>", on_skill_double)
+
+        def on_facet_double(event):
+            region = facets_tree.identify("region", event.x, event.y)
+            if region == "cell":
+                row = facets_tree.identify_row(event.y)
+                col = facets_tree.identify_column(event.x)
+                if col == "#2":
+                    edit_tree_cell(facets_tree, row, "custom")
+
+        facets_tree.bind("<Double-1>", on_facet_double)
+
+        # Кнопка сохранить
+        save_btn = ttk.Button(dialog, text="Сохранить", command=save_changes)
+        save_btn.pack(pady=10)
+        dialog.protocol("WM_DELETE_WINDOW", save_changes)
 
     def edit_item(self, event):
         item_sel = self.items_tree.selection()[0]
