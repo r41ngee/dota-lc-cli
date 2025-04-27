@@ -5,6 +5,7 @@
 import atexit
 import json
 import logging
+import os
 import subprocess
 import tkinter as tk
 from tkinter import messagebox, ttk
@@ -506,11 +507,22 @@ class App(tk.Tk):
                 return
             preset = Preset(
                 name,
-                heroes=[i.to_dict() for i in self.herolist],
-                items=[j.to_dict() for j in self.itemslist],
+                heroes=self.herolist,
+                items=self.itemslist,
             )
             preset.save()
             dialog.destroy()
+            # Диалоговое окно с вопросом
+            preset_path = os.path.abspath(os.path.join("presets", f"{name}.json"))
+            if messagebox.askyesno(
+                "Открыть проводник?", "Открыть проводник с выделенным файлом пресета?"
+            ):
+                try:
+                    subprocess.run(["explorer", "/select,", preset_path])
+                except Exception as e:
+                    messagebox.showwarning(
+                        "Внимание", f"Не удалось открыть Проводник: {e}"
+                    )
 
         ttk.Button(dialog, text="Сохранить", command=save).pack(pady=20)
 

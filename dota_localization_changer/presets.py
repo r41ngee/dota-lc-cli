@@ -6,7 +6,6 @@
 
 import json
 import logging
-import os
 from pathlib import Path
 from typing import List, Optional
 
@@ -51,7 +50,7 @@ class Preset:
                 json.dump(
                     {
                         "heroes": [hero.to_dict() for hero in self.heroes],
-                        "items": self.items,
+                        "items": [item.to_dict() for item in self.items],
                     },
                     f,
                     indent=4,
