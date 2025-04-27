@@ -5,76 +5,89 @@
 """
 
 import json
-import os
+import logging
+from pathlib import Path
+from typing import List, Optional
 
 from dotatypes import Hero
+
+PRESETS_DIR = Path("presets")
 
 
 class Preset:
     """Класс для работы с пресетами локализации.
 
     Attributes:
-        filename (str): Имя файла пресета
-        heroes (list[Hero]): Список героев в пресете
-        items (list): Список предметов в пресете
+        filename: Имя файла пресета
+        heroes: Список героев в пресете
+        items: Список предметов в пресете
     """
 
     def __init__(
-        self, name: str, heroes: list[Hero] | None = None, items: list | None = None
-    ):
+        self,
+        name: str,
+        heroes: Optional[List[Hero]] = None,
+        items: Optional[List[dict]] = None,
+    ) -> None:
         """Инициализирует пресет.
 
         Args:
-            name (str): Имя пресета
-            heroes (list[Hero] | None, optional): Список героев. По умолчанию None
-            items (list | None, optional): Список предметов. По умолчанию None
+            name: Имя пресета
+            heroes: Список героев
+            items: Список предметов
         """
-        self.filename = name + ".json"
+        self.filename = f"{name}.json"
         self.heroes = heroes or []
         self.items = items or []
 
-    def save(self):
-        """Сохраняет пресет в файл.
+    def save(self) -> None:
+        """Сохраняет пресет в файл."""
+        PRESETS_DIR.mkdir(parents=True, exist_ok=True)
+        file_path = PRESETS_DIR / self.filename
 
-        Создает директорию presets, если она не существует,
-        и сохраняет пресет в формате JSON.
-        """
-        os.makedirs("presets", exist_ok=True)
+        try:
+            with file_path.open("w", encoding="utf-8") as f:
+                json.dump(
+                    {
+                        "heroes": [hero.to_dict() for hero in self.heroes],
+                        "items": [item.to_dict() for item in self.items],
+                    },
+                    f,
+                    indent=4,
+                    ensure_ascii=False,
+                )
+        except OSError as e:
+            logging.error(f"Ошибка сохранения пресета {self.filename}: {e}")
 
-        with open(f"presets/{self.filename}", "w") as f:
-            json.dump(
-                {
-                    "heroes": self.heroes,
-                    "items": self.items,
-                },
-                f,
-                indent=4,
-                ensure_ascii=False,
-            )
-
-    def load(filename: str):
+    @staticmethod
+    def load(filename: str) -> "Preset":
         """Загружает пресет из файла.
 
         Args:
-            filename (str): Имя файла пресета
+            filename: Имя файла пресета
 
         Returns:
-            Preset: Загруженный пресет
+            Загруженный пресет
         """
-        with open(f"presets/{filename}", "r") as f:
-            dct = json.load(f)
-            return Preset(
-                name=filename.replace(".json", ""),
-                heroes=[Hero(h) for h in dct["heroes"]],  # Преобразуем словари в Hero
-                items=dct["items"],
-            )
+        file_path = PRESETS_DIR / filename
+        try:
+            with file_path.open("r", encoding="utf-8") as f:
+                data = json.load(f)
+                return Preset(
+                    name=filename.replace(".json", ""),
+                    heroes=[Hero(hero_data) for hero_data in data["heroes"]],
+                    items=data["items"],
+                )
+        except (OSError, json.JSONDecodeError) as e:
+            logging.error(f"Ошибка загрузки пресета {filename}: {e}")
+            return Preset(filename.replace(".json", ""))
 
-    def load_names() -> list[str]:
+    @staticmethod
+    def load_names() -> List[str]:
         """Получает список всех доступных пресетов.
 
         Returns:
-            list[str]: Список имен файлов пресетов
+            Список имен файлов пресетов
         """
-        files = [f for f in os.listdir("presets/") if f.endswith(".json")]
-
-        return files
+        PRESETS_DIR.mkdir(parents=True, exist_ok=True)
+        return [f.name for f in PRESETS_DIR.glob("*.json")]
