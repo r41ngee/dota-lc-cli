@@ -316,18 +316,42 @@ class App(tk.Tk):
 
         dialog = tk.Toplevel(self)
         dialog.title(f"Редактирование {hero.name}")
-        dialog.geometry("500x700")
+        dialog.geometry("500x600")  # Уменьшаем высоту окна
         dialog.configure(bg="#2C2F33")
 
+        # Создаем основной фрейм с скроллбаром
+        main_frame = ttk.Frame(dialog)
+        main_frame.pack(expand=True, fill="both", padx=10, pady=10)
+
+        # Создаем canvas и скроллбар
+        canvas = tk.Canvas(main_frame, bg="#2C2F33", highlightthickness=0)
+        scrollbar = ttk.Scrollbar(main_frame, orient="vertical", command=canvas.yview)
+        scrollable_frame = ttk.Frame(canvas)
+
+        scrollable_frame.bind(
+            "<Configure>", lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
+        )
+
+        canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
+        canvas.configure(yscrollcommand=scrollbar.set)
+
+        # Упаковываем canvas и скроллбар
+        canvas.pack(side="left", fill="both", expand=True)
+        scrollbar.pack(side="right", fill="y")
+
         # Имя героя
-        ttk.Label(dialog, text="Новое имя героя:", font=("Helvetica", 12)).pack(pady=10)
-        name_entry = ttk.Entry(dialog, width=40)
+        ttk.Label(
+            scrollable_frame, text="Новое имя героя:", font=("Helvetica", 12)
+        ).pack(pady=10)
+        name_entry = ttk.Entry(scrollable_frame, width=40)
         name_entry.insert(0, hero.username or "")
         name_entry.pack(pady=5)
 
         # Скиллы
-        ttk.Label(dialog, text="Скиллы:", font=("Helvetica", 12, "bold")).pack(pady=10)
-        skills_frame = ttk.Frame(dialog)
+        ttk.Label(
+            scrollable_frame, text="Скиллы:", font=("Helvetica", 12, "bold")
+        ).pack(pady=10)
+        skills_frame = ttk.Frame(scrollable_frame)
         skills_frame.pack(fill="x", padx=20)
 
         skill_entries = []
@@ -341,8 +365,10 @@ class App(tk.Tk):
             skill_entries.append((skill, entry))
 
         # Аспекты
-        ttk.Label(dialog, text="Аспекты:", font=("Helvetica", 12, "bold")).pack(pady=10)
-        facets_frame = ttk.Frame(dialog)
+        ttk.Label(
+            scrollable_frame, text="Аспекты:", font=("Helvetica", 12, "bold")
+        ).pack(pady=10)
+        facets_frame = ttk.Frame(scrollable_frame)
         facets_frame.pack(fill="x", padx=20)
 
         facet_entries = []
@@ -367,7 +393,15 @@ class App(tk.Tk):
             self.heroes_tree.item(item, values=(hero.name, hero.username or "N/A"))
             dialog.destroy()
 
-        ttk.Button(dialog, text="Сохранить", command=save).pack(pady=20)
+        # Кнопка сохранить внизу
+        ttk.Button(scrollable_frame, text="Сохранить", command=save).pack(pady=20)
+
+        # Добавляем возможность прокрутки колесиком мыши
+        def _on_mousewheel(event):
+            canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
+
+        canvas.bind_all("<MouseWheel>", _on_mousewheel)
+        dialog.bind("<Destroy>", lambda e: canvas.unbind_all("<MouseWheel>"))
 
     def edit_item(self, event):
         item_sel = self.items_tree.selection()[0]
