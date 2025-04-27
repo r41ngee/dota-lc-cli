@@ -142,10 +142,34 @@ class App(tk.Tk):
         # Поле поиска для героев
         self.hero_search_var = tk.StringVar()
         hero_search_entry = ttk.Entry(
-            self.heroes_frame, textvariable=self.hero_search_var, width=40
+            self.heroes_frame,
+            textvariable=self.hero_search_var,
+            width=40,
+            foreground="#888888",
         )
         hero_search_entry.pack(padx=10, pady=(10, 0), anchor="nw")
-        self.hero_search_var.trace_add("write", lambda *args: self.filter_heroes())
+        hero_placeholder = "Поиск..."
+        hero_search_entry.insert(0, hero_placeholder)
+        hero_search_entry.config(foreground="#888888")
+
+        def on_hero_focus_in(event):
+            if hero_search_entry.get() == hero_placeholder:
+                hero_search_entry.delete(0, tk.END)
+                hero_search_entry.config(foreground="#ffffff")
+
+        def on_hero_focus_out(event):
+            if not hero_search_entry.get():
+                hero_search_entry.insert(0, hero_placeholder)
+                hero_search_entry.config(foreground="#888888")
+
+        hero_search_entry.bind("<FocusIn>", on_hero_focus_in)
+        hero_search_entry.bind("<FocusOut>", on_hero_focus_out)
+
+        def hero_var_trace(*args):
+            if self.hero_search_var.get() != hero_placeholder:
+                self.filter_heroes()
+
+        self.hero_search_var.trace_add("write", hero_var_trace)
 
         # Внутренний фрейм для таблицы и скроллбара
         heroes_tree_frame = ttk.Frame(self.heroes_frame)
@@ -184,10 +208,34 @@ class App(tk.Tk):
         # Поле поиска для предметов
         self.item_search_var = tk.StringVar()
         item_search_entry = ttk.Entry(
-            self.items_frame, textvariable=self.item_search_var, width=40
+            self.items_frame,
+            textvariable=self.item_search_var,
+            width=40,
+            foreground="#888888",
         )
         item_search_entry.pack(padx=10, pady=(10, 0), anchor="nw")
-        self.item_search_var.trace_add("write", lambda *args: self.filter_items())
+        item_placeholder = "Поиск..."
+        item_search_entry.insert(0, item_placeholder)
+        item_search_entry.config(foreground="#888888")
+
+        def on_item_focus_in(event):
+            if item_search_entry.get() == item_placeholder:
+                item_search_entry.delete(0, tk.END)
+                item_search_entry.config(foreground="#ffffff")
+
+        def on_item_focus_out(event):
+            if not item_search_entry.get():
+                item_search_entry.insert(0, item_placeholder)
+                item_search_entry.config(foreground="#888888")
+
+        item_search_entry.bind("<FocusIn>", on_item_focus_in)
+        item_search_entry.bind("<FocusOut>", on_item_focus_out)
+
+        def item_var_trace(*args):
+            if self.item_search_var.get() != item_placeholder:
+                self.filter_items()
+
+        self.item_search_var.trace_add("write", item_var_trace)
 
         # Внутренний фрейм для таблицы и скроллбара
         items_tree_frame = ttk.Frame(self.items_frame)
@@ -403,6 +451,8 @@ class App(tk.Tk):
     def filter_heroes(self):
         """Фильтрация героев по поисковому запросу"""
         query = self.hero_search_var.get().lower()
+        if query == "поиск...":
+            query = ""
         self.heroes_tree.delete(*self.heroes_tree.get_children())
         for hero in self.herolist:
             if query in hero.name.lower() or (
@@ -415,6 +465,8 @@ class App(tk.Tk):
     def filter_items(self):
         """Фильтрация предметов по поисковому запросу"""
         query = self.item_search_var.get().lower()
+        if query == "поиск...":
+            query = ""
         self.items_tree.delete(*self.items_tree.get_children())
         for item in self.itemslist:
             if query in item.name.lower() or (
