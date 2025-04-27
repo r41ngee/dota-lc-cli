@@ -6,7 +6,6 @@
 
 import os
 import subprocess
-from typing import NoReturn
 
 
 def cls() -> None:
