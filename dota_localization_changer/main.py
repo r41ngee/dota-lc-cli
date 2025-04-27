@@ -221,8 +221,13 @@ class App(tk.Tk):
         heroes_tree_frame = ttk.Frame(self.heroes_frame)
         heroes_tree_frame.pack(expand=True, fill="both", padx=10, pady=10)
 
-        self.heroes_tree = self.create_treeview(
-            heroes_tree_frame, [f"col{i}" for i in range(1, 5)], show_headings=False
+        # Создаем одну таблицу с 4 колонками
+        self.heroes_tree = ttk.Treeview(
+            heroes_tree_frame,
+            columns=("col1", "col2", "col3", "col4"),
+            show="",  # Убираем все заголовки
+            height=20,
+            selectmode="none",  # Отключаем стандартное выделение
         )
         self.heroes_tree.pack(side="left", fill="both", expand=True)
 
