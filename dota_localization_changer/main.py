@@ -292,19 +292,25 @@ class App(tk.Tk):
         self.button_frame.columnconfigure(1, weight=1)
         self.button_frame.columnconfigure(2, weight=1)
         self.button_frame.columnconfigure(3, weight=1)
+        self.button_frame.columnconfigure(4, weight=1)
 
         ttk.Button(
-            self.button_frame, text="Загрузить пресет", command=self.load_preset
+            self.button_frame, text="Сохранить пресет", command=self.save_preset
         ).grid(row=0, column=0, sticky="ew", padx=5)
         ttk.Button(
-            self.button_frame, text="Сохранить пресет", command=self.save_preset
+            self.button_frame, text="Загрузить пресет", command=self.load_preset
         ).grid(row=0, column=1, sticky="ew", padx=5)
         ttk.Button(
-            self.button_frame, text="Сбросить настройки", command=self.reset_settings
+            self.button_frame,
+            text="Открыть папку пресетов",
+            command=self.open_presets_folder,
         ).grid(row=0, column=2, sticky="ew", padx=5)
         ttk.Button(
             self.button_frame, text="Сменить путь Dota 2", command=self.change_dota_path
         ).grid(row=0, column=3, sticky="ew", padx=5)
+        ttk.Button(
+            self.button_frame, text="Сбросить настройки", command=self.reset_settings
+        ).grid(row=0, column=4, sticky="ew", padx=5)
 
         # Привязываем двойной клик
         self.heroes_tree.bind("<Double-1>", self.edit_hero)
@@ -585,6 +591,16 @@ class App(tk.Tk):
             )
         else:
             messagebox.showwarning("Предупреждение", "Смена пути отменена")
+
+    def open_presets_folder(self):
+        """Открывает папку с пресетами в проводнике"""
+        presets_path = os.path.abspath("presets")
+        try:
+            subprocess.run(["explorer", presets_path])
+        except Exception as e:
+            messagebox.showwarning(
+                "Внимание", f"Не удалось открыть папку пресетов: {e}"
+            )
 
 
 if __name__ == "__main__":
