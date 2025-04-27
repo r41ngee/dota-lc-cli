@@ -316,7 +316,7 @@ class App(tk.Tk):
 
         dialog = tk.Toplevel(self)
         dialog.title(f"Редактирование {hero.name}")
-        dialog.geometry("500x600")  # Уменьшаем высоту окна
+        dialog.geometry("500x600")
         dialog.configure(bg="#2C2F33")
 
         # Создаем основной фрейм с скроллбаром
@@ -338,6 +338,10 @@ class App(tk.Tk):
         # Упаковываем canvas и скроллбар
         canvas.pack(side="left", fill="both", expand=True)
         scrollbar.pack(side="right", fill="y")
+
+        # Кнопка сохранить вверху
+        save_button = ttk.Button(scrollable_frame, text="Сохранить изменения")
+        save_button.pack(pady=10)
 
         # Имя героя
         ttk.Label(
@@ -381,7 +385,7 @@ class App(tk.Tk):
             entry.pack(pady=5)
             facet_entries.append((facet, entry))
 
-        def save():
+        def save_changes():
             hero.username = name_entry.get() if name_entry.get().strip() else None
 
             for skill, entry in skill_entries:
@@ -393,8 +397,8 @@ class App(tk.Tk):
             self.heroes_tree.item(item, values=(hero.name, hero.username or "N/A"))
             dialog.destroy()
 
-        # Кнопка сохранить внизу
-        ttk.Button(scrollable_frame, text="Сохранить", command=save).pack(pady=20)
+        # Привязываем функцию сохранения к кнопке
+        save_button.configure(command=save_changes)
 
         # Добавляем возможность прокрутки колесиком мыши
         def _on_mousewheel(event):
@@ -402,6 +406,9 @@ class App(tk.Tk):
 
         canvas.bind_all("<MouseWheel>", _on_mousewheel)
         dialog.bind("<Destroy>", lambda e: canvas.unbind_all("<MouseWheel>"))
+
+        # Сохраняем изменения при закрытии окна
+        dialog.protocol("WM_DELETE_WINDOW", save_changes)
 
     def edit_item(self, event):
         item_sel = self.items_tree.selection()[0]
