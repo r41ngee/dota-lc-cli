@@ -139,22 +139,38 @@ class App(tk.Tk):
         self.heroes_frame = ttk.Frame(self.notebook)
         self.notebook.add(self.heroes_frame, text="Герои")
 
+        # Поле поиска для героев
+        self.hero_search_var = tk.StringVar()
+        hero_search_entry = ttk.Entry(
+            self.heroes_frame, textvariable=self.hero_search_var, width=40
+        )
+        hero_search_entry.pack(padx=10, pady=(10, 0), anchor="nw")
+        self.hero_search_var.trace_add("write", lambda *args: self.filter_heroes())
+
+        # Внутренний фрейм для таблицы и скроллбара
+        heroes_tree_frame = ttk.Frame(self.heroes_frame)
+        heroes_tree_frame.pack(expand=True, fill="both", padx=10, pady=10)
+
         self.heroes_tree = ttk.Treeview(
-            self.heroes_frame,
+            heroes_tree_frame,
             columns=("name", "custom_name"),
             show="headings",
             height=20,
         )
         self.heroes_tree.heading("name", text="Имя")
         self.heroes_tree.heading("custom_name", text="Кастомное имя")
-        self.heroes_tree.pack(expand=True, fill="both", padx=10, pady=10)
+        self.heroes_tree.column("name", width=200, anchor="w")
+        self.heroes_tree.column("custom_name", width=200, anchor="w")
+        self.heroes_tree.pack(side="left", fill="both", expand=True)
 
-        # Добавляем скроллбар
+        # Добавляем скроллбар только вертикальный, горизонтальный не используем
         heroes_scrollbar = ttk.Scrollbar(
-            self.heroes_frame, orient="vertical", command=self.heroes_tree.yview
+            heroes_tree_frame, orient="vertical", command=self.heroes_tree.yview
         )
         heroes_scrollbar.pack(side="right", fill="y")
-        self.heroes_tree.configure(yscrollcommand=heroes_scrollbar.set)
+        self.heroes_tree.configure(
+            yscrollcommand=heroes_scrollbar.set, xscrollcommand=""
+        )
 
         for hero in self.herolist:
             self.heroes_tree.insert(
@@ -165,22 +181,36 @@ class App(tk.Tk):
         self.items_frame = ttk.Frame(self.notebook)
         self.notebook.add(self.items_frame, text="Предметы")
 
+        # Поле поиска для предметов
+        self.item_search_var = tk.StringVar()
+        item_search_entry = ttk.Entry(
+            self.items_frame, textvariable=self.item_search_var, width=40
+        )
+        item_search_entry.pack(padx=10, pady=(10, 0), anchor="nw")
+        self.item_search_var.trace_add("write", lambda *args: self.filter_items())
+
+        # Внутренний фрейм для таблицы и скроллбара
+        items_tree_frame = ttk.Frame(self.items_frame)
+        items_tree_frame.pack(expand=True, fill="both", padx=10, pady=10)
+
         self.items_tree = ttk.Treeview(
-            self.items_frame,
+            items_tree_frame,
             columns=("name", "custom_name"),
             show="headings",
             height=20,
         )
         self.items_tree.heading("name", text="Имя")
         self.items_tree.heading("custom_name", text="Кастомное имя")
-        self.items_tree.pack(expand=True, fill="both", padx=10, pady=10)
+        self.items_tree.column("name", width=200, anchor="w")
+        self.items_tree.column("custom_name", width=200, anchor="w")
+        self.items_tree.pack(side="left", fill="both", expand=True)
 
-        # Добавляем скроллбар
+        # Добавляем скроллбар только вертикальный, горизонтальный не используем
         items_scrollbar = ttk.Scrollbar(
-            self.items_frame, orient="vertical", command=self.items_tree.yview
+            items_tree_frame, orient="vertical", command=self.items_tree.yview
         )
         items_scrollbar.pack(side="right", fill="y")
-        self.items_tree.configure(yscrollcommand=items_scrollbar.set)
+        self.items_tree.configure(yscrollcommand=items_scrollbar.set, xscrollcommand="")
 
         for item in self.itemslist:
             self.items_tree.insert(
@@ -367,19 +397,32 @@ class App(tk.Tk):
         self.refresh_trees()
 
     def refresh_trees(self):
-        for item in self.heroes_tree.get_children():
-            self.heroes_tree.delete(item)
-        for hero in self.herolist:
-            self.heroes_tree.insert(
-                "", "end", values=(hero.name, hero.username or "N/A")
-            )
+        self.filter_heroes()
+        self.filter_items()
 
-        for item in self.items_tree.get_children():
-            self.items_tree.delete(item)
+    def filter_heroes(self):
+        """Фильтрация героев по поисковому запросу"""
+        query = self.hero_search_var.get().lower()
+        self.heroes_tree.delete(*self.heroes_tree.get_children())
+        for hero in self.herolist:
+            if query in hero.name.lower() or (
+                hero.username and query in hero.username.lower()
+            ):
+                self.heroes_tree.insert(
+                    "", "end", values=(hero.name, hero.username or "N/A")
+                )
+
+    def filter_items(self):
+        """Фильтрация предметов по поисковому запросу"""
+        query = self.item_search_var.get().lower()
+        self.items_tree.delete(*self.items_tree.get_children())
         for item in self.itemslist:
-            self.items_tree.insert(
-                "", "end", values=(item.name, item.username or "N/A")
-            )
+            if query in item.name.lower() or (
+                item.username and query in item.username.lower()
+            ):
+                self.items_tree.insert(
+                    "", "end", values=(item.name, item.username or "N/A")
+                )
 
     def change_dota_path(self):
         """Смена пути установки Dota 2"""
