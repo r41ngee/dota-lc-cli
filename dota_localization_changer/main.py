@@ -10,7 +10,7 @@ import tkinter as tk
 from tkinter import messagebox, ttk
 
 import kvparser2
-from config import LOGGER_LEVEL, VPK_PATH
+from config import LOGGER_LEVEL, VPK_PATH, change_dota_directory
 from dotatypes import Hero, Item
 from presets import Preset
 
@@ -60,7 +60,10 @@ def save_changes(herolist, itemslist):
             check=True,
         )
     except subprocess.CalledProcessError:
-        logging.warning("r/l/abilities does not exist")
+        messagebox.showwarning(
+            "Предупреждение",
+            "Файл resource/localization/abilities_russian.txt не существует",
+        )
 
     try:
         subprocess.run(
@@ -196,6 +199,9 @@ class App(tk.Tk):
         ).pack(side="left", padx=10)
         ttk.Button(
             self.button_frame, text="Сбросить настройки", command=self.reset_settings
+        ).pack(side="left", padx=10)
+        ttk.Button(
+            self.button_frame, text="Сменить путь Dota 2", command=self.change_dota_path
         ).pack(side="left", padx=10)
 
         # Привязываем двойной клик
@@ -374,6 +380,16 @@ class App(tk.Tk):
             self.items_tree.insert(
                 "", "end", values=(item.name, item.username or "N/A")
             )
+
+    def change_dota_path(self):
+        """Смена пути установки Dota 2"""
+        if change_dota_directory():
+            messagebox.showinfo(
+                "Успех",
+                "Путь к Dota 2 успешно изменен. Изменения вступят в силу после перезапуска программы.",
+            )
+        else:
+            messagebox.showwarning("Предупреждение", "Смена пути отменена")
 
 
 if __name__ == "__main__":
