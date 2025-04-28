@@ -143,11 +143,23 @@ class App(tk.Tk):
 
     def create_interface(self):
         """Создание элементов интерфейса"""
-        # Заголовок
+        # Заголовок и кнопка сохранения
+        header_frame = ttk.Frame(self)
+        header_frame.pack(fill="x", padx=20, pady=20)
+
         title_label = ttk.Label(
-            self, text="DOTA 2 Localization Changer", font=("Helvetica", 24, "bold")
+            header_frame,
+            text="DOTA 2 Localization Changer",
+            font=("Helvetica", 24, "bold"),
         )
-        title_label.pack(pady=20)
+        title_label.pack(side="left", expand=True)
+
+        save_button = ttk.Button(
+            header_frame,
+            text="Сохранить",
+            command=lambda: save_changes(self.herolist, self.itemslist),
+        )
+        save_button.pack(side="right", padx=10)
 
         # Создание вкладок
         self.notebook = ttk.Notebook(self)
@@ -169,7 +181,7 @@ class App(tk.Tk):
         def on_focus_in(event):
             if entry.get() == placeholder:
                 entry.delete(0, tk.END)
-                entry.config(foreground="#ffffff")
+                entry.config(foreground="#000000")
 
         def on_focus_out(event):
             if not entry.get():
