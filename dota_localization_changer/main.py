@@ -131,9 +131,16 @@ class App(tk.Tk):
         """Загрузка данных из файлов"""
         try:
             with open("data/hero_tags.json", "r", encoding="utf-8") as f:
-                self.herolist = [Hero(i) for i in json.load(f)]
+                hero_data = json.load(f)
+                self.herolist = [Hero(i) for i in hero_data]
+                # Сохраняем начальное состояние героев
+                self.initial_herolist = [Hero(i) for i in hero_data]
+
             with open("data/items_tags.json", "r", encoding="utf-8") as f:
-                self.itemslist = [Item(i) for i in json.load(f)]
+                item_data = json.load(f)
+                self.itemslist = [Item(i) for i in item_data]
+                # Сохраняем начальное состояние предметов
+                self.initial_itemslist = [Item(i) for i in item_data]
         except OSError as e:
             messagebox.showerror("Ошибка", str(e))
             self.destroy()
@@ -141,9 +148,31 @@ class App(tk.Tk):
 
         atexit.register(save_changes, self.herolist, self.itemslist)
 
+    def revert_changes(self):
+        """Откатывает все изменения к состоянию при загрузке"""
+        if not messagebox.askyesno(
+            "Подтверждение",
+            "Вы уверены что хотите откатить все изменения к состоянию при загрузке?",
+        ):
+            return
+
+        # Восстанавливаем начальное состояние
+        self.herolist = [Hero(hero.to_dict()) for hero in self.initial_herolist]
+        self.itemslist = [Item(item.to_dict()) for item in self.initial_itemslist]
+
+        # Обновляем отображение
+        self.refresh_heroes_tree()
+        self.items_tree.delete(*self.items_tree.get_children())
+        for item in self.itemslist:
+            self.items_tree.insert(
+                "", "end", values=(item.name, item.username or "N/A")
+            )
+
+        messagebox.showinfo("Успех", "Изменения успешно откачены")
+
     def create_interface(self):
         """Создание элементов интерфейса"""
-        # Заголовок и кнопка сохранения
+        # Заголовок и кнопки
         header_frame = ttk.Frame(self)
         header_frame.pack(fill="x", padx=20, pady=20)
 
@@ -154,12 +183,20 @@ class App(tk.Tk):
         )
         title_label.pack(side="left", expand=True)
 
+        buttons_frame = ttk.Frame(header_frame)
+        buttons_frame.pack(side="right")
+
         save_button = ttk.Button(
-            header_frame,
+            buttons_frame,
             text="Сохранить",
             command=lambda: save_changes(self.herolist, self.itemslist),
         )
-        save_button.pack(side="right", padx=10)
+        save_button.pack(side="left", padx=5)
+
+        revert_button = ttk.Button(
+            buttons_frame, text="Откатить изменения", command=self.revert_changes
+        )
+        revert_button.pack(side="left", padx=5)
 
         # Создание вкладок
         self.notebook = ttk.Notebook(self)
